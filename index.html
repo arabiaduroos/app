@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>دُرُوسُ اللُّغَةِ الْعَرَبِيَّةِ • Madinah Arabic</title>
+  <!-- Google Fonts: Lateef (for Arabic) & Noto Nastaliq Urdu (for Urdu) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lateef:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-lang="ur">
+  <!-- ULTRA-MINIMAL STARTING SCREEN (LANGUAGE SELECTION) -->
+  <div class="splash-overlay" id="splashOverlay">
+    <div class="splash-card minimal-splash-card">
+      <div class="minimal-splash-badge">🕌</div>
+      <h1 class="minimal-splash-title ar-font">دُرُوسُ اللُّغَةِ الْعَرَبِيَّةِ</h1>
+      <p class="minimal-splash-subtitle">زبان منتخب کریں • Select Language</p>
+
+      <div class="minimal-lang-grid">
+        <button class="minimal-lang-card" id="selectUrduBtn" data-lang="ur">
+          <span class="lang-flag">🇵🇰</span>
+          <span class="minimal-lang-name ur-font">اردو</span>
+        </button>
+
+        <button class="minimal-lang-card" id="selectEnglishBtn" data-lang="en">
+          <span class="lang-flag">🇬🇧</span>
+          <span class="minimal-lang-name">English</span>
+        </button>
+
+        <button class="minimal-lang-card" id="selectBothBtn" data-lang="both">
+          <span class="lang-flag">🌐</span>
+          <span class="minimal-lang-name">EN + UR</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOP CLEAN HEADER -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand" id="brandHomeBtn" title="Madinah Arabic">
+        <span class="brand-logo">🕌</span>
+        <div class="brand-text">
+          <span class="brand-title ar-font">عَرَبِيَّةُ الْمَدِينَةِ</span>
+          <span class="brand-sub" id="brandSubText">دُرُوسُ اللُّغَةِ الْعَرَبِيَّةِ</span>
+        </div>
+      </div>
+
+      <!-- Book Switcher Pills -->
+      <div class="book-switcher" id="bookSwitcher">
+        <button class="book-pill active" data-book="1">
+          <span class="pill-icon">📗</span>
+          <span id="bookPillLabel1" class="pill-title">الكتاب ١</span>
+          <span class="pill-count" id="pillCount1">0/23</span>
+        </button>
+        <button class="book-pill" data-book="2">
+          <span class="pill-icon">📘</span>
+          <span id="bookPillLabel2" class="pill-title">الكتاب ٢</span>
+          <span class="pill-count" id="pillCount2">0/31</span>
+        </button>
+        <button class="book-pill" data-book="3">
+          <span class="pill-icon">📙</span>
+          <span id="bookPillLabel3" class="pill-title">الكتاب ٣</span>
+          <span class="pill-count" id="pillCount3">0/17</span>
+        </button>
+      </div>
+
+      <!-- Controls & Stats -->
+      <div class="stats-bar">
+        <button class="icon-btn lang-switch-btn" id="switchLangBtn" title="Switch Language">
+          <span id="activeLangBadge">🇵🇰 اردو</span>
+        </button>
+        <div class="stat-chip streak" title="Streak">
+          <span>🔥</span>
+          <strong id="statStreak">1</strong>
+        </div>
+        <div class="stat-chip xp" title="Total Points">
+          <span>⚡</span>
+          <strong id="statXP">0</strong>
+        </div>
+        <button class="icon-btn" id="fontSizeBtn" title="Adjust Arabic Font Size">
+          <span>A+</span>
+        </button>
+        <button class="icon-btn" id="themeToggleBtn" title="Dark / Light Mode">
+          <span id="themeIcon">🌙</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN APP CONTAINER (MINIMALIST LEARNING JOURNEY) -->
+  <main class="main-journey-container">
+    <!-- Current Book Banner & Progress -->
+    <div class="book-hero-banner" id="bookHeroBanner">
+      <div class="book-hero-info">
+        <div class="book-hero-badge" id="bookHeroBadge">📗 المستوى الأول • ٢٣ درسًا</div>
+        <h1 class="book-hero-title ar-font" id="bookHeroTitle">دُرُوسُ اللُّغَةِ الْعَرَبِيَّةِ - الْجُزْءُ الْأَوَّلُ</h1>
+        <p class="book-hero-desc" id="bookHeroDesc">بنیادی عربی گرامر اور جملہ اسمیہ</p>
+      </div>
+      <!-- Overall Book Progress Track -->
+      <div class="book-progress-wrapper">
+        <div class="book-progress-label">
+          <span id="bookProgressCount">0 / 23 اسباق مکمل</span>
+          <span id="bookProgressPercent">0%</span>
+        </div>
+        <div class="book-progress-track">
+          <div class="book-progress-fill" id="bookProgressFill" style="width: 0%"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Units List / Journey -->
+    <div class="journey-units-grid" id="journeyUnitsGrid">
+      <!-- Dynamic Unit Cards Injected Here -->
+    </div>
+  </main>
+
+  <!-- MODAL: MINIMAL LESSON CARD READER (STYLED SAME AS QUESTIONS!) -->
+  <div class="lesson-reader-overlay hidden" id="lessonReaderModal">
+    <div class="reader-topbar">
+      <button class="reader-close-btn" id="readerCloseBtn" title="Close Lesson">✕</button>
+      <div class="reader-header-info">
+        <span class="reader-badge" id="readerUnitBadge">🏠 الدرس الأول</span>
+        <div class="reader-progress-track">
+          <div class="reader-progress-fill" id="readerProgressFill" style="width: 10%"></div>
+        </div>
+        <span class="reader-counter" id="readerCardCounter">بطاقة ١ من ٨</span>
+      </div>
+      <div class="reader-mode-toggle">
+        <button class="mode-pill active" id="readerModeCardBtn" title="Cards Mode">🃏 بطاقات</button>
+        <button class="mode-pill" id="readerModeFullBtn" title="Full Text Mode">📄 كامل</button>
+      </div>
+    </div>
+
+    <!-- Central Stage: Card-by-Card (Styled exactly like question prompt card!) -->
+    <div class="lesson-stage" id="lessonStage">
+      <!-- Single Card View (Default) -->
+      <div class="lesson-card-viewport" id="lessonCardViewport">
+        <div class="lesson-page-card" id="lessonPageCard">
+          <div class="lesson-card-header">
+            <span class="lesson-card-em" id="lessonCardEmoji">🏠</span>
+            <button class="lesson-speak-btn" id="lessonCardSpeakBtn" title="Listen Pronunciation">🔊</button>
+          </div>
+          <div class="lesson-card-arabic ar-font" id="lessonCardArabic">هٰذَا بَيْتٌ</div>
+          <div class="lesson-card-trans" id="lessonCardTrans">یہ ایک گھر ہے</div>
+        </div>
+      </div>
+
+      <!-- Full Text Scrollable View (Optional Toggle) -->
+      <div class="lesson-full-scroll hidden" id="lessonFullScroll"></div>
+    </div>
+
+    <!-- Bottom Navigation Bar -->
+    <div class="lesson-bottombar" id="lessonBottomBar">
+      <div class="lesson-bottom-inner">
+        <button class="duo-btn duo-btn-outline" id="lessonPrevBtn">➡️ السابق</button>
+        <button class="duo-btn duo-btn-blue" id="lessonNextBtn">التالي ⬅️</button>
+        <button class="duo-btn duo-btn-green hidden" id="lessonStartExercisesBtn">
+          <span>✍️</span>
+          <span id="lessonStartExercisesLabel">اب سبق کی تمارین حل کریں</span>
+          <span>⬅️</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: SELECT TAMREEN (اخْتَرْ التَّمْرِينَ) -->
+  <div class="tamreen-selector-backdrop hidden" id="tamreenSelectorModal">
+    <div class="tamreen-selector-card">
+      <div class="tamreen-selector-header">
+        <div class="tamreen-header-title-wrap">
+          <span class="tamreen-unit-badge ar-font" id="tamreenUnitBadge">الدَّرْسُ الْأَوَّلُ</span>
+          <h2 class="tamreen-selector-title" id="tamreenSelectorTitle">اخْتَرْ التَّمْرِينَ • Select Exercise</h2>
+        </div>
+        <button class="popover-close" id="closeTamreenSelectorBtn">✕</button>
+      </div>
+      <div class="tamreen-options-list" id="tamreenOptionsList">
+        <!-- Injected options for Tamreen 1, Tamreen 2, All Exercises -->
+      </div>
+    </div>
+  </div>
+
+  <!-- DUOLINGO INTERACTIVE CHAPTER EXERCISES (التمارين) OVERLAY -->
+  <div class="quiz-overlay hidden" id="quizOverlay">
+    <div class="quiz-topbar">
+      <button class="quiz-close-btn" id="quizCloseBtn" title="Exit">✕</button>
+      <div class="quiz-progress-track">
+        <div class="quiz-progress-fill" id="quizProgressFill" style="width: 10%"></div>
+      </div>
+      <button class="quiz-peek-btn" id="quizPeekLessonBtn" title="Peek at Lesson Cards">
+        <span>📖</span>
+        <span id="quizPeekBtnLabel">الدرس</span>
+      </button>
+      <div class="quiz-hearts" title="Hearts">
+        <span>❤️</span>
+        <strong id="quizHeartsCount">5</strong>
+      </div>
+    </div>
+
+    <!-- Scrollable Quiz Stage - Top aligned to guarantee text above question is NEVER cut off! -->
+    <div class="quiz-stage" id="quizStage">
+      <!-- Dynamic Question Content Injected Here -->
+    </div>
+
+    <!-- Bottom Check / Feedback Bar -->
+    <div class="quiz-bottombar" id="quizBottomBar">
+      <div class="quiz-bottom-inner">
+        <div class="quiz-feedback" id="quizFeedbackBox">
+          <span class="feedback-icon" id="feedbackIcon">🎉</span>
+          <div class="feedback-texts">
+            <strong id="feedbackTitle"></strong>
+            <p id="feedbackSub"></p>
+          </div>
+        </div>
+        <div class="quiz-bottom-actions">
+          <button class="duo-btn duo-btn-outline" id="quizSkipBtn">Skip</button>
+          <button class="duo-btn duo-btn-green" id="quizCheckBtn" disabled>Check</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: QUICK PEEK AT LESSON CARDS DURING QUIZ -->
+  <div class="peek-drawer-backdrop hidden" id="peekLessonBackdrop">
+    <div class="peek-drawer" id="peekLessonDrawer">
+      <div class="peek-drawer-header">
+        <h3 class="ar-font" id="peekLessonTitle">📖 الدَّرْسُ وَالتَّرْجَمَةُ</h3>
+        <button class="popover-close" id="closePeekBtn">✕</button>
+      </div>
+      <div class="peek-drawer-body" id="peekLessonBody"></div>
+    </div>
+  </div>
+
+  <!-- Load Full Transcribed Dataset (Books 1, 2, 3) & App Engine -->
+  <script src="data/madinah_books.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
