@@ -1010,6 +1010,33 @@
     container.innerHTML = '';
 
     lessonReader.cards.forEach((card, idx) => {
+      if (card.type === 'vocab_table') {
+        const vCard = document.createElement('div');
+        vCard.className = 'vocab-table-card full-text-vocab';
+        const vTitle = state.lang === 'ur' ? card.title_ur : (state.lang === 'en' ? card.title_en : `${card.title_ur} • ${card.title_en}`);
+        vCard.innerHTML = `<div class="vocab-table-title" style="margin-top:14px;">${card.title_ar} — ${vTitle}</div>`;
+
+        const grid = document.createElement('div');
+        grid.className = 'vocab-table-grid';
+        (card.words || []).forEach(w => {
+          const cell = document.createElement('div');
+          cell.className = 'vocab-cell';
+          let meaning = w.ur || '';
+          if (state.lang === 'en') meaning = w.en || '';
+          else if (state.lang === 'both') meaning = `${w.ur || ''} • ${w.en || ''}`;
+
+          cell.innerHTML = `
+            <span class="vocab-cell-ar ar-font">${formatAr(w.ar)}</span>
+            <span class="vocab-cell-meaning">${meaning}</span>
+          `;
+          cell.addEventListener('click', () => speakArabic(w.ar));
+          grid.appendChild(cell);
+        });
+        vCard.appendChild(grid);
+        container.appendChild(vCard);
+        return;
+      }
+
       const row = document.createElement('div');
       row.className = 't-illus-row';
       let cleanTrans = '';
