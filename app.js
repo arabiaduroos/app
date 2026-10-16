@@ -814,6 +814,9 @@
     document.getElementById('readerUnitBadge').textContent = L.readerBadge(unit.unit_num, formatAr(unit.title_ar));
     document.getElementById('lessonReaderModal').classList.remove('hidden');
 
+    const stage = document.getElementById('lessonStage');
+    if (stage) stage.scrollTop = 0;
+
     setReaderMode('cards');
     renderCurrentLessonCard();
   }
@@ -830,8 +833,12 @@
     document.getElementById('lessonCardViewport').classList.toggle('hidden', !isCard);
     document.getElementById('lessonFullScroll').classList.toggle('hidden', isCard);
 
+    const stage = document.getElementById('lessonStage');
+    if (stage) stage.scrollTop = 0;
+
     if (!isCard) {
       renderLessonFullText();
+      if (stage) stage.scrollTop = 0;
     }
   }
 
@@ -861,8 +868,10 @@
     arEl.style.display = 'block';
     transEl.style.display = 'block';
     arEl.className = 'lesson-card-arabic ar-font';
+    cardContainer.classList.remove('is-vocab-table', 'is-grammar-pairs');
 
     if (card.type === 'grammar_pairs') {
+      cardContainer.classList.add('is-grammar-pairs');
       emEl.innerHTML = card.emoji || '⚖️';
       arEl.style.display = 'none';
       transEl.style.display = 'none';
@@ -900,6 +909,7 @@
       speakBtn.onclick = () => speakArabic(card.arabic);
 
     } else if (card.type === 'vocab_table') {
+      cardContainer.classList.add('is-vocab-table');
       emEl.innerHTML = card.emoji || '🗂️';
       arEl.style.display = 'none';
       transEl.style.display = 'none';
@@ -1120,6 +1130,29 @@
 
     const tamreens = Object.values(tamreenMap).sort((a, b) => a.num - b.num);
 
+    // Add "All Exercises" card at the top if more than 1 tamreen
+    if (tamreens.length > 1) {
+      const allCard = document.createElement('div');
+      allCard.className = 'tamreen-opt-card all-tamreens';
+      
+      let allTitle = state.lang === 'ur' ? '⭐ جَمِيعُ التَّمَارِينِ (تمام مشقیں اکٹھی حل کریں)' : (state.lang === 'en' ? '⭐ All Exercises (Play full sequence)' : '⭐ جَمِيعُ التَّمَارِينِ • All Exercises');
+      let allSub = state.lang === 'ur' ? `سبق کی تمام ${questions.length} مشقیں یکے بعد دیگرے حل کریں` : `Solve all ${questions.length} exercises of this chapter in sequence`;
+
+      allCard.innerHTML = `
+        <div class="tamreen-opt-num">⭐</div>
+        <div class="tamreen-opt-info">
+          <div class="tamreen-opt-title ar-font" style="font-weight:bold;color:var(--duo-green);">${allTitle}</div>
+          <div class="tamreen-opt-goal">${allSub}</div>
+          <div class="tamreen-opt-meta">${questions.length} ${state.lang === 'ur' ? 'سوالات' : 'questions'}</div>
+        </div>
+      `;
+      allCard.addEventListener('click', () => {
+        closeTamreenSelector();
+        startQuiz(unit, null);
+      });
+      list.appendChild(allCard);
+    }
+
     tamreens.forEach(tItem => {
       const card = document.createElement('div');
       card.className = 'tamreen-opt-card';
@@ -1154,29 +1187,6 @@
       });
       list.appendChild(card);
     });
-
-    // Also add "All Exercises" card if more than 1 tamreen
-    if (tamreens.length > 1) {
-      const allCard = document.createElement('div');
-      allCard.className = 'tamreen-opt-card all-tamreens';
-      
-      let allTitle = state.lang === 'ur' ? 'جَمِيعُ التَّمَارِينِ (تمام مشقیں حل کریں)' : (state.lang === 'en' ? 'All Exercises (Play full sequence)' : 'جَمِيعُ التَّمَارِينِ • All Exercises');
-      let allSub = state.lang === 'ur' ? `سبق کی تمام ${questions.length} مشقیں یکے بعد دیگرے حل کریں` : `Solve all ${questions.length} exercises in sequence`;
-
-      allCard.innerHTML = `
-        <div class="tamreen-opt-num">⭐</div>
-        <div class="tamreen-opt-info">
-          <div class="tamreen-opt-title ar-font">${allTitle}</div>
-          <div class="tamreen-opt-goal">${allSub}</div>
-          <div class="tamreen-opt-meta">${questions.length} questions</div>
-        </div>
-      `;
-      allCard.addEventListener('click', () => {
-        closeTamreenSelector();
-        startQuiz(unit, null);
-      });
-      list.appendChild(allCard);
-    }
 
     document.getElementById('tamreenSelectorModal').classList.remove('hidden');
   }
@@ -1716,7 +1726,131 @@
   // ============================================================================
   // EVENT BINDINGS
   // ============================================================================
+  // ============================================================================
+  // PWA & SERVICE WORKER INSTALL ENGINE
+  // ============================================================================
+  let deferredInstallPrompt = null;
+
+  function registerServiceWorker() {
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js')
+          .then((reg) => {
+            console.log('[Madinah Arabic PWA] ServiceWorker registered with scope:', reg.scope);
+          })
+          .catch((err) => {
+            console.warn('[Madinah Arabic PWA] ServiceWorker registration failed:', err);
+          });
+      });
+    }
+  }
+
+  function setupPWAInstall() {
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredInstallPrompt = e;
+      console.log('[Madinah Arabic PWA] beforeinstallprompt event captured');
+
+      const splashBtn = document.getElementById('splashInstallBtn');
+      if (splashBtn) {
+        splashBtn.classList.add('prompt-ready');
+      }
+    });
+
+    window.addEventListener('appinstalled', () => {
+      console.log('[Madinah Arabic PWA] App was successfully installed!');
+      deferredInstallPrompt = null;
+      closeInstallGuide();
+
+      const splashBtn = document.getElementById('splashInstallBtn');
+      if (splashBtn) {
+        splashBtn.innerHTML = `
+          <span class="install-btn-icon">✅</span>
+          <div class="install-btn-texts">
+            <span class="install-btn-title">تَمَّ تَثْبِيتُ التَّطْبِيقِ • Installed</span>
+            <span class="install-btn-sub">تطبیق کامیابی سے انسٹال ہو چکی ہے (کتابیں آف لائن دستیاب ہیں)</span>
+          </div>
+          <span class="install-btn-badge" style="background:#1cb0f6;">DONE</span>
+        `;
+      }
+    });
+  }
+
+  function triggerAppInstall() {
+    if (deferredInstallPrompt) {
+      deferredInstallPrompt.prompt();
+      deferredInstallPrompt.userChoice.then((choiceResult) => {
+        if (choiceResult.outcome === 'accepted') {
+          console.log('[Madinah Arabic PWA] User accepted installation prompt');
+          closeInstallGuide();
+        } else {
+          console.log('[Madinah Arabic PWA] User dismissed installation prompt');
+        }
+        deferredInstallPrompt = null;
+      });
+    } else {
+      openInstallGuide();
+    }
+  }
+
+  function openInstallGuide() {
+    const backdrop = document.getElementById('installGuideBackdrop');
+    if (backdrop) {
+      backdrop.classList.remove('hidden');
+    }
+  }
+
+  function closeInstallGuide() {
+    const backdrop = document.getElementById('installGuideBackdrop');
+    if (backdrop) {
+      backdrop.classList.add('hidden');
+    }
+  }
+
   function bindEvents() {
+    // PWA Install Triggers
+    const splashInstallBtn = document.getElementById('splashInstallBtn');
+    if (splashInstallBtn) {
+      splashInstallBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        triggerAppInstall();
+      });
+    }
+
+    const topbarInstallBtn = document.getElementById('topbarInstallBtn');
+    if (topbarInstallBtn) {
+      topbarInstallBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        triggerAppInstall();
+      });
+    }
+
+    const guideDirectInstallBtn = document.getElementById('guideDirectInstallBtn');
+    if (guideDirectInstallBtn) {
+      guideDirectInstallBtn.addEventListener('click', () => {
+        if (deferredInstallPrompt) {
+          triggerAppInstall();
+        } else {
+          guideDirectInstallBtn.innerHTML = '<span>📲</span><span>براؤزر مینو ⋮ یا ایڈریس بار ⊕ سے انسٹال کریں</span>';
+          setTimeout(() => {
+            guideDirectInstallBtn.innerHTML = '<span>📲</span><span>ابھی انسٹال کریں • Install Now</span>';
+          }, 3500);
+        }
+      });
+    }
+
+    const closeInstallGuideBtn = document.getElementById('closeInstallGuideBtn');
+    if (closeInstallGuideBtn) {
+      closeInstallGuideBtn.addEventListener('click', closeInstallGuide);
+    }
+
+    const installGuideBackdrop = document.getElementById('installGuideBackdrop');
+    if (installGuideBackdrop) {
+      installGuideBackdrop.addEventListener('click', (e) => {
+        if (e.target.id === 'installGuideBackdrop') closeInstallGuide();
+      });
+    }
+
     // Splash Screen
     document.getElementById('selectUrduBtn').addEventListener('click', () => selectLearnerLanguage('ur'));
     document.getElementById('selectEnglishBtn').addEventListener('click', () => selectLearnerLanguage('en'));
@@ -1839,6 +1973,8 @@
   }
 
   function init() {
+    registerServiceWorker();
+    setupPWAInstall();
     loadState();
     applyLocalizationStrings();
     applyThemeAndPrefs();

@@ -4,6 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>دُرُوسُ اللُّغَةِ الْعَرَبِيَّةِ • Madinah Arabic</title>
+
+  <!-- PWA & Mobile Web App Meta -->
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#58cc02" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Madinah Arabic" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="icon" type="image/png" href="icons/icon-192.png" />
+
   <!-- Google Fonts: Lateef (for Arabic) & Noto Nastaliq Urdu (for Urdu) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,7 +21,7 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body data-lang="ur">
-  <!-- ULTRA-MINIMAL STARTING SCREEN (LANGUAGE SELECTION) -->
+  <!-- ULTRA-MINIMAL STARTING SCREEN (LANGUAGE SELECTION & PWA INSTALL) -->
   <div class="splash-overlay" id="splashOverlay">
     <div class="splash-card minimal-splash-card">
       <div class="minimal-splash-badge">🕌</div>
@@ -32,6 +42,18 @@
         <button class="minimal-lang-card" id="selectBothBtn" data-lang="both">
           <span class="lang-flag">🌐</span>
           <span class="minimal-lang-name">EN + UR</span>
+        </button>
+      </div>
+
+      <!-- PWA INSTALL APP BUTTON ON FIRST SCREEN -->
+      <div class="splash-install-wrap">
+        <button class="splash-install-btn" id="splashInstallBtn" type="button" title="Install App • ایپ انسٹال کریں">
+          <span class="install-btn-icon">📲</span>
+          <div class="install-btn-texts">
+            <span class="install-btn-title ar-font">تَثْبِيتُ التَّطْبِيقِ عَلَى الْجِهَازِ</span>
+            <span class="install-btn-sub">ایپ انسٹال کریں • Install App (Offline)</span>
+          </div>
+          <span class="install-btn-badge">PWA</span>
         </button>
       </div>
     </div>
@@ -69,6 +91,9 @@
 
       <!-- Controls & Stats -->
       <div class="stats-bar">
+        <button class="icon-btn pwa-install-btn" id="topbarInstallBtn" title="Install App • ایپ انسٹال کریں">
+          <span>📲</span>
+        </button>
         <button class="icon-btn lang-switch-btn" id="switchLangBtn" title="Switch Language">
           <span id="activeLangBadge">🇵🇰 اردو</span>
         </button>
@@ -230,6 +255,71 @@
         <button class="popover-close" id="closePeekBtn">✕</button>
       </div>
       <div class="peek-drawer-body" id="peekLessonBody"></div>
+    </div>
+  </div>
+
+  <!-- MODAL: PWA INSTALL GUIDE -->
+  <div class="install-guide-backdrop hidden" id="installGuideBackdrop">
+    <div class="install-guide-modal" id="installGuideModal">
+      <div class="install-guide-header">
+        <div class="guide-header-icon">📲</div>
+        <div class="guide-header-text">
+          <h3 class="ar-font">تَثْبِيتُ التَّطْبِيقِ عَلَى جِهَازِكَ</h3>
+          <p class="guide-subtitle">ایپ کو اپنے فون یا کمپیوٹر پر انسٹال کریں • Install App</p>
+        </div>
+        <button class="popover-close" id="closeInstallGuideBtn" title="Close">✕</button>
+      </div>
+
+      <div class="install-guide-body">
+        <!-- Direct Prompt Button (shown when browser prompt is available or triggered) -->
+        <div class="guide-direct-wrap" id="guideDirectWrap">
+          <button class="duo-btn duo-btn-green guide-direct-btn" id="guideDirectInstallBtn">
+            <span>📲</span>
+            <span>ابھی انسٹال کریں • Install Now</span>
+          </button>
+        </div>
+
+        <div class="guide-steps-grid">
+          <!-- Android / Chrome step -->
+          <div class="guide-step-card">
+            <div class="guide-step-badge">🤖 Android / Chrome</div>
+            <div class="guide-step-body">
+              <p class="guide-step-desc">
+                براؤزر کے مینو <strong class="badge-tag">⋮</strong> پر کلک کریں اور <strong>«ایپ انسٹال کریں»</strong> (Install App) منتخب کریں۔
+              </p>
+              <p class="guide-step-sub">Tap browser menu <strong>⋮</strong> and select <strong>"Install app"</strong>.</p>
+            </div>
+          </div>
+
+          <!-- iOS / Safari step -->
+          <div class="guide-step-card">
+            <div class="guide-step-badge">🍏 iPhone / iPad (Safari)</div>
+            <div class="guide-step-body">
+              <p class="guide-step-desc">
+                نیچے شیئر بٹن <strong class="badge-tag">⎋</strong> دبائیں اور پھر <strong>«ہوم اسکرین پر شامل کریں ⊕»</strong> (Add to Home Screen) پر کلک کریں۔
+              </p>
+              <p class="guide-step-sub">Tap Share <strong>⎋</strong> then tap <strong>"Add to Home Screen ⊕"</strong>.</p>
+            </div>
+          </div>
+
+          <!-- Windows / Mac / Desktop step -->
+          <div class="guide-step-card">
+            <div class="guide-step-badge">💻 Windows / Mac (Chrome / Edge)</div>
+            <div class="guide-step-body">
+              <p class="guide-step-desc">
+                ایڈریس بار میں دائیں جانب موجود انسٹال بٹن <strong class="badge-tag">⊕</strong> پر کلک کریں، یا اوپر والا انسٹال بٹن دبائیں۔
+              </p>
+              <p class="guide-step-sub">Click the install icon <strong>⊕</strong> in the browser address bar.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="guide-features-row">
+          <span class="guide-feat">⚡ تیز رفتار لوڈنگ</span>
+          <span class="guide-feat">📴 مکمل آف لائن دستیابی</span>
+          <span class="guide-feat">🚫 بغیر اشتہارات</span>
+        </div>
+      </div>
     </div>
   </div>
 
