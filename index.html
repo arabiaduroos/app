@@ -145,17 +145,19 @@
   <!-- MODAL: MINIMAL LESSON CARD READER (STYLED SAME AS QUESTIONS!) -->
   <div class="lesson-reader-overlay hidden" id="lessonReaderModal">
     <div class="reader-topbar">
-      <button class="reader-close-btn" id="readerCloseBtn" title="Close Lesson">✕</button>
-      <div class="reader-header-info">
+      <div class="reader-topbar-row1">
+        <button class="reader-close-btn" id="readerCloseBtn" title="Close Lesson">✕</button>
         <span class="reader-badge" id="readerUnitBadge">🏠 الدرس الأول</span>
+        <div class="reader-mode-toggle">
+          <button class="mode-pill active" id="readerModeCardBtn" title="Cards Mode">🃏 بطاقات</button>
+          <button class="mode-pill" id="readerModeFullBtn" title="Full Text Mode">📄 كامل</button>
+        </div>
+      </div>
+      <div class="reader-topbar-row2">
         <div class="reader-progress-track">
           <div class="reader-progress-fill" id="readerProgressFill" style="width: 10%"></div>
         </div>
         <span class="reader-counter" id="readerCardCounter">بطاقة ١ من ٨</span>
-      </div>
-      <div class="reader-mode-toggle">
-        <button class="mode-pill active" id="readerModeCardBtn" title="Cards Mode">🃏 بطاقات</button>
-        <button class="mode-pill" id="readerModeFullBtn" title="Full Text Mode">📄 كامل</button>
       </div>
     </div>
 

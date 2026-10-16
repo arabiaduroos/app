@@ -1745,35 +1745,64 @@
     }
   }
 
+  function isAppInstalled() {
+    const isStandalone = window.matchMedia('(display-mode: standalone)').matches ||
+                         window.matchMedia('(display-mode: fullscreen)').matches ||
+                         window.navigator.standalone === true ||
+                         (document.referrer && document.referrer.includes('android-app://'));
+    const isMarked = localStorage.getItem('madinah_pwa_installed') === 'true';
+    return isStandalone || isMarked;
+  }
+
+  function updateInstallButtonVisibility() {
+    const installed = isAppInstalled();
+    const splashWrap = document.querySelector('.splash-install-wrap');
+    const splashBtn = document.getElementById('splashInstallBtn');
+    const topbarBtn = document.getElementById('topbarInstallBtn');
+
+    if (installed) {
+      if (splashWrap) splashWrap.style.display = 'none';
+      if (splashBtn) splashBtn.style.display = 'none';
+      if (topbarBtn) topbarBtn.style.display = 'none';
+    } else {
+      if (splashWrap) splashWrap.style.display = '';
+      if (splashBtn) splashBtn.style.display = '';
+      if (topbarBtn) topbarBtn.style.display = '';
+    }
+  }
+
   function setupPWAInstall() {
+    updateInstallButtonVisibility();
+
     window.addEventListener('beforeinstallprompt', (e) => {
       e.preventDefault();
       deferredInstallPrompt = e;
       console.log('[Madinah Arabic PWA] beforeinstallprompt event captured');
 
-      const splashBtn = document.getElementById('splashInstallBtn');
-      if (splashBtn) {
-        splashBtn.classList.add('prompt-ready');
+      if (!isAppInstalled()) {
+        const splashBtn = document.getElementById('splashInstallBtn');
+        if (splashBtn) {
+          splashBtn.classList.add('prompt-ready');
+        }
       }
     });
 
     window.addEventListener('appinstalled', () => {
       console.log('[Madinah Arabic PWA] App was successfully installed!');
+      localStorage.setItem('madinah_pwa_installed', 'true');
       deferredInstallPrompt = null;
       closeInstallGuide();
-
-      const splashBtn = document.getElementById('splashInstallBtn');
-      if (splashBtn) {
-        splashBtn.innerHTML = `
-          <span class="install-btn-icon">✅</span>
-          <div class="install-btn-texts">
-            <span class="install-btn-title">تَمَّ تَثْبِيتُ التَّطْبِيقِ • Installed</span>
-            <span class="install-btn-sub">تطبیق کامیابی سے انسٹال ہو چکی ہے (کتابیں آف لائن دستیاب ہیں)</span>
-          </div>
-          <span class="install-btn-badge" style="background:#1cb0f6;">DONE</span>
-        `;
-      }
+      updateInstallButtonVisibility();
     });
+
+    try {
+      window.matchMedia('(display-mode: standalone)').addEventListener('change', (e) => {
+        if (e.matches) {
+          localStorage.setItem('madinah_pwa_installed', 'true');
+        }
+        updateInstallButtonVisibility();
+      });
+    } catch (_) {}
   }
 
   function triggerAppInstall() {
@@ -1782,6 +1811,8 @@
       deferredInstallPrompt.userChoice.then((choiceResult) => {
         if (choiceResult.outcome === 'accepted') {
           console.log('[Madinah Arabic PWA] User accepted installation prompt');
+          localStorage.setItem('madinah_pwa_installed', 'true');
+          updateInstallButtonVisibility();
           closeInstallGuide();
         } else {
           console.log('[Madinah Arabic PWA] User dismissed installation prompt');

@@ -11,8 +11,11 @@ const PRECACHE_ASSETS = [
   './data/madinah_books.js',
   './icons/icon-192.png',
   './icons/icon-512.png',
+  './icons/icon-maskable-192.png',
   './icons/icon-maskable.png',
-  './icons/icon.svg'
+  './icons/icon.svg',
+  './icons/screenshot-mobile.png',
+  './icons/screenshot-desktop.png'
 ];
 
 // Install: Pre-cache core assets and activate immediately
