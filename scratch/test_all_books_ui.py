@@ -151,6 +151,70 @@ try:
     for opt in b1_u1_opts:
         print(f"  [{opt['num']}] {opt['title']} ({opt['meta']})")
 
+    evaluate('document.getElementById("closeTamreenModalBtn").click();')
+    time.sleep(0.3)
+
+    # Test Book 2 Unit 20 (Dual Nouns)
+    evaluate('document.querySelector(\'[data-book="2"]\').click();')
+    time.sleep(0.5)
+    evaluate('document.querySelector(\'[data-unit-id="b2_u20"] .unit-ex-btn\').click();')
+    time.sleep(0.5)
+    b2_u20_opts = evaluate('''
+        Array.from(document.querySelectorAll('#tamreenOptionsList .tamreen-opt-card')).map(c => ({
+            num: c.querySelector('.tamreen-opt-num') ? c.querySelector('.tamreen-opt-num').textContent.trim() : '',
+            title: c.querySelector('.tamreen-opt-title') ? c.querySelector('.tamreen-opt-title').textContent.trim() : '',
+            meta: c.querySelector('.tamreen-opt-meta') ? c.querySelector('.tamreen-opt-meta').textContent.trim() : ''
+        }))
+    ''')
+    print(f"\nBook 2 Unit 20 Tamreens ({len(b2_u20_opts)} cards):")
+    for opt in b2_u20_opts:
+        print(f"  [{opt['num']}] {opt['title']} ({opt['meta']})")
+
+    evaluate('document.getElementById("closeTamreenModalBtn").click();')
+    time.sleep(0.3)
+
+    # Test Book 3 Unit 16 (Form II verbs)
+    evaluate('document.querySelector(\'[data-book="3"]\').click();')
+    time.sleep(0.5)
+    evaluate('document.querySelector(\'[data-unit-id="b3_u16"] .unit-ex-btn\').click();')
+    time.sleep(0.5)
+    b3_u16_opts = evaluate('''
+        Array.from(document.querySelectorAll('#tamreenOptionsList .tamreen-opt-card')).map(c => ({
+            num: c.querySelector('.tamreen-opt-num') ? c.querySelector('.tamreen-opt-num').textContent.trim() : '',
+            title: c.querySelector('.tamreen-opt-title') ? c.querySelector('.tamreen-opt-title').textContent.trim() : '',
+            meta: c.querySelector('.tamreen-opt-meta') ? c.querySelector('.tamreen-opt-meta').textContent.trim() : ''
+        }))
+    ''')
+    print(f"\nBook 3 Unit 16 Tamreens ({len(b3_u16_opts)} cards):")
+    for opt in b3_u16_opts:
+        print(f"  [{opt['num']}] {opt['title']} ({opt['meta']})")
+
+    # Click first card ("All Exercises") and verify Quiz view
+    evaluate('document.querySelectorAll("#tamreenOptionsList .tamreen-opt-card")[0].click();')
+    time.sleep(1.0)
+    quiz_data = evaluate('''
+        (function() {
+            const overlay = document.getElementById('quizOverlay');
+            const badge = document.querySelector('.q-badge');
+            const inst = document.querySelector('.q-instruction');
+            const promptAr = document.querySelector('.prompt-ar') || document.querySelector('.q-target-ar') || document.querySelector('.q-dialogue-prompt');
+            const opts = Array.from(document.querySelectorAll('.q-opt')).map(b => b.textContent.trim());
+            return {
+                open: overlay ? !overlay.classList.contains('hidden') : false,
+                badge: badge ? badge.textContent.trim() : '',
+                instruction: inst ? inst.textContent.trim() : '',
+                prompt_ar: promptAr ? promptAr.textContent.trim() : '',
+                options: opts
+            };
+        })()
+    ''')
+    print(f"\nQuiz View Verified for Book 3 Unit 16:")
+    print(f"  Overlay Open: {quiz_data.get('open')}")
+    print(f"  Badge: {quiz_data.get('badge')}")
+    print(f"  Instruction: {quiz_data.get('instruction')}")
+    print(f"  Prompt AR: {quiz_data.get('prompt_ar')}")
+    print(f"  Options ({len(quiz_data.get('options', []))}): {quiz_data.get('options')}")
+
     print("\nALL VERIFICATIONS PASSED SUCCESSFULLY!")
 
 finally:

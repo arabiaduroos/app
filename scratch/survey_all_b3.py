@@ -1,26 +1,35 @@
-import sys, re
+# -*- coding: utf-8 -*-
+import re, json, sys
+
 sys.stdout.reconfigure(encoding='utf-8')
+with open('transcriptions/Madinah-Book-3.html', 'r', encoding='utf-8') as f:
+    html = f.read()
 
-with open(r'C:\Users\Person\Documents\GitHub\app\transcriptions\Madinah-All-Books-Cairo.md', 'r', encoding='utf-8') as f:
-    text = f.read()
-
-parts = re.split(r'\n##\s+', text)
-book3_text = ""
-for p in parts:
-    if 'الجزء الثالث' in p or 'الْجُزْءُ الثَّالِثُ' in p:
-        book3_text = p
-        break
-
-lessons = re.split(r'\n###\s+', book3_text)
-
-for idx in range(1, len(lessons)):
-    l = lessons[idx]
-    header = l.split('\n')[0]
-    tamreen_parts = re.split(r'####\s*✍️\s*تمـ*ارِين*|####\s*✍️\s*تمـ*ارين', l)
-    if len(tamreen_parts) > 1:
-        ex_content = tamreen_parts[1]
-        print(f"\n==================== Lesson {idx}: {header[:50]} ====================")
-        lines = [line for line in ex_content.split('\n') if line.strip() and not line.startswith('---')]
-        print(f"Total non-empty lines in exercises: {len(lines)}")
-        for line in lines[:10]:
-            print(f"  {line[:100]}")
+lessons = re.split(r'<h2[^>]*>', html)
+for i in range(2, len(lessons)):
+    l_text = lessons[i]
+    title_match = re.search(r'(الدَّرْسُ\s+[^\n<]+)', l_text)
+    t = title_match.group(1) if title_match else f'L{i-1}'
+    print(f'\n=== Unit {i-1}: {t} ===')
+    parts = l_text.split('✍️')
+    if len(parts) > 1:
+        ex_content = parts[1]
+        lines = re.findall(r'<div class="txt-line"><div>(.*?)</div>(?:<div class="ur">(.*?)</div>)?</div>', ex_content)
+        cur_tam = None
+        items = []
+        for ar, ur in lines:
+            clean_ar = re.sub(r'<[^>]+>', '', ar).strip()
+            clean_ur = re.sub(r'<[^>]+>', '', ur).strip() if ur else ''
+            # check for tamreen pattern: 1-, 2-, 🔹 1-, 🔹 2-, etc.
+            m = re.search(r'([0-9]+)\s*-\s*(.*)', clean_ar)
+            if m:
+                if cur_tam and items:
+                    print(f"   Tamreen {cur_tam}: {len(items)} items")
+                cur_tam = m.group(1)
+                tam_title = m.group(2).strip()
+                print(f'   [Tamreen {cur_tam}] {tam_title[:60]}')
+                items = []
+            elif cur_tam is not None and clean_ar:
+                items.append((clean_ar, clean_ur))
+        if cur_tam and items:
+            print(f"   Tamreen {cur_tam}: {len(items)} items")

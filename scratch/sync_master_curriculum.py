@@ -8,9 +8,8 @@ import json, sys, os
 sys.stdout.reconfigure(encoding='utf-8')
 sys.path.append(r'C:\Users\Person\Desktop\Dr Vaniya Ar\scratch')
 
-from build_b2_expanded_curriculum import get_b2_complete_curriculum
-from build_b3_full_units import get_b3_complete_dataset
-from build_b3_u10_u17_deep import get_b3_units_10_to_17_deep
+from build_b2_master_curriculum import get_b2_master_curriculum
+from build_b3_master_curriculum import get_b3_master_curriculum
 
 print("=== 1. Loading existing base dataset ===")
 with open('data/madinah_books.json', 'r', encoding='utf-8') as f:
@@ -23,7 +22,7 @@ print(f"Book 1: {len(b1_units)} units with {b1_total} questions.")
 
 # Book 2: Complete 31 units
 print("\n=== 2. Updating Book 2 (31 Units) ===")
-b2_curriculum = get_b2_complete_curriculum()
+b2_curriculum = get_b2_master_curriculum()
 b2_units = data['books'][1]['units']
 b2_total = 0
 for idx, u in enumerate(b2_units):
@@ -32,14 +31,16 @@ for idx, u in enumerate(b2_units):
         qs = b2_curriculum[u_num]
         u['questions'] = qs
         b2_total += len(qs)
+        tamreens = sorted(list(set(q.get('tamreen_num', 1) for q in qs)))
+        print(f"  B2 Unit {u_num:2d} ({u.get('title')}) -> {len(qs):2d} questions (Tamreens: {tamreens})")
+    else:
+        print(f"  ERROR: B2 Unit {u_num} missing from curriculum!")
+
 print(f"Book 2: Updated {len(b2_units)} units with {b2_total} questions.")
 
 # Book 3: Deep authentic curriculum (Units 1-17)
 print("\n=== 3. Updating Book 3 (17 Units) ===")
-b3_full = get_b3_complete_dataset()
-b3_deep_10_17 = get_b3_units_10_to_17_deep()
-b3_full.update(b3_deep_10_17)
-
+b3_full = get_b3_master_curriculum()
 b3_units = data['books'][2]['units']
 b3_total = 0
 for idx, u in enumerate(b3_units):
