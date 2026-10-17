@@ -1,27 +1,27 @@
-import sys, re, json
+import sys, re
 sys.stdout.reconfigure(encoding='utf-8')
 
-content = open('transcriptions/Madinah-Book-3.html', encoding='utf-8').read()
-sections = re.findall(r'<section[^>]*id=[\"\']([^\"\']+)[\"\']>(.*?)</section>', content, re.DOTALL)
+with open(r'C:\Users\Person\Documents\GitHub\app\transcriptions\Madinah-All-Books-Cairo.md', 'r', encoding='utf-8') as f:
+    text = f.read()
 
-print("BOOK 3 SECTIONS:")
-for s_idx, (s_id, s_html) in enumerate(sections, 1):
-    if 'مُقَدِّمَة' in s_html[:400] or 'مقدمة' in s_html[:400]:
-        print(f"Skipping muqaddima: {s_id}")
-        continue
-    t_m = re.search(r'<h2[^>]*>(.*?)</h2>', s_html)
-    title = re.sub(r'<[^>]+>', '', t_m.group(1)).strip() if t_m else s_id
-    
-    lines = [re.sub(r'<[^>]+>', ' ', d).strip() for d in re.findall(r'<div class=[\"\'](?:txt-line|sec-hdr)[\"\']>(.*?)</div>', s_html, re.DOTALL)]
-    ex_hdrs = []
-    for l in lines:
-        l_first = l.split('\n')[0].strip()
-        m = re.match(r'^[🐪👨‍🎓👨‍🏫📖📗👁️🔹✍️📋⚡\s]*([۱-۹\d]+)[\-\.]\s*(.+)', l_first)
-        if m and len(m.group(2)) > 5 and not re.match(r'^\(?\d', m.group(2)):
-            ex_hdrs.append(f"{m.group(1)}- {m.group(2)[:50]}")
-        elif '✍️ تم' in l_first or 'تمرين' in l_first:
-            ex_hdrs.append(l_first[:50])
-            
-    print(f"Unit {s_idx-1} [{s_id}] {title}: {len(ex_hdrs)} exercise headers")
-    for h in ex_hdrs[:6]:
-        print(f"    * {h}")
+# Split into books
+parts = re.split(r'\n##\s+', text)
+book3_text = ""
+for p in parts:
+    if 'الجزء الثالث' in p or 'الْجُزْءُ الثَّالِثُ' in p:
+        book3_text = p
+        break
+
+print(f"Book 3 length: {len(book3_text)} chars")
+# Split Book 3 into lessons
+lessons = re.split(r'\n###\s+', book3_text)
+print(f"Book 3 lessons found: {len(lessons)}")
+
+for idx, l in enumerate(lessons[1:], 1):
+    header = l.split('\n')[0]
+    # Find all exercise lines
+    ex_markers = re.findall(r'(\([0-9]+\)\s*•\s*[^\n]+|####\s*✍️[^\n]+)', l)
+    print(f"\nLesson {idx}: {header[:60]}")
+    print(f"  Total potential exercise items: {len(ex_markers)}")
+    for em in ex_markers[:5]:
+        print(f"    - {em[:80]}")

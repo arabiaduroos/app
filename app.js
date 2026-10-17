@@ -386,6 +386,7 @@
       const card = document.createElement('div');
       const crowns = state.completed[unit.id] || 0;
       card.className = 'journey-unit-card' + (crowns > 0 ? ' completed' : '');
+      card.dataset.unitId = unit.id;
 
       const transTopic = getUnitTransTopic(unit);
 

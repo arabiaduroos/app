@@ -1,26 +1,27 @@
-import re
-import sys
-
+import sys, re
 sys.stdout.reconfigure(encoding='utf-8')
 
-for bnum, fname in [(1, 'transcriptions/Madinah-Book-1.html'), 
-                    (2, 'transcriptions/Madinah-Book-2.html'), 
-                    (3, 'transcriptions/Madinah-Book-3.html')]:
-    with open(fname, 'r', encoding='utf-8') as f:
-        html = f.read()
-    units = re.findall(r'<section class="unit-card"[^>]*id="([^"]+)"', html)
-    tamreens = re.findall(r'تمرين|تمارين|التدريب', html)
-    txt_lines = re.findall(r'<div class="txt-line">', html)
-    print(f'Book {bnum}: {len(units)} unit sections, {len(tamreens)} tamreen mentions, {len(txt_lines)} text lines')
+with open(r'C:\Users\Person\Documents\GitHub\app\transcriptions\Madinah-All-Books-Cairo.md', 'r', encoding='utf-8') as f:
+    text = f.read()
 
-# Also check Madinah-All-Books-Cairo.md
-with open('transcriptions/Madinah-All-Books-Cairo.md', 'r', encoding='utf-8') as f:
-    md = f.read()
+headings = re.findall(r'^(#+ [^\n]+)', text, re.MULTILINE)
+print(f"Total markdown headings: {len(headings)}")
 
-md_h2 = re.findall(r'^##\s+(.*)', md, re.MULTILINE)
-md_h3 = re.findall(r'^###\s+(.*)', md, re.MULTILINE)
-md_h4 = re.findall(r'^####\s+(.*)', md, re.MULTILINE)
-print(f'Markdown: {len(md_h2)} books, {len(md_h3)} chapters, {len(md_h4)} subheadings/tamreens')
-for h in md_h2:
-    print('  Book:', h)
-print(f'First 10 chapters: {md_h3[:10]}')
+# Find all book headings and lesson headings
+current_book = None
+book_lessons = {}
+for h in headings:
+    if 'الكتاب' in h or 'الجزء' in h or 'المجلد' in h or 'Book' in h:
+        current_book = h
+        book_lessons[current_book] = []
+    elif 'الدرس' in h or 'الدَّرْسُ' in h:
+        if current_book not in book_lessons:
+            book_lessons[current_book] = []
+        book_lessons[current_book].append(h)
+
+for b, l_list in book_lessons.items():
+    print(f"\n{b} -> {len(l_list)} lessons")
+    for l in l_list[:5]:
+        print(f"  {l}")
+    if len(l_list) > 5:
+        print(f"  ... and {len(l_list) - 5} more")
