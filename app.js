@@ -24,14 +24,14 @@
       bookHeroBadge: (bnum, count) => `📗 کتاب ${bnum} • کل ${count} اسباق`,
       bookProgress: (done, total, pct) => `${total} میں سے ${done} اسباق مکمل (${pct}%)`,
       unitBadge: (num) => `سبق ${num}`,
-      unitReadBtn: '📖 سبق پڑھیں',
-      unitExBtn: '✍️ تمارین',
+      unitReadBtn: 'سبق پڑھیں',
+      unitExBtn: 'تمارین',
       unitCompleted: 'مکمل ✅',
       readerBadge: (unum, title) => `📖 سبق ${unum}: ${title}`,
       readerCardCounter: (cur, tot) => `کارڈ ${cur} از ${tot}`,
       readerPrev: '➡️ پچھلا',
       readerNext: 'اگلا ⬅️',
-      readerStartExercises: 'اب سبق کی تمارین حل کریں ✍️',
+      readerStartExercises: 'اب سبق کی تمارین حل کریں',
       modeCards: '🃏 بطاقات',
       modeFull: '📄 مکمل متن',
       checkBtn: 'چیک کریں',
@@ -57,14 +57,14 @@
       bookHeroBadge: (bnum, count) => `📗 Book ${bnum} • ${count} Units`,
       bookProgress: (done, total, pct) => `${done} of ${total} units completed (${pct}%)`,
       unitBadge: (num) => `Unit ${num}`,
-      unitReadBtn: '📖 Read Lesson',
-      unitExBtn: '✍️ Exercises',
+      unitReadBtn: 'Read Lesson',
+      unitExBtn: 'Exercises',
       unitCompleted: 'Completed ✅',
       readerBadge: (unum, title) => `📖 Unit ${unum}: ${title}`,
       readerCardCounter: (cur, tot) => `Card ${cur} of ${tot}`,
       readerPrev: '➡️ Previous',
       readerNext: 'Next ⬅️',
-      readerStartExercises: 'Solve Chapter Exercises Now ✍️',
+      readerStartExercises: 'Solve Chapter Exercises Now',
       modeCards: '🃏 Cards',
       modeFull: '📄 Full Text',
       checkBtn: 'Check',
@@ -90,14 +90,14 @@
       bookHeroBadge: (bnum, count) => `📗 کتاب ${bnum} • Book ${bnum} (${count} Units)`,
       bookProgress: (done, total, pct) => `${done}/${total} مکمل (${pct}%) Completed`,
       unitBadge: (num) => `سبق ${num} • Unit ${num}`,
-      unitReadBtn: '📖 سبق پڑھیں • Read',
-      unitExBtn: '✍️ تمارین • Exercises',
+      unitReadBtn: 'سبق پڑھیں • Read',
+      unitExBtn: 'تمارین • Exercises',
       unitCompleted: 'مکمل ✅ Done',
       readerBadge: (unum, title) => `📖 سبق ${unum} • Unit ${unum}: ${title}`,
       readerCardCounter: (cur, tot) => `Card ${cur} of ${tot}`,
       readerPrev: '➡️ Previous • پچھلا',
       readerNext: 'Next • اگلا ⬅️',
-      readerStartExercises: 'Solve Exercises Now • تمارین حل کریں ✍️',
+      readerStartExercises: 'Solve Exercises Now • تمارین حل کریں',
       modeCards: '🃏 Cards • بطاقات',
       modeFull: '📄 Full • مکمل متن',
       checkBtn: 'چیک کریں • Check',
@@ -421,8 +421,21 @@
       });
 
       card.querySelector('.unit-ex-btn').addEventListener('click', () => {
-        openTamreenSelector(unit);
+        startQuiz(unit);
       });
+
+      const qaidaChip = card.querySelector('.chip-qaida');
+      if (qaidaChip && unit.curriculum_flow) {
+        const qaidaItem = unit.curriculum_flow.find(f => f.type === 'qaida');
+        if (qaidaItem) {
+          qaidaChip.style.cursor = 'pointer';
+          qaidaChip.title = state.lang === 'ur' ? 'قواعد دیکھنے کے لیے کلک کریں' : 'Click to view grammar rules';
+          qaidaChip.addEventListener('click', (e) => {
+            e.stopPropagation();
+            openQaidaModal(qaidaItem, unit);
+          });
+        }
+      }
 
       grid.appendChild(card);
     });
@@ -1119,32 +1132,27 @@
     list.innerHTML = '';
 
     const questions = unit.questions || [];
-    const flow = unit.curriculum_flow || [];
+    const flow = (unit.curriculum_flow || []).filter(item => item.type !== 'nasuddars');
 
-    // 1. Top Card: Play Full Lesson Sequence in Order
+    // 1. Top Card: Play Exercises in Order
     if (questions.length > 0 || flow.length > 0) {
       const allCard = document.createElement('div');
       allCard.className = 'tamreen-opt-card all-tamreens';
       
-      let allTitle = state.lang === 'ur' ? '⭐ جَمِيعُ الدَّرْسِ (ترتیب سے مکمل سبق شروع کریں)' : (state.lang === 'en' ? '⭐ Complete Lesson Flow (Start from beginning)' : '⭐ جَمِيعُ الدَّرْسِ • Complete Lesson Flow');
-      let allSub = state.lang === 'ur' ? `سبق کا متن، تمام ${questions.length} مشقیں اور قواعد کتاب کی ترتیب کے مطابق حل کریں` : `Read lesson text, solve all ${questions.length} exercises and study grammar rules in book sequence`;
+      let allTitle = state.lang === 'ur' ? '⭐ جَمِيعُ التَّمَارِينِ (ترتیب سے مشقیں شروع کریں)' : (state.lang === 'en' ? '⭐ All Exercises (Start in textbook sequence)' : '⭐ جَمِيعُ التَّمَارِينِ • All Exercises');
+      let allSub = state.lang === 'ur' ? `تمام ${questions.length} مشقیں کتاب کی ترتیب کے مطابق حل کریں` : `Solve all ${questions.length} exercises in book sequence`;
 
       allCard.innerHTML = `
         <div class="tamreen-opt-num" style="background:rgba(88,204,2,0.18);color:var(--duo-green);">⭐</div>
         <div class="tamreen-opt-info">
           <div class="tamreen-opt-title ar-font" style="font-weight:bold;color:var(--duo-green);">${allTitle}</div>
           <div class="tamreen-opt-goal">${allSub}</div>
-          <div class="tamreen-opt-meta">${questions.length} ${state.lang === 'ur' ? 'سوالات' : 'questions'} • ${flow.length || 1} ${state.lang === 'ur' ? 'اجزاء' : 'parts'}</div>
+          <div class="tamreen-opt-meta">${questions.length} ${state.lang === 'ur' ? 'سوالات' : 'questions'}</div>
         </div>
       `;
       allCard.addEventListener('click', () => {
         closeTamreenSelector();
-        // If first item is nasuddars, start reader, else start quiz
-        if (flow.length > 0 && flow[0].type === 'nasuddars') {
-          openLessonCardReader(unit);
-        } else {
-          startQuiz(unit, null);
-        }
+        startQuiz(unit, null);
       });
       list.appendChild(allCard);
     }
@@ -1333,12 +1341,22 @@
       ? unit.questions
       : generateFallbackQuestions(unit);
 
-    quiz.questions = tamreenNum
+    let filtered = tamreenNum
       ? allQs.filter(q => (q.tamreen_num || 1) === tamreenNum)
       : allQs;
 
     // Safety fallback
-    if (quiz.questions.length === 0) quiz.questions = allQs;
+    if (filtered.length === 0) filtered = allQs;
+
+    // Ensure nassuddars is never present in exercises
+    filtered = filtered.filter(q => q.type !== 'nasuddars' && q.section !== 'nasuddars');
+
+    // Questions cards in order of tamreens must appear (Tamreen 1, 2, 3...)
+    quiz.questions = [...filtered].sort((a, b) => {
+      const tA = Number(a.tamreen_num) || 1;
+      const tB = Number(b.tamreen_num) || 1;
+      return tA - tB;
+    });
 
     quiz.index = 0;
     quiz.hearts = 5;
@@ -1531,13 +1549,6 @@
     // CRITICAL: Guarantee scroll is reset to top so question headers are NEVER cut off!
     stage.scrollTop = 0;
 
-    // Check for pending in-quiz Qaida mini-lesson
-    const pendingQaida = findPendingInQuizQaida();
-    if (pendingQaida) {
-      renderInQuizQaida(pendingQaida.item, pendingQaida.key);
-      return;
-    }
-
     quiz.currentPendingQaidaKey = null;
     bottomBar.className = 'quiz-bottombar';
     checkBtn.textContent = L.checkBtn;
@@ -1645,34 +1656,7 @@
     stage.appendChild(promptCard);
 
     // 3. Question Options / Interaction
-    if (q.type === 'emoji_choice' || q.type === 'dialogue_qa' || q.type === 'fill_blank' || q.type === 'meaning_choice') {
-      const grid = document.createElement('div');
-      grid.className = 'q-options-grid';
-      (q.options || []).forEach((opt, i) => {
-        const btn = document.createElement('button');
-        btn.className = 'q-option-btn';
-        btn.dataset.opt = opt;
-
-        const isArabicText = /[\u0600-\u06ff]/.test(opt) && !/[\u0679\u0686\u0698\u0695\u06ba\u06be\u06c1\u06d2]/.test(opt);
-        // IN GRAMMAR EXERCISES: ALWAYS preserve tashkeel on Arabic options!
-        const displayText = opt;
-
-        btn.innerHTML = `
-          <span class="${isArabicText ? 'ar-font preserve-tashkeel' : (state.lang === 'ur' ? 'ur-font' : 'en-font')}">${displayText}</span>
-          <span class="key-num">${i + 1}</span>
-        `;
-        btn.addEventListener('click', () => {
-          if (quiz.answered) return;
-          quiz.selectedOption = opt;
-          grid.querySelectorAll('.q-option-btn').forEach(b => b.classList.remove('selected'));
-          btn.classList.add('selected');
-          checkBtn.disabled = false;
-          if (isArabicText) speakArabic(opt);
-        });
-        grid.appendChild(btn);
-      });
-      stage.appendChild(grid);
-    } else if (q.type === 'sentence_builder') {
+    if (q.type === 'sentence_builder' && Array.isArray(q.tiles) && q.tiles.length > 0) {
       const well = document.createElement('div');
       well.className = 'sb-answer-well';
       const bank = document.createElement('div');
@@ -1715,7 +1699,7 @@
       stage.appendChild(well);
       stage.appendChild(bank);
       refreshSentenceBuilder();
-    } else if (q.type === 'pair_match') {
+    } else if (q.type === 'pair_match' && Array.isArray(q.pairs) && q.pairs.length > 0) {
       const cols = document.createElement('div');
       cols.className = 'pairs-columns';
       const leftCol = document.createElement('div');
@@ -1774,6 +1758,39 @@
       cols.appendChild(leftCol);
       cols.appendChild(rightCol);
       stage.appendChild(cols);
+    } else {
+      // Multiple-choice options grid (rendered for ALL question types with options: sentence_reading, dialogue_qa, fill_blank, vocalization, transformation, correction, verification_qa, illustrated_qa, emoji_choice, meaning_choice, etc.)
+      const grid = document.createElement('div');
+      grid.className = 'q-options-grid';
+      let optionsList = (Array.isArray(q.options) && q.options.length > 0) ? q.options : [];
+      if (optionsList.length === 0 && q.answer) {
+        optionsList = [q.answer, 'نَعَمْ', 'لَا', 'صَحِيحٌ'].filter((v, i, a) => a.indexOf(v) === i);
+      }
+
+      optionsList.forEach((opt, i) => {
+        const btn = document.createElement('button');
+        btn.className = 'q-option-btn';
+        btn.dataset.opt = opt;
+
+        const isArabicText = /[\u0600-\u06ff]/.test(opt) && !/[\u0679\u0686\u0698\u0695\u06ba\u06be\u06c1\u06d2]/.test(opt) && !/[a-zA-Z]/.test(opt);
+        // IN GRAMMAR EXERCISES: ALWAYS preserve tashkeel on Arabic options!
+        const displayText = opt;
+
+        btn.innerHTML = `
+          <span class="${isArabicText ? 'ar-font preserve-tashkeel' : (state.lang === 'ur' ? 'ur-font' : 'en-font')}">${displayText}</span>
+          <span class="key-num">${i + 1}</span>
+        `;
+        btn.addEventListener('click', () => {
+          if (quiz.answered) return;
+          quiz.selectedOption = opt;
+          grid.querySelectorAll('.q-option-btn').forEach(b => b.classList.remove('selected'));
+          btn.classList.add('selected');
+          checkBtn.disabled = false;
+          if (isArabicText) speakArabic(opt);
+        });
+        grid.appendChild(btn);
+      });
+      stage.appendChild(grid);
     }
   }
 
@@ -1831,7 +1848,14 @@
     quiz.answered = true;
     let isCorrect = false;
 
-    if (q.type === 'emoji_choice' || q.type === 'dialogue_qa' || q.type === 'fill_blank' || q.type === 'meaning_choice') {
+    if (q.type === 'sentence_builder' && Array.isArray(q.tiles) && q.tiles.length > 0) {
+      // In ordering questions, ignore commas, periods, and punctuation
+      const built = quiz.sbSelectedIndices.map(i => q.tiles[i]).join(' ');
+      const normalizeSentence = s => stripTashkeel(s).replace(/[\.\،\,\?\؟\!\:\"\']/g, '').replace(/\s+/g, ' ').trim();
+      isCorrect = normalizeSentence(built) === normalizeSentence(q.answer);
+    } else if (q.type === 'pair_match' && Array.isArray(q.pairs) && q.pairs.length > 0) {
+      isCorrect = true;
+    } else {
       if (q.strict_tashkeel) {
         // Strict comparison with diacritics for vowel ending drills
         isCorrect = (quiz.selectedOption || '').trim() === (q.answer || '').trim();
@@ -1842,21 +1866,14 @@
       document.querySelectorAll('.q-option-btn').forEach(btn => {
         btn.disabled = true;
         const match = q.strict_tashkeel
-          ? btn.dataset.opt.trim() === q.answer.trim()
-          : stripTashkeel(btn.dataset.opt) === stripTashkeel(q.answer);
+          ? btn.dataset.opt.trim() === (q.answer || '').trim()
+          : stripTashkeel(btn.dataset.opt) === stripTashkeel(q.answer || '');
         if (match) {
           btn.classList.add('correct');
         } else if (btn.classList.contains('selected') && !isCorrect) {
           btn.classList.add('wrong');
         }
       });
-    } else if (q.type === 'sentence_builder') {
-      // In ordering questions, ignore commas, periods, and punctuation
-      const built = quiz.sbSelectedIndices.map(i => q.tiles[i]).join(' ');
-      const normalizeSentence = s => stripTashkeel(s).replace(/[\.\،\,\?\؟\!\:\"\']/g, '').replace(/\s+/g, ' ').trim();
-      isCorrect = normalizeSentence(built) === normalizeSentence(q.answer);
-    } else if (q.type === 'pair_match') {
-      isCorrect = true;
     }
 
     const bottomBar = document.getElementById('quizBottomBar');
@@ -2193,7 +2210,7 @@
     document.getElementById('lessonNextBtn').addEventListener('click', nextLessonCard);
     document.getElementById('lessonStartExercisesBtn').addEventListener('click', () => {
       if (lessonReader.unit) {
-        openTamreenSelector(lessonReader.unit);
+        startQuiz(lessonReader.unit);
       }
     });
 
