@@ -667,7 +667,9 @@
       const rawText = (b.text || '').trim();
 
       if (sec === 'exercises' || bt === 'exercise_line') return;
-      if (/^(تمارين|تمرين|التدريبات|اقرأ واكتب)/.test(rawText)) return;
+      const cleanRaw = stripTashkeel(rawText).replace(/[\u0640]/g, '').trim();
+      if (/^(تمارين|تمرين|التدريبات|اقرا|اقرأ|اجب|أجب|املا|املأ|اختر|حول|حوّل|ضع|اشر|أشر|هات|تامل|تأمل|صل|صحح)/.test(cleanRaw)) return;
+      if (/(\.{3,}|…+)/.test(cleanRaw)) return;
 
       const rawUr = (b.ur || '').trim();
       const rawEn = (b.en || '').trim();
@@ -702,11 +704,23 @@
           pairs: b.pairs || []
         });
       } else if (bt === 'vocab_table' && Array.isArray(b.words)) {
-        const words = b.words;
+        // STRICT FILTER: Discard any words that are leaked exercises or instructions
+        const cleanWords = b.words.filter(w => {
+          const ar = stripTashkeel(w.ar || '').replace(/[\u0640]/g, '').trim();
+          if (!ar) return false;
+          if (/^(اقرا|اقرأ|اجب|أجب|املا|املأ|اختر|حول|حوّل|ضع|اشر|أشر|هات|تامل|تأمل|صل|صحح|تمارين|تمرين)/.test(ar)) return false;
+          if (/(\.{3,}|…+)/.test(ar)) return false;
+          if (/^\(\d+\)/.test(ar)) return false;
+          if (/^\([أ-يa-zA-Z]\)$/.test(ar)) return false;
+          return true;
+        });
+
+        if (cleanWords.length === 0) return;
+
         const CHUNK_SIZE = 16;
-        for (let i = 0; i < words.length; i += CHUNK_SIZE) {
-          const chunk = words.slice(i, i + CHUNK_SIZE);
-          const partLabel = words.length > CHUNK_SIZE ? ` (${i + 1}-${i + chunk.length})` : '';
+        for (let i = 0; i < cleanWords.length; i += CHUNK_SIZE) {
+          const chunk = cleanWords.slice(i, i + CHUNK_SIZE);
+          const partLabel = cleanWords.length > CHUNK_SIZE ? ` (${i + 1}-${i + chunk.length})` : '';
           cards.push({
             type: 'vocab_table',
             emoji: '🗂️',

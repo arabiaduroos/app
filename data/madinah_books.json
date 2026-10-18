@@ -1728,6 +1728,43 @@
               "emoji": "💬"
             },
             {
+              "type": "grammar_pairs",
+              "section": "lesson",
+              "title_ar": "الْحُرُوفُ الشَّمْسِيَّةُ (نَجْمٌ ➔ النَّجْمُ)",
+              "title_ur": "حروف شمسیہ (لامِ تعریف کا مدغم ہونا)",
+              "title_en": "Sun Letters (Assimilation of Lam)",
+              "emoji": "☀️",
+              "arabic": "نَجْمٌ ➔ النَّجْمُ • رَجُلٌ ➔ الرَّجُلُ • دِيكٌ ➔ الدِّيكُ • طَالِبٌ ➔ الطَّالِبُ",
+              "ur": "نَجْمٌ (تنوین کے ساتھ) ➔ النَّجْمُ (لام پر جزم نہیں، نون پر تشدید) • رَجُلٌ ➔ الرَّجُلُ",
+              "en": "najmun ➔ an-najmu (Lam assimilates into Nun, receiving shaddah) • rajulun ➔ ar-rajulu",
+              "pairs": [
+                {
+                  "left_ar": "نَجْمٌ",
+                  "right": "النَّجْمُ",
+                  "left_ur": "ستارہ",
+                  "right_ur": "(خاص) ستارہ"
+                },
+                {
+                  "left_ar": "رَجُلٌ",
+                  "right": "الرَّجُلُ",
+                  "left_ur": "آدمی",
+                  "right_ur": "(خاص) آدمی"
+                },
+                {
+                  "left_ar": "دِيكٌ",
+                  "right": "الدِّيكُ",
+                  "left_ur": "مرغا",
+                  "right_ur": "(خاص) مرغا"
+                },
+                {
+                  "left_ar": "طَالِبٌ",
+                  "right": "الطَّالِبُ",
+                  "left_ur": "طالب علم",
+                  "right_ur": "(خاص) طالب علم"
+                }
+              ]
+            },
+            {
               "type": "illustrated_line",
               "section": "lesson",
               "text": "(1) النَّجْمُ بَعِيدٌ .",
@@ -1864,1248 +1901,1461 @@
                 }
               ],
               "emoji": "💬"
-            },
-            {
-              "type": "vocab_table",
-              "section": "vocabulary",
-              "title_ar": "الْكَلِمَاتُ الْجَدِيدَةُ",
-              "title_ur": "نئے الفاظ",
-              "title_en": "New Vocabulary",
-              "emoji": "🗂️",
-              "words": [
-                {
-                  "ar": "القَمَرُ",
-                  "ur": "چاند",
-                  "en": "Moon"
-                },
-                {
-                  "ar": "جَدِيدٌ",
-                  "ur": "نیا",
-                  "en": "نیا"
-                },
-                {
-                  "ar": "قَدِيمٌ",
-                  "ur": "پرانا",
-                  "en": "پرانا"
-                },
-                {
-                  "ar": "وَسِخٌ",
-                  "ur": "میلا",
-                  "en": "میلا"
-                },
-                {
-                  "ar": "نَظِيفٌ",
-                  "ur": "صاف",
-                  "en": "صاف"
-                },
-                {
-                  "ar": "حارٌّ",
-                  "ur": "گرم",
-                  "en": "گرم"
-                },
-                {
-                  "ar": "بَارِدٌ",
-                  "ur": "ٹھنڈا",
-                  "en": "ٹھنڈا"
-                },
-                {
-                  "ar": "صَغِيرٌ",
-                  "ur": "چھوٹا",
-                  "en": "چھوٹا"
-                },
-                {
-                  "ar": "كَبِيرٌ",
-                  "ur": "بڑا",
-                  "en": "بڑا"
-                },
-                {
-                  "ar": "مَفْتُوحٌ",
-                  "ur": "کھلا",
-                  "en": "کھلا"
-                },
-                {
-                  "ar": "مَكْسُورٌ",
-                  "ur": "ٹوٹا ہوا",
-                  "en": "ٹوٹا ہوا"
-                },
-                {
-                  "ar": "ثَقِيلٌ",
-                  "ur": "بھاری",
-                  "en": "بھاری"
-                },
-                {
-                  "ar": "خَفِيفٌ",
-                  "ur": "ہلکا",
-                  "en": "ہلکا"
-                },
-                {
-                  "ar": "جَمِيلٌ",
-                  "ur": "خوبصورت",
-                  "en": "خوبصورت"
-                },
-                {
-                  "ar": "وَاقِفٌ",
-                  "ur": "کھڑا",
-                  "en": "کھڑا"
-                },
-                {
-                  "ar": "جَالِسٌ",
-                  "ur": "بیٹھا ہوا",
-                  "en": "بیٹھا ہوا"
-                },
-                {
-                  "ar": "👨 نَجْـمٌ : اَلنَّجْـمُ",
-                  "ur": "ستارہ : (خاص) ستارہ",
-                  "en": "Star"
-                },
-                {
-                  "ar": "رَجُـلٌ : اَلرَّجُلُ",
-                  "ur": "آدمی : (خاص) آدمی",
-                  "en": "آدمی : (خاص) آدمی"
-                },
-                {
-                  "ar": "🐓 ديكٌ : الدِّيْكُ",
-                  "ur": "مرغا : (خاص) مرغا",
-                  "en": "Rooster"
-                },
-                {
-                  "ar": "طَـالِبٌ : اَلطَّالِبُ",
-                  "ur": "طالب علم : (خاص) طالب علم",
-                  "en": "Student"
-                },
-                {
-                  "ar": "👨 (1) النَّجْمُ بَعِيْدٌ.",
-                  "ur": "(۱) ستارہ دور ہے۔",
-                  "en": "Star"
-                },
-                {
-                  "ar": "(2) الرَّجُلُ وَاقِفٌ.",
-                  "ur": "(۲) آدمی کھڑا ہے۔",
-                  "en": "(۲) آدمی کھڑا ہے۔"
-                },
-                {
-                  "ar": "(3) السُّكَّرُ حُلْوٌ.",
-                  "ur": "(۳) چینی میٹھی ہے۔",
-                  "en": "China"
-                },
-                {
-                  "ar": "(4) الطَّالِبُ مَرِيْضٌ.",
-                  "ur": "(۴) طالب علم بیمار ہے۔",
-                  "en": "Student"
-                },
-                {
-                  "ar": "🐓 (5) الدِّيْكُ جَمِيْلٌ.",
-                  "ur": "(۵) مرغا خوبصورت ہے۔",
-                  "en": "Rooster"
-                },
-                {
-                  "ar": "(6) الدَّفترُ جَدِيْدٌ.",
-                  "ur": "(۶) کاپی نئی ہے۔",
-                  "en": "(۶) کاپی نئی ہے۔"
-                },
-                {
-                  "ar": "(7) التَّاجِرُ غَنِيٌّ.",
-                  "ur": "(۷) تاجر مالدار ہے۔",
-                  "en": "Merchant / Trader"
-                },
-                {
-                  "ar": "(8) الدُّكَّانُ مَفْتُوْحٌ.",
-                  "ur": "(۸) دکان کھلی ہے۔",
-                  "en": "(۸) دکان کھلی ہے۔"
-                },
-                {
-                  "ar": "(9) الوَلَدُ فَقِيْرٌ.",
-                  "ur": "(۹) لڑکا غریب ہے۔",
-                  "en": "(۹) لڑکا غریب ہے۔"
-                },
-                {
-                  "ar": "(10) التُّفَّاحُ لَذِيْذٌ.",
-                  "ur": "(۱۰) سیب لذیذ ہے۔",
-                  "en": "(۱۰) سیب لذیذ ہے۔"
-                },
-                {
-                  "ar": "(11) الطَّبِيْبُ طَوِيْلٌ وَالـمريـضُ قَصِيْرٌ.",
-                  "ur": "(۱۱) ڈاکٹر لمبا ہے اور مریض چھوٹے قد کا ہے۔",
-                  "en": "Doctor"
-                },
-                {
-                  "ar": "(1) اِقْرأ وَاكْتُبْ مَعَ ضَبْطِ أَواخِرِ الكَلِمَاتِ:",
-                  "ur": "(1) اِقْرأ وَاكْتُبْ مَعَ ضَبْطِ أَواخِرِ الكَلِمَاتِ:",
-                  "en": "(1) اِقْرأ وَاكْتُبْ مَعَ ضَبْطِ أَواخِرِ الكَلِمَاتِ:"
-                },
-                {
-                  "ar": "🏠 الـبـاب. الـتـاجـر. الـنجْم. القَمَـر. الـديك. المـاء. السرير. الـبيت. المسجـد. الـرجُـل. السكَّـر. الورَق.",
-                  "ur": "الـبـاب. الـتـاجـر. الـنجْم. القَمَـر. الـديك. المـاء. السرير. الـبيت. المسجـد. الـرجُـل. السكَّـر. الورَق.",
-                  "en": "الـبـاب. الـتـاجـر. الـنجْم. القَمَـر. الـديك. المـاء. السرير. الـبيت. المسجـد. الـرجُـل. السكَّـر. الورَق."
-                },
-                {
-                  "ar": "(2) اِمْلأ الفراغ فيما يلي بوضع كلمةٍ مناسبةٍ :",
-                  "ur": "(2) اِمْلأ الفراغ فيما يلي بوضع كلمةٍ مناسبةٍ:",
-                  "en": "(2) اِمْلأ الفراغ فيما يلي بوضع كلمةٍ مناسبةٍ:"
-                },
-                {
-                  "ar": "(1) ……………… غني",
-                  "ur": "(1) ……………… غني",
-                  "en": "(1) ……………… غني"
-                },
-                {
-                  "ar": "(2) ………………… حلو",
-                  "ur": "(2) ………………… حلو",
-                  "en": "(2) ………………… حلو"
-                },
-                {
-                  "ar": "(3) ……………… مريض",
-                  "ur": "(3) ……………… مريض",
-                  "en": "(3) ……………… مريض"
-                },
-                {
-                  "ar": "(4) ………………… لذيذ",
-                  "ur": "(4) ………………… لذيذ",
-                  "en": "(4) ………………… لذيذ"
-                },
-                {
-                  "ar": "(5) ……………… طويل",
-                  "ur": "(5) ……………… طويل",
-                  "en": "(5) ……………… طويل"
-                },
-                {
-                  "ar": "(6) …….…………… قصير",
-                  "ur": "(6) …….…………… قصير",
-                  "en": "(6) …….…………… قصير"
-                },
-                {
-                  "ar": "(3) اختر كلمة من القائِمَةِ (ب) تناسب الكلمة التي في القَائِمَةِ (أ):",
-                  "ur": "(3) اختر كلمة من القائِمَةِ (ب) تناسب الكلمة التي في القَائِمَةِ (أ):",
-                  "en": "(3) اختر كلمة من القائِمَةِ (ب) تناسب الكلمة التي في القَائِمَةِ (أ):"
-                },
-                {
-                  "ar": "(أ)",
-                  "ur": "(أ)",
-                  "en": "(أ)"
-                },
-                {
-                  "ar": "(ب)",
-                  "ur": "(ب)",
-                  "en": "(ب)"
-                },
-                {
-                  "ar": "الطَّـالبُ",
-                  "ur": "الطَّـالبُ",
-                  "en": "الطَّـالبُ"
-                },
-                {
-                  "ar": "لَـذيذٌ",
-                  "ur": "لَـذيذٌ",
-                  "en": "لَـذيذٌ"
-                },
-                {
-                  "ar": "الدُّكَّانُ",
-                  "ur": "الدُّكَّانُ",
-                  "en": "الدُّكَّانُ"
-                },
-                {
-                  "ar": "مَكْسُـورٌ",
-                  "ur": "مَكْسُـورٌ",
-                  "en": "مَكْسُـورٌ"
-                },
-                {
-                  "ar": "اَلتُّفَّاحُ",
-                  "ur": "اَلتُّفَّاحُ",
-                  "en": "اَلتُّفَّاحُ"
-                },
-                {
-                  "ar": "ثَقِيلٌ",
-                  "ur": "ثَقِيلٌ",
-                  "en": "ثَقِيلٌ"
-                },
-                {
-                  "ar": "المَـاءُ",
-                  "ur": "المَـاءُ",
-                  "en": "المَـاءُ"
-                },
-                {
-                  "ar": "مَفتـوحٌ",
-                  "ur": "مَفتـوحٌ",
-                  "en": "مَفتـوحٌ"
-                },
-                {
-                  "ar": "الحَجَـرُ",
-                  "ur": "الحَجَـرُ",
-                  "en": "الحَجَـرُ"
-                },
-                {
-                  "ar": "مَـرِيضٌ",
-                  "ur": "مَـرِيضٌ",
-                  "en": "مَـرِيضٌ"
-                },
-                {
-                  "ar": "القَلَـمُ",
-                  "ur": "القَلَـمُ",
-                  "en": "القَلَـمُ"
-                },
-                {
-                  "ar": "حَـارٌّ",
-                  "ur": "حَـارٌّ",
-                  "en": "حَـارٌّ"
-                }
-              ]
             }
           ],
           "questions": [
             {
-              "id": "b1_u3_t3_q1",
-              "book": 1,
-              "unit_num": 3,
-              "tamreen_num": 3,
-              "badge_ar": "التَّمْرِينُ (3)",
-              "badge_ur": "مشق (3): سوال (1)",
-              "badge_en": "Exercise (3): Question (1)",
-              "tamreen_title_ar": "اِمْلأْ الفراغ فيما يلي بوضع الكدمة المناسبة من الكدمات التالية:",
-              "tamreen_title_ur": "مشق (3): اِمْلأْ الفراغ فيما يلي بوضع الكدمة المناسبة من ال",
-              "tamreen_title_en": "Exercise (3): اِمْلأْ الفراغ فيما يلي بوضع الكدمة المناسبة من ال",
-              "grammar_goal_ur": "کتاب 1، سبق 3 کی مشق (3) کا فہم و حل۔",
-              "grammar_goal_en": "Practice drill for Book 1, Lesson 3, Exercise 3.",
-              "type": "fill_blank",
-              "strict_tashkeel": true,
-              "prompt_ar": "(1) الحجر …………………  ",
-              "prompt_ur": "سوال (1): کتاب کے مطابق صحیح جواب منتخب کریں۔",
-              "prompt_en": "Question (1): Choose the correct answer according to the lesson.",
-              "answer": "الحجر …………………  ",
+              "tamreen_num": 1,
+              "type": "emoji_choice",
+              "prompt_ar": "اخْتَرِ الضَّبْطَ الصَّحِيحَ لِلْكَلِمَةِ: (مَسْجِدٌ)",
+              "prompt_ur": "درست اعراب والا لفظ منتخب کریں:",
+              "prompt_en": "Select the correctly vocalized word:",
               "options": [
-                "الحجر …………………  ",
-                "القمر ……………………  •",
-                "الباب ……………….…… - 🌙",
-                "الحجر …………………  •"
+                "مَسْجِدٌ",
+                "مَسْجِدُ"
               ],
-              "emoji": "✍️",
-              "hint_ur": "سبق کے قواعد کے مطابق حل کریں۔",
-              "hint_en": "Solve according to the rules of this lesson.",
-              "explanation_ur": "کتاب کے مطابق درست جواب 'الحجر …………………  ' ہے۔",
-              "explanation_en": "According to the textbook, the correct answer is 'الحجر …………………  '."
+              "answer": "مَسْجِدٌ",
+              "strict_tashkeel": true,
+              "explanation_ur": "درست اعراب: مَسْجِدٌ (نکرہ اسم پر تنوین آتی ہے)",
+              "explanation_en": "Correct: مَسْجِدٌ"
             },
             {
-              "id": "b1_u3_t3_q2",
-              "book": 1,
-              "unit_num": 3,
-              "tamreen_num": 3,
-              "badge_ar": "التَّمْرِينُ (3)",
-              "badge_ur": "مشق (3): سوال (2)",
-              "badge_en": "Exercise (3): Question (2)",
-              "tamreen_title_ar": "اِمْلأْ الفراغ فيما يلي بوضع الكدمة المناسبة من الكدمات التالية:",
-              "tamreen_title_ur": "مشق (3): اِمْلأْ الفراغ فيما يلي بوضع الكدمة المناسبة من ال",
-              "tamreen_title_en": "Exercise (3): اِمْلأْ الفراغ فيما يلي بوضع الكدمة المناسبة من ال",
-              "grammar_goal_ur": "کتاب 1، سبق 3 کی مشق (3) کا فہم و حل۔",
-              "grammar_goal_en": "Practice drill for Book 1, Lesson 3, Exercise 3.",
-              "type": "fill_blank",
-              "strict_tashkeel": true,
-              "prompt_ar": "(2) الباب ……………….…… - 🌙",
-              "prompt_ur": "سوال (2): کتاب کے مطابق صحیح جواب منتخب کریں۔",
-              "prompt_en": "Question (2): Choose the correct answer according to the lesson.",
-              "answer": "الباب ……………….…… - 🌙",
+              "tamreen_num": 1,
+              "type": "emoji_choice",
+              "prompt_ar": "اخْتَرِ الضَّبْطَ الصَّحِيحَ لِلْكَلِمَةِ: (الْمَسْجِدُ)",
+              "prompt_ur": "درست اعراب والا لفظ منتخب کریں:",
+              "prompt_en": "Select the correctly vocalized word:",
               "options": [
-                "الحجر …………………  •",
-                "الورق …………………… - 🧻 🥛",
-                "القمر ……………………  •",
-                "الباب ……………….…… - 🌙"
+                "الْمَسْجِدُ",
+                "الْمَسْجِدٌ"
               ],
-              "emoji": "✍️",
-              "hint_ur": "سبق کے قواعد کے مطابق حل کریں۔",
-              "hint_en": "Solve according to the rules of this lesson.",
-              "explanation_ur": "کتاب کے مطابق درست جواب 'الباب ……………….…… - 🌙' ہے۔",
-              "explanation_en": "According to the textbook, the correct answer is 'الباب ……………….…… - 🌙'."
+              "answer": "الْمَسْجِدُ",
+              "strict_tashkeel": true,
+              "explanation_ur": "درست اعراب: الْمَسْجِدُ (الف لام کے ساتھ تنوین نہیں آتی)",
+              "explanation_en": "Correct: الْمَسْجِدُ"
             },
             {
-              "id": "b1_u3_t3_q3",
-              "book": 1,
-              "unit_num": 3,
-              "tamreen_num": 3,
-              "badge_ar": "التَّمْرِينُ (3)",
-              "badge_ur": "مشق (3): سوال (3)",
-              "badge_en": "Exercise (3): Question (3)",
-              "tamreen_title_ar": "اِمْلأْ الفراغ فيما يلي بوضع الكدمة المناسبة من الكدمات التالية:",
-              "tamreen_title_ur": "مشق (3): اِمْلأْ الفراغ فيما يلي بوضع الكدمة المناسبة من ال",
-              "tamreen_title_en": "Exercise (3): اِمْلأْ الفراغ فيما يلي بوضع الكدمة المناسبة من ال",
-              "grammar_goal_ur": "کتاب 1، سبق 3 کی مشق (3) کا فہم و حل۔",
-              "grammar_goal_en": "Practice drill for Book 1, Lesson 3, Exercise 3.",
-              "type": "fill_blank",
-              "strict_tashkeel": true,
-              "prompt_ar": "(3) القمر ……………………  ",
-              "prompt_ur": "سوال (3): کتاب کے مطابق صحیح جواب منتخب کریں۔",
-              "prompt_en": "Question (3): Choose the correct answer according to the lesson.",
-              "answer": "القمر ……………………  ",
+              "tamreen_num": 1,
+              "type": "emoji_choice",
+              "prompt_ar": "اخْتَرِ الضَّبْطَ الصَّحِيحَ لِلْكَلِمَةِ: (الْمَاءُ)",
+              "prompt_ur": "درست اعراب والا لفظ منتخب کریں:",
+              "prompt_en": "Select the correctly vocalized word:",
               "options": [
-                "الباب ……………….…… - 🌙",
-                "القمر ……………………  •",
-                "القمر ……………………  ",
-                "الحجر …………………  •"
+                "الْمَاءُ",
+                "الْمَاءٌ"
               ],
-              "emoji": "✍️",
-              "hint_ur": "سبق کے قواعد کے مطابق حل کریں۔",
-              "hint_en": "Solve according to the rules of this lesson.",
-              "explanation_ur": "کتاب کے مطابق درست جواب 'القمر ……………………  ' ہے۔",
-              "explanation_en": "According to the textbook, the correct answer is 'القمر ……………………  '."
+              "answer": "الْمَاءُ",
+              "strict_tashkeel": true,
+              "explanation_ur": "درست اعراب: الْمَاءُ (الف لام کے ساتھ ضمہ آتا ہے)",
+              "explanation_en": "Correct: الْمَاءُ"
             },
             {
-              "id": "b1_u3_t3_q4",
-              "book": 1,
-              "unit_num": 3,
-              "tamreen_num": 3,
-              "badge_ar": "التَّمْرِينُ (3)",
-              "badge_ur": "مشق (3): سوال (4)",
-              "badge_en": "Exercise (3): Question (4)",
-              "tamreen_title_ar": "اِمْلأْ الفراغ فيما يلي بوضع الكدمة المناسبة من الكدمات التالية:",
-              "tamreen_title_ur": "مشق (3): اِمْلأْ الفراغ فيما يلي بوضع الكدمة المناسبة من ال",
-              "tamreen_title_en": "Exercise (3): اِمْلأْ الفراغ فيما يلي بوضع الكدمة المناسبة من ال",
-              "grammar_goal_ur": "کتاب 1، سبق 3 کی مشق (3) کا فہم و حل۔",
-              "grammar_goal_en": "Practice drill for Book 1, Lesson 3, Exercise 3.",
-              "type": "fill_blank",
-              "strict_tashkeel": true,
-              "prompt_ar": "(4) الورق …………………… - 🧻 🥛",
-              "prompt_ur": "سوال (4): کتاب کے مطابق صحیح جواب منتخب کریں۔",
-              "prompt_en": "Question (4): Choose the correct answer according to the lesson.",
-              "answer": "الورق …………………… - 🧻 🥛",
+              "tamreen_num": 1,
+              "type": "emoji_choice",
+              "prompt_ar": "اخْتَرِ الضَّبْطَ الصَّحِيحَ لِلْكَلِمَةِ: (مَاءٌ)",
+              "prompt_ur": "درست اعراب والا لفظ منتخب کریں:",
+              "prompt_en": "Select the correctly vocalized word:",
               "options": [
-                "الباب ……………….…… - 🌙",
-                "الورق …………………… - 🧻 🥛",
-                "الحجر …………………  •",
-                "القمر ……………………  •"
+                "مَاءٌ",
+                "مَاءُ"
               ],
-              "emoji": "✍️",
-              "hint_ur": "سبق کے قواعد کے مطابق حل کریں۔",
-              "hint_en": "Solve according to the rules of this lesson.",
-              "explanation_ur": "کتاب کے مطابق درست جواب 'الورق …………………… - 🧻 🥛' ہے۔",
-              "explanation_en": "According to the textbook, the correct answer is 'الورق …………………… - 🧻 🥛'."
+              "answer": "مَاءٌ",
+              "strict_tashkeel": true,
+              "explanation_ur": "درست اعراب: مَاءٌ (نکرہ اسم تنوین لیتا ہے)",
+              "explanation_en": "Correct: مَاءٌ"
             },
             {
-              "id": "b1_u3_t3_q5",
-              "book": 1,
-              "unit_num": 3,
-              "tamreen_num": 3,
-              "badge_ar": "التَّمْرِينُ (3)",
-              "badge_ur": "مشق (3): سوال (5)",
-              "badge_en": "Exercise (3): Question (5)",
-              "tamreen_title_ar": "اِمْلأْ الفراغ فيما يلي بوضع الكدمة المناسبة من الكدمات التالية:",
-              "tamreen_title_ur": "مشق (3): اِمْلأْ الفراغ فيما يلي بوضع الكدمة المناسبة من ال",
-              "tamreen_title_en": "Exercise (3): اِمْلأْ الفراغ فيما يلي بوضع الكدمة المناسبة من ال",
-              "grammar_goal_ur": "کتاب 1، سبق 3 کی مشق (3) کا فہم و حل۔",
-              "grammar_goal_en": "Practice drill for Book 1, Lesson 3, Exercise 3.",
-              "type": "fill_blank",
-              "strict_tashkeel": true,
-              "prompt_ar": "(5) المنديل …………………  ",
-              "prompt_ur": "سوال (5): کتاب کے مطابق صحیح جواب منتخب کریں۔",
-              "prompt_en": "Question (5): Choose the correct answer according to the lesson.",
-              "answer": "المنديل …………………  ",
+              "tamreen_num": 1,
+              "type": "emoji_choice",
+              "prompt_ar": "اخْتَرِ الضَّبْطَ الصَّحِيحَ لِلْكَلِمَةِ: (الْبَيْتُ)",
+              "prompt_ur": "درست اعراب والا لفظ منتخب کریں:",
+              "prompt_en": "Select the correctly vocalized word:",
               "options": [
-                "الحجر …………………  •",
-                "القمر ……………………  •",
-                "المنديل …………………  ",
-                "الباب ……………….…… - 🌙"
+                "الْبَيْتُ",
+                "الْبَيْتٌ"
               ],
-              "emoji": "✍️",
-              "hint_ur": "سبق کے قواعد کے مطابق حل کریں۔",
-              "hint_en": "Solve according to the rules of this lesson.",
-              "explanation_ur": "کتاب کے مطابق درست جواب 'المنديل …………………  ' ہے۔",
-              "explanation_en": "According to the textbook, the correct answer is 'المنديل …………………  '."
+              "answer": "الْبَيْتُ",
+              "strict_tashkeel": true,
+              "explanation_ur": "درست اعراب: الْبَيْتُ (الف لام کے ساتھ تنوین گر جاتی ہے)",
+              "explanation_en": "Correct: الْبَيْتُ"
             },
             {
-              "id": "b1_u3_t3_q6",
-              "book": 1,
-              "unit_num": 3,
-              "tamreen_num": 3,
-              "badge_ar": "التَّمْرِينُ (3)",
-              "badge_ur": "مشق (3): سوال (6)",
-              "badge_en": "Exercise (3): Question (6)",
-              "tamreen_title_ar": "اِمْلأْ الفراغ فيما يلي بوضع الكدمة المناسبة من الكدمات التالية:",
-              "tamreen_title_ur": "مشق (3): اِمْلأْ الفراغ فيما يلي بوضع الكدمة المناسبة من ال",
-              "tamreen_title_en": "Exercise (3): اِمْلأْ الفراغ فيما يلي بوضع الكدمة المناسبة من ال",
-              "grammar_goal_ur": "کتاب 1، سبق 3 کی مشق (3) کا فہم و حل۔",
-              "grammar_goal_en": "Practice drill for Book 1, Lesson 3, Exercise 3.",
-              "type": "fill_blank",
-              "strict_tashkeel": true,
-              "prompt_ar": "(6) اللـبن ……………….…",
-              "prompt_ur": "سوال (6): کتاب کے مطابق صحیح جواب منتخب کریں۔",
-              "prompt_en": "Question (6): Choose the correct answer according to the lesson.",
-              "answer": "اللـبن ……………….…",
+              "tamreen_num": 1,
+              "type": "emoji_choice",
+              "prompt_ar": "اخْتَرِ الضَّبْطَ الصَّحِيحَ لِلْكَلِمَةِ: (بَابٌ)",
+              "prompt_ur": "درست اعراب والا لفظ منتخب کریں:",
+              "prompt_en": "Select the correctly vocalized word:",
               "options": [
-                "القمر ……………………  •",
-                "الباب ……………….…… - 🌙",
-                "الحجر …………………  •",
-                "اللـبن ……………….…"
+                "بَابٌ",
+                "بَابُ"
               ],
-              "emoji": "✍️",
-              "hint_ur": "سبق کے قواعد کے مطابق حل کریں۔",
-              "hint_en": "Solve according to the rules of this lesson.",
-              "explanation_ur": "کتاب کے مطابق درست جواب 'اللـبن ……………….…' ہے۔",
-              "explanation_en": "According to the textbook, the correct answer is 'اللـبن ……………….…'."
+              "answer": "بَابٌ",
+              "strict_tashkeel": true,
+              "explanation_ur": "درست اعراب: بَابٌ (نکرہ اسم تنوین لیتا ہے)",
+              "explanation_en": "Correct: بَابٌ"
             },
             {
-              "id": "b1_u3_t4_q1",
-              "book": 1,
-              "unit_num": 3,
-              "tamreen_num": 4,
-              "badge_ar": "التَّمْرِينُ (4)",
-              "badge_ur": "مشق (4): سوال (1)",
-              "badge_en": "Exercise (4): Question (1)",
-              "tamreen_title_ar": "اِمْلأْ الفراغ فيما يلي بوضع كدمة مناسبة:",
-              "tamreen_title_ur": "مشق (4): اِمْلأْ الفراغ فيما يلي بوضع كدمة مناسبة:",
-              "tamreen_title_en": "Exercise (4): اِمْلأْ الفراغ فيما يلي بوضع كدمة مناسبة:",
-              "grammar_goal_ur": "کتاب 1، سبق 3 کی مشق (4) کا فہم و حل۔",
-              "grammar_goal_en": "Practice drill for Book 1, Lesson 3, Exercise 4.",
-              "type": "fill_blank",
-              "strict_tashkeel": true,
-              "prompt_ar": "(1) ………………… نظيف.  ",
-              "prompt_ur": "سوال (1): کتاب کے مطابق صحیح جواب منتخب کریں۔",
-              "prompt_en": "Question (1): Choose the correct answer according to the lesson.",
-              "answer": "………………… نظيف.  ",
+              "tamreen_num": 1,
+              "type": "emoji_choice",
+              "prompt_ar": "اخْتَرِ الضَّبْطَ الصَّحِيحَ لِلْكَلِمَةِ: (قَلَمٌ)",
+              "prompt_ur": "درست اعراب والا لفظ منتخب کریں:",
+              "prompt_en": "Select the correctly vocalized word:",
               "options": [
-                "………………… نظيف.  •",
-                "…………….…. بارد.  •",
-                "………………… نظيف.  ",
-                "……………… مكسور. - 🔹"
+                "قَلَمٌ",
+                "قَلَمُ"
               ],
-              "emoji": "✍️",
-              "hint_ur": "سبق کے قواعد کے مطابق حل کریں۔",
-              "hint_en": "Solve according to the rules of this lesson.",
-              "explanation_ur": "کتاب کے مطابق درست جواب '………………… نظيف.  ' ہے۔",
-              "explanation_en": "According to the textbook, the correct answer is '………………… نظيف.  '."
+              "answer": "قَلَمٌ",
+              "strict_tashkeel": true,
+              "explanation_ur": "درست اعراب: قَلَمٌ (نکرہ اسم تنوین لیتا ہے)",
+              "explanation_en": "Correct: قَلَمٌ"
             },
             {
-              "id": "b1_u3_t4_q2",
-              "book": 1,
-              "unit_num": 3,
-              "tamreen_num": 4,
-              "badge_ar": "التَّمْرِينُ (4)",
-              "badge_ur": "مشق (4): سوال (2)",
-              "badge_en": "Exercise (4): Question (2)",
-              "tamreen_title_ar": "اِمْلأْ الفراغ فيما يلي بوضع كدمة مناسبة:",
-              "tamreen_title_ur": "مشق (4): اِمْلأْ الفراغ فيما يلي بوضع كدمة مناسبة:",
-              "tamreen_title_en": "Exercise (4): اِمْلأْ الفراغ فيما يلي بوضع كدمة مناسبة:",
-              "grammar_goal_ur": "کتاب 1، سبق 3 کی مشق (4) کا فہم و حل۔",
-              "grammar_goal_en": "Practice drill for Book 1, Lesson 3, Exercise 4.",
-              "type": "fill_blank",
-              "strict_tashkeel": true,
-              "prompt_ar": "(2) ……………… مكسور. - 🔹",
-              "prompt_ur": "سوال (2): کتاب کے مطابق صحیح جواب منتخب کریں۔",
-              "prompt_en": "Question (2): Choose the correct answer according to the lesson.",
-              "answer": "……………… مكسور. - 🔹",
+              "tamreen_num": 1,
+              "type": "emoji_choice",
+              "prompt_ar": "اخْتَرِ الضَّبْطَ الصَّحِيحَ لِلْكَلِمَةِ: (الْقَلَمُ)",
+              "prompt_ur": "درست اعراب والا لفظ منتخب کریں:",
+              "prompt_en": "Select the correctly vocalized word:",
               "options": [
-                "……………… قريب. - 🔹",
-                "………………… نظيف.  •",
-                "……………… مكسور. - 🔹",
-                "…………….…. بارد.  •"
+                "الْقَلَمُ",
+                "الْقَلَمٌ"
               ],
-              "emoji": "✍️",
-              "hint_ur": "سبق کے قواعد کے مطابق حل کریں۔",
-              "hint_en": "Solve according to the rules of this lesson.",
-              "explanation_ur": "کتاب کے مطابق درست جواب '……………… مكسور. - 🔹' ہے۔",
-              "explanation_en": "According to the textbook, the correct answer is '……………… مكسور. - 🔹'."
+              "answer": "الْقَلَمُ",
+              "strict_tashkeel": true,
+              "explanation_ur": "درست اعراب: الْقَلَمُ (معرف باللام پر تنوین ممنوع ہے)",
+              "explanation_en": "Correct: الْقَلَمُ"
             },
             {
-              "id": "b1_u3_t4_q3",
-              "book": 1,
-              "unit_num": 3,
-              "tamreen_num": 4,
-              "badge_ar": "التَّمْرِينُ (4)",
-              "badge_ur": "مشق (4): سوال (3)",
-              "badge_en": "Exercise (4): Question (3)",
-              "tamreen_title_ar": "اِمْلأْ الفراغ فيما يلي بوضع كدمة مناسبة:",
-              "tamreen_title_ur": "مشق (4): اِمْلأْ الفراغ فيما يلي بوضع كدمة مناسبة:",
-              "tamreen_title_en": "Exercise (4): اِمْلأْ الفراغ فيما يلي بوضع كدمة مناسبة:",
-              "grammar_goal_ur": "کتاب 1، سبق 3 کی مشق (4) کا فہم و حل۔",
-              "grammar_goal_en": "Practice drill for Book 1, Lesson 3, Exercise 4.",
-              "type": "fill_blank",
-              "strict_tashkeel": true,
-              "prompt_ar": "(3) …………….…. بارد.  ",
-              "prompt_ur": "سوال (3): کتاب کے مطابق صحیح جواب منتخب کریں۔",
-              "prompt_en": "Question (3): Choose the correct answer according to the lesson.",
-              "answer": "…………….…. بارد.  ",
+              "tamreen_num": 1,
+              "type": "emoji_choice",
+              "prompt_ar": "اخْتَرِ الضَّبْطَ الصَّحِيحَ لِلْكَلِمَةِ: (الْكَلْبُ)",
+              "prompt_ur": "درست اعراب والا لفظ منتخب کریں:",
+              "prompt_en": "Select the correctly vocalized word:",
               "options": [
-                "…………….…. بارد.  ",
-                "………………… نظيف.  •",
-                "……………… مكسور. - 🔹",
-                "…………….…. بارد.  •"
+                "الْكَلْبُ",
+                "الْكَلْبٌ"
               ],
-              "emoji": "✍️",
-              "hint_ur": "سبق کے قواعد کے مطابق حل کریں۔",
-              "hint_en": "Solve according to the rules of this lesson.",
-              "explanation_ur": "کتاب کے مطابق درست جواب '…………….…. بارد.  ' ہے۔",
-              "explanation_en": "According to the textbook, the correct answer is '…………….…. بارد.  '."
+              "answer": "الْكَلْبُ",
+              "strict_tashkeel": true,
+              "explanation_ur": "درست اعراب: الْكَلْبُ (معرف باللام پر تنوین نہیں آتی)",
+              "explanation_en": "Correct: الْكَلْبُ"
             },
             {
-              "id": "b1_u3_t4_q4",
-              "book": 1,
-              "unit_num": 3,
-              "tamreen_num": 4,
-              "badge_ar": "التَّمْرِينُ (4)",
-              "badge_ur": "مشق (4): سوال (4)",
-              "badge_en": "Exercise (4): Question (4)",
-              "tamreen_title_ar": "اِمْلأْ الفراغ فيما يلي بوضع كدمة مناسبة:",
-              "tamreen_title_ur": "مشق (4): اِمْلأْ الفراغ فيما يلي بوضع كدمة مناسبة:",
-              "tamreen_title_en": "Exercise (4): اِمْلأْ الفراغ فيما يلي بوضع كدمة مناسبة:",
-              "grammar_goal_ur": "کتاب 1، سبق 3 کی مشق (4) کا فہم و حل۔",
-              "grammar_goal_en": "Practice drill for Book 1, Lesson 3, Exercise 4.",
-              "type": "fill_blank",
-              "strict_tashkeel": true,
-              "prompt_ar": "(4) ……………… قريب. - 🔹",
-              "prompt_ur": "سوال (4): کتاب کے مطابق صحیح جواب منتخب کریں۔",
-              "prompt_en": "Question (4): Choose the correct answer according to the lesson.",
-              "answer": "……………… قريب. - 🔹",
+              "tamreen_num": 1,
+              "type": "emoji_choice",
+              "prompt_ar": "اخْتَرِ الضَّبْطَ الصَّحِيحَ لِلْكَلِمَةِ: (كَلْبٌ)",
+              "prompt_ur": "درست اعراب والا لفظ منتخب کریں:",
+              "prompt_en": "Select the correctly vocalized word:",
               "options": [
-                "……………… مكسور. - 🔹",
-                "……………… قريب. - 🔹",
-                "…………….…. بارد.  •",
-                "………………… نظيف.  •"
+                "كَلْبٌ",
+                "كَلْبُ"
               ],
-              "emoji": "✍️",
-              "hint_ur": "سبق کے قواعد کے مطابق حل کریں۔",
-              "hint_en": "Solve according to the rules of this lesson.",
-              "explanation_ur": "کتاب کے مطابق درست جواب '……………… قريب. - 🔹' ہے۔",
-              "explanation_en": "According to the textbook, the correct answer is '……………… قريب. - 🔹'."
+              "answer": "كَلْبٌ",
+              "strict_tashkeel": true,
+              "explanation_ur": "درست اعراب: كَلْبٌ (نکرہ اسم پر تنوین آتی ہے)",
+              "explanation_en": "Correct: كَلْبٌ"
             },
             {
-              "id": "b1_u3_t4_q5",
-              "book": 1,
-              "unit_num": 3,
-              "tamreen_num": 4,
-              "badge_ar": "التَّمْرِينُ (4)",
-              "badge_ur": "مشق (4): سوال (5)",
-              "badge_en": "Exercise (4): Question (5)",
-              "tamreen_title_ar": "اِمْلأْ الفراغ فيما يلي بوضع كدمة مناسبة:",
-              "tamreen_title_ur": "مشق (4): اِمْلأْ الفراغ فيما يلي بوضع كدمة مناسبة:",
-              "tamreen_title_en": "Exercise (4): اِمْلأْ الفراغ فيما يلي بوضع كدمة مناسبة:",
-              "grammar_goal_ur": "کتاب 1، سبق 3 کی مشق (4) کا فہم و حل۔",
-              "grammar_goal_en": "Practice drill for Book 1, Lesson 3, Exercise 4.",
-              "type": "fill_blank",
-              "strict_tashkeel": true,
-              "prompt_ar": "(5) …… ……….… بعيد.  ",
-              "prompt_ur": "سوال (5): کتاب کے مطابق صحیح جواب منتخب کریں۔",
-              "prompt_en": "Question (5): Choose the correct answer according to the lesson.",
-              "answer": "…… ……….… بعيد.  ",
+              "tamreen_num": 1,
+              "type": "emoji_choice",
+              "prompt_ar": "اخْتَرِ الضَّبْطَ الصَّحِيحَ لِلْكَلِمَةِ: (قَمِيصٌ)",
+              "prompt_ur": "درست اعراب والا لفظ منتخب کریں:",
+              "prompt_en": "Select the correctly vocalized word:",
               "options": [
-                "…… ……….… بعيد.  ",
-                "…………….…. بارد.  •",
-                "……………… مكسور. - 🔹",
-                "………………… نظيف.  •"
+                "قَمِيصٌ",
+                "قَمِيصُ"
               ],
-              "emoji": "✍️",
-              "hint_ur": "سبق کے قواعد کے مطابق حل کریں۔",
-              "hint_en": "Solve according to the rules of this lesson.",
-              "explanation_ur": "کتاب کے مطابق درست جواب '…… ……….… بعيد.  ' ہے۔",
-              "explanation_en": "According to the textbook, the correct answer is '…… ……….… بعيد.  '."
+              "answer": "قَمِيصٌ",
+              "strict_tashkeel": true,
+              "explanation_ur": "درست اعراب: قَمِيصٌ (نکرہ اسم تنوین لیتا ہے)",
+              "explanation_en": "Correct: قَمِيصٌ"
             },
             {
-              "id": "b1_u3_t4_q6",
-              "book": 1,
-              "unit_num": 3,
-              "tamreen_num": 4,
-              "badge_ar": "التَّمْرِينُ (4)",
-              "badge_ur": "مشق (4): سوال (6)",
-              "badge_en": "Exercise (4): Question (6)",
-              "tamreen_title_ar": "اِمْلأْ الفراغ فيما يلي بوضع كدمة مناسبة:",
-              "tamreen_title_ur": "مشق (4): اِمْلأْ الفراغ فيما يلي بوضع كدمة مناسبة:",
-              "tamreen_title_en": "Exercise (4): اِمْلأْ الفراغ فيما يلي بوضع كدمة مناسبة:",
-              "grammar_goal_ur": "کتاب 1، سبق 3 کی مشق (4) کا فہم و حل۔",
-              "grammar_goal_en": "Practice drill for Book 1, Lesson 3, Exercise 4.",
-              "type": "fill_blank",
-              "strict_tashkeel": true,
-              "prompt_ar": "(6) ……………… واقف. - 🔹",
-              "prompt_ur": "سوال (6): کتاب کے مطابق صحیح جواب منتخب کریں۔",
-              "prompt_en": "Question (6): Choose the correct answer according to the lesson.",
-              "answer": "……………… واقف. - 🔹",
+              "tamreen_num": 1,
+              "type": "emoji_choice",
+              "prompt_ar": "اخْتَرِ الضَّبْطَ الصَّحِيحَ لِلْكَلِمَةِ: (وَلَدٌ)",
+              "prompt_ur": "درست اعراب والا لفظ منتخب کریں:",
+              "prompt_en": "Select the correctly vocalized word:",
               "options": [
-                "……………… واقف. - 🔹",
-                "………………… نظيف.  •",
-                "……………… مكسور. - 🔹",
-                "…………….…. بارد.  •"
+                "وَلَدٌ",
+                "وَلَدُ"
               ],
-              "emoji": "✍️",
-              "hint_ur": "سبق کے قواعد کے مطابق حل کریں۔",
-              "hint_en": "Solve according to the rules of this lesson.",
-              "explanation_ur": "کتاب کے مطابق درست جواب '……………… واقف. - 🔹' ہے۔",
-              "explanation_en": "According to the textbook, the correct answer is '……………… واقف. - 🔹'."
+              "answer": "وَلَدٌ",
+              "strict_tashkeel": true,
+              "explanation_ur": "درست اعراب: وَلَدٌ (نکرہ اسم تنوین لیتا ہے)",
+              "explanation_en": "Correct: وَلَدٌ"
             },
             {
-              "id": "b1_u3_t4_q7",
-              "book": 1,
-              "unit_num": 3,
-              "tamreen_num": 4,
-              "badge_ar": "التَّمْرِينُ (4)",
-              "badge_ur": "مشق (4): سوال (7)",
-              "badge_en": "Exercise (4): Question (7)",
-              "tamreen_title_ar": "اِمْلأْ الفراغ فيما يلي بوضع كدمة مناسبة:",
-              "tamreen_title_ur": "مشق (4): اِمْلأْ الفراغ فيما يلي بوضع كدمة مناسبة:",
-              "tamreen_title_en": "Exercise (4): اِمْلأْ الفراغ فيما يلي بوضع كدمة مناسبة:",
-              "grammar_goal_ur": "کتاب 1، سبق 3 کی مشق (4) کا فہم و حل۔",
-              "grammar_goal_en": "Practice drill for Book 1, Lesson 3, Exercise 4.",
-              "type": "fill_blank",
-              "strict_tashkeel": true,
-              "prompt_ar": "(7) ………………. جالس.  ",
-              "prompt_ur": "سوال (7): کتاب کے مطابق صحیح جواب منتخب کریں۔",
-              "prompt_en": "Question (7): Choose the correct answer according to the lesson.",
-              "answer": "………………. جالس.  ",
+              "tamreen_num": 1,
+              "type": "emoji_choice",
+              "prompt_ar": "اخْتَرِ الضَّبْطَ الصَّحِيحَ لِلْكَلِمَةِ: (الْحَجَرُ)",
+              "prompt_ur": "درست اعراب والا لفظ منتخب کریں:",
+              "prompt_en": "Select the correctly vocalized word:",
               "options": [
-                "………………… نظيف.  •",
-                "…………….…. بارد.  •",
-                "………………. جالس.  ",
-                "……………… مكسور. - 🔹"
+                "الْحَجَرُ",
+                "الْحَجَرٌ"
               ],
-              "emoji": "✍️",
-              "hint_ur": "سبق کے قواعد کے مطابق حل کریں۔",
-              "hint_en": "Solve according to the rules of this lesson.",
-              "explanation_ur": "کتاب کے مطابق درست جواب '………………. جالس.  ' ہے۔",
-              "explanation_en": "According to the textbook, the correct answer is '………………. جالس.  '."
+              "answer": "الْحَجَرُ",
+              "strict_tashkeel": true,
+              "explanation_ur": "درست اعراب: الْحَجَرُ (معرف باللام پر ضمہ آتا ہے)",
+              "explanation_en": "Correct: الْحَجَرُ"
             },
             {
-              "id": "b1_u3_t4_q8",
-              "book": 1,
-              "unit_num": 3,
-              "tamreen_num": 4,
-              "badge_ar": "التَّمْرِينُ (4)",
-              "badge_ur": "مشق (4): سوال (8)",
-              "badge_en": "Exercise (4): Question (8)",
-              "tamreen_title_ar": "اِمْلأْ الفراغ فيما يلي بوضع كدمة مناسبة:",
-              "tamreen_title_ur": "مشق (4): اِمْلأْ الفراغ فيما يلي بوضع كدمة مناسبة:",
-              "tamreen_title_en": "Exercise (4): اِمْلأْ الفراغ فيما يلي بوضع كدمة مناسبة:",
-              "grammar_goal_ur": "کتاب 1، سبق 3 کی مشق (4) کا فہم و حل۔",
-              "grammar_goal_en": "Practice drill for Book 1, Lesson 3, Exercise 4.",
-              "type": "fill_blank",
-              "strict_tashkeel": true,
-              "prompt_ar": "(8) ………………… كبير. - 🔹",
-              "prompt_ur": "سوال (8): کتاب کے مطابق صحیح جواب منتخب کریں۔",
-              "prompt_en": "Question (8): Choose the correct answer according to the lesson.",
-              "answer": "………………… كبير. - 🔹",
+              "tamreen_num": 1,
+              "type": "emoji_choice",
+              "prompt_ar": "اخْتَرِ الضَّبْطَ الصَّحِيحَ لِلْكَلِمَةِ: (الْوَلَدُ)",
+              "prompt_ur": "درست اعراب والا لفظ منتخب کریں:",
+              "prompt_en": "Select the correctly vocalized word:",
               "options": [
-                "………………… نظيف.  •",
-                "……………… مكسور. - 🔹",
-                "………………… كبير. - 🔹",
-                "…………….…. بارد.  •"
+                "الْوَلَدُ",
+                "الْوَلَدٌ"
               ],
-              "emoji": "✍️",
-              "hint_ur": "سبق کے قواعد کے مطابق حل کریں۔",
-              "hint_en": "Solve according to the rules of this lesson.",
-              "explanation_ur": "کتاب کے مطابق درست جواب '………………… كبير. - 🔹' ہے۔",
-              "explanation_en": "According to the textbook, the correct answer is '………………… كبير. - 🔹'."
+              "answer": "الْوَلَدُ",
+              "strict_tashkeel": true,
+              "explanation_ur": "درست اعراب: الْوَلَدُ (معرف باللام پر ضمہ آتا ہے)",
+              "explanation_en": "Correct: الْوَلَدُ"
             },
             {
-              "id": "b1_u3_t4_q9",
-              "book": 1,
-              "unit_num": 3,
-              "tamreen_num": 4,
-              "badge_ar": "التَّمْرِينُ (4)",
-              "badge_ur": "مشق (4): سوال (9)",
-              "badge_en": "Exercise (4): Question (9)",
-              "tamreen_title_ar": "اِمْلأْ الفراغ فيما يلي بوضع كدمة مناسبة:",
-              "tamreen_title_ur": "مشق (4): اِمْلأْ الفراغ فيما يلي بوضع كدمة مناسبة:",
-              "tamreen_title_en": "Exercise (4): اِمْلأْ الفراغ فيما يلي بوضع كدمة مناسبة:",
-              "grammar_goal_ur": "کتاب 1، سبق 3 کی مشق (4) کا فہم و حل۔",
-              "grammar_goal_en": "Practice drill for Book 1, Lesson 3, Exercise 4.",
-              "type": "fill_blank",
-              "strict_tashkeel": true,
-              "prompt_ar": "(9) ………………. قديم.  ",
-              "prompt_ur": "سوال (9): کتاب کے مطابق صحیح جواب منتخب کریں۔",
-              "prompt_en": "Question (9): Choose the correct answer according to the lesson.",
-              "answer": "………………. قديم.  ",
+              "tamreen_num": 1,
+              "type": "emoji_choice",
+              "prompt_ar": "اخْتَرِ الضَّبْطَ الصَّحِيحَ لِلْكَلِمَةِ: (حِمَارٌ)",
+              "prompt_ur": "درست اعراب والا لفظ منتخب کریں:",
+              "prompt_en": "Select the correctly vocalized word:",
               "options": [
-                "………………… نظيف.  •",
-                "……………… مكسور. - 🔹",
-                "…………….…. بارد.  •",
-                "………………. قديم.  "
+                "حِمَارٌ",
+                "حِمَارُ"
               ],
-              "emoji": "✍️",
-              "hint_ur": "سبق کے قواعد کے مطابق حل کریں۔",
-              "hint_en": "Solve according to the rules of this lesson.",
-              "explanation_ur": "کتاب کے مطابق درست جواب '………………. قديم.  ' ہے۔",
-              "explanation_en": "According to the textbook, the correct answer is '………………. قديم.  '."
+              "answer": "حِمَارٌ",
+              "strict_tashkeel": true,
+              "explanation_ur": "درست اعراب: حِمَارٌ (نکرہ اسم تنوین لیتا ہے)",
+              "explanation_en": "Correct: حِمَارٌ"
             },
             {
-              "id": "b1_u3_t4_q10",
-              "book": 1,
-              "unit_num": 3,
-              "tamreen_num": 4,
-              "badge_ar": "التَّمْرِينُ (4)",
-              "badge_ur": "مشق (4): سوال (10)",
-              "badge_en": "Exercise (4): Question (10)",
-              "tamreen_title_ar": "اِمْلأْ الفراغ فيما يلي بوضع كدمة مناسبة:",
-              "tamreen_title_ur": "مشق (4): اِمْلأْ الفراغ فيما يلي بوضع كدمة مناسبة:",
-              "tamreen_title_en": "Exercise (4): اِمْلأْ الفراغ فيما يلي بوضع كدمة مناسبة:",
-              "grammar_goal_ur": "کتاب 1، سبق 3 کی مشق (4) کا فہم و حل۔",
-              "grammar_goal_en": "Practice drill for Book 1, Lesson 3, Exercise 4.",
-              "type": "fill_blank",
-              "strict_tashkeel": true,
-              "prompt_ar": "(10) …………….. جديد",
-              "prompt_ur": "سوال (10): کتاب کے مطابق صحیح جواب منتخب کریں۔",
-              "prompt_en": "Question (10): Choose the correct answer according to the lesson.",
-              "answer": "…………….. جديد",
+              "tamreen_num": 1,
+              "type": "emoji_choice",
+              "prompt_ar": "اخْتَرِ الضَّبْطَ الصَّحِيحَ لِلْكَلِمَةِ: (الْحِمَارُ)",
+              "prompt_ur": "درست اعراب والا لفظ منتخب کریں:",
+              "prompt_en": "Select the correctly vocalized word:",
               "options": [
-                "………………… نظيف.  •",
-                "…………….. جديد",
-                "……………… مكسور. - 🔹",
-                "…………….…. بارد.  •"
+                "الْحِمَارُ",
+                "الْحِمَارٌ"
               ],
-              "emoji": "✍️",
-              "hint_ur": "سبق کے قواعد کے مطابق حل کریں۔",
-              "hint_en": "Solve according to the rules of this lesson.",
-              "explanation_ur": "کتاب کے مطابق درست جواب '…………….. جديد' ہے۔",
-              "explanation_en": "According to the textbook, the correct answer is '…………….. جديد'."
+              "answer": "الْحِمَارُ",
+              "strict_tashkeel": true,
+              "explanation_ur": "درست اعراب: الْحِمَارُ (معرف باللام پر تنوین نہیں آتی)",
+              "explanation_en": "Correct: الْحِمَارُ"
             },
             {
-              "id": "b1_u3_t2_q1",
-              "book": 1,
-              "unit_num": 3,
+              "tamreen_num": 1,
+              "type": "emoji_choice",
+              "prompt_ar": "اخْتَرِ الضَّبْطَ الصَّحِيحَ لِلْكَلِمَةِ: (الْحِصَانُ)",
+              "prompt_ur": "درست اعراب والا لفظ منتخب کریں:",
+              "prompt_en": "Select the correctly vocalized word:",
+              "options": [
+                "الْحِصَانُ",
+                "الْحِصَانٌ"
+              ],
+              "answer": "الْحِصَانُ",
+              "strict_tashkeel": true,
+              "explanation_ur": "درست اعراب: الْحِصَانُ (معرف باللام پر تنوین نہیں آتی)",
+              "explanation_en": "Correct: الْحِصَانُ"
+            },
+            {
+              "tamreen_num": 1,
+              "type": "emoji_choice",
+              "prompt_ar": "اخْتَرِ الضَّبْطَ الصَّحِيحَ لِلْكَلِمَةِ: (حِصَانٌ)",
+              "prompt_ur": "درست اعراب والا لفظ منتخب کریں:",
+              "prompt_en": "Select the correctly vocalized word:",
+              "options": [
+                "حِصَانٌ",
+                "حِصَانُ"
+              ],
+              "answer": "حِصَانٌ",
+              "strict_tashkeel": true,
+              "explanation_ur": "درست اعراب: حِصَانٌ (نکرہ اسم تنوین لیتا ہے)",
+              "explanation_en": "Correct: حِصَانٌ"
+            },
+            {
               "tamreen_num": 2,
-              "badge_ar": "التَّمْرِينُ (2)",
-              "badge_ur": "مشق (2): سوال (1)",
-              "badge_en": "Exercise (2): Question (1)",
-              "tamreen_title_ar": "اِمْلأ الفراغ فيما يلي بوضع كلمةٍ مناسبةٍ :",
-              "tamreen_title_ur": "مشق (2): اِمْلأ الفراغ فيما يلي بوضع كلمةٍ مناسبةٍ :",
-              "tamreen_title_en": "Exercise (2): اِمْلأ الفراغ فيما يلي بوضع كلمةٍ مناسبةٍ :",
-              "grammar_goal_ur": "کتاب 1، سبق 3 کی مشق (2) کا فہم و حل۔",
-              "grammar_goal_en": "Practice drill for Book 1, Lesson 3, Exercise 2.",
-              "type": "fill_blank",
-              "strict_tashkeel": true,
-              "prompt_ar": "(1) ……………… غني  ",
-              "prompt_ur": "سوال (1): کتاب کے مطابق صحیح جواب منتخب کریں۔",
-              "prompt_en": "Question (1): Choose the correct answer according to the lesson.",
-              "answer": "……………… غني  ",
+              "type": "emoji_choice",
+              "prompt_ar": "الْمَكْتَبُ مَكْسُورٌ.",
+              "prompt_ur": "جملے کا صحیح ترجمہ اور مفہوم منتخب کریں:",
+              "prompt_en": "Select the correct translation and meaning:",
+              "hint_ur": "میز ٹوٹی ہوئی ہے۔",
+              "hint_en": "The desk is broken.",
               "options": [
-                "……………… غني  ",
-                "………………… حلو - 🤒",
-                "……………… غني  •",
-                "……………… مريض  •"
+                "میز ٹوٹی ہوئی ہے۔",
+                "غلط ترجمہ",
+                "ترجمہ غیر متعلق ہے"
               ],
-              "emoji": "✍️",
-              "hint_ur": "سبق کے قواعد کے مطابق حل کریں۔",
-              "hint_en": "Solve according to the rules of this lesson.",
-              "explanation_ur": "کتاب کے مطابق درست جواب '……………… غني  ' ہے۔",
-              "explanation_en": "According to the textbook, the correct answer is '……………… غني  '."
+              "answer": "میز ٹوٹی ہوئی ہے۔",
+              "explanation_ur": "الْمَكْتَبُ مَكْسُورٌ. — میز ٹوٹی ہوئی ہے۔",
+              "explanation_en": "الْمَكْتَبُ مَكْسُورٌ. — The desk is broken."
             },
             {
-              "id": "b1_u3_t2_q2",
-              "book": 1,
-              "unit_num": 3,
               "tamreen_num": 2,
-              "badge_ar": "التَّمْرِينُ (2)",
-              "badge_ur": "مشق (2): سوال (2)",
-              "badge_en": "Exercise (2): Question (2)",
-              "tamreen_title_ar": "اِمْلأ الفراغ فيما يلي بوضع كلمةٍ مناسبةٍ :",
-              "tamreen_title_ur": "مشق (2): اِمْلأ الفراغ فيما يلي بوضع كلمةٍ مناسبةٍ :",
-              "tamreen_title_en": "Exercise (2): اِمْلأ الفراغ فيما يلي بوضع كلمةٍ مناسبةٍ :",
-              "grammar_goal_ur": "کتاب 1، سبق 3 کی مشق (2) کا فہم و حل۔",
-              "grammar_goal_en": "Practice drill for Book 1, Lesson 3, Exercise 2.",
-              "type": "fill_blank",
-              "strict_tashkeel": true,
-              "prompt_ar": "(2) ………………… حلو - 🤒",
-              "prompt_ur": "سوال (2): کتاب کے مطابق صحیح جواب منتخب کریں۔",
-              "prompt_en": "Question (2): Choose the correct answer according to the lesson.",
-              "answer": "………………… حلو - 🤒",
+              "type": "emoji_choice",
+              "prompt_ar": "الْمُدَرِّسُ جَدِيدٌ.",
+              "prompt_ur": "جملے کا صحیح ترجمہ اور مفہوم منتخب کریں:",
+              "prompt_en": "Select the correct translation and meaning:",
+              "hint_ur": "استاد نیا ہے۔",
+              "hint_en": "The teacher is new.",
               "options": [
-                "……………… غني  •",
-                "………………… حلو - 🤒",
-                "………………… لذيذ - 🔹",
-                "……………… مريض  •"
+                "استاد نیا ہے۔",
+                "غلط ترجمہ",
+                "ترجمہ غیر متعلق ہے"
               ],
-              "emoji": "✍️",
-              "hint_ur": "سبق کے قواعد کے مطابق حل کریں۔",
-              "hint_en": "Solve according to the rules of this lesson.",
-              "explanation_ur": "کتاب کے مطابق درست جواب '………………… حلو - 🤒' ہے۔",
-              "explanation_en": "According to the textbook, the correct answer is '………………… حلو - 🤒'."
+              "answer": "استاد نیا ہے۔",
+              "explanation_ur": "الْمُدَرِّسُ جَدِيدٌ. — استاد نیا ہے۔",
+              "explanation_en": "الْمُدَرِّسُ جَدِيدٌ. — The teacher is new."
             },
             {
-              "id": "b1_u3_t2_q3",
-              "book": 1,
-              "unit_num": 3,
               "tamreen_num": 2,
-              "badge_ar": "التَّمْرِينُ (2)",
-              "badge_ur": "مشق (2): سوال (3)",
-              "badge_en": "Exercise (2): Question (3)",
-              "tamreen_title_ar": "اِمْلأ الفراغ فيما يلي بوضع كلمةٍ مناسبةٍ :",
-              "tamreen_title_ur": "مشق (2): اِمْلأ الفراغ فيما يلي بوضع كلمةٍ مناسبةٍ :",
-              "tamreen_title_en": "Exercise (2): اِمْلأ الفراغ فيما يلي بوضع كلمةٍ مناسبةٍ :",
-              "grammar_goal_ur": "کتاب 1، سبق 3 کی مشق (2) کا فہم و حل۔",
-              "grammar_goal_en": "Practice drill for Book 1, Lesson 3, Exercise 2.",
-              "type": "fill_blank",
-              "strict_tashkeel": true,
-              "prompt_ar": "(3) ……………… مريض  ",
-              "prompt_ur": "سوال (3): کتاب کے مطابق صحیح جواب منتخب کریں۔",
-              "prompt_en": "Question (3): Choose the correct answer according to the lesson.",
-              "answer": "……………… مريض  ",
+              "type": "emoji_choice",
+              "prompt_ar": "الْقَمِيصُ وَسِخٌ.",
+              "prompt_ur": "جملے کا صحیح ترجمہ اور مفہوم منتخب کریں:",
+              "prompt_en": "Select the correct translation and meaning:",
+              "hint_ur": "قمیض میلی ہے۔",
+              "hint_en": "The shirt is dirty.",
               "options": [
-                "……………… مريض  •",
-                "……………… غني  •",
-                "………………… حلو - 🤒",
-                "……………… مريض  "
+                "قمیض میلی ہے۔",
+                "غلط ترجمہ",
+                "ترجمہ غیر متعلق ہے"
               ],
-              "emoji": "✍️",
-              "hint_ur": "سبق کے قواعد کے مطابق حل کریں۔",
-              "hint_en": "Solve according to the rules of this lesson.",
-              "explanation_ur": "کتاب کے مطابق درست جواب '……………… مريض  ' ہے۔",
-              "explanation_en": "According to the textbook, the correct answer is '……………… مريض  '."
+              "answer": "قمیض میلی ہے۔",
+              "explanation_ur": "الْقَمِيصُ وَسِخٌ. — قمیض میلی ہے۔",
+              "explanation_en": "الْقَمِيصُ وَسِخٌ. — The shirt is dirty."
             },
             {
-              "id": "b1_u3_t2_q4",
-              "book": 1,
-              "unit_num": 3,
               "tamreen_num": 2,
-              "badge_ar": "التَّمْرِينُ (2)",
-              "badge_ur": "مشق (2): سوال (4)",
-              "badge_en": "Exercise (2): Question (4)",
-              "tamreen_title_ar": "اِمْلأ الفراغ فيما يلي بوضع كلمةٍ مناسبةٍ :",
-              "tamreen_title_ur": "مشق (2): اِمْلأ الفراغ فيما يلي بوضع كلمةٍ مناسبةٍ :",
-              "tamreen_title_en": "Exercise (2): اِمْلأ الفراغ فيما يلي بوضع كلمةٍ مناسبةٍ :",
-              "grammar_goal_ur": "کتاب 1، سبق 3 کی مشق (2) کا فہم و حل۔",
-              "grammar_goal_en": "Practice drill for Book 1, Lesson 3, Exercise 2.",
-              "type": "fill_blank",
-              "strict_tashkeel": true,
-              "prompt_ar": "(4) ………………… لذيذ - 🔹",
-              "prompt_ur": "سوال (4): کتاب کے مطابق صحیح جواب منتخب کریں۔",
-              "prompt_en": "Question (4): Choose the correct answer according to the lesson.",
-              "answer": "………………… لذيذ - 🔹",
+              "type": "emoji_choice",
+              "prompt_ar": "اللَّبَنُ بَارِدٌ.",
+              "prompt_ur": "جملے کا صحیح ترجمہ اور مفہوم منتخب کریں:",
+              "prompt_en": "Select the correct translation and meaning:",
+              "hint_ur": "دودھ ٹھنڈا ہے۔",
+              "hint_en": "The milk is cold.",
               "options": [
-                "……………… مريض  •",
-                "……………… غني  •",
-                "………………… لذيذ - 🔹",
-                "………………… حلو - 🤒"
+                "دودھ ٹھنڈا ہے۔",
+                "غلط ترجمہ",
+                "ترجمہ غیر متعلق ہے"
               ],
-              "emoji": "✍️",
-              "hint_ur": "سبق کے قواعد کے مطابق حل کریں۔",
-              "hint_en": "Solve according to the rules of this lesson.",
-              "explanation_ur": "کتاب کے مطابق درست جواب '………………… لذيذ - 🔹' ہے۔",
-              "explanation_en": "According to the textbook, the correct answer is '………………… لذيذ - 🔹'."
+              "answer": "دودھ ٹھنڈا ہے۔",
+              "explanation_ur": "اللَّبَنُ بَارِدٌ. — دودھ ٹھنڈا ہے۔",
+              "explanation_en": "اللَّبَنُ بَارِدٌ. — The milk is cold."
             },
             {
-              "id": "b1_u3_t2_q5",
-              "book": 1,
-              "unit_num": 3,
               "tamreen_num": 2,
-              "badge_ar": "التَّمْرِينُ (2)",
-              "badge_ur": "مشق (2): سوال (5)",
-              "badge_en": "Exercise (2): Question (5)",
-              "tamreen_title_ar": "اِمْلأ الفراغ فيما يلي بوضع كلمةٍ مناسبةٍ :",
-              "tamreen_title_ur": "مشق (2): اِمْلأ الفراغ فيما يلي بوضع كلمةٍ مناسبةٍ :",
-              "tamreen_title_en": "Exercise (2): اِمْلأ الفراغ فيما يلي بوضع كلمةٍ مناسبةٍ :",
-              "grammar_goal_ur": "کتاب 1، سبق 3 کی مشق (2) کا فہم و حل۔",
-              "grammar_goal_en": "Practice drill for Book 1, Lesson 3, Exercise 2.",
-              "type": "fill_blank",
-              "strict_tashkeel": true,
-              "prompt_ar": "(5) ……………… طويل  ",
-              "prompt_ur": "سوال (5): کتاب کے مطابق صحیح جواب منتخب کریں۔",
-              "prompt_en": "Question (5): Choose the correct answer according to the lesson.",
-              "answer": "……………… طويل  ",
+              "type": "emoji_choice",
+              "prompt_ar": "الْمَسْجِدُ مَفْتُوحٌ.",
+              "prompt_ur": "جملے کا صحیح ترجمہ اور مفہوم منتخب کریں:",
+              "prompt_en": "Select the correct translation and meaning:",
+              "hint_ur": "مسجد کھلی ہے۔",
+              "hint_en": "The mosque is open.",
               "options": [
-                "………………… حلو - 🤒",
-                "……………… غني  •",
-                "……………… طويل  ",
-                "……………… مريض  •"
+                "مسجد کھلی ہے۔",
+                "غلط ترجمہ",
+                "ترجمہ غیر متعلق ہے"
               ],
-              "emoji": "✍️",
-              "hint_ur": "سبق کے قواعد کے مطابق حل کریں۔",
-              "hint_en": "Solve according to the rules of this lesson.",
-              "explanation_ur": "کتاب کے مطابق درست جواب '……………… طويل  ' ہے۔",
-              "explanation_en": "According to the textbook, the correct answer is '……………… طويل  '."
+              "answer": "مسجد کھلی ہے۔",
+              "explanation_ur": "الْمَسْجِدُ مَفْتُوحٌ. — مسجد کھلی ہے۔",
+              "explanation_en": "الْمَسْجِدُ مَفْتُوحٌ. — The mosque is open."
             },
             {
-              "id": "b1_u3_t2_q6",
-              "book": 1,
-              "unit_num": 3,
               "tamreen_num": 2,
-              "badge_ar": "التَّمْرِينُ (2)",
-              "badge_ur": "مشق (2): سوال (6)",
-              "badge_en": "Exercise (2): Question (6)",
-              "tamreen_title_ar": "اِمْلأ الفراغ فيما يلي بوضع كلمةٍ مناسبةٍ :",
-              "tamreen_title_ur": "مشق (2): اِمْلأ الفراغ فيما يلي بوضع كلمةٍ مناسبةٍ :",
-              "tamreen_title_en": "Exercise (2): اِمْلأ الفراغ فيما يلي بوضع كلمةٍ مناسبةٍ :",
-              "grammar_goal_ur": "کتاب 1، سبق 3 کی مشق (2) کا فہم و حل۔",
-              "grammar_goal_en": "Practice drill for Book 1, Lesson 3, Exercise 2.",
+              "type": "emoji_choice",
+              "prompt_ar": "الْحَجَرُ كَبِيرٌ.",
+              "prompt_ur": "جملے کا صحیح ترجمہ اور مفہوم منتخب کریں:",
+              "prompt_en": "Select the correct translation and meaning:",
+              "hint_ur": "پتھر بڑا ہے۔",
+              "hint_en": "The stone is big.",
+              "options": [
+                "پتھر بڑا ہے۔",
+                "غلط ترجمہ",
+                "ترجمہ غیر متعلق ہے"
+              ],
+              "answer": "پتھر بڑا ہے۔",
+              "explanation_ur": "الْحَجَرُ كَبِيرٌ. — پتھر بڑا ہے۔",
+              "explanation_en": "الْحَجَرُ كَبِيرٌ. — The stone is big."
+            },
+            {
+              "tamreen_num": 2,
+              "type": "emoji_choice",
+              "prompt_ar": "اللَّبَنُ بَارِدٌ وَالْمَاءُ حَارٌّ.",
+              "prompt_ur": "جملے کا صحیح ترجمہ اور مفہوم منتخب کریں:",
+              "prompt_en": "Select the correct translation and meaning:",
+              "hint_ur": "دودھ ٹھنڈا ہے اور پانی گرم ہے۔",
+              "hint_en": "The milk is cold and the water is hot.",
+              "options": [
+                "دودھ ٹھنڈا ہے اور پانی گرم ہے۔",
+                "غلط ترجمہ",
+                "ترجمہ غیر متعلق ہے"
+              ],
+              "answer": "دودھ ٹھنڈا ہے اور پانی گرم ہے۔",
+              "explanation_ur": "اللَّبَنُ بَارِدٌ وَالْمَاءُ حَارٌّ. — دودھ ٹھنڈا ہے اور پانی گرم ہے۔",
+              "explanation_en": "اللَّبَنُ بَارِدٌ وَالْمَاءُ حَارٌّ. — The milk is cold and the water is hot."
+            },
+            {
+              "tamreen_num": 2,
+              "type": "emoji_choice",
+              "prompt_ar": "الْمُهَنْدِسُ جَالِسٌ وَالْمُدَرِّسُ وَاقِفٌ.",
+              "prompt_ur": "جملے کا صحیح ترجمہ اور مفہوم منتخب کریں:",
+              "prompt_en": "Select the correct translation and meaning:",
+              "hint_ur": "انجینئر بیٹھا ہے اور استاد کھڑا ہے۔",
+              "hint_en": "The engineer is sitting and the teacher is standing.",
+              "options": [
+                "انجینئر بیٹھا ہے اور استاد کھڑا ہے۔",
+                "غلط ترجمہ",
+                "ترجمہ غیر متعلق ہے"
+              ],
+              "answer": "انجینئر بیٹھا ہے اور استاد کھڑا ہے۔",
+              "explanation_ur": "الْمُهَنْدِسُ جَالِسٌ وَالْمُدَرِّسُ وَاقِفٌ. — انجینئر بیٹھا ہے اور استاد کھڑا ہے۔",
+              "explanation_en": "الْمُهَنْدِسُ جَالِسٌ وَالْمُدَرِّسُ وَاقِفٌ. — The engineer is sitting and the teacher is standing."
+            },
+            {
+              "tamreen_num": 2,
+              "type": "emoji_choice",
+              "prompt_ar": "الْقَمَرُ بَعِيدٌ.",
+              "prompt_ur": "جملے کا صحیح ترجمہ اور مفہوم منتخب کریں:",
+              "prompt_en": "Select the correct translation and meaning:",
+              "hint_ur": "چاند دور ہے۔",
+              "hint_en": "The moon is far.",
+              "options": [
+                "چاند دور ہے۔",
+                "غلط ترجمہ",
+                "ترجمہ غیر متعلق ہے"
+              ],
+              "answer": "چاند دور ہے۔",
+              "explanation_ur": "الْقَمَرُ بَعِيدٌ. — چاند دور ہے۔",
+              "explanation_en": "الْقَمَرُ بَعِيدٌ. — The moon is far."
+            },
+            {
+              "tamreen_num": 2,
+              "type": "emoji_choice",
+              "prompt_ar": "الْمِنْدِيلُ نَظِيفٌ.",
+              "prompt_ur": "جملے کا صحیح ترجمہ اور مفہوم منتخب کریں:",
+              "prompt_en": "Select the correct translation and meaning:",
+              "hint_ur": "رومال صاف ہے۔",
+              "hint_en": "The handkerchief is clean.",
+              "options": [
+                "رومال صاف ہے۔",
+                "غلط ترجمہ",
+                "ترجمہ غیر متعلق ہے"
+              ],
+              "answer": "رومال صاف ہے۔",
+              "explanation_ur": "الْمِنْدِيلُ نَظِيفٌ. — رومال صاف ہے۔",
+              "explanation_en": "الْمِنْدِيلُ نَظِيفٌ. — The handkerchief is clean."
+            },
+            {
+              "tamreen_num": 3,
               "type": "fill_blank",
-              "strict_tashkeel": true,
-              "prompt_ar": "(6) …….…………… قصير",
-              "prompt_ur": "سوال (6): کتاب کے مطابق صحیح جواب منتخب کریں۔",
-              "prompt_en": "Question (6): Choose the correct answer according to the lesson.",
-              "answer": "…….…………… قصير",
+              "prompt_ar": "الْحَجَرُ ...............",
+              "prompt_ur": "مناسب خبر منتخب کر کے خالی جگہ پُر کریں:",
+              "prompt_en": "Fill in the blank with the appropriate predicate:",
               "options": [
-                "……………… مريض  •",
-                "……………… غني  •",
-                "………………… حلو - 🤒",
-                "…….…………… قصير"
+                "ثَقِيلٌ",
+                "خَفِيفٌ",
+                "حَارٌّ",
+                "مَفْتُوحٌ"
               ],
-              "emoji": "✍️",
-              "hint_ur": "سبق کے قواعد کے مطابق حل کریں۔",
-              "hint_en": "Solve according to the rules of this lesson.",
-              "explanation_ur": "کتاب کے مطابق درست جواب '…….…………… قصير' ہے۔",
-              "explanation_en": "According to the textbook, the correct answer is '…….…………… قصير'."
+              "answer": "ثَقِيلٌ",
+              "explanation_ur": "پتھر بھاری ہے۔ (الْحَجَرُ ثَقِيلٌ)",
+              "explanation_en": "Correct answer: ثَقِيلٌ"
             },
             {
-              "id": "b1_u3_t3_q1",
-              "book": 1,
-              "unit_num": 3,
               "tamreen_num": 3,
-              "badge_ar": "التَّمْرِينُ (3)",
-              "badge_ur": "مشق (3): سوال (1)",
-              "badge_en": "Exercise (3): Question (1)",
-              "tamreen_title_ar": "اختر كلمة من القائِمَةِ (ب) تناسب الكلمة التي في القَائِمَةِ (أ):",
-              "tamreen_title_ur": "مشق (3): اختر كلمة من القائِمَةِ (ب) تناسب الكلمة التي في ا",
-              "tamreen_title_en": "Exercise (3): اختر كلمة من القائِمَةِ (ب) تناسب الكلمة التي في ا",
-              "grammar_goal_ur": "کتاب 1، سبق 3 کی مشق (3) کا فہم و حل۔",
-              "grammar_goal_en": "Practice drill for Book 1, Lesson 3, Exercise 3.",
-              "type": "sentence_reading",
-              "strict_tashkeel": true,
-              "prompt_ar": "(1) 🔹 (أ)  •  (ب)",
-              "prompt_ur": "سوال (1): کتاب کے مطابق صحیح جواب منتخب کریں۔",
-              "prompt_en": "Question (1): Choose the correct answer according to the lesson.",
-              "answer": "🔹 (أ)  •  (ب)",
+              "type": "fill_blank",
+              "prompt_ar": "الْقَمَرُ ...............",
+              "prompt_ur": "مناسب خبر منتخب کر کے خالی جگہ پُر کریں:",
+              "prompt_en": "Fill in the blank with the appropriate predicate:",
               "options": [
-                "🍎 اَلتُّفَّاحُ  •  ثَقِيلٌ",
-                "🔹 (أ)  •  (ب)",
-                "🔹 الدُّكَّانُ  •  مَكْسُـورٌ",
-                "👨‍🎓 الطَّـالبُ  •  لَـذيذٌ"
+                "جَمِيلٌ",
+                "وَسِخٌ",
+                "حَارٌّ",
+                "ثَقِيلٌ"
               ],
-              "emoji": "✍️",
-              "hint_ur": "سبق کے قواعد کے مطابق حل کریں۔",
-              "hint_en": "Solve according to the rules of this lesson.",
-              "explanation_ur": "کتاب کے مطابق درست جواب '🔹 (أ)  •  (ب)' ہے۔",
-              "explanation_en": "According to the textbook, the correct answer is '🔹 (أ)  •  (ب)'."
+              "answer": "جَمِيلٌ",
+              "explanation_ur": "چاند خوبصورت ہے۔ (الْقَمَرُ جَمِيلٌ)",
+              "explanation_en": "Correct answer: جَمِيلٌ"
             },
             {
-              "id": "b1_u3_t3_q2",
-              "book": 1,
-              "unit_num": 3,
               "tamreen_num": 3,
-              "badge_ar": "التَّمْرِينُ (3)",
-              "badge_ur": "مشق (3): سوال (2)",
-              "badge_en": "Exercise (3): Question (2)",
-              "tamreen_title_ar": "اختر كلمة من القائِمَةِ (ب) تناسب الكلمة التي في القَائِمَةِ (أ):",
-              "tamreen_title_ur": "مشق (3): اختر كلمة من القائِمَةِ (ب) تناسب الكلمة التي في ا",
-              "tamreen_title_en": "Exercise (3): اختر كلمة من القائِمَةِ (ب) تناسب الكلمة التي في ا",
-              "grammar_goal_ur": "کتاب 1، سبق 3 کی مشق (3) کا فہم و حل۔",
-              "grammar_goal_en": "Practice drill for Book 1, Lesson 3, Exercise 3.",
-              "type": "sentence_reading",
-              "strict_tashkeel": true,
-              "prompt_ar": "(2) 👨‍🎓 الطَّـالبُ  •  لَـذيذٌ",
-              "prompt_ur": "سوال (2): کتاب کے مطابق صحیح جواب منتخب کریں۔",
-              "prompt_en": "Question (2): Choose the correct answer according to the lesson.",
-              "answer": "👨‍🎓 الطَّـالبُ  •  لَـذيذٌ",
+              "type": "fill_blank",
+              "prompt_ar": "الْبَابُ ...............",
+              "prompt_ur": "مناسب خبر منتخب کر کے خالی جگہ پُر کریں:",
+              "prompt_en": "Fill in the blank with the appropriate predicate:",
               "options": [
-                "🔹 (أ)  •  (ب)",
-                "👨‍🎓 الطَّـالبُ  •  لَـذيذٌ",
-                "🍎 اَلتُّفَّاحُ  •  ثَقِيلٌ",
-                "🔹 الدُّكَّانُ  •  مَكْسُـورٌ"
+                "مَفْتُوحٌ",
+                "حَارٌّ",
+                "ثَقِيلٌ",
+                "خَفِيفٌ"
               ],
-              "emoji": "✍️",
-              "hint_ur": "سبق کے قواعد کے مطابق حل کریں۔",
-              "hint_en": "Solve according to the rules of this lesson.",
-              "explanation_ur": "کتاب کے مطابق درست جواب '👨‍🎓 الطَّـالبُ  •  لَـذيذٌ' ہے۔",
-              "explanation_en": "According to the textbook, the correct answer is '👨‍🎓 الطَّـالبُ  •  لَـذيذٌ'."
+              "answer": "مَفْتُوحٌ",
+              "explanation_ur": "دروازہ کھلا ہے۔ (الْبَابُ مَفْتُوحٌ)",
+              "explanation_en": "Correct answer: مَفْتُوحٌ"
             },
             {
-              "id": "b1_u3_t3_q3",
-              "book": 1,
-              "unit_num": 3,
               "tamreen_num": 3,
-              "badge_ar": "التَّمْرِينُ (3)",
-              "badge_ur": "مشق (3): سوال (3)",
-              "badge_en": "Exercise (3): Question (3)",
-              "tamreen_title_ar": "اختر كلمة من القائِمَةِ (ب) تناسب الكلمة التي في القَائِمَةِ (أ):",
-              "tamreen_title_ur": "مشق (3): اختر كلمة من القائِمَةِ (ب) تناسب الكلمة التي في ا",
-              "tamreen_title_en": "Exercise (3): اختر كلمة من القائِمَةِ (ب) تناسب الكلمة التي في ا",
-              "grammar_goal_ur": "کتاب 1، سبق 3 کی مشق (3) کا فہم و حل۔",
-              "grammar_goal_en": "Practice drill for Book 1, Lesson 3, Exercise 3.",
-              "type": "sentence_reading",
-              "strict_tashkeel": true,
-              "prompt_ar": "(3) 🔹 الدُّكَّانُ  •  مَكْسُـورٌ",
-              "prompt_ur": "سوال (3): کتاب کے مطابق صحیح جواب منتخب کریں۔",
-              "prompt_en": "Question (3): Choose the correct answer according to the lesson.",
-              "answer": "🔹 الدُّكَّانُ  •  مَكْسُـورٌ",
+              "type": "fill_blank",
+              "prompt_ar": "الْوَرَقُ ...............",
+              "prompt_ur": "مناسب خبر منتخب کر کے خالی جگہ پُر کریں:",
+              "prompt_en": "Fill in the blank with the appropriate predicate:",
               "options": [
-                "👨‍🎓 الطَّـالبُ  •  لَـذيذٌ",
-                "🔹 الدُّكَّانُ  •  مَكْسُـورٌ",
-                "🍎 اَلتُّفَّاحُ  •  ثَقِيلٌ",
-                "🔹 (أ)  •  (ب)"
+                "خَفِيفٌ",
+                "ثَقِيلٌ",
+                "مَفْتُوحٌ",
+                "حَارٌّ"
               ],
-              "emoji": "✍️",
-              "hint_ur": "سبق کے قواعد کے مطابق حل کریں۔",
-              "hint_en": "Solve according to the rules of this lesson.",
-              "explanation_ur": "کتاب کے مطابق درست جواب '🔹 الدُّكَّانُ  •  مَكْسُـورٌ' ہے۔",
-              "explanation_en": "According to the textbook, the correct answer is '🔹 الدُّكَّانُ  •  مَكْسُـورٌ'."
+              "answer": "خَفِيفٌ",
+              "explanation_ur": "کاغذ ہلکا ہے۔ (الْوَرَقُ خَفِيفٌ)",
+              "explanation_en": "Correct answer: خَفِيفٌ"
             },
             {
-              "id": "b1_u3_t3_q4",
-              "book": 1,
-              "unit_num": 3,
               "tamreen_num": 3,
-              "badge_ar": "التَّمْرِينُ (3)",
-              "badge_ur": "مشق (3): سوال (4)",
-              "badge_en": "Exercise (3): Question (4)",
-              "tamreen_title_ar": "اختر كلمة من القائِمَةِ (ب) تناسب الكلمة التي في القَائِمَةِ (أ):",
-              "tamreen_title_ur": "مشق (3): اختر كلمة من القائِمَةِ (ب) تناسب الكلمة التي في ا",
-              "tamreen_title_en": "Exercise (3): اختر كلمة من القائِمَةِ (ب) تناسب الكلمة التي في ا",
-              "grammar_goal_ur": "کتاب 1، سبق 3 کی مشق (3) کا فہم و حل۔",
-              "grammar_goal_en": "Practice drill for Book 1, Lesson 3, Exercise 3.",
-              "type": "sentence_reading",
-              "strict_tashkeel": true,
-              "prompt_ar": "(4) 🍎 اَلتُّفَّاحُ  •  ثَقِيلٌ",
-              "prompt_ur": "سوال (4): کتاب کے مطابق صحیح جواب منتخب کریں۔",
-              "prompt_en": "Question (4): Choose the correct answer according to the lesson.",
-              "answer": "🍎 اَلتُّفَّاحُ  •  ثَقِيلٌ",
+              "type": "fill_blank",
+              "prompt_ar": "الْمِنْدِيلُ ...............",
+              "prompt_ur": "مناسب خبر منتخب کر کے خالی جگہ پُر کریں:",
+              "prompt_en": "Fill in the blank with the appropriate predicate:",
               "options": [
-                "🔹 الدُّكَّانُ  •  مَكْسُـورٌ",
-                "🔹 (أ)  •  (ب)",
-                "👨‍🎓 الطَّـالبُ  •  لَـذيذٌ",
-                "🍎 اَلتُّفَّاحُ  •  ثَقِيلٌ"
+                "وَسِخٌ",
+                "حَارٌّ",
+                "ثَقِيلٌ",
+                "مَفْتُوحٌ"
               ],
-              "emoji": "✍️",
-              "hint_ur": "سبق کے قواعد کے مطابق حل کریں۔",
-              "hint_en": "Solve according to the rules of this lesson.",
-              "explanation_ur": "کتاب کے مطابق درست جواب '🍎 اَلتُّفَّاحُ  •  ثَقِيلٌ' ہے۔",
-              "explanation_en": "According to the textbook, the correct answer is '🍎 اَلتُّفَّاحُ  •  ثَقِيلٌ'."
+              "answer": "وَسِخٌ",
+              "explanation_ur": "رومال میلا ہے۔ (الْمِنْدِيلُ وَسِخٌ)",
+              "explanation_en": "Correct answer: وَسِخٌ"
             },
             {
-              "id": "b1_u3_t3_q5",
-              "book": 1,
-              "unit_num": 3,
               "tamreen_num": 3,
-              "badge_ar": "التَّمْرِينُ (3)",
-              "badge_ur": "مشق (3): سوال (5)",
-              "badge_en": "Exercise (3): Question (5)",
-              "tamreen_title_ar": "اختر كلمة من القائِمَةِ (ب) تناسب الكلمة التي في القَائِمَةِ (أ):",
-              "tamreen_title_ur": "مشق (3): اختر كلمة من القائِمَةِ (ب) تناسب الكلمة التي في ا",
-              "tamreen_title_en": "Exercise (3): اختر كلمة من القائِمَةِ (ب) تناسب الكلمة التي في ا",
-              "grammar_goal_ur": "کتاب 1، سبق 3 کی مشق (3) کا فہم و حل۔",
-              "grammar_goal_en": "Practice drill for Book 1, Lesson 3, Exercise 3.",
-              "type": "sentence_reading",
-              "strict_tashkeel": true,
-              "prompt_ar": "(5) 💧 المَـاءُ  •  مَفتـوحٌ",
-              "prompt_ur": "سوال (5): کتاب کے مطابق صحیح جواب منتخب کریں۔",
-              "prompt_en": "Question (5): Choose the correct answer according to the lesson.",
-              "answer": "💧 المَـاءُ  •  مَفتـوحٌ",
+              "type": "fill_blank",
+              "prompt_ar": "اللَّبَنُ ...............",
+              "prompt_ur": "مناسب خبر منتخب کر کے خالی جگہ پُر کریں:",
+              "prompt_en": "Fill in the blank with the appropriate predicate:",
               "options": [
-                "🔹 (أ)  •  (ب)",
-                "👨‍🎓 الطَّـالبُ  •  لَـذيذٌ",
-                "💧 المَـاءُ  •  مَفتـوحٌ",
-                "🔹 الدُّكَّانُ  •  مَكْسُـورٌ"
+                "حَارٌّ",
+                "ثَقِيلٌ",
+                "خَفِيفٌ",
+                "مَفْتُوحٌ"
               ],
-              "emoji": "✍️",
-              "hint_ur": "سبق کے قواعد کے مطابق حل کریں۔",
-              "hint_en": "Solve according to the rules of this lesson.",
-              "explanation_ur": "کتاب کے مطابق درست جواب '💧 المَـاءُ  •  مَفتـوحٌ' ہے۔",
-              "explanation_en": "According to the textbook, the correct answer is '💧 المَـاءُ  •  مَفتـوحٌ'."
+              "answer": "حَارٌّ",
+              "explanation_ur": "دودھ گرم ہے۔ (اللَّبَنُ حَارٌّ)",
+              "explanation_en": "Correct answer: حَارٌّ"
             },
             {
-              "id": "b1_u3_t3_q6",
-              "book": 1,
-              "unit_num": 3,
-              "tamreen_num": 3,
-              "badge_ar": "التَّمْرِينُ (3)",
-              "badge_ur": "مشق (3): سوال (6)",
-              "badge_en": "Exercise (3): Question (6)",
-              "tamreen_title_ar": "اختر كلمة من القائِمَةِ (ب) تناسب الكلمة التي في القَائِمَةِ (أ):",
-              "tamreen_title_ur": "مشق (3): اختر كلمة من القائِمَةِ (ب) تناسب الكلمة التي في ا",
-              "tamreen_title_en": "Exercise (3): اختر كلمة من القائِمَةِ (ب) تناسب الكلمة التي في ا",
-              "grammar_goal_ur": "کتاب 1، سبق 3 کی مشق (3) کا فہم و حل۔",
-              "grammar_goal_en": "Practice drill for Book 1, Lesson 3, Exercise 3.",
-              "type": "sentence_reading",
-              "strict_tashkeel": true,
-              "prompt_ar": "(6) 🪨 🤒 الحَجَـرُ  •  مَـرِيضٌ",
-              "prompt_ur": "سوال (6): کتاب کے مطابق صحیح جواب منتخب کریں۔",
-              "prompt_en": "Question (6): Choose the correct answer according to the lesson.",
-              "answer": "🪨 🤒 الحَجَـرُ  •  مَـرِيضٌ",
+              "tamreen_num": 4,
+              "type": "fill_blank",
+              "prompt_ar": "............... نَظِيفٌ.",
+              "prompt_ur": "مناسب مبتدأ منتخب کر کے خالی جگہ پُر کریں:",
+              "prompt_en": "Fill in the blank with the appropriate subject:",
               "options": [
-                "🔹 الدُّكَّانُ  •  مَكْسُـورٌ",
-                "🪨 🤒 الحَجَـرُ  •  مَـرِيضٌ",
-                "🔹 (أ)  •  (ب)",
-                "👨‍🎓 الطَّـالبُ  •  لَـذيذٌ"
+                "الْقَمِيصُ",
+                "الْحَجَرُ",
+                "الْبَابُ",
+                "الْمَاءُ"
               ],
-              "emoji": "✍️",
-              "hint_ur": "سبق کے قواعد کے مطابق حل کریں۔",
-              "hint_en": "Solve according to the rules of this lesson.",
-              "explanation_ur": "کتاب کے مطابق درست جواب '🪨 🤒 الحَجَـرُ  •  مَـرِيضٌ' ہے۔",
-              "explanation_en": "According to the textbook, the correct answer is '🪨 🤒 الحَجَـرُ  •  مَـرِيضٌ'."
+              "answer": "الْقَمِيصُ",
+              "explanation_ur": "الْقَمِيصُ نَظِيفٌ.",
+              "explanation_en": "Correct subject: الْقَمِيصُ"
             },
             {
-              "id": "b1_u3_t3_q7",
-              "book": 1,
-              "unit_num": 3,
-              "tamreen_num": 3,
-              "badge_ar": "التَّمْرِينُ (3)",
-              "badge_ur": "مشق (3): سوال (7)",
-              "badge_en": "Exercise (3): Question (7)",
-              "tamreen_title_ar": "اختر كلمة من القائِمَةِ (ب) تناسب الكلمة التي في القَائِمَةِ (أ):",
-              "tamreen_title_ur": "مشق (3): اختر كلمة من القائِمَةِ (ب) تناسب الكلمة التي في ا",
-              "tamreen_title_en": "Exercise (3): اختر كلمة من القائِمَةِ (ب) تناسب الكلمة التي في ا",
-              "grammar_goal_ur": "کتاب 1، سبق 3 کی مشق (3) کا فہم و حل۔",
-              "grammar_goal_en": "Practice drill for Book 1, Lesson 3, Exercise 3.",
-              "type": "sentence_reading",
-              "strict_tashkeel": true,
-              "prompt_ar": "(7) 🖊️ القَلَـمُ  •  حَـارٌّ",
-              "prompt_ur": "سوال (7): کتاب کے مطابق صحیح جواب منتخب کریں۔",
-              "prompt_en": "Question (7): Choose the correct answer according to the lesson.",
-              "answer": "🖊️ القَلَـمُ  •  حَـارٌّ",
+              "tamreen_num": 4,
+              "type": "fill_blank",
+              "prompt_ar": "............... مَكْسُورٌ.",
+              "prompt_ur": "مناسب مبتدأ منتخب کر کے خالی جگہ پُر کریں:",
+              "prompt_en": "Fill in the blank with the appropriate subject:",
               "options": [
-                "🔹 (أ)  •  (ب)",
-                "👨‍🎓 الطَّـالبُ  •  لَـذيذٌ",
-                "🔹 الدُّكَّانُ  •  مَكْسُـورٌ",
-                "🖊️ القَلَـمُ  •  حَـارٌّ"
+                "الْقَلَمُ",
+                "الْقَمَرُ",
+                "اللَّبَنُ",
+                "الْوَلَدُ"
               ],
-              "emoji": "✍️",
-              "hint_ur": "سبق کے قواعد کے مطابق حل کریں۔",
-              "hint_en": "Solve according to the rules of this lesson.",
-              "explanation_ur": "کتاب کے مطابق درست جواب '🖊️ القَلَـمُ  •  حَـارٌّ' ہے۔",
-              "explanation_en": "According to the textbook, the correct answer is '🖊️ القَلَـمُ  •  حَـارٌّ'."
+              "answer": "الْقَلَمُ",
+              "explanation_ur": "الْقَلَمُ مَكْسُورٌ.",
+              "explanation_en": "Correct subject: الْقَلَمُ"
+            },
+            {
+              "tamreen_num": 4,
+              "type": "fill_blank",
+              "prompt_ar": "............... بَارِدٌ.",
+              "prompt_ur": "مناسب مبتدأ منتخب کر کے خالی جگہ پُر کریں:",
+              "prompt_en": "Fill in the blank with the appropriate subject:",
+              "options": [
+                "الْمَاءُ",
+                "الْقَمِيصُ",
+                "الْحِمَارُ",
+                "الدَّفْتَرُ"
+              ],
+              "answer": "الْمَاءُ",
+              "explanation_ur": "الْمَاءُ بَارِدٌ.",
+              "explanation_en": "Correct subject: الْمَاءُ"
+            },
+            {
+              "tamreen_num": 4,
+              "type": "fill_blank",
+              "prompt_ar": "............... قَرِيبٌ.",
+              "prompt_ur": "مناسب مبتدأ منتخب کر کے خالی جگہ پُر کریں:",
+              "prompt_en": "Fill in the blank with the appropriate subject:",
+              "options": [
+                "الْبَيْتُ",
+                "الْقَمَرُ",
+                "النَّجْمُ",
+                "السَّرِيرُ"
+              ],
+              "answer": "الْبَيْتُ",
+              "explanation_ur": "الْبَيْتُ قَرِيبٌ.",
+              "explanation_en": "Correct subject: الْبَيْتُ"
+            },
+            {
+              "tamreen_num": 4,
+              "type": "fill_blank",
+              "prompt_ar": "............... بَعِيدٌ.",
+              "prompt_ur": "مناسب مبتدأ منتخب کر کے خالی جگہ پُر کریں:",
+              "prompt_en": "Fill in the blank with the appropriate subject:",
+              "options": [
+                "الْمَسْجِدُ",
+                "الْمِنْدِيلُ",
+                "الْقَلَمُ",
+                "الْكُرْسِيُّ"
+              ],
+              "answer": "الْمَسْجِدُ",
+              "explanation_ur": "الْمَسْجِدُ بَعِيدٌ.",
+              "explanation_en": "Correct subject: الْمَسْجِدُ"
+            },
+            {
+              "tamreen_num": 4,
+              "type": "fill_blank",
+              "prompt_ar": "............... وَاقِفٌ.",
+              "prompt_ur": "مناسب مبتدأ منتخب کر کے خالی جگہ پُر کریں:",
+              "prompt_en": "Fill in the blank with the appropriate subject:",
+              "options": [
+                "الْمُدَرِّسُ",
+                "الْكِتَابُ",
+                "الْمَكْتَبُ",
+                "الْوَرَقُ"
+              ],
+              "answer": "الْمُدَرِّسُ",
+              "explanation_ur": "الْمُدَرِّسُ وَاقِفٌ.",
+              "explanation_en": "Correct subject: الْمُدَرِّسُ"
+            },
+            {
+              "tamreen_num": 4,
+              "type": "fill_blank",
+              "prompt_ar": "............... جَالِسٌ.",
+              "prompt_ur": "مناسب مبتدأ منتخب کر کے خالی جگہ پُر کریں:",
+              "prompt_en": "Fill in the blank with the appropriate subject:",
+              "options": [
+                "الْوَلَدُ",
+                "الْبَابُ",
+                "الْقَمِيصُ",
+                "الْحَجَرُ"
+              ],
+              "answer": "الْوَلَدُ",
+              "explanation_ur": "الْوَلَدُ جَالِسٌ.",
+              "explanation_en": "Correct subject: الْوَلَدُ"
+            },
+            {
+              "tamreen_num": 4,
+              "type": "fill_blank",
+              "prompt_ar": "............... كَبِيرٌ.",
+              "prompt_ur": "مناسب مبتدأ منتخب کر کے خالی جگہ پُر کریں:",
+              "prompt_en": "Fill in the blank with the appropriate subject:",
+              "options": [
+                "الْحَجَرُ",
+                "الْقَلَمُ",
+                "الْمِنْدِيلُ",
+                "الْوَرَقُ"
+              ],
+              "answer": "الْحَجَرُ",
+              "explanation_ur": "الْحَجَرُ كَبِيرٌ.",
+              "explanation_en": "Correct subject: الْحَجَرُ"
+            },
+            {
+              "tamreen_num": 4,
+              "type": "fill_blank",
+              "prompt_ar": "............... قَدِيمٌ.",
+              "prompt_ur": "مناسب مبتدأ منتخب کر کے خالی جگہ پُر کریں:",
+              "prompt_en": "Fill in the blank with the appropriate subject:",
+              "options": [
+                "الْكِتَابُ",
+                "اللَّبَنُ",
+                "الْمَاءُ",
+                "الْوَلَدُ"
+              ],
+              "answer": "الْكِتَابُ",
+              "explanation_ur": "الْكِتَابُ قَدِيمٌ.",
+              "explanation_en": "Correct subject: الْكِتَابُ"
+            },
+            {
+              "tamreen_num": 4,
+              "type": "fill_blank",
+              "prompt_ar": "............... جَدِيدٌ.",
+              "prompt_ur": "مناسب مبتدأ منتخب کر کے خالی جگہ پُر کریں:",
+              "prompt_en": "Fill in the blank with the appropriate subject:",
+              "options": [
+                "الدَّفْتَرُ",
+                "الْحِمَارُ",
+                "الْحَصَانُ",
+                "الْقَمَرُ"
+              ],
+              "answer": "الدَّفْتَرُ",
+              "explanation_ur": "الدَّفْتَرُ جَدِيدٌ.",
+              "explanation_en": "Correct subject: الدَّفْتَرُ"
+            },
+            {
+              "tamreen_num": 5,
+              "type": "emoji_choice",
+              "prompt_ar": "اخْتَرِ الضَّبْطَ الصَّحِيحَ: (الْبَابُ)",
+              "prompt_ur": "درست اعراب منتخب کریں:",
+              "prompt_en": "Select the correct vocalization:",
+              "options": [
+                "الْبَابُ",
+                "الْبَابٌ"
+              ],
+              "answer": "الْبَابُ",
+              "strict_tashkeel": true,
+              "explanation_ur": "معرف باللام پر تنوین نہیں آتی: الْبَابُ",
+              "explanation_en": "Correct: الْبَابُ"
+            },
+            {
+              "tamreen_num": 5,
+              "type": "emoji_choice",
+              "prompt_ar": "اخْتَرِ الضَّبْطَ الصَّحِيحَ: (التَّاجِرُ)",
+              "prompt_ur": "درست اعراب منتخب کریں:",
+              "prompt_en": "Select the correct vocalization:",
+              "options": [
+                "التَّاجِرُ",
+                "التَّاجِرٌ"
+              ],
+              "answer": "التَّاجِرُ",
+              "strict_tashkeel": true,
+              "explanation_ur": "معرف باللام پر تنوین نہیں آتی: التَّاجِرُ",
+              "explanation_en": "Correct: التَّاجِرُ"
+            },
+            {
+              "tamreen_num": 5,
+              "type": "emoji_choice",
+              "prompt_ar": "اخْتَرِ الضَّبْطَ الصَّحِيحَ: (النَّجْمُ)",
+              "prompt_ur": "درست اعراب منتخب کریں:",
+              "prompt_en": "Select the correct vocalization:",
+              "options": [
+                "النَّجْمُ",
+                "النَّجْمٌ"
+              ],
+              "answer": "النَّجْمُ",
+              "strict_tashkeel": true,
+              "explanation_ur": "معرف باللام پر تنوین نہیں آتی: النَّجْمُ",
+              "explanation_en": "Correct: النَّجْمُ"
+            },
+            {
+              "tamreen_num": 5,
+              "type": "emoji_choice",
+              "prompt_ar": "اخْتَرِ الضَّبْطَ الصَّحِيحَ: (الْقَمَرُ)",
+              "prompt_ur": "درست اعراب منتخب کریں:",
+              "prompt_en": "Select the correct vocalization:",
+              "options": [
+                "الْقَمَرُ",
+                "الْقَمَرٌ"
+              ],
+              "answer": "الْقَمَرُ",
+              "strict_tashkeel": true,
+              "explanation_ur": "معرف باللام پر تنوین نہیں آتی: الْقَمَرُ",
+              "explanation_en": "Correct: الْقَمَرُ"
+            },
+            {
+              "tamreen_num": 5,
+              "type": "emoji_choice",
+              "prompt_ar": "اخْتَرِ الضَّبْطَ الصَّحِيحَ: (الدِّيكُ)",
+              "prompt_ur": "درست اعراب منتخب کریں:",
+              "prompt_en": "Select the correct vocalization:",
+              "options": [
+                "الدِّيكُ",
+                "الدِّيكٌ"
+              ],
+              "answer": "الدِّيكُ",
+              "strict_tashkeel": true,
+              "explanation_ur": "معرف باللام پر تنوین نہیں آتی: الدِّيكُ",
+              "explanation_en": "Correct: الدِّيكُ"
+            },
+            {
+              "tamreen_num": 5,
+              "type": "emoji_choice",
+              "prompt_ar": "اخْتَرِ الضَّبْطَ الصَّحِيحَ: (الْمَاءُ)",
+              "prompt_ur": "درست اعراب منتخب کریں:",
+              "prompt_en": "Select the correct vocalization:",
+              "options": [
+                "الْمَاءُ",
+                "الْمَاءٌ"
+              ],
+              "answer": "الْمَاءُ",
+              "strict_tashkeel": true,
+              "explanation_ur": "معرف باللام پر تنوین نہیں آتی: الْمَاءُ",
+              "explanation_en": "Correct: الْمَاءُ"
+            },
+            {
+              "tamreen_num": 5,
+              "type": "emoji_choice",
+              "prompt_ar": "اخْتَرِ الضَّبْطَ الصَّحِيحَ: (السَّرِيرُ)",
+              "prompt_ur": "درست اعراب منتخب کریں:",
+              "prompt_en": "Select the correct vocalization:",
+              "options": [
+                "السَّرِيرُ",
+                "السَّرِيرٌ"
+              ],
+              "answer": "السَّرِيرُ",
+              "strict_tashkeel": true,
+              "explanation_ur": "معرف باللام پر تنوین نہیں آتی: السَّرِيرُ",
+              "explanation_en": "Correct: السَّرِيرُ"
+            },
+            {
+              "tamreen_num": 5,
+              "type": "emoji_choice",
+              "prompt_ar": "اخْتَرِ الضَّبْطَ الصَّحِيحَ: (الْبَيْتُ)",
+              "prompt_ur": "درست اعراب منتخب کریں:",
+              "prompt_en": "Select the correct vocalization:",
+              "options": [
+                "الْبَيْتُ",
+                "الْبَيْتٌ"
+              ],
+              "answer": "الْبَيْتُ",
+              "strict_tashkeel": true,
+              "explanation_ur": "معرف باللام پر تنوین نہیں آتی: الْبَيْتُ",
+              "explanation_en": "Correct: الْبَيْتُ"
+            },
+            {
+              "tamreen_num": 5,
+              "type": "emoji_choice",
+              "prompt_ar": "اخْتَرِ الضَّبْطَ الصَّحِيحَ: (الْمَسْجِدُ)",
+              "prompt_ur": "درست اعراب منتخب کریں:",
+              "prompt_en": "Select the correct vocalization:",
+              "options": [
+                "الْمَسْجِدُ",
+                "الْمَسْجِدٌ"
+              ],
+              "answer": "الْمَسْجِدُ",
+              "strict_tashkeel": true,
+              "explanation_ur": "معرف باللام پر تنوین نہیں آتی: الْمَسْجِدُ",
+              "explanation_en": "Correct: الْمَسْجِدُ"
+            },
+            {
+              "tamreen_num": 5,
+              "type": "emoji_choice",
+              "prompt_ar": "اخْتَرِ الضَّبْطَ الصَّحِيحَ: (الرَّجُلُ)",
+              "prompt_ur": "درست اعراب منتخب کریں:",
+              "prompt_en": "Select the correct vocalization:",
+              "options": [
+                "الرَّجُلُ",
+                "الرَّجُلٌ"
+              ],
+              "answer": "الرَّجُلُ",
+              "strict_tashkeel": true,
+              "explanation_ur": "معرف باللام پر تنوین نہیں آتی: الرَّجُلُ",
+              "explanation_en": "Correct: الرَّجُلُ"
+            },
+            {
+              "tamreen_num": 5,
+              "type": "emoji_choice",
+              "prompt_ar": "اخْتَرِ الضَّبْطَ الصَّحِيحَ: (السُّكَّرُ)",
+              "prompt_ur": "درست اعراب منتخب کریں:",
+              "prompt_en": "Select the correct vocalization:",
+              "options": [
+                "السُّكَّرُ",
+                "السُّكَّرٌ"
+              ],
+              "answer": "السُّكَّرُ",
+              "strict_tashkeel": true,
+              "explanation_ur": "معرف باللام پر تنوین نہیں آتی: السُّكَّرُ",
+              "explanation_en": "Correct: السُّكَّرُ"
+            },
+            {
+              "tamreen_num": 5,
+              "type": "emoji_choice",
+              "prompt_ar": "اخْتَرِ الضَّبْطَ الصَّحِيحَ: (الْوَرَقُ)",
+              "prompt_ur": "درست اعراب منتخب کریں:",
+              "prompt_en": "Select the correct vocalization:",
+              "options": [
+                "الْوَرَقُ",
+                "الْوَرَقٌ"
+              ],
+              "answer": "الْوَرَقُ",
+              "strict_tashkeel": true,
+              "explanation_ur": "معرف باللام پر تنوین نہیں آتی: الْوَرَقُ",
+              "explanation_en": "Correct: الْوَرَقُ"
+            },
+            {
+              "tamreen_num": 6,
+              "type": "fill_blank",
+              "prompt_ar": "............... غَنِيٌّ.",
+              "prompt_ur": "مناسب لفظ منتخب کر کے خالی جگہ پُر کریں:",
+              "prompt_en": "Fill in the blank with the appropriate word:",
+              "options": [
+                "التَّاجِرُ",
+                "الْقَلَمُ",
+                "الْحَجَرُ",
+                "الْبَابُ"
+              ],
+              "answer": "التَّاجِرُ",
+              "explanation_ur": "التَّاجِرُ غَنِيٌّ (تاجر مالدار ہے)",
+              "explanation_en": "Correct: التَّاجِرُ"
+            },
+            {
+              "tamreen_num": 6,
+              "type": "fill_blank",
+              "prompt_ar": "............... حُلْوٌ.",
+              "prompt_ur": "مناسب لفظ منتخب کر کے خالی جگہ پُر کریں:",
+              "prompt_en": "Fill in the blank with the appropriate word:",
+              "options": [
+                "السُّكَّرُ",
+                "الدَّفْتَرُ",
+                "الْمَسْجِدُ",
+                "السَّرِيرُ"
+              ],
+              "answer": "السُّكَّرُ",
+              "explanation_ur": "السُّكَّرُ حُلْوٌ (چینی میٹھی ہے)",
+              "explanation_en": "Correct: السُّكَّرُ"
+            },
+            {
+              "tamreen_num": 6,
+              "type": "fill_blank",
+              "prompt_ar": "............... مَرِيضٌ.",
+              "prompt_ur": "مناسب لفظ منتخب کر کے خالی جگہ پُر کریں:",
+              "prompt_en": "Fill in the blank with the appropriate word:",
+              "options": [
+                "الطَّالِبُ",
+                "الْمَاءُ",
+                "الْقَمَرُ",
+                "الْوَرَقُ"
+              ],
+              "answer": "الطَّالِبُ",
+              "explanation_ur": "الطَّالِبُ مَرِيضٌ (طالب علم بیمار ہے)",
+              "explanation_en": "Correct: الطَّالِبُ"
+            },
+            {
+              "tamreen_num": 6,
+              "type": "fill_blank",
+              "prompt_ar": "............... لَذِيذٌ.",
+              "prompt_ur": "مناسب لفظ منتخب کر کے خالی جگہ پُر کریں:",
+              "prompt_en": "Fill in the blank with the appropriate word:",
+              "options": [
+                "التُّفَّاحُ",
+                "الْحِمَارُ",
+                "السَّرِيرُ",
+                "الدُّكَّانُ"
+              ],
+              "answer": "التُّفَّاحُ",
+              "explanation_ur": "التُّفَّاحُ لَذِيذٌ (سیب لذیذ ہے)",
+              "explanation_en": "Correct: التُّفَّاحُ"
+            },
+            {
+              "tamreen_num": 6,
+              "type": "fill_blank",
+              "prompt_ar": "............... طَوِيلٌ.",
+              "prompt_ur": "مناسب لفظ منتخب کر کے خالی جگہ پُر کریں:",
+              "prompt_en": "Fill in the blank with the appropriate word:",
+              "options": [
+                "الطَّبِيبُ",
+                "الْمِنْدِيلُ",
+                "الدُّكَّانُ",
+                "الْبَيْتُ"
+              ],
+              "answer": "الطَّبِيبُ",
+              "explanation_ur": "الطَّبِيبُ طَوِيلٌ (ڈاکٹر لمبا ہے)",
+              "explanation_en": "Correct: الطَّبِيبُ"
+            },
+            {
+              "tamreen_num": 6,
+              "type": "fill_blank",
+              "prompt_ar": "............... قَصِيرٌ.",
+              "prompt_ur": "مناسب لفظ منتخب کر کے خالی جگہ پُر کریں:",
+              "prompt_en": "Fill in the blank with the appropriate word:",
+              "options": [
+                "الْمَرِيضُ",
+                "النَّجْمُ",
+                "الْكِتَابُ",
+                "الْبَابُ"
+              ],
+              "answer": "الْمَرِيضُ",
+              "explanation_ur": "الْمَرِيضُ قَصِيرٌ (مریض ٹھگنے قد کا ہے)",
+              "explanation_en": "Correct: الْمَرِيضُ"
+            },
+            {
+              "tamreen_num": 7,
+              "type": "pair_match",
+              "prompt_ar": "اخْتَرْ كَلِمَةً مِنَ الْقَائِمَةِ (ب) تُنَاسِبُ الْكَلِمَةَ الَّتِي فِي الْقَائِمَةِ (أ):",
+              "prompt_ur": "کالم (أ) کے مناسب لفظ کو کالم (ب) سے ملائیں (جوڑے بنائیں):",
+              "prompt_en": "Match words from Column (A) with Column (B):",
+              "pairs": [
+                {
+                  "left_ar": "الطَّالِبُ",
+                  "right": "مَرِيضٌ",
+                  "left_ur": "طالب علم",
+                  "right_ur": "بیمار ہے"
+                },
+                {
+                  "left_ar": "الدُّكَّانُ",
+                  "right": "مَفْتُوحٌ",
+                  "left_ur": "دکان",
+                  "right_ur": "کھلی ہے"
+                },
+                {
+                  "left_ar": "التُّفَّاحُ",
+                  "right": "لَذِيذٌ",
+                  "left_ur": "سیب",
+                  "right_ur": "لذیذ ہے"
+                },
+                {
+                  "left_ar": "الْمَاءُ",
+                  "right": "حَارٌّ",
+                  "left_ur": "پانی",
+                  "right_ur": "گرم ہے"
+                },
+                {
+                  "left_ar": "الْحَجَرُ",
+                  "right": "ثَقِيلٌ",
+                  "left_ur": "پتھر",
+                  "right_ur": "بھاری ہے"
+                },
+                {
+                  "left_ar": "الْقَلَمُ",
+                  "right": "مَكْسُورٌ",
+                  "left_ur": "قلم",
+                  "right_ur": "ٹوٹا ہوا ہے"
+                }
+              ],
+              "answer": "الطَّالِبُ مَرِيضٌ • الدُّكَّانُ مَفْتُوحٌ • التُّفَّاحُ لَذِيذٌ • الْمَاءُ حَارٌّ • الْحَجَرُ ثَقِيلٌ • الْقَلَمُ مَكْسُورٌ",
+              "explanation_ur": "الطَّالِبُ مَرِيضٌ • الدُّكَّانُ مَفْتُوحٌ • التُّفَّاحُ لَذِيذٌ • الْمَاءُ حَارٌّ • الْحَجَرُ ثَقِيلٌ • الْقَلَمُ مَكْسُورٌ",
+              "explanation_en": "All matched pairs correct!"
+            },
+            {
+              "tamreen_num": 7,
+              "type": "emoji_choice",
+              "prompt_ar": "اخْتَرْ مَا يُنَاسِبُ الْمُبْتَدَأَ: (الطَّالِبُ)",
+              "prompt_ur": "لفظ «الطَّالِبُ» کے مناسب خبر منتخب کریں:",
+              "prompt_en": "Select the suitable predicate for \"الطَّالِبُ\":",
+              "options": [
+                "مَرِيضٌ",
+                "مَفْتُوحٌ",
+                "لَذِيذٌ",
+                "مَكْسُورٌ"
+              ],
+              "answer": "مَرِيضٌ",
+              "explanation_ur": "الطَّالِبُ مَرِيضٌ",
+              "explanation_en": "الطَّالِبُ مَرِيضٌ"
+            },
+            {
+              "tamreen_num": 7,
+              "type": "emoji_choice",
+              "prompt_ar": "اخْتَرْ مَا يُنَاسِبُ الْمُبْتَدَأَ: (الدُّكَّانُ)",
+              "prompt_ur": "لفظ «الدُّكَّانُ» کے مناسب خبر منتخب کریں:",
+              "prompt_en": "Select the suitable predicate for \"الدُّكَّانُ\":",
+              "options": [
+                "مَفْتُوحٌ",
+                "مَرِيضٌ",
+                "حَارٌّ",
+                "ثَقِيلٌ"
+              ],
+              "answer": "مَفْتُوحٌ",
+              "explanation_ur": "الدُّكَّانُ مَفْتُوحٌ",
+              "explanation_en": "الدُّكَّانُ مَفْتُوحٌ"
+            },
+            {
+              "tamreen_num": 7,
+              "type": "emoji_choice",
+              "prompt_ar": "اخْتَرْ مَا يُنَاسِبُ الْمُبْتَدَأَ: (التُّفَّاحُ)",
+              "prompt_ur": "لفظ «التُّفَّاحُ» کے مناسب خبر منتخب کریں:",
+              "prompt_en": "Select the suitable predicate for \"التُّفَّاحُ\":",
+              "options": [
+                "لَذِيذٌ",
+                "مَكْسُورٌ",
+                "حَارٌّ",
+                "ثَقِيلٌ"
+              ],
+              "answer": "لَذِيذٌ",
+              "explanation_ur": "التُّفَّاحُ لَذِيذٌ",
+              "explanation_en": "التُّفَّاحُ لَذِيذٌ"
+            },
+            {
+              "tamreen_num": 7,
+              "type": "emoji_choice",
+              "prompt_ar": "اخْتَرْ مَا يُنَاسِبُ الْمُبْتَدَأَ: (الْمَاءُ)",
+              "prompt_ur": "لفظ «الْمَاءُ» کے مناسب خبر منتخب کریں:",
+              "prompt_en": "Select the suitable predicate for \"الْمَاءُ\":",
+              "options": [
+                "حَارٌّ",
+                "لَذِيذٌ",
+                "مَفْتُوحٌ",
+                "مَرِيضٌ"
+              ],
+              "answer": "حَارٌّ",
+              "explanation_ur": "الْمَاءُ حَارٌّ",
+              "explanation_en": "الْمَاءُ حَارٌّ"
+            },
+            {
+              "tamreen_num": 7,
+              "type": "emoji_choice",
+              "prompt_ar": "اخْتَرْ مَا يُنَاسِبُ الْمُبْتَدَأَ: (الْحَجَرُ)",
+              "prompt_ur": "لفظ «الْحَجَرُ» کے مناسب خبر منتخب کریں:",
+              "prompt_en": "Select the suitable predicate for \"الْحَجَرُ\":",
+              "options": [
+                "ثَقِيلٌ",
+                "مَكْسُورٌ",
+                "لَذِيذٌ",
+                "حَارٌّ"
+              ],
+              "answer": "ثَقِيلٌ",
+              "explanation_ur": "الْحَجَرُ ثَقِيلٌ",
+              "explanation_en": "الْحَجَرُ ثَقِيلٌ"
+            },
+            {
+              "tamreen_num": 7,
+              "type": "emoji_choice",
+              "prompt_ar": "اخْتَرْ مَا يُنَاسِبُ الْمُبْتَدَأَ: (الْقَلَمُ)",
+              "prompt_ur": "لفظ «الْقَلَمُ» کے مناسب خبر منتخب کریں:",
+              "prompt_en": "Select the suitable predicate for \"الْقَلَمُ\":",
+              "options": [
+                "مَكْسُورٌ",
+                "حَارٌّ",
+                "ثَقِيلٌ",
+                "مَفْتُوحٌ"
+              ],
+              "answer": "مَكْسُورٌ",
+              "explanation_ur": "الْقَلَمُ مَكْسُورٌ",
+              "explanation_en": "الْقَلَمُ مَكْسُورٌ"
+            },
+            {
+              "tamreen_num": 8,
+              "type": "emoji_choice",
+              "prompt_ar": "هَلِ اللَّامُ فِي (الْأَبُ) شَمْسِيَّةٌ أَمْ قَمَرِيَّةٌ؟",
+              "prompt_ur": "لفظ «الْأَبُ» میں لام شمسی ہے یا قمری؟",
+              "prompt_en": "Is the Lam in \"الْأَبُ\" Solar or Lunar?",
+              "options": [
+                "قَمَرِيَّةٌ",
+                "شَمْسِيَّةٌ"
+              ],
+              "answer": "قَمَرِيَّةٌ",
+              "explanation_ur": "«الْأَبُ» کی لام قَمَرِيَّةٌ ہے",
+              "explanation_en": "The Lam in \"الْأَبُ\" is قَمَرِيَّةٌ"
+            },
+            {
+              "tamreen_num": 8,
+              "type": "emoji_choice",
+              "prompt_ar": "هَلِ اللَّامُ فِي (التَّاجِرُ) شَمْسِيَّةٌ أَمْ قَمَرِيَّةٌ؟",
+              "prompt_ur": "لفظ «التَّاجِرُ» میں لام شمسی ہے یا قمری؟",
+              "prompt_en": "Is the Lam in \"التَّاجِرُ\" Solar or Lunar?",
+              "options": [
+                "شَمْسِيَّةٌ",
+                "قَمَرِيَّةٌ"
+              ],
+              "answer": "شَمْسِيَّةٌ",
+              "explanation_ur": "«التَّاجِرُ» کی لام شَمْسِيَّةٌ ہے",
+              "explanation_en": "The Lam in \"التَّاجِرُ\" is شَمْسِيَّةٌ"
+            },
+            {
+              "tamreen_num": 8,
+              "type": "emoji_choice",
+              "prompt_ar": "هَلِ اللَّامُ فِي (الثَّوْبُ) شَمْسِيَّةٌ أَمْ قَمَرِيَّةٌ؟",
+              "prompt_ur": "لفظ «الثَّوْبُ» میں لام شمسی ہے یا قمری؟",
+              "prompt_en": "Is the Lam in \"الثَّوْبُ\" Solar or Lunar?",
+              "options": [
+                "شَمْسِيَّةٌ",
+                "قَمَرِيَّةٌ"
+              ],
+              "answer": "شَمْسِيَّةٌ",
+              "explanation_ur": "«الثَّوْبُ» کی لام شَمْسِيَّةٌ ہے",
+              "explanation_en": "The Lam in \"الثَّوْبُ\" is شَمْسِيَّةٌ"
+            },
+            {
+              "tamreen_num": 8,
+              "type": "emoji_choice",
+              "prompt_ar": "هَلِ اللَّامُ فِي (الْبَابُ) شَمْسِيَّةٌ أَمْ قَمَرِيَّةٌ؟",
+              "prompt_ur": "لفظ «الْبَابُ» میں لام شمسی ہے یا قمری؟",
+              "prompt_en": "Is the Lam in \"الْبَابُ\" Solar or Lunar?",
+              "options": [
+                "قَمَرِيَّةٌ",
+                "شَمْسِيَّةٌ"
+              ],
+              "answer": "قَمَرِيَّةٌ",
+              "explanation_ur": "«الْبَابُ» کی لام قَمَرِيَّةٌ ہے",
+              "explanation_en": "The Lam in \"الْبَابُ\" is قَمَرِيَّةٌ"
+            },
+            {
+              "tamreen_num": 8,
+              "type": "emoji_choice",
+              "prompt_ar": "هَلِ اللَّامُ فِي (الْجَنَّةُ) شَمْسِيَّةٌ أَمْ قَمَرِيَّةٌ؟",
+              "prompt_ur": "لفظ «الْجَنَّةُ» میں لام شمسی ہے یا قمری؟",
+              "prompt_en": "Is the Lam in \"الْجَنَّةُ\" Solar or Lunar?",
+              "options": [
+                "قَمَرِيَّةٌ",
+                "شَمْسِيَّةٌ"
+              ],
+              "answer": "قَمَرِيَّةٌ",
+              "explanation_ur": "«الْجَنَّةُ» کی لام قَمَرِيَّةٌ ہے",
+              "explanation_en": "The Lam in \"الْجَنَّةُ\" is قَمَرِيَّةٌ"
+            },
+            {
+              "tamreen_num": 8,
+              "type": "emoji_choice",
+              "prompt_ar": "هَلِ اللَّامُ فِي (الدِّيكُ) شَمْسِيَّةٌ أَمْ قَمَرِيَّةٌ؟",
+              "prompt_ur": "لفظ «الدِّيكُ» میں لام شمسی ہے یا قمری؟",
+              "prompt_en": "Is the Lam in \"الدِّيكُ\" Solar or Lunar?",
+              "options": [
+                "شَمْسِيَّةٌ",
+                "قَمَرِيَّةٌ"
+              ],
+              "answer": "شَمْسِيَّةٌ",
+              "explanation_ur": "«الدِّيكُ» کی لام شَمْسِيَّةٌ ہے",
+              "explanation_en": "The Lam in \"الدِّيكُ\" is شَمْسِيَّةٌ"
+            },
+            {
+              "tamreen_num": 8,
+              "type": "emoji_choice",
+              "prompt_ar": "هَلِ اللَّامُ فِي (الذَّهَبُ) شَمْسِيَّةٌ أَمْ قَمَرِيَّةٌ؟",
+              "prompt_ur": "لفظ «الذَّهَبُ» میں لام شمسی ہے یا قمری؟",
+              "prompt_en": "Is the Lam in \"الذَّهَبُ\" Solar or Lunar?",
+              "options": [
+                "شَمْسِيَّةٌ",
+                "قَمَرِيَّةٌ"
+              ],
+              "answer": "شَمْسِيَّةٌ",
+              "explanation_ur": "«الذَّهَبُ» کی لام شَمْسِيَّةٌ ہے",
+              "explanation_en": "The Lam in \"الذَّهَبُ\" is شَمْسِيَّةٌ"
+            },
+            {
+              "tamreen_num": 8,
+              "type": "emoji_choice",
+              "prompt_ar": "هَلِ اللَّامُ فِي (الْحِمَارُ) شَمْسِيَّةٌ أَمْ قَمَرِيَّةٌ؟",
+              "prompt_ur": "لفظ «الْحِمَارُ» میں لام شمسی ہے یا قمری؟",
+              "prompt_en": "Is the Lam in \"الْحِمَارُ\" Solar or Lunar?",
+              "options": [
+                "قَمَرِيَّةٌ",
+                "شَمْسِيَّةٌ"
+              ],
+              "answer": "قَمَرِيَّةٌ",
+              "explanation_ur": "«الْحِمَارُ» کی لام قَمَرِيَّةٌ ہے",
+              "explanation_en": "The Lam in \"الْحِمَارُ\" is قَمَرِيَّةٌ"
+            },
+            {
+              "tamreen_num": 8,
+              "type": "emoji_choice",
+              "prompt_ar": "هَلِ اللَّامُ فِي (الرَّجُلُ) شَمْسِيَّةٌ أَمْ قَمَرِيَّةٌ؟",
+              "prompt_ur": "لفظ «الرَّجُلُ» میں لام شمسی ہے یا قمری؟",
+              "prompt_en": "Is the Lam in \"الرَّجُلُ\" Solar or Lunar?",
+              "options": [
+                "شَمْسِيَّةٌ",
+                "قَمَرِيَّةٌ"
+              ],
+              "answer": "شَمْسِيَّةٌ",
+              "explanation_ur": "«الرَّجُلُ» کی لام شَمْسِيَّةٌ ہے",
+              "explanation_en": "The Lam in \"الرَّجُلُ\" is شَمْسِيَّةٌ"
+            },
+            {
+              "tamreen_num": 8,
+              "type": "emoji_choice",
+              "prompt_ar": "هَلِ اللَّامُ فِي (الزَّهْرَةُ) شَمْسِيَّةٌ أَمْ قَمَرِيَّةٌ؟",
+              "prompt_ur": "لفظ «الزَّهْرَةُ» میں لام شمسی ہے یا قمری؟",
+              "prompt_en": "Is the Lam in \"الزَّهْرَةُ\" Solar or Lunar?",
+              "options": [
+                "شَمْسِيَّةٌ",
+                "قَمَرِيَّةٌ"
+              ],
+              "answer": "شَمْسِيَّةٌ",
+              "explanation_ur": "«الزَّهْرَةُ» کی لام شَمْسِيَّةٌ ہے",
+              "explanation_en": "The Lam in \"الزَّهْرَةُ\" is شَمْسِيَّةٌ"
+            },
+            {
+              "tamreen_num": 8,
+              "type": "emoji_choice",
+              "prompt_ar": "هَلِ اللَّامُ فِي (السَّمَكُ) شَمْسِيَّةٌ أَمْ قَمَرِيَّةٌ؟",
+              "prompt_ur": "لفظ «السَّمَكُ» میں لام شمسی ہے یا قمری؟",
+              "prompt_en": "Is the Lam in \"السَّمَكُ\" Solar or Lunar?",
+              "options": [
+                "شَمْسِيَّةٌ",
+                "قَمَرِيَّةٌ"
+              ],
+              "answer": "شَمْسِيَّةٌ",
+              "explanation_ur": "«السَّمَكُ» کی لام شَمْسِيَّةٌ ہے",
+              "explanation_en": "The Lam in \"السَّمَكُ\" is شَمْسِيَّةٌ"
+            },
+            {
+              "tamreen_num": 8,
+              "type": "emoji_choice",
+              "prompt_ar": "هَلِ اللَّامُ فِي (الشَّمْسُ) شَمْسِيَّةٌ أَمْ قَمَرِيَّةٌ؟",
+              "prompt_ur": "لفظ «الشَّمْسُ» میں لام شمسی ہے یا قمری؟",
+              "prompt_en": "Is the Lam in \"الشَّمْسُ\" Solar or Lunar?",
+              "options": [
+                "شَمْسِيَّةٌ",
+                "قَمَرِيَّةٌ"
+              ],
+              "answer": "شَمْسِيَّةٌ",
+              "explanation_ur": "«الشَّمْسُ» کی لام شَمْسِيَّةٌ ہے",
+              "explanation_en": "The Lam in \"الشَّمْسُ\" is شَمْسِيَّةٌ"
+            },
+            {
+              "tamreen_num": 8,
+              "type": "emoji_choice",
+              "prompt_ar": "هَلِ اللَّامُ فِي (الْقَمَرُ) شَمْسِيَّةٌ أَمْ قَمَرِيَّةٌ؟",
+              "prompt_ur": "لفظ «الْقَمَرُ» میں لام شمسی ہے یا قمری؟",
+              "prompt_en": "Is the Lam in \"الْقَمَرُ\" Solar or Lunar?",
+              "options": [
+                "قَمَرِيَّةٌ",
+                "شَمْسِيَّةٌ"
+              ],
+              "answer": "قَمَرِيَّةٌ",
+              "explanation_ur": "«الْقَمَرُ» کی لام قَمَرِيَّةٌ ہے",
+              "explanation_en": "The Lam in \"الْقَمَرُ\" is قَمَرِيَّةٌ"
+            },
+            {
+              "tamreen_num": 8,
+              "type": "emoji_choice",
+              "prompt_ar": "هَلِ اللَّامُ فِي (اللَّحْمُ) شَمْسِيَّةٌ أَمْ قَمَرِيَّةٌ؟",
+              "prompt_ur": "لفظ «اللَّحْمُ» میں لام شمسی ہے یا قمری؟",
+              "prompt_en": "Is the Lam in \"اللَّحْمُ\" Solar or Lunar?",
+              "options": [
+                "شَمْسِيَّةٌ",
+                "قَمَرِيَّةٌ"
+              ],
+              "answer": "شَمْسِيَّةٌ",
+              "explanation_ur": "«اللَّحْمُ» کی لام شَمْسِيَّةٌ ہے",
+              "explanation_en": "The Lam in \"اللَّحْمُ\" is شَمْسِيَّةٌ"
             }
           ],
           "curriculum_flow": [
             {
-              "id": "b1_u3_item_nas",
+              "id": "b1_u3_flow_nas1",
               "type": "nasuddars",
               "item_order": 1,
-              "title_ar": "نَصُّ الدَّرْسِ (الْقِرَاءَةُ وَالْمُطَالَعَةُ)",
-              "title_ur": "سبق کا متن و مطالعہ",
-              "title_en": "Lesson Reading & Core Text",
-              "page": 14,
-              "preview": "بَيْتٌ ➔ الْبَيْتُ • قَلَمٌ ➔ الْقَلَمُ • كِتَابٌ ➔ الْكِتَابُ • جَمَلٌ ➔ الْجَمَلُ"
+              "title_ar": "نَصُّ الدَّرْسِ (الْقِسْمُ أ — مَعْرِفَةٌ وَنَكِرَةٌ: بَيْتٌ : الْبَيْتُ)",
+              "title_ur": "سبق کا بنیادی متن (معرفہ اور نکرہ کا فرق)",
+              "title_en": "Lesson Core Text (Part A — Definite vs Indefinite)",
+              "page": 15
             },
             {
-              "id": "b1_u3_t3",
+              "id": "b1_u3_flow_t1",
               "type": "tamreen",
+              "tamreen_num": 1,
               "item_order": 2,
-              "tamreen_num": 3,
-              "title_ar": "تَمْرِين (3): اِمْلأْ الفراغ فيما يلي بوضع الكدمة المناسبة من الكدمات التا",
-              "title_ur": "مشق (3): اِمْلأْ الفراغ فيما يلي بوضع الكدمة المناسبة من الكدمات التا",
-              "title_en": "Exercise (3): اِمْلأْ الفراغ فيما يلي بوضع الكدمة المناسبة من الكدمات التا",
-              "page": 16,
-              "question_count": 6
+              "title_ar": "تَمْرِين (١): اقْرَأْ وَاكْتُبْ مَعَ ضَبْطِ أَوَاخِرِ الْكَلِمَاتِ",
+              "title_ur": "مشق (۱): الفاظ کے آخری اعراب کے ساتھ پڑھیں اور لکھیں",
+              "title_en": "Exercise 1: Read & Write with Final Vocalization",
+              "question_count": 18,
+              "page": 16
             },
             {
-              "id": "b1_u3_t4",
+              "id": "b1_u3_flow_t2",
               "type": "tamreen",
-              "item_order": 3,
-              "tamreen_num": 4,
-              "title_ar": "تَمْرِين (4): اِمْلأْ الفراغ فيما يلي بوضع كدمة مناسبة:",
-              "title_ur": "مشق (4): اِمْلأْ الفراغ فيما يلي بوضع كدمة مناسبة:",
-              "title_en": "Exercise (4): اِمْلأْ الفراغ فيما يلي بوضع كدمة مناسبة:",
-              "page": 16,
-              "question_count": 10
-            },
-            {
-              "id": "b1_u3_t2",
-              "type": "tamreen",
-              "item_order": 4,
               "tamreen_num": 2,
-              "title_ar": "تَمْرِين (2): اِمْلأ الفراغ فيما يلي بوضع كلمةٍ مناسبةٍ :",
-              "title_ur": "مشق (2): اِمْلأ الفراغ فيما يلي بوضع كلمةٍ مناسبةٍ :",
-              "title_en": "Exercise (2): اِمْلأ الفراغ فيما يلي بوضع كلمةٍ مناسبةٍ :",
-              "page": 18,
-              "question_count": 6
+              "item_order": 3,
+              "title_ar": "تَمْرِين (٢): اقْرَأْ وَاكْتُبْ (قِرَاءَةُ الْجُمَلِ الْمُفِيدَةِ)",
+              "title_ur": "مشق (۲): جملوں کا صحیح تلفظ کے ساتھ مطالعہ",
+              "title_en": "Exercise 2: Read & Write Useful Sentences",
+              "question_count": 10,
+              "page": 16
             },
             {
-              "id": "b1_u3_t3",
+              "id": "b1_u3_flow_t3",
               "type": "tamreen",
-              "item_order": 5,
               "tamreen_num": 3,
-              "title_ar": "تَمْرِين (3): اختر كلمة من القائِمَةِ (ب) تناسب الكلمة التي في القَائِمَةِ",
-              "title_ur": "مشق (3): اختر كلمة من القائِمَةِ (ب) تناسب الكلمة التي في القَائِمَةِ",
-              "title_en": "Exercise (3): اختر كلمة من القائِمَةِ (ب) تناسب الكلمة التي في القَائِمَةِ",
-              "page": 19,
-              "question_count": 7
+              "item_order": 4,
+              "title_ar": "تَمْرِين (٣): امْلَأِ الْفَرَاغَ بِوَضْعِ الْكَلِمَةِ الْمُنَاسِبَةِ مِنَ الْقَائِمَةِ",
+              "title_ur": "مشق (۳): دیے گئے الفاظ میں سے مناسب خبر چن کر خالی جگہ پُر کریں",
+              "title_en": "Exercise 3: Fill in the Blanks from the Word Bank",
+              "question_count": 6,
+              "page": 16
+            },
+            {
+              "id": "b1_u3_flow_t4",
+              "type": "tamreen",
+              "tamreen_num": 4,
+              "item_order": 5,
+              "title_ar": "تَمْرِين (٤): امْلَأِ الْفَرَاغَ فِيمَا يَلِي بِوَضْعِ كَلِمَةٍ مُنَاسِبَةٍ (مُبْتَدَأ)",
+              "title_ur": "مشق (۴): مناسب مبتدأ لگا کر با معنی جملے مکمل کریں",
+              "title_en": "Exercise 4: Complete Sentences with a Suitable Subject",
+              "question_count": 10,
+              "page": 16
+            },
+            {
+              "id": "b1_u3_flow_q1",
+              "type": "qaida",
+              "item_order": 6,
+              "title_ar": "قَاعِدَةٌ: الْحُرُوفُ الشَّمْسِيَّةُ (نَجْمٌ ➔ النَّجْمُ)",
+              "title_ur": "قاعدہ: حروف شمسیہ میں لامِ تعریف مدغم ہو جاتی ہے اور شمسی حرف پر تشدید آتی ہے",
+              "title_en": "Rule: Sun Letters assimilate the Lam of \"Al-\", giving the letter a Shaddah",
+              "rule_summary_ur": "جب اسم کے شروع میں حروف شمسیہ میں سے کوئی حرف آئے تو «ال» کی لام نہیں پڑھی جاتی بلکہ بعد والے حرف پر تشدید آتی ہے (جیسے: النَّجْمُ، الرَّجُلُ، الدِّيكُ، الطَّالِبُ)۔",
+              "rule_summary_en": "When a word begins with a Sun Letter, the Lam of the definite article is assimilated and not pronounced, and the Sun Letter receives a Shaddah (e.g. an-Najmu, ar-Rajulu, ad-Deeku, at-Taalibu).",
+              "page": 18,
+              "examples": [
+                {
+                  "ar": "نَجْمٌ ➔ النَّجْمُ",
+                  "ur": "ستارہ ➔ (خاص) ستارہ (انَّجْم)",
+                  "en": "A star ➔ The star (an-najmu)"
+                },
+                {
+                  "ar": "رَجُلٌ ➔ الرَّجُلُ",
+                  "ur": "آدمی ➔ (خاص) آدمی (ارَّجُل)",
+                  "en": "A man ➔ The man (ar-rajulu)"
+                },
+                {
+                  "ar": "دِيكٌ ➔ الدِّيكُ",
+                  "ur": "مرغا ➔ (خاص) مرغا (ادِّيك)",
+                  "en": "A rooster ➔ The rooster (ad-deeku)"
+                },
+                {
+                  "ar": "طَالِبٌ ➔ الطَّالِبُ",
+                  "ur": "طالب علم ➔ (خاص) طالب علم (اطَّالِب)",
+                  "en": "A student ➔ The student (at-taalibu)"
+                }
+              ]
+            },
+            {
+              "id": "b1_u3_flow_nas2",
+              "type": "nasuddars",
+              "item_order": 7,
+              "title_ar": "نَصُّ الدَّرْسِ (الْقِسْمُ ب — جُمَلُ الْحُرُوفِ الشَّمْسِيَّةِ: النَّجْمُ بَعِيدٌ)",
+              "title_ur": "سبق کا متن (حصہ ب — حروف شمسیہ کے جملے)",
+              "title_en": "Lesson Core Text (Part B — Sun Letter Sentences)",
+              "page": 18
+            },
+            {
+              "id": "b1_u3_flow_t5",
+              "type": "tamreen",
+              "tamreen_num": 5,
+              "item_order": 8,
+              "title_ar": "تَمْرِين (١ — ب): اقْرَأْ وَاكْتُبْ مَعَ ضَبْطِ أَوَاخِرِ الْكَلِمَاتِ",
+              "title_ur": "مشق (۱ — ب): الفاظ کو صحیح اعراب کے ساتھ پڑھیں اور لکھیں",
+              "title_en": "Exercise 1 (Part B): Read & Write with Correct Vocalization",
+              "question_count": 12,
+              "page": 19
+            },
+            {
+              "id": "b1_u3_flow_t6",
+              "type": "tamreen",
+              "tamreen_num": 6,
+              "item_order": 9,
+              "title_ar": "تَمْرِين (٢ — ب): امْلَأِ الْفَرَاغَ فِيمَا يَلِي بِوَضْعِ كَلِمَةٍ مُنَاسِبَةٍ (خَيَارَاتٌ)",
+              "title_ur": "مشق (۲ — ب): خالی جگہ میں مناسب لفظ لگا کر جملہ مکمل کریں (آپشنز کے ساتھ)",
+              "title_en": "Exercise 2 (Part B): Fill in the Blanks with Options",
+              "question_count": 6,
+              "page": 19
+            },
+            {
+              "id": "b1_u3_flow_t7",
+              "type": "tamreen",
+              "tamreen_num": 7,
+              "item_order": 10,
+              "title_ar": "تَمْرِين (٣ — ب): اخْتَرْ كَلِمَةً مِنَ الْقَائِمَةِ (ب) تُنَاسِبُ الَّتِي فِي (أ)",
+              "title_ur": "مشق (۳ — ب): کالم (أ) کے مناسب لفظ کو کالم (ب) سے ملائیں (جوڑے بنائیں)",
+              "title_en": "Exercise 3 (Part B): Match Column (A) with Column (B)",
+              "question_count": 7,
+              "page": 19
+            },
+            {
+              "id": "b1_u3_flow_t8",
+              "type": "tamreen",
+              "tamreen_num": 8,
+              "item_order": 11,
+              "title_ar": "تَمْرِين (٤ — ب): جَدْوَلُ الْحُرُوفِ الشَّمْسِيَّةِ وَالْقَمَرِيَّةِ",
+              "title_ur": "مشق (۴ — ب): شمسی اور قمری حروف کی پہچان اور فرق",
+              "title_en": "Exercise 4 (Part B): Solar vs Lunar Letters Classification",
+              "question_count": 14,
+              "page": 20
             }
           ]
         },
@@ -11196,261 +11446,6 @@
                   "ar": "اليَـوْمَ",
                   "ur": "آج",
                   "en": "آج"
-                },
-                {
-                  "ar": "( ب )",
-                  "ur": "(ب)",
-                  "en": "(ب)"
-                },
-                {
-                  "ar": "أين المـدرسُ؟",
-                  "ur": "استاد کہاں ہیں؟",
-                  "en": "Teacher"
-                },
-                {
-                  "ar": "هو في الفصـل.",
-                  "ur": "وہ کلاس روم میں ہیں۔",
-                  "en": "Classroom"
-                },
-                {
-                  "ar": "وأين المدرسُ الجديدُ؟",
-                  "ur": "اور نئے استاد کہاں ہیں؟",
-                  "en": "Teacher"
-                },
-                {
-                  "ar": "هو عِنْدَ المديرِ.",
-                  "ur": "وہ پرنسپل کے پاس ہیں۔",
-                  "en": "Director / Principal"
-                },
-                {
-                  "ar": "أين الطالبُ الجديدُ؟",
-                  "ur": "نیا طالب علم کہاں ہے؟",
-                  "en": "Student"
-                },
-                {
-                  "ar": "ذهب إلى الـمَكْتَبَـةِ.",
-                  "ur": "وہ لائبریری گیا ہے۔",
-                  "en": "Went"
-                },
-                {
-                  "ar": "👨 مَنْ ذلِكَ الرَّجلُ الطويلُ الذي خَرَجَ الآن من المدرسة؟",
-                  "ur": "وہ لمبا آدمی کون ہے جو ابھی اسکول سے نکلا؟",
-                  "en": "School"
-                },
-                {
-                  "ar": "هو المديرُ الجـديدُ.",
-                  "ur": "وہ نئے پرنسپل ہیں۔",
-                  "en": "Director / Principal"
-                },
-                {
-                  "ar": "👦 ومن الولدُ الصغيرُ الذي خرج الآن من الفصل؟",
-                  "ur": "اور وہ چھوٹا لڑکا کون ہے جو ابھی کلاس سے نکلا؟",
-                  "en": "Classroom"
-                },
-                {
-                  "ar": "هو ابن المدير الجديد .",
-                  "ur": "وہ نئے پرنسپل کا بیٹا ہے۔",
-                  "en": "Director / Principal"
-                },
-                {
-                  "ar": "لِمَنْ تلك السيارةُ الْجميلةُ؟",
-                  "ur": "وہ خوبصورت گاڑی کس کی ہے؟",
-                  "en": "Car"
-                },
-                {
-                  "ar": "هي للمديرِ الجـديـدِ.",
-                  "ur": "وہ نئے پرنسپل کی ہے۔",
-                  "en": "Director / Principal"
-                },
-                {
-                  "ar": "👨‍🏫 لِـمَنْ هذا الكتابُ الكبيرُ؟ أهو للمدرسِ؟",
-                  "ur": "یہ بڑی کتاب کس کی ہے؟ کیا یہ استاد کی ہے؟",
-                  "en": "Teacher"
-                },
-                {
-                  "ar": "لا هو للطالب الجـديـدِ.",
-                  "ur": "نہیں، وہ نئے طالب علم کی ہے۔",
-                  "en": "Student"
-                },
-                {
-                  "ar": "أين الملعقةُ الصَغيرةُ؟",
-                  "ur": "چھوٹا چمچ کہاں ہے؟",
-                  "en": "چھوٹا چمچ کہاں ہے؟"
-                },
-                {
-                  "ar": "أين الكرسـيُّ المكسـورُ؟",
-                  "ur": "ٹوٹی ہوئی کرسی کہاں ہے؟",
-                  "en": "Chair"
-                },
-                {
-                  "ar": "هو هنـاك.",
-                  "ur": "وہ وہاں ہے۔",
-                  "en": "There"
-                },
-                {
-                  "ar": "(1) اِقـرأ واكتـب:",
-                  "ur": "(1) اِقـرأ واكتـب:",
-                  "en": "(1) اِقـرأ واكتـب:"
-                },
-                {
-                  "ar": "🏥 (1) الـطبيبُ الجـديدُ في المستشفى والـطبيب القـديم في المُسْتَوْصَف.",
-                  "ur": "(1) الـطبيبُ الجـديدُ في المستشفى والـطبيب القـديم في المُسْتَوْصَف.",
-                  "en": "(1) الـطبيبُ الجـديدُ في المستشفى والـطبيب القـديم في المُسْتَوْصَف."
-                },
-                {
-                  "ar": "🗄️ (2) القلم المكسور على المكتب.",
-                  "ur": "(2) القلم المكسور على المكتب.",
-                  "en": "Pen"
-                },
-                {
-                  "ar": "(3) المِرْوَحَةُ الجديدة في الغرفة الكبيرة.",
-                  "ur": "(3) المِرْوَحَةُ الجديدة في الغرفة الكبيرة.",
-                  "en": "(3) المِرْوَحَةُ الجديدة في الغرفة الكبيرة."
-                },
-                {
-                  "ar": "(4) اللغـة العربيـة سهلـة.",
-                  "ur": "(4) اللغـة العربيـة سهلـة.",
-                  "en": "(4) اللغـة العربيـة سهلـة."
-                },
-                {
-                  "ar": "👨‍🎓 (5) الولد الطويل الذي خرج من الفصل الاَن طالب من الهنـد.",
-                  "ur": "(5) الولد الطويل الذي خرج من الفصل الاَن طالب من الهنـد.",
-                  "en": "(5) الولد الطويل الذي خرج من الفصل الاَن طالب من الهنـد."
-                },
-                {
-                  "ar": "(6) أنا في المدرسة الثانَوِيَّة.",
-                  "ur": "(6) أنا في المدرسة الثانَوِيَّة.",
-                  "en": "(6) أنا في المدرسة الثانَوِيَّة."
-                },
-                {
-                  "ar": "🦵 (7) ذهب الرجل الفقير إلى الوزير.",
-                  "ur": "(7) ذهب الرجل الفقير إلى الوزير.",
-                  "en": "(7) ذهب الرجل الفقير إلى الوزير."
-                },
-                {
-                  "ar": "(8) جلس الطالب الجديد خَلْفَ حامد.",
-                  "ur": "(8) جلس الطالب الجديد خَلْفَ حامد.",
-                  "en": "(8) جلس الطالب الجديد خَلْفَ حامد."
-                },
-                {
-                  "ar": "(9) السكيـن الكبير حاد جداً.",
-                  "ur": "(9) السكيـن الكبير حاد جداً.",
-                  "en": "(9) السكيـن الكبير حاد جداً."
-                },
-                {
-                  "ar": "👦 (10) من هذا الولد الصغير؟ هو ابْن المدرس الجديد.",
-                  "ur": "(10) من هذا الولد الصغير؟ هو ابْن المدرس الجديد.",
-                  "en": "(10) من هذا الولد الصغير؟ هو ابْن المدرس الجديد."
-                },
-                {
-                  "ar": "(2) اِملأ في الفراغ فيما يلي بالنعت الذي بين قوسين بعد تحليته بـ ال عند اللزوم.",
-                  "ur": "(2) اِملأ في الفراغ فيما يلي بالنعت الذي بين قوسين بعد تحليته بـ ال عند اللزوم.",
-                  "en": "(2) اِملأ في الفراغ فيما يلي بالنعت الذي بين قوسين بعد تحليته بـ ال عند اللزوم."
-                },
-                {
-                  "ar": "(1)أين المدرس ..................................................؟ (جديد)",
-                  "ur": "(1)أين المدرس ..................................................؟ (جديد)",
-                  "en": "(1)أين المدرس ..................................................؟ (جديد)"
-                },
-                {
-                  "ar": "(2) التاجر ...........................................في السوق . (كبير)",
-                  "ur": "(2) التاجر ...........................................في السوق . (كبير)",
-                  "en": "Merchant / Trader"
-                },
-                {
-                  "ar": "(3) أنا طالب ....................................................... (قديم)",
-                  "ur": "(3) أنا طالب ....................................................... (قديم)",
-                  "en": "(3) أنا طالب ....................................................... (قديم)"
-                },
-                {
-                  "ar": "(4) جلس الطالب ................................. خلف محمد. (جديد)",
-                  "ur": "(4) جلس الطالب ................................. خلف محمد. (جديد)",
-                  "en": "(4) جلس الطالب ................................. خلف محمد. (جديد)"
-                },
-                {
-                  "ar": "👦 (5) من الولد ............................الذي خرج الآن من الفصل؟ (طويل)",
-                  "ur": "(5) من الولد ............................الذي خرج الآن من الفصل؟ (طويل)",
-                  "en": "(5) من الولد ............................الذي خرج الآن من الفصل؟ (طويل)"
-                },
-                {
-                  "ar": "(6) عمار ولد .................................................... (قصير)",
-                  "ur": "(6) عمار ولد .................................................... (قصير)",
-                  "en": "(6) عمار ولد .................................................... (قصير)"
-                },
-                {
-                  "ar": "(7) فيصل طبيب ................................................. (شهير)",
-                  "ur": "(7) فيصل طبيب ................................................. (شهير)",
-                  "en": "(7) فيصل طبيب ................................................. (شهير)"
-                },
-                {
-                  "ar": "(8) لمن هذا السرير ..........................................؟ (مكسور)",
-                  "ur": "(8) لمن هذا السرير ..........................................؟ (مكسور)",
-                  "en": "One hundred"
-                },
-                {
-                  "ar": "(9) هذا قلم....................................................... (مكسور)",
-                  "ur": "(9) هذا قلم....................................................... (مكسور)",
-                  "en": "Pen"
-                },
-                {
-                  "ar": "(10) أين السكين ................................................؟ (حـاد)",
-                  "ur": "(10) أين السكين ................................................؟ (حـاد)",
-                  "en": "(10) أين السكين ................................................؟ (حـاد)"
-                },
-                {
-                  "ar": "(11) لمن هذه السيارة ........................................؟ (جميلة)",
-                  "ur": "(11) لمن هذه السيارة ........................................؟ (جميلة)",
-                  "en": "(11) لمن هذه السيارة ........................................؟ (جميلة)"
-                },
-                {
-                  "ar": "(3) اِقـرأ:",
-                  "ur": "(3) اِقـرأ:",
-                  "en": "(3) اِقـرأ:"
-                },
-                {
-                  "ar": "👨‍🎓 (1) الطالب الذي خرج من الفصل الآن من إندونيسيا.",
-                  "ur": "(1) الطالب الذي خرج من الفصل الآن من إندونيسيا.",
-                  "en": "(1) الطالب الذي خرج من الفصل الآن من إندونيسيا."
-                },
-                {
-                  "ar": "🗄️ (2) الكتاب الذي على المكتب للمدرس.",
-                  "ur": "(2) الكتاب الذي على المكتب للمدرس.",
-                  "en": "(2) الكتاب الذي على المكتب للمدرس."
-                },
-                {
-                  "ar": "🗄️ (3) لمن هذا القلم الجميل الذي على المكتب؟",
-                  "ur": "(3) لمن هذا القلم الجميل الذي على المكتب؟",
-                  "en": "Pen"
-                },
-                {
-                  "ar": "(4) البيت الكبير الذي في ذلك الشارع للوزير.",
-                  "ur": "(4) البيت الكبير الذي في ذلك الشارع للوزير.",
-                  "en": "(4) البيت الكبير الذي في ذلك الشارع للوزير."
-                },
-                {
-                  "ar": "🛏️ (5) السرير الذي في غرفة خالد مكسور.",
-                  "ur": "(5) السرير الذي في غرفة خالد مكسور.",
-                  "en": "One hundred"
-                },
-                {
-                  "ar": "بيت",
-                  "ur": "بيت",
-                  "en": "بيت"
-                },
-                {
-                  "ar": "جـديدٌ",
-                  "ur": "جـديدٌ",
-                  "en": "جـديدٌ"
-                },
-                {
-                  "ar": "مَنْعُـوت",
-                  "ur": "مَنْعُـوت",
-                  "en": "مَنْعُـوت"
-                },
-                {
-                  "ar": "نَعْت",
-                  "ur": "نَعْت",
-                  "en": "نَعْت"
                 }
               ]
             }
@@ -15782,426 +15777,6 @@
                   "ar": "بَيْتُهُنَّ قَرِيبٌ من المدرسةِ.",
                   "ur": "ان کا گھر اسکول کے قریب ہے۔",
                   "en": "School"
-                },
-                {
-                  "ar": "(1) حوِّل المبتدأ في الجمل الآتية إلى جمع كـما هو موضّح في المثال:",
-                  "ur": "(1) حوِّل المبتدأ في الجمل الآتية إلى جمع كـما هو موضّح في المثال:",
-                  "en": "(1) حوِّل المبتدأ في الجمل الآتية إلى جمع كـما هو موضّح في المثال:"
-                },
-                {
-                  "ar": "مثال: هذه بنت.",
-                  "ur": "مثال: هذه بنت.",
-                  "en": "مثال: هذه بنت."
-                },
-                {
-                  "ar": "هؤُلاءِ بَنَاتٌ .",
-                  "ur": "هؤُلاءِ بَنَاتٌ .",
-                  "en": "هؤُلاءِ بَنَاتٌ ."
-                },
-                {
-                  "ar": "(بَنَاتٌ )",
-                  "ur": "(بَنَاتٌ )",
-                  "en": "(بَنَاتٌ )"
-                },
-                {
-                  "ar": "(1) هذه طالبةٌ .",
-                  "ur": "(1) هذه طالبةٌ .",
-                  "en": "(1) هذه طالبةٌ ."
-                },
-                {
-                  "ar": "…………………………",
-                  "ur": "…………………………",
-                  "en": "…………………………"
-                },
-                {
-                  "ar": "(طالِبَاتٌ )",
-                  "ur": "(طالِبَاتٌ )",
-                  "en": "(طالِبَاتٌ )"
-                },
-                {
-                  "ar": "(2) هذه مُدَرِّسةٌ .",
-                  "ur": "(2) هذه مُدَرِّسةٌ .",
-                  "en": "(2) هذه مُدَرِّسةٌ ."
-                },
-                {
-                  "ar": "…………………………",
-                  "ur": "…………………………",
-                  "en": "…………………………"
-                },
-                {
-                  "ar": "(مُدَرِّساتٌ )",
-                  "ur": "(مُدَرِّساتٌ )",
-                  "en": "(مُدَرِّساتٌ )"
-                },
-                {
-                  "ar": "(3) هذه طبيبةٌ .",
-                  "ur": "(3) هذه طبيبةٌ .",
-                  "en": "(3) هذه طبيبةٌ ."
-                },
-                {
-                  "ar": "…………………………",
-                  "ur": "…………………………",
-                  "en": "…………………………"
-                },
-                {
-                  "ar": "(طَبِيْبَاتٌ )",
-                  "ur": "(طَبِيْبَاتٌ )",
-                  "en": "(طَبِيْبَاتٌ )"
-                },
-                {
-                  "ar": "(4)هذه مُسْلِمَةٌ .",
-                  "ur": "(4)هذه مُسْلِمَةٌ .",
-                  "en": "(4)هذه مُسْلِمَةٌ ."
-                },
-                {
-                  "ar": "…………………………",
-                  "ur": "…………………………",
-                  "en": "…………………………"
-                },
-                {
-                  "ar": "(مُسْلمَاتٌ )",
-                  "ur": "(مُسْلمَاتٌ )",
-                  "en": "(مُسْلمَاتٌ )"
-                },
-                {
-                  "ar": "(5) هذه زَوْجَةٌ .",
-                  "ur": "(5) هذه زَوْجَةٌ .",
-                  "en": "(5) هذه زَوْجَةٌ ."
-                },
-                {
-                  "ar": "…………………………. (زَوْجَاتٌ )",
-                  "ur": "…………………………. (زَوْجَاتٌ )",
-                  "en": "…………………………. (زَوْجَاتٌ )"
-                },
-                {
-                  "ar": "(6) هذه أُخْـت.",
-                  "ur": "(6) هذه أُخْـت.",
-                  "en": "(6) هذه أُخْـت."
-                },
-                {
-                  "ar": "…………………………. (أَخَواتٌ )",
-                  "ur": "…………………………. (أَخَواتٌ )",
-                  "en": "…………………………. (أَخَواتٌ )"
-                },
-                {
-                  "ar": "(7) هذه فَتَاةٌ .",
-                  "ur": "(7) هذه فَتَاةٌ .",
-                  "en": "(7) هذه فَتَاةٌ ."
-                },
-                {
-                  "ar": "…………………………. (فَتَيَـاتٌ )",
-                  "ur": "…………………………. (فَتَيَـاتٌ )",
-                  "en": "…………………………. (فَتَيَـاتٌ )"
-                },
-                {
-                  "ar": "(8) هذه جديدةٌ .",
-                  "ur": "(8) هذه جديدةٌ .",
-                  "en": "(8) هذه جديدةٌ ."
-                },
-                {
-                  "ar": "………………………… (جُـدُدٌ )",
-                  "ur": "………………………… (جُـدُدٌ )",
-                  "en": "………………………… (جُـدُدٌ )"
-                },
-                {
-                  "ar": "(9) هذه كبيرةٌ .",
-                  "ur": "(9) هذه كبيرةٌ .",
-                  "en": "(9) هذه كبيرةٌ ."
-                },
-                {
-                  "ar": "………………………… (كِبـارٌ )",
-                  "ur": "………………………… (كِبـارٌ )",
-                  "en": "………………………… (كِبـارٌ )"
-                },
-                {
-                  "ar": "(10) هذه صغيرةٌ .",
-                  "ur": "(10) هذه صغيرةٌ .",
-                  "en": "(10) هذه صغيرةٌ ."
-                },
-                {
-                  "ar": "………………………… (صِغـارٌ )",
-                  "ur": "………………………… (صِغـارٌ )",
-                  "en": "………………………… (صِغـارٌ )"
-                },
-                {
-                  "ar": "(11) هذه طويلةٌ .",
-                  "ur": "(11) هذه طويلةٌ .",
-                  "en": "(11) هذه طويلةٌ ."
-                },
-                {
-                  "ar": "………………………… (طِوالٌ )",
-                  "ur": "………………………… (طِوالٌ )",
-                  "en": "………………………… (طِوالٌ )"
-                },
-                {
-                  "ar": "(2) اِقـرأ واكتـب:",
-                  "ur": "(2) اِقـرأ واكتـب:",
-                  "en": "(2) اِقـرأ واكتـب:"
-                },
-                {
-                  "ar": "(1) هؤلاء إِخْوَتِي وهؤلاء أَخَوَاتِي.",
-                  "ur": "(1) هؤلاء إِخْوَتِي وهؤلاء أَخَوَاتِي.",
-                  "en": "(1) هؤلاء إِخْوَتِي وهؤلاء أَخَوَاتِي."
-                },
-                {
-                  "ar": "(2) من هؤلاء الفتيات؟ هؤلاء بنات المدرِّسة.",
-                  "ur": "(2) من هؤلاء الفتيات؟ هؤلاء بنات المدرِّسة.",
-                  "en": "(2) من هؤلاء الفتيات؟ هؤلاء بنات المدرِّسة."
-                },
-                {
-                  "ar": "🏫 (3) هؤلاء الفتيات زميلاتي. أبوهنّ طبيب وأمهن مدرِّسة.",
-                  "ur": "(3) هؤلاء الفتيات زميلاتي. أبوهنّ طبيب وأمهن مدرِّسة.",
-                  "en": "(3) هؤلاء الفتيات زميلاتي. أبوهنّ طبيب وأمهن مدرِّسة."
-                },
-                {
-                  "ar": "👩‍🎓 (4) أين الطالبات الجدد؟ ذَهَبْنَ إلى المكتبة.",
-                  "ur": "(4) أين الطالبات الجدد؟ ذَهَبْنَ إلى المكتبة.",
-                  "en": "(4) أين الطالبات الجدد؟ ذَهَبْنَ إلى المكتبة."
-                },
-                {
-                  "ar": "(5) أين بناتك ياعمّتي؟ هنّ في المطبخ.",
-                  "ur": "(5) أين بناتك ياعمّتي؟ هنّ في المطبخ.",
-                  "en": "(5) أين بناتك ياعمّتي؟ هنّ في المطبخ."
-                },
-                {
-                  "ar": "(6) أهؤلاء الممرّضات مسلمات؟ نعم.",
-                  "ur": "(6) أهؤلاء الممرّضات مسلمات؟ نعم.",
-                  "en": "(6) أهؤلاء الممرّضات مسلمات؟ نعم."
-                },
-                {
-                  "ar": "(7) هؤلاء طبيبات. أزواجهن مدرسـون.",
-                  "ur": "(7) هؤلاء طبيبات. أزواجهن مدرسـون.",
-                  "en": "(7) هؤلاء طبيبات. أزواجهن مدرسـون."
-                },
-                {
-                  "ar": "(8) من هذه المَرْأَةُ؟ هي زَوْجَةُ الطبيب الجديد.",
-                  "ur": "(8) من هذه المَرْأَةُ؟ هي زَوْجَةُ الطبيب الجديد.",
-                  "en": "(8) من هذه المَرْأَةُ؟ هي زَوْجَةُ الطبيب الجديد."
-                },
-                {
-                  "ar": "(9) أبنـاتـك في المدرسة الثانويّة يا أسامة؟ بعضها فِي المدرسة الثانويّة وبعضهن في المدرسة المتوسطة.",
-                  "ur": "(9) أبنـاتـك في المدرسة الثانويّة يا أسامة؟ بعضها فِي المدرسة الثانويّة وبعضهن في المدرسة المتوسطة.",
-                  "en": "(9) أبنـاتـك في المدرسة الثانويّة يا أسامة؟ بعضها فِي المدرسة الثانويّة وبعضهن في المدرسة المتوسطة."
-                },
-                {
-                  "ar": "👩‍🎓 (10) ألك بنات يا لَيْلَى؟ نعم لي بنات كبار. وهن طالبات بالجامعة.",
-                  "ur": "(10) ألك بنات يا لَيْلَى؟ نعم لي بنات كبار. وهن طالبات بالجامعة.",
-                  "en": "(10) ألك بنات يا لَيْلَى؟ نعم لي بنات كبار. وهن طالبات بالجامعة."
-                },
-                {
-                  "ar": "(11) من هؤلاء النِّساءُ الطوال؟ هن طبيبات من أمريكا.",
-                  "ur": "(11) من هؤلاء النِّساءُ الطوال؟ هن طبيبات من أمريكا.",
-                  "en": "(11) من هؤلاء النِّساءُ الطوال؟ هن طبيبات من أمريكا."
-                },
-                {
-                  "ar": "(12) الطبيبات خَرَجْنَ من المستشفى.",
-                  "ur": "(12) الطبيبات خَرَجْنَ من المستشفى.",
-                  "en": "(12) الطبيبات خَرَجْنَ من المستشفى."
-                },
-                {
-                  "ar": "(3) اِقرأ المثال ثم حَوِّل الجمل الآتية مثلـه:",
-                  "ur": "(3) اِقرأ المثال ثم حَوِّل الجمل الآتية مثلـه:",
-                  "en": "(3) اِقرأ المثال ثم حَوِّل الجمل الآتية مثلـه:"
-                },
-                {
-                  "ar": "مثال: زينبُ خَرَجَتْ من الفصل. زينبُ وآمنةُ ومريم خَرَجْنَ من الفصل",
-                  "ur": "مثال: زينبُ خَرَجَتْ من الفصل. زينبُ وآمنةُ ومريم خَرَجْنَ من الفصل",
-                  "en": "مثال: زينبُ خَرَجَتْ من الفصل. زينبُ وآمنةُ ومريم خَرَجْنَ من الفصل"
-                },
-                {
-                  "ar": "(1) المدرّسة ذَهبَتْ إلى الفصل …………………………………..",
-                  "ur": "(1) المدرّسة ذَهبَتْ إلى الفصل …………………………………..",
-                  "en": "(1) المدرّسة ذَهبَتْ إلى الفصل ………………………………….."
-                },
-                {
-                  "ar": "👩‍🎓 (2) الطالبة الجديدة جَلَسَتْ في الفصل …………………………….",
-                  "ur": "(2) الطالبة الجديدة جَلَسَتْ في الفصل …………………………….",
-                  "en": "(2) الطالبة الجديدة جَلَسَتْ في الفصل ……………………………."
-                },
-                {
-                  "ar": "👧 (3) بنت محمد ذَهَبَتْ إلى المدرسة ………………………………..",
-                  "ur": "(3) بنت محمد ذَهَبَتْ إلى المدرسة ………………………………..",
-                  "en": "(3) بنت محمد ذَهَبَتْ إلى المدرسة ……………………………….."
-                },
-                {
-                  "ar": "(4) أَشِرْ إلى الأسماء التالية باسم إشارةٍ للقريب (هذا، هذه، هؤلاء):",
-                  "ur": "(4) أَشِرْ إلى الأسماء التالية باسم إشارةٍ للقريب (هذا، هذه، هؤلاء):",
-                  "en": "(4) أَشِرْ إلى الأسماء التالية باسم إشارةٍ للقريب (هذا، هذه، هؤلاء):"
-                },
-                {
-                  "ar": "(1)………. أخي (2)………….. أختي (3)……….. رجال",
-                  "ur": "(1)………. أخي (2)………….. أختي (3)……….. رجال",
-                  "en": "(1)………. أخي (2)………….. أختي (3)……….. رجال"
-                },
-                {
-                  "ar": "(4) …….مدرسون (5)……….. طالبات (6)………… أمي",
-                  "ur": "(4) …….مدرسون (5)……….. طالبات (6)………… أمي",
-                  "en": "One hundred"
-                },
-                {
-                  "ar": "(7) …………أبي (8) …………طالبة (9) …………طبيبات",
-                  "ur": "(7) …………أبي (8) …………طالبة (9) …………طبيبات",
-                  "en": "(7) …………أبي (8) …………طالبة (9) …………طبيبات"
-                },
-                {
-                  "ar": "(10)……….. تجار",
-                  "ur": "(10)……….. تجار",
-                  "en": "(10)……….. تجار"
-                },
-                {
-                  "ar": "(5) ضع في الأماكن الخالية من الجمل الآتية ضميراً مناسباً (هُوَ، هِيَ، هُمْ، هُنَّ):",
-                  "ur": "(5) ضع في الأماكن الخالية من الجمل الآتية ضميراً مناسباً (هُوَ، هِيَ، هُمْ، هُنَّ):",
-                  "en": "(5) ضع في الأماكن الخالية من الجمل الآتية ضميراً مناسباً (هُوَ، هِيَ، هُمْ، هُنَّ):"
-                },
-                {
-                  "ar": "🦵 (1) من هذا الرجل؟ …………………………….. مدرِّسنا.",
-                  "ur": "(1) من هذا الرجل؟ …………………………….. مدرِّسنا.",
-                  "en": "(1) من هذا الرجل؟ …………………………….. مدرِّسنا."
-                },
-                {
-                  "ar": "👩‍🎓 (2) أين الطالبات؟ …………………………….في الفصل.",
-                  "ur": "(2) أين الطالبات؟ …………………………….في الفصل.",
-                  "en": "(2) أين الطالبات؟ …………………………….في الفصل."
-                },
-                {
-                  "ar": "(3) من هؤلاء الفتية؟ ……………………… .أبناء المدرس.",
-                  "ur": "(3) من هؤلاء الفتية؟ ……………………… .أبناء المدرس.",
-                  "en": "(3) من هؤلاء الفتية؟ ……………………… .أبناء المدرس."
-                },
-                {
-                  "ar": "👩‍🎓 (4) أين الطالبة الجديدة؟ ………………………..في المكتبة.",
-                  "ur": "(4) أين الطالبة الجديدة؟ ………………………..في المكتبة.",
-                  "en": "(4) أين الطالبة الجديدة؟ ………………………..في المكتبة."
-                },
-                {
-                  "ar": "(5) من هؤلاء الناس؟ ……………………..حجاج من الهند.",
-                  "ur": "(5) من هؤلاء الناس؟ ……………………..حجاج من الهند.",
-                  "en": "(5) من هؤلاء الناس؟ ……………………..حجاج من الهند."
-                },
-                {
-                  "ar": "(6) أين الطبيبات؟ ……………………. في مستشفى الولادة.",
-                  "ur": "(6) أين الطبيبات؟ ……………………. في مستشفى الولادة.",
-                  "en": "(6) أين الطبيبات؟ ……………………. في مستشفى الولادة."
-                },
-                {
-                  "ar": "(7) من هذا الولد الذي خرج من بيتك؟ …………….. ابن أخي.",
-                  "ur": "(7) من هذا الولد الذي خرج من بيتك؟ …………….. ابن أخي.",
-                  "en": "(7) من هذا الولد الذي خرج من بيتك؟ …………….. ابن أخي."
-                },
-                {
-                  "ar": "(8) من أين هؤلاء الضيوف؟ ………………….من الرياض.",
-                  "ur": "(8) من أين هؤلاء الضيوف؟ ………………….من الرياض.",
-                  "en": "(8) من أين هؤلاء الضيوف؟ ………………….من الرياض."
-                },
-                {
-                  "ar": "(9) من أين هؤلاء الممرضات؟ ………………… من الفلبِّيْن.",
-                  "ur": "(9) من أين هؤلاء الممرضات؟ ………………… من الفلبِّيْن.",
-                  "en": "(9) من أين هؤلاء الممرضات؟ ………………… من الفلبِّيْن."
-                },
-                {
-                  "ar": "👧 (10) من هذه الفتاة؟ ……………………….. بنت المدرسة.",
-                  "ur": "(10) من هذه الفتاة؟ ……………………….. بنت المدرسة.",
-                  "en": "(10) من هذه الفتاة؟ ……………………….. بنت المدرسة."
-                },
-                {
-                  "ar": "(6) هاتِ جمع الأسماء الآتيـة:",
-                  "ur": "(6) هاتِ جمع الأسماء الآتيـة:",
-                  "en": "(6) هاتِ جمع الأسماء الآتيـة:"
-                },
-                {
-                  "ar": "👧 أخت………",
-                  "ur": "أخت………",
-                  "en": "أخت………"
-                },
-                {
-                  "ar": "بنت………",
-                  "ur": "بنت………",
-                  "en": "بنت………"
-                },
-                {
-                  "ar": "مسلمة………",
-                  "ur": "مسلمة………",
-                  "en": "مسلمة………"
-                },
-                {
-                  "ar": "طبيبة………",
-                  "ur": "طبيبة………",
-                  "en": "طبيبة………"
-                },
-                {
-                  "ar": "طبيب………",
-                  "ur": "طبيب………",
-                  "en": "طبيب………"
-                },
-                {
-                  "ar": "زوج………",
-                  "ur": "زوج………",
-                  "en": "زوج………"
-                },
-                {
-                  "ar": "زوجة………",
-                  "ur": "زوجة………",
-                  "en": "زوجة………"
-                },
-                {
-                  "ar": "فتاة………",
-                  "ur": "فتاة………",
-                  "en": "فتاة………"
-                },
-                {
-                  "ar": "كبيرة………",
-                  "ur": "كبيرة………",
-                  "en": "كبيرة………"
-                },
-                {
-                  "ar": "طويلة………",
-                  "ur": "طويلة………",
-                  "en": "طويلة………"
-                },
-                {
-                  "ar": "جديدة………",
-                  "ur": "جديدة………",
-                  "en": "جديدة………"
-                },
-                {
-                  "ar": "أخ………",
-                  "ur": "أخ………",
-                  "en": "أخ………"
-                },
-                {
-                  "ar": "كبير………",
-                  "ur": "كبير………",
-                  "en": "كبير………"
-                },
-                {
-                  "ar": "جديد………",
-                  "ur": "جديد………",
-                  "en": "جديد………"
-                },
-                {
-                  "ar": "أَسْمَاءُ الإِشـارَة للقَرِيْبِ",
-                  "ur": "أَسْمَاءُ الإِشـارَة للقَرِيْبِ",
-                  "en": "أَسْمَاءُ الإِشـارَة للقَرِيْبِ"
-                },
-                {
-                  "ar": "هـذا طـالبٌ",
-                  "ur": "هـذا طـالبٌ",
-                  "en": "هـذا طـالبٌ"
-                },
-                {
-                  "ar": "هؤُلاء طـلاّبٌ",
-                  "ur": "هؤُلاء طـلاّبٌ",
-                  "en": "هؤُلاء طـلاّبٌ"
-                },
-                {
-                  "ar": "هـذه طالبـةٌ",
-                  "ur": "هـذه طالبـةٌ",
-                  "en": "هـذه طالبـةٌ"
-                },
-                {
-                  "ar": "هؤُلاءِ طالباتٌ",
-                  "ur": "هؤُلاءِ طالباتٌ",
-                  "en": "هؤُلاءِ طالباتٌ"
                 }
               ]
             }
@@ -90184,251 +89759,6 @@
                   "ar": "دَفَعَ (يَدْ فَعُ) مَرِضَ (يَمْرَضُ) حَزِنَ (يَحْزَنُ)",
                   "ur": "دَفَعَ (يَدْ فَعُ) مَرِضَ (يَمْرَضُ) حَزِنَ (يَحْزَنُ)",
                   "en": "دَفَعَ (يَدْ فَعُ) مَرِضَ (يَمْرَضُ) حَزِنَ (يَحْزَنُ)"
-                },
-                {
-                  "ar": "أقـسام الـفـعل",
-                  "ur": "أقـسام الـفـعل",
-                  "en": "أقـسام الـفـعل"
-                },
-                {
-                  "ar": "الفعل",
-                  "ur": "الفعل",
-                  "en": "الفعل"
-                },
-                {
-                  "ar": "الماضي",
-                  "ur": "الماضي",
-                  "en": "الماضي"
-                },
-                {
-                  "ar": "المضارع المرفوع",
-                  "ur": "المضارع المرفوع",
-                  "en": "المضارع المرفوع"
-                },
-                {
-                  "ar": "المضارع المنصوب",
-                  "ur": "المضارع المنصوب",
-                  "en": "المضارع المنصوب"
-                },
-                {
-                  "ar": "المضارع المجزوم",
-                  "ur": "المضارع المجزوم",
-                  "en": "المضارع المجزوم"
-                },
-                {
-                  "ar": "الأمر",
-                  "ur": "الأمر",
-                  "en": "الأمر"
-                },
-                {
-                  "ar": "السالم",
-                  "ur": "السالم",
-                  "en": "السالم"
-                },
-                {
-                  "ar": "كَتَبَ",
-                  "ur": "كَتَبَ",
-                  "en": "كَتَبَ"
-                },
-                {
-                  "ar": "يَكْتُبُ",
-                  "ur": "يَكْتُبُ",
-                  "en": "يَكْتُبُ"
-                },
-                {
-                  "ar": "لَنْ يَكْتُبَ",
-                  "ur": "لَنْ يَكْتُبَ",
-                  "en": "لَنْ يَكْتُبَ"
-                },
-                {
-                  "ar": "لَمْ يَكْتُبْ",
-                  "ur": "لَمْ يَكْتُبْ",
-                  "en": "لَمْ يَكْتُبْ"
-                },
-                {
-                  "ar": "اُكْتُبْ",
-                  "ur": "اُكْتُبْ",
-                  "en": "اُكْتُبْ"
-                },
-                {
-                  "ar": "المهموز",
-                  "ur": "المهموز",
-                  "en": "المهموز"
-                },
-                {
-                  "ar": "أَكَلَ سَأَلَ قَرَأَ",
-                  "ur": "أَكَلَ سَأَلَ قَرَأَ",
-                  "en": "أَكَلَ سَأَلَ قَرَأَ"
-                },
-                {
-                  "ar": "يَأْكُلُ يَسْألُ يَقْرأُ",
-                  "ur": "يَأْكُلُ يَسْألُ يَقْرأُ",
-                  "en": "يَأْكُلُ يَسْألُ يَقْرأُ"
-                },
-                {
-                  "ar": "لَنْ يَأْكُلَ لَنْ يَسْألَ لَنْ يَقْرأَ",
-                  "ur": "لَنْ يَأْكُلَ لَنْ يَسْألَ لَنْ يَقْرأَ",
-                  "en": "لَنْ يَأْكُلَ لَنْ يَسْألَ لَنْ يَقْرأَ"
-                },
-                {
-                  "ar": "لمْ يَأكلْ لمْ يَسألْ لمْ يَقرأْ",
-                  "ur": "لمْ يَأكلْ لمْ يَسألْ لمْ يَقرأْ",
-                  "en": "لمْ يَأكلْ لمْ يَسألْ لمْ يَقرأْ"
-                },
-                {
-                  "ar": "كُلْ اسْأَلْ اقْرَأْ",
-                  "ur": "كُلْ اسْأَلْ اقْرَأْ",
-                  "en": "كُلْ اسْأَلْ اقْرَأْ"
-                },
-                {
-                  "ar": "المضَعَّف",
-                  "ur": "المضَعَّف",
-                  "en": "المضَعَّف"
-                },
-                {
-                  "ar": "عَدَّ شَمَّ جَدًّ",
-                  "ur": "عَدَّ شَمَّ جَدًّ",
-                  "en": "عَدَّ شَمَّ جَدًّ"
-                },
-                {
-                  "ar": "يَعُدُّ يَشَمُّ يَجِدُّ",
-                  "ur": "يَعُدُّ يَشَمُّ يَجِدُّ",
-                  "en": "يَعُدُّ يَشَمُّ يَجِدُّ"
-                },
-                {
-                  "ar": "لَنْ يَعُدَّ لَنْ يَشَمّ‍َ لَنْ يَجِدَّ",
-                  "ur": "لَنْ يَعُدَّ لَنْ يَشَمّ‍َ لَنْ يَجِدَّ",
-                  "en": "لَنْ يَعُدَّ لَنْ يَشَمّ‍َ لَنْ يَجِدَّ"
-                },
-                {
-                  "ar": "لَمْ يَعْدَّ لَمْ يَشَمْ لَمْ يَجِدْ",
-                  "ur": "لَمْ يَعْدَّ لَمْ يَشَمْ لَمْ يَجِدْ",
-                  "en": "لَمْ يَعْدَّ لَمْ يَشَمْ لَمْ يَجِدْ"
-                },
-                {
-                  "ar": "عُدَّ شَمًّ جِدَّ",
-                  "ur": "عُدَّ شَمًّ جِدَّ",
-                  "en": "عُدَّ شَمًّ جِدَّ"
-                },
-                {
-                  "ar": "المعْتلّ الفاء ( المثال )",
-                  "ur": "المعْتلّ الفاء ( المثال )",
-                  "en": "المعْتلّ الفاء ( المثال )"
-                },
-                {
-                  "ar": "وَقَفَ",
-                  "ur": "وَقَفَ",
-                  "en": "وَقَفَ"
-                },
-                {
-                  "ar": "يَقِفُ",
-                  "ur": "يَقِفُ",
-                  "en": "يَقِفُ"
-                },
-                {
-                  "ar": "لَنْ يَقِفَ",
-                  "ur": "لَنْ يَقِفَ",
-                  "en": "لَنْ يَقِفَ"
-                },
-                {
-                  "ar": "لَمْ يَقِفْ",
-                  "ur": "لَمْ يَقِفْ",
-                  "en": "لَمْ يَقِفْ"
-                },
-                {
-                  "ar": "قِفْ",
-                  "ur": "قِفْ",
-                  "en": "قِفْ"
-                },
-                {
-                  "ar": "المُعْتَلّ العين (الأجوف)",
-                  "ur": "المُعْتَلّ العين (الأجوف)",
-                  "en": "المُعْتَلّ العين (الأجوف)"
-                },
-                {
-                  "ar": "قَالَ بَاعَ نَامَ",
-                  "ur": "قَالَ بَاعَ نَامَ",
-                  "en": "قَالَ بَاعَ نَامَ"
-                },
-                {
-                  "ar": "يَقُولُ يَبِيْعُ يَنَامُ",
-                  "ur": "يَقُولُ يَبِيْعُ يَنَامُ",
-                  "en": "يَقُولُ يَبِيْعُ يَنَامُ"
-                },
-                {
-                  "ar": "لَنْ يَقُولَ لَنْ يَبِيْعَ لَنْ يَنَامَ",
-                  "ur": "لَنْ يَقُولَ لَنْ يَبِيْعَ لَنْ يَنَامَ",
-                  "en": "لَنْ يَقُولَ لَنْ يَبِيْعَ لَنْ يَنَامَ"
-                },
-                {
-                  "ar": "لَمْ يَقُلْ لَمْ يَبِعْ لَمْ يَنَمْ",
-                  "ur": "لَمْ يَقُلْ لَمْ يَبِعْ لَمْ يَنَمْ",
-                  "en": "لَمْ يَقُلْ لَمْ يَبِعْ لَمْ يَنَمْ"
-                },
-                {
-                  "ar": "قُلْ بِعْ نَمْ",
-                  "ur": "قُلْ بِعْ نَمْ",
-                  "en": "قُلْ بِعْ نَمْ"
-                },
-                {
-                  "ar": "المُعْتَلّ اللاّم (الناقص )",
-                  "ur": "المُعْتَلّ اللاّم (الناقص )",
-                  "en": "المُعْتَلّ اللاّم (الناقص )"
-                },
-                {
-                  "ar": "مَشَى نَسِي نَهَى دَعَا",
-                  "ur": "مَشَى نَسِي نَهَى دَعَا",
-                  "en": "مَشَى نَسِي نَهَى دَعَا"
-                },
-                {
-                  "ar": "يَمْشِي يَنْسَى يَنْهَى يَدْعُو",
-                  "ur": "يَمْشِي يَنْسَى يَنْهَى يَدْعُو",
-                  "en": "يَمْشِي يَنْسَى يَنْهَى يَدْعُو"
-                },
-                {
-                  "ar": "لَنْ يَمْشِيَ لَنْ يَنْسَىَ لَنْ يَنْهَىَ لَنْ يَدْعُوَ",
-                  "ur": "لَنْ يَمْشِيَ لَنْ يَنْسَىَ لَنْ يَنْهَىَ لَنْ يَدْعُوَ",
-                  "en": "لَنْ يَمْشِيَ لَنْ يَنْسَىَ لَنْ يَنْهَىَ لَنْ يَدْعُوَ"
-                },
-                {
-                  "ar": "لَمْ يَمْشِ لَمْ يَنْسَ لَمْ يَنْهَ لَمْ يَدْعُ",
-                  "ur": "لَمْ يَمْشِ لَمْ يَنْسَ لَمْ يَنْهَ لَمْ يَدْعُ",
-                  "en": "لَمْ يَمْشِ لَمْ يَنْسَ لَمْ يَنْهَ لَمْ يَدْعُ"
-                },
-                {
-                  "ar": "اِمْشِ اِنْسَ اِنْهَ اُدْعُ",
-                  "ur": "اِمْشِ اِنْسَ اِنْهَ اُدْعُ",
-                  "en": "اِمْشِ اِنْسَ اِنْهَ اُدْعُ"
-                },
-                {
-                  "ar": "اللَّفيفُ المقرون اللفيف المفروق",
-                  "ur": "اللَّفيفُ المقرون اللفيف المفروق",
-                  "en": "اللَّفيفُ المقرون اللفيف المفروق"
-                },
-                {
-                  "ar": "كَوَى وَقَى",
-                  "ur": "كَوَى وَقَى",
-                  "en": "كَوَى وَقَى"
-                },
-                {
-                  "ar": "يَكْوِي يَقِي",
-                  "ur": "يَكْوِي يَقِي",
-                  "en": "يَكْوِي يَقِي"
-                },
-                {
-                  "ar": "لَنْ يَكْوِيَ لَنْ يَقِيَ",
-                  "ur": "لَنْ يَكْوِيَ لَنْ يَقِيَ",
-                  "en": "لَنْ يَكْوِيَ لَنْ يَقِيَ"
-                },
-                {
-                  "ar": "لَمْ يَكْوِ لَمْ يَقِ",
-                  "ur": "لَمْ يَكْوِ لَمْ يَقِ",
-                  "en": "لَمْ يَكْوِ لَمْ يَقِ"
-                },
-                {
-                  "ar": "اِكْوِ قِ",
-                  "ur": "اِكْوِ قِ",
-                  "en": "اِكْوِ قِ"
                 }
               ]
             }
