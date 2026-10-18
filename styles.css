@@ -3041,4 +3041,184 @@ body[data-lang="en"] {
   }
 }
 
+/* =====================================================
+   CURRICULUM FLOW & QAIDA MINI-LESSON STYLING
+   ===================================================== */
+.tamreen-opt-card.is-nasuddars {
+  border-right: 5px solid var(--duo-blue);
+  background: rgba(28, 176, 246, 0.03);
+}
+.tamreen-opt-card.is-nasuddars:hover {
+  background: rgba(28, 176, 246, 0.08);
+  border-color: var(--duo-blue);
+}
+.tamreen-opt-card.is-tamreen {
+  border-right: 5px solid var(--duo-green);
+}
+.tamreen-opt-card.is-tamreen:hover {
+  background: rgba(88, 204, 2, 0.06);
+  border-color: var(--duo-green);
+}
+.tamreen-opt-card.is-qaida {
+  border-right: 5px solid #f59e0b;
+  background: rgba(245, 158, 11, 0.04);
+}
+.tamreen-opt-card.is-qaida:hover {
+  background: rgba(245, 158, 11, 0.09);
+  border-color: #f59e0b;
+}
+
+.qaida-badge-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.qaida-badge {
+  background: rgba(245, 158, 11, 0.16);
+  color: #d97706;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-size: 0.85rem;
+}
+.qaida-page-badge {
+  background: rgba(100, 116, 139, 0.14);
+  color: var(--text-muted);
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 0.82rem;
+}
+
+.qaida-modal-body {
+  padding: 20px 24px;
+  overflow-y: auto;
+  max-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  direction: rtl;
+  text-align: right;
+}
+.qaida-rule-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.4;
+  margin: 0;
+}
+.qaida-rule-text {
+  font-size: 1.05rem;
+  color: var(--text-main);
+  background: var(--bg-hover);
+  border: 1px solid var(--border-color);
+  padding: 14px 16px;
+  border-radius: 14px;
+  line-height: 1.6;
+}
+.qaida-rule-text-en {
+  direction: ltr;
+  text-align: left;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-top: 6px;
+}
+.qaida-examples-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.qaida-example-card {
+  background: var(--bg-surface);
+  border: 1.5px solid var(--border-color);
+  border-radius: 14px;
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.qaida-example-ar {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--duo-blue);
+  line-height: 1.35;
+}
+.qaida-example-trans {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+.qaida-modal-footer {
+  padding: 16px 24px;
+  border-top: 2px dashed var(--border-color);
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* =====================================================
+   JOURNEY UNIT CARD CURRICULUM CHIPS & IN-QUIZ QAIDA
+   ===================================================== */
+.unit-card-curriculum-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.unit-curr-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: var(--bg-hover);
+  color: var(--text-muted);
+  border: 1px solid var(--border-color);
+}
+
+.unit-curr-chip.chip-tamreen {
+  background: rgba(88, 204, 2, 0.1);
+  color: var(--duo-green-dark);
+  border-color: rgba(88, 204, 2, 0.25);
+}
+
+.unit-curr-chip.chip-qaida {
+  background: rgba(245, 158, 11, 0.12);
+  color: #b45309;
+  border-color: rgba(245, 158, 11, 0.3);
+}
+
+.unit-curr-chip.chip-qcount {
+  background: rgba(28, 176, 246, 0.1);
+  color: var(--duo-blue);
+  border-color: rgba(28, 176, 246, 0.25);
+}
+
+.in-quiz-qaida-card {
+  background: var(--bg-surface);
+  border: 2px solid rgba(245, 158, 11, 0.4);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.08);
+  margin-top: 12px;
+}
+
+.in-quiz-qaida-title {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #d97706;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.in-quiz-qaida-examples-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin: 16px 0 8px;
+}
+
+
 

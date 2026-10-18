@@ -389,6 +389,10 @@
       card.dataset.unitId = unit.id;
 
       const transTopic = getUnitTransTopic(unit);
+      const flow = unit.curriculum_flow || [];
+      const tamreenCount = flow.filter(f => f.type === 'tamreen').length || (unit.questions ? new Set(unit.questions.map(q => q.tamreen_num || 1)).size : 0);
+      const qaidaCount = flow.filter(f => f.type === 'qaida').length;
+      const qCount = (unit.questions || []).length;
 
       card.innerHTML = `
         <div>
@@ -399,6 +403,11 @@
           <div class="unit-card-body">
             <h3 class="unit-card-title ar-font">${formatAr(unit.title_ar)}</h3>
             <p class="unit-card-sub">${transTopic}</p>
+            <div class="unit-card-curriculum-chips">
+              ${tamreenCount > 0 ? `<span class="unit-curr-chip chip-tamreen">✍️ ${tamreenCount} ${state.lang === 'ur' ? 'تمارین' : (state.lang === 'en' ? 'Exercises' : 'تمارین')}</span>` : ''}
+              ${qaidaCount > 0 ? `<span class="unit-curr-chip chip-qaida">💡 ${qaidaCount} ${state.lang === 'ur' ? 'قواعد' : (state.lang === 'en' ? 'Rules' : 'قواعد')}</span>` : ''}
+              ${qCount > 0 ? `<span class="unit-curr-chip chip-qcount">🎯 ${qCount} ${state.lang === 'ur' ? 'سوالات' : (state.lang === 'en' ? 'Questions' : 'أسئلة')}</span>` : ''}
+            </div>
           </div>
         </div>
         <div class="unit-card-actions">
@@ -1099,101 +1108,215 @@
 
     const titleEl = document.getElementById('tamreenSelectorTitle');
     if (state.lang === 'ur') {
-      titleEl.textContent = 'مشق (تمرین) کا انتخاب کریں';
+      titleEl.textContent = 'سبق کے اجزاء، تمارین اور قواعد (کتاب کی ترتیب)';
     } else if (state.lang === 'en') {
-      titleEl.textContent = 'Select Exercise (Tamreen)';
+      titleEl.textContent = 'Lesson Flow: Text, Exercises & Rules';
     } else {
-      titleEl.textContent = 'اخْتَرْ التَّمْرِينَ • Select Exercise';
+      titleEl.textContent = 'خُطَّةُ الدَّرْسِ وَالتَّمَارِينِ • Lesson Flow & Exercises';
     }
 
     const list = document.getElementById('tamreenOptionsList');
     list.innerHTML = '';
 
     const questions = unit.questions || [];
-    
-    // Group questions by tamreen_num
-    const tamreenMap = {};
-    questions.forEach(q => {
-      const num = q.tamreen_num || 1;
-      if (!tamreenMap[num]) {
-        tamreenMap[num] = {
-          num: num,
-          title_ar: q.tamreen_title_ar || q.badge_ar || `التَّمْرِينُ (${num})`,
-          title_ur: q.tamreen_title_ur || q.badge_ur || `مشق نمبر (${num})`,
-          title_en: q.tamreen_title_en || q.badge_en || `Exercise (${num})`,
-          goal_ur: q.grammar_goal_ur || '',
-          goal_en: q.grammar_goal_en || '',
-          count: 0
-        };
-      }
-      tamreenMap[num].count += 1;
-    });
+    const flow = unit.curriculum_flow || [];
 
-    const tamreens = Object.values(tamreenMap).sort((a, b) => a.num - b.num);
-
-    // Add "All Exercises" card at the top if more than 1 tamreen
-    if (tamreens.length > 1) {
+    // 1. Top Card: Play Full Lesson Sequence in Order
+    if (questions.length > 0 || flow.length > 0) {
       const allCard = document.createElement('div');
       allCard.className = 'tamreen-opt-card all-tamreens';
       
-      let allTitle = state.lang === 'ur' ? '⭐ جَمِيعُ التَّمَارِينِ (تمام مشقیں اکٹھی حل کریں)' : (state.lang === 'en' ? '⭐ All Exercises (Play full sequence)' : '⭐ جَمِيعُ التَّمَارِينِ • All Exercises');
-      let allSub = state.lang === 'ur' ? `سبق کی تمام ${questions.length} مشقیں یکے بعد دیگرے حل کریں` : `Solve all ${questions.length} exercises of this chapter in sequence`;
+      let allTitle = state.lang === 'ur' ? '⭐ جَمِيعُ الدَّرْسِ (ترتیب سے مکمل سبق شروع کریں)' : (state.lang === 'en' ? '⭐ Complete Lesson Flow (Start from beginning)' : '⭐ جَمِيعُ الدَّرْسِ • Complete Lesson Flow');
+      let allSub = state.lang === 'ur' ? `سبق کا متن، تمام ${questions.length} مشقیں اور قواعد کتاب کی ترتیب کے مطابق حل کریں` : `Read lesson text, solve all ${questions.length} exercises and study grammar rules in book sequence`;
 
       allCard.innerHTML = `
-        <div class="tamreen-opt-num">⭐</div>
+        <div class="tamreen-opt-num" style="background:rgba(88,204,2,0.18);color:var(--duo-green);">⭐</div>
         <div class="tamreen-opt-info">
           <div class="tamreen-opt-title ar-font" style="font-weight:bold;color:var(--duo-green);">${allTitle}</div>
           <div class="tamreen-opt-goal">${allSub}</div>
-          <div class="tamreen-opt-meta">${questions.length} ${state.lang === 'ur' ? 'سوالات' : 'questions'}</div>
+          <div class="tamreen-opt-meta">${questions.length} ${state.lang === 'ur' ? 'سوالات' : 'questions'} • ${flow.length || 1} ${state.lang === 'ur' ? 'اجزاء' : 'parts'}</div>
         </div>
       `;
       allCard.addEventListener('click', () => {
         closeTamreenSelector();
-        startQuiz(unit, null);
+        // If first item is nasuddars, start reader, else start quiz
+        if (flow.length > 0 && flow[0].type === 'nasuddars') {
+          openLessonCardReader(unit);
+        } else {
+          startQuiz(unit, null);
+        }
       });
       list.appendChild(allCard);
     }
 
-    tamreens.forEach(tItem => {
-      const card = document.createElement('div');
-      card.className = 'tamreen-opt-card';
+    // 2. Render all curriculum items in EXACT AUTHENTIC TEXTBOOK ORDER
+    if (flow.length > 0) {
+      flow.forEach(item => {
+        const card = document.createElement('div');
+        const pLabel = item.page ? (state.lang === 'ur' ? `ص ${item.page}` : `p. ${item.page}`) : '';
 
-      let displayTitle = '';
-      let displayGoal = '';
-      if (state.lang === 'ur') {
-        displayTitle = tItem.title_ur || tItem.title_ar;
-        displayGoal = tItem.goal_ur;
-      } else if (state.lang === 'en') {
-        displayTitle = tItem.title_en || tItem.title_ar;
-        displayGoal = tItem.goal_en;
-      } else {
-        displayTitle = `${tItem.title_ar} • ${tItem.title_ur || tItem.title_en}`;
-        displayGoal = (tItem.goal_ur && tItem.goal_en) ? `${tItem.goal_ur} • ${tItem.goal_en}` : (tItem.goal_ur || tItem.goal_en);
-      }
+        if (item.type === 'nasuddars') {
+          card.className = 'tamreen-opt-card is-nasuddars';
+          let titleStr = formatAr(item.title_ar || 'نَصُّ الدَّرْسِ');
+          let subStr = state.lang === 'ur' ? (item.title_ur || 'سبق کا بنیادی متن و مطالعہ') : (state.lang === 'en' ? (item.title_en || 'Lesson Reading & Core Text') : `${item.title_ur || ''} • ${item.title_en || ''}`);
+          
+          card.innerHTML = `
+            <div class="tamreen-opt-num" style="background:rgba(28,176,246,0.15);color:var(--duo-blue);">📖</div>
+            <div class="tamreen-opt-info">
+              <div class="tamreen-opt-title ar-font">${titleStr}</div>
+              <div class="tamreen-opt-goal">${subStr}</div>
+              <div class="tamreen-opt-meta">📖 ${state.lang === 'ur' ? 'متن و مطالعہ' : 'Lesson Reading'} ${pLabel ? `• ${pLabel}` : ''}</div>
+            </div>
+          `;
+          card.addEventListener('click', () => {
+            closeTamreenSelector();
+            openLessonCardReader(unit);
+          });
+        } else if (item.type === 'qaida') {
+          card.className = 'tamreen-opt-card is-qaida';
+          let titleStr = formatAr(item.title_ar || 'قَاعِدَةٌ ضَابِطَةٌ');
+          let subStr = state.lang === 'ur' ? (item.rule_summary_ur || item.title_ur || '') : (state.lang === 'en' ? (item.rule_summary_en || item.title_en || '') : `${item.rule_summary_ur || ''} • ${item.rule_summary_en || ''}`);
+          
+          card.innerHTML = `
+            <div class="tamreen-opt-num" style="background:rgba(245,158,11,0.15);color:#d97706;">💡</div>
+            <div class="tamreen-opt-info">
+              <div class="tamreen-opt-title ar-font" style="color:#d97706;">${titleStr}</div>
+              ${subStr ? `<div class="tamreen-opt-goal">${subStr}</div>` : ''}
+              <div class="tamreen-opt-meta">💡 ${state.lang === 'ur' ? 'قاعدہ ضابطہ (منی لیسن)' : 'Grammar Mini-Lesson'} ${pLabel ? `• ${pLabel}` : ''}</div>
+            </div>
+          `;
+          card.addEventListener('click', () => {
+            closeTamreenSelector();
+            openQaidaModal(item, unit);
+          });
+        } else {
+          // Tamreen (Exercise)
+          card.className = 'tamreen-opt-card is-tamreen';
+          let titleStr = formatAr(item.title_ar || `التَّمْرِينُ (${item.tamreen_num})`);
+          let subStr = state.lang === 'ur' ? (item.title_ur || '') : (state.lang === 'en' ? (item.title_en || '') : `${item.title_ur || ''} • ${item.title_en || ''}`);
+          const qCount = item.question_count || (unit.questions ? unit.questions.filter(q => (q.tamreen_num || 1) === item.tamreen_num).length : 0);
 
-      const qLabel = state.lang === 'ur' ? `${tItem.count} سوالات` : (state.lang === 'en' ? `${tItem.count} Questions` : `${tItem.count} سوالات • Questions`);
-
-      card.innerHTML = `
-        <div class="tamreen-opt-num">${tItem.num}</div>
-        <div class="tamreen-opt-info">
-          <div class="tamreen-opt-title ar-font">${displayTitle}</div>
-          ${displayGoal ? `<div class="tamreen-opt-goal">${displayGoal}</div>` : ''}
-          <div class="tamreen-opt-meta">${qLabel}</div>
-        </div>
-      `;
-
-      card.addEventListener('click', () => {
-        closeTamreenSelector();
-        startQuiz(unit, tItem.num);
+          card.innerHTML = `
+            <div class="tamreen-opt-num" style="background:rgba(88,204,2,0.15);color:var(--duo-green);">${item.tamreen_num || '✍️'}</div>
+            <div class="tamreen-opt-info">
+              <div class="tamreen-opt-title ar-font">${titleStr}</div>
+              ${subStr ? `<div class="tamreen-opt-goal">${subStr}</div>` : ''}
+              <div class="tamreen-opt-meta">✍️ ${qCount} ${state.lang === 'ur' ? 'سوالات' : 'questions'} ${pLabel ? `• ${pLabel}` : ''}</div>
+            </div>
+          `;
+          card.addEventListener('click', () => {
+            closeTamreenSelector();
+            startQuiz(unit, item.tamreen_num);
+          });
+        }
+        list.appendChild(card);
       });
-      list.appendChild(card);
-    });
+    } else {
+      // Fallback grouping by tamreen_num if flow array missing
+      const tamreenMap = {};
+      questions.forEach(q => {
+        const num = q.tamreen_num || 1;
+        if (!tamreenMap[num]) {
+          tamreenMap[num] = {
+            num: num,
+            title_ar: q.tamreen_title_ar || q.badge_ar || `التَّمْرِينُ (${num})`,
+            title_ur: q.tamreen_title_ur || q.badge_ur || `مشق نمبر (${num})`,
+            title_en: q.tamreen_title_en || q.badge_en || `Exercise (${num})`,
+            goal_ur: q.grammar_goal_ur || '',
+            goal_en: q.grammar_goal_en || '',
+            count: 0
+          };
+        }
+        tamreenMap[num].count += 1;
+      });
+
+      const tamreens = Object.values(tamreenMap).sort((a, b) => a.num - b.num);
+      tamreens.forEach(tItem => {
+        const card = document.createElement('div');
+        card.className = 'tamreen-opt-card is-tamreen';
+
+        let displayTitle = state.lang === 'ur' ? (tItem.title_ur || tItem.title_ar) : (state.lang === 'en' ? (tItem.title_en || tItem.title_ar) : `${tItem.title_ar} • ${tItem.title_ur || tItem.title_en}`);
+        let displayGoal = state.lang === 'ur' ? tItem.goal_ur : (state.lang === 'en' ? tItem.goal_en : `${tItem.goal_ur} • ${tItem.goal_en}`);
+        const qLabel = state.lang === 'ur' ? `${tItem.count} سوالات` : `${tItem.count} Questions`;
+
+        card.innerHTML = `
+          <div class="tamreen-opt-num">${tItem.num}</div>
+          <div class="tamreen-opt-info">
+            <div class="tamreen-opt-title ar-font">${displayTitle}</div>
+            ${displayGoal ? `<div class="tamreen-opt-goal">${displayGoal}</div>` : ''}
+            <div class="tamreen-opt-meta">${qLabel}</div>
+          </div>
+        `;
+        card.addEventListener('click', () => {
+          closeTamreenSelector();
+          startQuiz(unit, tItem.num);
+        });
+        list.appendChild(card);
+      });
+    }
 
     document.getElementById('tamreenSelectorModal').classList.remove('hidden');
   }
 
   function closeTamreenSelector() {
     document.getElementById('tamreenSelectorModal').classList.add('hidden');
+  }
+
+  function openQaidaModal(item, unit) {
+    if (!item) return;
+    const modal = document.getElementById('qaidaModal');
+    if (!modal) return;
+
+    const pageBadge = document.getElementById('qaidaPageBadge');
+    if (pageBadge) pageBadge.textContent = item.page ? `ص ${item.page}` : '';
+
+    const titleEl = document.getElementById('qaidaModalTitle');
+    if (titleEl) titleEl.textContent = formatAr(item.title_ar || 'قَاعِدَةٌ ضَابِطَةٌ');
+
+    const body = document.getElementById('qaidaModalBody');
+    body.innerHTML = '';
+
+    // 1. Rule Summary Box
+    if (item.rule_summary_ur || item.rule_summary_en) {
+      const summaryBox = document.createElement('div');
+      summaryBox.className = 'qaida-rule-text';
+      summaryBox.innerHTML = `
+        ${item.rule_summary_ur ? `<div style="font-weight:600;margin-bottom:6px;font-size:1.15rem;">${item.rule_summary_ur}</div>` : ''}
+        ${item.rule_summary_en ? `<div class="qaida-rule-text-en">${item.rule_summary_en}</div>` : ''}
+      `;
+      body.appendChild(summaryBox);
+    }
+
+    // 2. Examples List
+    if (item.examples && item.examples.length > 0) {
+      const exHeader = document.createElement('div');
+      exHeader.style.fontWeight = '700';
+      exHeader.style.color = 'var(--text-muted)';
+      exHeader.style.fontSize = '0.95rem';
+      exHeader.textContent = state.lang === 'ur' ? 'امثلہ و تطبیقات:' : 'Examples & Applications:';
+      body.appendChild(exHeader);
+
+      const exList = document.createElement('div');
+      exList.className = 'qaida-examples-list';
+
+      item.examples.forEach(ex => {
+        const exCard = document.createElement('div');
+        exCard.className = 'qaida-example-card';
+        exCard.innerHTML = `
+          <div class="qaida-example-ar ar-font">${formatAr(ex.ar)}</div>
+          <div class="qaida-example-trans">${ex.ur || ''} • <span style="direction:ltr;display:inline-block;">${ex.en || ''}</span></div>
+        `;
+        exList.appendChild(exCard);
+      });
+      body.appendChild(exList);
+    }
+
+    modal.classList.remove('hidden');
+  }
+
+  function closeQaidaModal() {
+    const modal = document.getElementById('qaidaModal');
+    if (modal) modal.classList.add('hidden');
   }
 
   function startQuiz(unit, tamreenNum = null) {
@@ -1203,6 +1326,8 @@
 
     quiz.unit = unit;
     quiz.tamreenNum = tamreenNum;
+    quiz.seenQaidas = new Set();
+    quiz.currentPendingQaidaKey = null;
 
     const allQs = (unit.questions && unit.questions.length > 0)
       ? unit.questions
@@ -1280,6 +1405,122 @@
     }));
   }
 
+  function findPendingInQuizQaida() {
+    if (quiz.tamreenNum !== null || !quiz.unit || !quiz.unit.curriculum_flow) return null;
+
+    // If all regular questions completed, check if any trailing Qaidas remain in flow
+    if (quiz.index >= quiz.questions.length) {
+      for (const it of quiz.unit.curriculum_flow) {
+        if (it.type === 'qaida') {
+          const key = it.id || `qaida_${it.item_order}`;
+          if (!quiz.seenQaidas.has(key)) {
+            return { item: it, key: key };
+          }
+        }
+      }
+      return null;
+    }
+
+    const q = quiz.questions[quiz.index];
+    const targetTamreenNum = q.tamreen_num || 1;
+
+    // Find in curriculum_flow: all qaidas that appear BEFORE this tamreen in flow order
+    const flow = quiz.unit.curriculum_flow;
+    let targetFlowIdx = flow.findIndex(it => it.type === 'tamreen' && it.tamreen_num === targetTamreenNum);
+    if (targetFlowIdx === -1) targetFlowIdx = flow.length;
+
+    for (let i = 0; i < targetFlowIdx; i++) {
+      const it = flow[i];
+      if (it.type === 'qaida') {
+        const key = it.id || `qaida_${it.item_order || i}`;
+        if (!quiz.seenQaidas.has(key)) {
+          return { item: it, key: key };
+        }
+      }
+    }
+    return null;
+  }
+
+  function renderInQuizQaida(item, key) {
+    const L = t();
+    const stage = document.getElementById('quizStage');
+    const bottomBar = document.getElementById('quizBottomBar');
+    const checkBtn = document.getElementById('quizCheckBtn');
+    const skipBtn = document.getElementById('quizSkipBtn');
+
+    stage.scrollTop = 0;
+    bottomBar.className = 'quiz-bottombar';
+    skipBtn.classList.add('hidden');
+    checkBtn.disabled = false;
+    checkBtn.textContent = state.lang === 'ur' ? 'فَہِمْتُ (جاری رکھیں) ⬅️' : (state.lang === 'en' ? 'Got it! Continue ⬅️' : 'فَهِمْتُ • Continue ⬅️');
+
+    quiz.currentPendingQaidaKey = key;
+
+    document.getElementById('quizHeartsCount').textContent = quiz.hearts;
+    const pct = Math.round(((quiz.index) / Math.max(1, quiz.questions.length)) * 100);
+    document.getElementById('quizProgressFill').style.width = `${Math.max(8, pct)}%`;
+
+    stage.innerHTML = '';
+
+    // Header row
+    const headerRow = document.createElement('div');
+    headerRow.className = 'q-header-row';
+    const badge = document.createElement('div');
+    badge.className = 'q-badge';
+    badge.style.background = 'rgba(245,158,11,0.15)';
+    badge.style.color = '#d97706';
+    badge.style.borderColor = 'rgba(245,158,11,0.3)';
+    badge.textContent = `💡 ${state.lang === 'ur' ? 'قاعدہ ضابطہ (منی لیسن)' : 'Grammar Mini-Lesson'}${item.page ? ` • ص ${item.page}` : ''}`;
+    headerRow.appendChild(badge);
+    stage.appendChild(headerRow);
+
+    // Qaida Box
+    const box = document.createElement('div');
+    box.className = 'in-quiz-qaida-card';
+
+    let titleAr = formatAr(item.title_ar || 'قَاعِدَةٌ ضَابِطَةٌ');
+    let summaryUr = item.rule_summary_ur || '';
+    let summaryEn = item.rule_summary_en || '';
+
+    let examplesHtml = '';
+    if (item.examples && item.examples.length > 0) {
+      examplesHtml = `
+        <div class="in-quiz-qaida-examples-title">${state.lang === 'ur' ? 'أمثلہ و تطبیقات (سنیں اور سمجھیں):' : 'Examples & Audio Applications:'}</div>
+        <div class="qaida-examples-list">
+          ${item.examples.map(ex => `
+            <div class="qaida-example-card">
+              <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;">
+                <div class="qaida-example-ar ar-font">${formatAr(ex.ar)}</div>
+                <button class="q-speak-btn in-quiz-ex-audio" data-ar="${encodeURIComponent(ex.ar)}" title="Listen">🔊</button>
+              </div>
+              <div class="qaida-example-trans">${ex.ur || ''} ${ex.en ? `• <span style="direction:ltr;display:inline-block;">${ex.en}</span>` : ''}</div>
+            </div>
+          `).join('')}
+        </div>
+      `;
+    }
+
+    box.innerHTML = `
+      <div class="in-quiz-qaida-title ar-font">${titleAr}</div>
+      ${(summaryUr || summaryEn) ? `
+        <div class="qaida-rule-text">
+          ${summaryUr ? `<div style="font-weight:600;margin-bottom:6px;font-size:1.15rem;">${summaryUr}</div>` : ''}
+          ${summaryEn ? `<div class="qaida-rule-text-en">${summaryEn}</div>` : ''}
+        </div>
+      ` : ''}
+      ${examplesHtml}
+    `;
+
+    box.querySelectorAll('.in-quiz-ex-audio').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        speakArabic(decodeURIComponent(btn.dataset.ar));
+      });
+    });
+
+    stage.appendChild(box);
+  }
+
   function renderCurrentQuizQuestion() {
     const L = t();
     const stage = document.getElementById('quizStage');
@@ -1290,6 +1531,14 @@
     // CRITICAL: Guarantee scroll is reset to top so question headers are NEVER cut off!
     stage.scrollTop = 0;
 
+    // Check for pending in-quiz Qaida mini-lesson
+    const pendingQaida = findPendingInQuizQaida();
+    if (pendingQaida) {
+      renderInQuizQaida(pendingQaida.item, pendingQaida.key);
+      return;
+    }
+
+    quiz.currentPendingQaidaKey = null;
     bottomBar.className = 'quiz-bottombar';
     checkBtn.textContent = L.checkBtn;
     checkBtn.disabled = true;
@@ -1561,6 +1810,15 @@
 
   function handleQuizCheck() {
     const L = t();
+
+    // If currently displaying an in-quiz Qaida intermission
+    if (quiz.currentPendingQaidaKey) {
+      quiz.seenQaidas.add(quiz.currentPendingQaidaKey);
+      quiz.currentPendingQaidaKey = null;
+      renderCurrentQuizQuestion();
+      return;
+    }
+
     const q = quiz.questions[quiz.index];
     if (!q) return;
 
@@ -1945,6 +2203,18 @@
       if (e.target.id === 'tamreenSelectorModal') closeTamreenSelector();
     });
 
+    // Qaida Modal Events
+    const closeQaidaBtn = document.getElementById('closeQaidaModalBtn');
+    if (closeQaidaBtn) closeQaidaBtn.addEventListener('click', closeQaidaModal);
+    const qaidaContBtn = document.getElementById('qaidaContinueBtn');
+    if (qaidaContBtn) qaidaContBtn.addEventListener('click', closeQaidaModal);
+    const qaidaModalEl = document.getElementById('qaidaModal');
+    if (qaidaModalEl) {
+      qaidaModalEl.addEventListener('click', (e) => {
+        if (e.target.id === 'qaidaModal') closeQaidaModal();
+      });
+    }
+
     document.getElementById('readerModeCardBtn').addEventListener('click', () => setReaderMode('cards'));
     document.getElementById('readerModeFullBtn').addEventListener('click', () => setReaderMode('full'));
 
@@ -1957,7 +2227,7 @@
     });
 
     document.getElementById('quizCheckBtn').addEventListener('click', () => {
-      if (quiz.index < quiz.questions.length) {
+      if (quiz.index < quiz.questions.length || quiz.currentPendingQaidaKey) {
         handleQuizCheck();
       }
     });
@@ -2014,6 +2284,17 @@
     bindEvents();
     renderJourneyView();
   }
+
+  // Expose for testing and automation
+  window.app = {
+    state,
+    quiz,
+    startQuiz,
+    closeQuiz,
+    renderCurrentQuizQuestion,
+    openTamreenSelector,
+    openLessonCardReader
+  };
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);

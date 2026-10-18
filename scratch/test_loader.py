@@ -1,11 +1,15 @@
-import sys, json, os
+import sys, re, json
+
 sys.stdout.reconfigure(encoding='utf-8')
 
-# Load existing books dataset
-with open('data/madinah_books.json', 'r', encoding='utf-8') as f:
-    data = json.load(f)
+# Let's inspect Book 1 HTML and Cairo markdown first
+with open('transcriptions/Madinah-Book-1.html', 'r', encoding='utf-8') as f:
+    b1_html = f.read()
 
-print("Current questions count:")
-for i, b in enumerate(data['books']):
-    q_count = sum(len(u.get('questions', [])) for u in b['units'])
-    print(f"Book {i+1}: {len(b['units'])} units, {q_count} questions")
+with open('transcriptions/Madinah-Book-2.html', 'r', encoding='utf-8') as f:
+    b2_html = f.read()
+
+with open('transcriptions/Madinah-Book-3.html', 'r', encoding='utf-8') as f:
+    b3_html = f.read()
+
+print("Loaded all 3 HTML files successfully.")

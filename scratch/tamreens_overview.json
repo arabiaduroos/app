@@ -1,0 +1,3041 @@
+{
+  "Book 1: دُرُوسُ اللُّغَةِ الْعَرَبِيَّةِ لِغَيْرِ النَّاطِقِينَ بِهَا - الْجُزْءُ الْأَوَّلُ": [
+    {
+      "unit_id": "b1_u1",
+      "title_ar": "الدَّرْسُ الْأَوَّلُ",
+      "topic_en": "This is (هٰذَا) • What & Who questions",
+      "topic_ur": "اسم اشارہ قریب (هٰذَا: یہ) • مَا هٰذَا؟ (یہ کیا ہے؟) اور مَنْ هٰذَا؟ (یہ کون ہے؟)",
+      "total_questions": 25,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): مَا هٰذَا؟",
+          "badge_en": "Exercise (1): What is this?",
+          "count": 10,
+          "sample_ar": "مَا هٰذَا؟ [ ＿＿＿ ]",
+          "sample_ur": "تصویر دیکھ کر درست جملہ منتخب کریں:"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): أَهٰذَا...؟",
+          "badge_en": "Exercise (2): Is this...?",
+          "count": 5,
+          "sample_ar": "أَهٰذَا بَيْتٌ؟ (والصورة بيت)",
+          "sample_ur": "درست جواب منتخب کریں:"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): مَنْ هٰذَا؟",
+          "badge_en": "Exercise (3): Who is this?",
+          "count": 6,
+          "sample_ar": "[ ＿＿＿ ] هٰذَا؟ هٰذَا طَبِيبٌ .",
+          "sample_ur": "درست سوالیہ کلمہ یا جواب منتخب کریں:"
+        },
+        {
+          "num": 4,
+          "badge_ar": "التَّمْرِينُ (4)",
+          "badge_ur": "مشق (4): مَا بمقابلہ مَنْ",
+          "badge_en": "Exercise (4): 'Maa' vs 'Man'",
+          "count": 4,
+          "sample_ar": "طَبِيبٌ ➔ نَسْأَلُ عَنْهُ بِـ:",
+          "sample_ur": "درست سوالیہ جملہ منتخب کریں:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b1_u2",
+      "title_ar": "الدَّرْسُ الثَّانِي",
+      "topic_en": "That is (ذٰلِكَ) — Demonstrative for distant objects",
+      "topic_ur": "اسم اشارہ بعید مذکر (ذٰلِكَ: وہ) — دور کی چیزوں کی طرف اشارہ",
+      "total_questions": 9,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): مَا ذٰلِكَ؟",
+          "badge_en": "Exercise (1): What is that?",
+          "count": 4,
+          "sample_ar": "مَا ذٰلِكَ؟ [ ＿＿＿ ]",
+          "sample_ur": "درست جملہ منتخب کریں:"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): مَنْ ذٰلِكَ؟",
+          "badge_en": "Exercise (2): Who is that?",
+          "count": 2,
+          "sample_ar": "مَنْ ذٰلِكَ؟ (صورة إمام)",
+          "sample_ur": "درست جواب منتخب کریں:"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): هٰذَا بمقابلہ ذٰلِكَ",
+          "badge_en": "Exercise (3): Near vs Far",
+          "count": 3,
+          "sample_ar": "هٰذَا مَسْجِدٌ وَ [ ＿＿＿ ] بَيْتٌ .",
+          "sample_ur": "خالی جگہ پر کریں:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b1_u3",
+      "title_ar": "الدَّرْسُ الثَّالِثُ",
+      "topic_en": "The Definite Article (ال) • Sun & Moon Letters",
+      "topic_ur": "معرفہ اور نکرہ (الـ کا استعمال) • حروفِ شمسیہ اور حروفِ قمریہ",
+      "total_questions": 24,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): أَلْ اور تنوین کا فرق",
+          "badge_en": "Exercise (1): Al- vs Tanween",
+          "count": 4,
+          "sample_ar": "اخْتَرْ الصَّحِيحَ عِنْدَ دُخُولِ (أَلْ) عَلَى (بَ",
+          "sample_ur": "اعراب کے اصول کے مطابق درست کلمہ چنیں:"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): معرفہ جملے کا ترجمہ",
+          "badge_en": "Exercise (2): Definite Sentence Translation",
+          "count": 3,
+          "sample_ar": "وہ ستارہ دور ہے۔ (اختر الترجمة الصحيحة):",
+          "sample_ur": "درست عربی جملہ منتخب کریں:"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): مناسب خبر سے خالی جگہ",
+          "badge_en": "Exercise (3): Fill Blank with Predicate",
+          "count": 6,
+          "sample_ar": "الْحَجَرُ [ ＿＿＿ ] .",
+          "sample_ur": "دیے گئے الفاظ میں سے مناسب کلمہ چنیں:"
+        },
+        {
+          "num": 4,
+          "badge_ar": "التَّمْرِينُ (4)",
+          "badge_ur": "مشق (4): مناسب مبتدا سے خالی جگہ",
+          "badge_en": "Exercise (4): Fill Blank with Subject",
+          "count": 5,
+          "sample_ar": "[ ＿＿＿ ] نَظِيفٌ .",
+          "sample_ur": "مناسب مبتدا منتخب کریں:"
+        },
+        {
+          "num": 5,
+          "badge_ar": "التَّمْرِينُ (5)",
+          "badge_ur": "مشق (5): مناسب صفت سے خالی جگہ",
+          "badge_en": "Exercise (5): Fill Blank with Predicate",
+          "count": 5,
+          "sample_ar": "التَّاجِرُ [ ＿＿＿ ] .",
+          "sample_ur": "خالی جگہ کے لیے درست کلمہ چنیں:"
+        },
+        {
+          "num": 6,
+          "badge_ar": "التَّمْرِينُ (6)",
+          "badge_ur": "مشق (6): کالم ملائیں",
+          "badge_en": "Exercise (6): Match Columns",
+          "count": 1,
+          "sample_ar": "اخْتَرْ كَلِمَةً مِنَ الْقَائِمَةِ (ب) تُنَاسِبُ ا",
+          "sample_ur": "کالم (أ) کے لفظ پر کلک کریں پھر کالم (ب) کے مناسب "
+        }
+      ]
+    },
+    {
+      "unit_id": "b1_u4",
+      "title_ar": "الدَّرْسُ الرَّابِعُ",
+      "topic_en": "Prepositions (فِي، عَلَى، مِنْ، إِلَى) & Pronouns",
+      "topic_ur": "حروفِ جارّہ (فِي، عَلَى، مِنْ، إِلَى) اور ضمائر (هُوَ، هِيَ)",
+      "total_questions": 16,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): سوالات کے جوابات دیں",
+          "badge_en": "Exercise (1): Answer Comprehension Questions",
+          "count": 5,
+          "sample_ar": "أَيْنَ مُحَمَّدٌ؟",
+          "sample_ur": "درست جواب منتخب کریں:"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): حرف جر کے بعد اعراب لگائیں",
+          "badge_en": "Exercise (2): Apply Kasra Case Ending",
+          "count": 4,
+          "sample_ar": "الْبَيْتُ ➔ فِي [ ＿＿＿ ]",
+          "sample_ur": "درست جواب منتخب کریں:"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): خالی جگہ میں مناسب حرف جر لگائیں",
+          "badge_en": "Exercise (3): Fill in Suitable Preposition",
+          "count": 4,
+          "sample_ar": "الْكِتَابُ [ ＿＿＿ ] الْمَكْتَبِ .",
+          "sample_ur": "درست جواب منتخب کریں:"
+        },
+        {
+          "num": 4,
+          "badge_ar": "التَّمْرِينُ (4)",
+          "badge_ur": "مشق (4): عورتوں کے نام غیر منصرف ہوتے ہیں",
+          "badge_en": "Exercise (4): Female Proper Names (No Tanween)",
+          "count": 3,
+          "sample_ar": "اخْتَرْ الضَّبْطَ الصَّحِيحَ لِاسْمِ الْمُؤَنَّثِ:",
+          "sample_ur": "درست جواب منتخب کریں:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b1_u5",
+      "title_ar": "الدَّرْسُ الْخَامِسُ",
+      "topic_en": "Possessive Construction (الإضافة) & Vocative (يا)",
+      "topic_ur": "مرکب اضافی (مضاف اور مضاف الیہ: كِتَابُ مُحَمَّدٍ) اور حرفِ ندا (يَا)",
+      "total_questions": 10,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): سوالات کے جوابات دیں",
+          "badge_en": "Exercise (1): Answer Questions",
+          "count": 3,
+          "sample_ar": "أَيْنَ كِتَابُ مُحَمَّدٍ؟",
+          "sample_ur": "درست جواب منتخب کریں:"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): پہلے لفظ کو دوسرے کی طرف مضاف بنائیں",
+          "badge_en": "Exercise (2): Form Mudaf & Mudaf Ilayh",
+          "count": 4,
+          "sample_ar": "كِتَابٌ + مُحَمَّدٌ ➔ [ ＿＿＿ ]",
+          "sample_ur": "درست جواب منتخب کریں:"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): حرف ندا کے بعد منادی کا اعراب",
+          "badge_en": "Exercise (3): Vocative Noun after 'Yaa'",
+          "count": 3,
+          "sample_ar": "عَلِيٌّ ➔ يَا [ ＿＿＿ ]",
+          "sample_ur": "درست جواب منتخب کریں:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b1_u6",
+      "title_ar": "الدَّرْسُ السَّادِسُ",
+      "topic_en": "Feminine Demonstrative (هٰذِهِ) & Belonging (لِـ)",
+      "topic_ur": "اسم اشارہ مؤنث قریب (هٰذِهِ: یہ) اور ملکیت کے لیے لامِ جارّہ (لِـ)",
+      "total_questions": 8,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): مذکر اور مؤنث میں مطابقت",
+          "badge_en": "Exercise (1): Gender Agreement (Hatha vs Hadhihi)",
+          "count": 3,
+          "sample_ar": "هٰذَا ابْنُ حَامِدٍ وَ [ ＿＿＿ ] بِنْتُ يَاسِرٍ .",
+          "sample_ur": "درست جواب منتخب کریں:"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): جسم کے جوڑے والے اعضاء مؤنث ہیں",
+          "badge_en": "Exercise (2): Paired Body Parts are Feminine",
+          "count": 3,
+          "sample_ar": "هٰذَا أَنْفٌ وَ [ ＿＿＿ ] عَيْنٌ .",
+          "sample_ur": "درست جواب منتخب کریں:"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): مبتدا کو مؤنث میں تبدیل کریں",
+          "badge_en": "Exercise (3): Convert Subject to Feminine",
+          "count": 2,
+          "sample_ar": "هٰذَا طَالِبٌ ➔ (حَوِّلْ لِلْمُؤَنَّثِ):",
+          "sample_ur": "درست جواب منتخب کریں:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b1_u7",
+      "title_ar": "الدَّرْسُ السَّابِعُ",
+      "topic_en": "Distant Feminine Demonstrative (تِلْكَ)",
+      "topic_ur": "اسم اشارہ مؤنث بعید (تِلْكَ: وہ)",
+      "total_questions": 7,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): دور کا اشارہ: مذکر بمقابلہ مؤنث",
+          "badge_en": "Exercise (1): Distant Demonstrative: Dhalika vs Tilka",
+          "count": 3,
+          "sample_ar": "ذٰلِكَ نَجْمٌ وَ [ ＿＿＿ ] بَقَرَةٌ .",
+          "sample_ur": "درست جواب منتخب کریں:"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): مناسب اسم اشارہ بعید لگائیں",
+          "badge_en": "Exercise (2): Point using 'Dhalika' or 'Tilka'",
+          "count": 4,
+          "sample_ar": "[ ＿＿＿ ] أُمٌّ .",
+          "sample_ur": "درست جواب منتخب کریں:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b1_u8",
+      "title_ar": "الدَّرْسُ الثَّامِنُ",
+      "topic_en": "Apposition (البدل) & Nouns Ending in Alif",
+      "topic_ur": "مشار الیہ (بدل اور مبدل منہ) اور اسم مقصور (الْمُسْتَشْفَى) کا اعراب",
+      "total_questions": 8,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): سوالات کے جوابات دیں",
+          "badge_en": "Exercise (1): Answer Badal Questions",
+          "count": 3,
+          "sample_ar": "مَنْ هٰذَا الرَّجُلُ وَمَنْ ذٰلِكَ الرَّجُلُ؟",
+          "sample_ur": "درست جواب منتخب کریں:"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): بدل کا جملہ بنائیں",
+          "badge_en": "Exercise (2): Forming Badal Construction",
+          "count": 3,
+          "sample_ar": "هٰذَا كِتَابٌ ➔ هٰذَا [ ＿＿＿ ] لِمُحَمَّدٍ .",
+          "sample_ur": "درست جواب منتخب کریں:"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): ظروف مکان: آگے اور پیچھے",
+          "badge_en": "Exercise (3): Locative Adverbs: In Front & Behind",
+          "count": 2,
+          "sample_ar": "الْبَيْتُ خَلْفَ [ ＿＿＿ ] .",
+          "sample_ur": "درست جواب منتخب کریں:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b1_u9",
+      "title_ar": "الدَّرْسُ التَّاسِعُ",
+      "topic_en": "Adjectives (النعت والمنعوت) & Relative Pronoun (الذي)",
+      "topic_ur": "مرکب توصیفی (صفت اور موصوف / نعت و منعوت) اور اسم موصول (الَّذِي)",
+      "total_questions": 9,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): خالی جگہ میں مناسب صفت لگائیں",
+          "badge_en": "Exercise (1): Fill in Suitable Adjective (Na'at)",
+          "count": 4,
+          "sample_ar": "خَدِيجَةُ طَالِبَةٌ [ ＿＿＿ ] .",
+          "sample_ur": "درست جواب منتخب کریں:"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): فعلان کے وزن والی صفات پر تنوین نہیں آتی",
+          "badge_en": "Exercise (2): Adjectives on pattern Fa'laanu (No Tanween)",
+          "count": 3,
+          "sample_ar": "أَنَا [ ＿＿＿ ] . (بمعنى جائع)",
+          "sample_ur": "درست جواب منتخب کریں:"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): اسم موصول 'الَّذِي' کا استعمال",
+          "badge_en": "Exercise (3): Relative Pronoun 'Alladhi'",
+          "count": 2,
+          "sample_ar": "الطَّالِبُ [ ＿＿＿ ] خَرَجَ مِنَ الْفَصْلِ الآنَ مِن",
+          "sample_ur": "درست جواب منتخب کریں:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b1_u10",
+      "title_ar": "الدَّرْسُ الْعَاشِرُ",
+      "topic_en": "Attached Pronouns • Have (عند / مع) • أبو & أخو",
+      "topic_ur": "ضمائر متصلہ (ـهُ، ـهَا، ـكَ، ـي) • عِنْدَ اور مَعَ کا فرق • أَبُو اور أَخُو",
+      "total_questions": 9,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): خالی جگہ میں ضمیر 'ـه' یا 'ـها' لگائیں",
+          "badge_en": "Exercise (1): Fill Pronoun '-hu' or '-haa'",
+          "count": 4,
+          "sample_ar": "هٰذِهِ الْبِنْتُ طَالِبَةٌ، اسْمُـ [ ＿＿＿ ] زَيْنَب",
+          "sample_ur": "درست جواب منتخب کریں:"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): 'لی' اور 'عندی' کے استعمال کا فرق",
+          "badge_en": "Exercise (2): Difference between 'Lee' and ''Indee'",
+          "count": 3,
+          "sample_ar": "[ ＿＿＿ ] أَخٌ وَاحِدٌ .",
+          "sample_ur": "درست جواب منتخب کریں:"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): کلمہ 'مَعَ' کا جملوں میں استعمال",
+          "badge_en": "Exercise (3): Usage of 'Ma'a' (With)",
+          "count": 2,
+          "sample_ar": "خَرَجَ حَامِدٌ مَعَ [ ＿＿＿ ] .",
+          "sample_ur": "درست جواب منتخب کریں:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b1_u11",
+      "title_ar": "الدَّرْسُ الْحَادِيَ عَشَرَ",
+      "topic_en": "My House • Attached Pronouns & 'I love' (أحبّ)",
+      "topic_ur": "بَيْتِي (میرا گھر) • ضمائر متصلہ کی مشق اور فعل «أُحِبُّ» (میں پسند کرتا ہوں)",
+      "total_questions": 6,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): متن کا فہم: میرا گھر",
+          "badge_en": "Exercise (1): Comprehension: My House",
+          "count": 3,
+          "sample_ar": "أَيْنَ يَقَعُ بَيْتِي؟",
+          "sample_ur": "درست جواب منتخب کریں:"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): حروف جر کے ساتھ مجرور ضمیریں",
+          "badge_en": "Exercise (2): Prepositional Pronouns",
+          "count": 3,
+          "sample_ar": "فِي + هُ ➔ [ ＿＿＿ ]",
+          "sample_ur": "درست جواب منتخب کریں:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b1_u12",
+      "title_ar": "الدَّرْسُ الثَّانِيَ عَشَرَ",
+      "topic_en": "Feminine Pronouns, Verbs & Relative Pronoun (التي)",
+      "topic_ur": "مؤنث کی ضمیر (كِ)، تائے تانیث (ذَهَبَتْ) اور اسم موصول مؤنث (الَّتِي)",
+      "total_questions": 6,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): مؤنث سے خطاب: 'ـكِ' اور 'أَنْتِ'",
+          "badge_en": "Exercise (1): Addressing Females with 'Anti' & '-ki'",
+          "count": 2,
+          "sample_ar": "كَيْفَ حَالُكِ يَا بِنْتُ؟",
+          "sample_ur": "درست جواب منتخب کریں:"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): جملوں کو مؤنث میں تبدیل کریں",
+          "badge_en": "Exercise (2): Convert to Feminine",
+          "count": 2,
+          "sample_ar": "أَيْنَ أَبُوكَ يَا عَلِيُّ؟ ➔ (حَوِّلْ لِفَاطِمَةَ",
+          "sample_ur": "درست جواب منتخب کریں:"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): مؤنث کے لیے اسم موصول 'الَّتِي'",
+          "badge_en": "Exercise (3): Feminine Relative Pronoun 'Allati'",
+          "count": 2,
+          "sample_ar": "الْفَتَاةُ [ ＿＿＿ ] خَرَجَتْ مِنَ الْفَصْلِ طَالِبَ",
+          "sample_ur": "درست جواب منتخب کریں:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b1_u13",
+      "title_ar": "الدَّرْسُ الثَّالِثَ عَشَرَ",
+      "topic_en": "Plurals (Sound & Broken) • هٰؤُلَاءِ & أُولٰئِكَ",
+      "topic_ur": "جمع مذکر و مؤنث (جمع سالم اور جمع مکسر) • هٰؤُلَاءِ اور أُولٰئِكَ",
+      "total_questions": 9,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): مبتدا کو جمع تکسیر بنائیں",
+          "badge_en": "Exercise (1): Form Broken Plurals with 'Ha'ulaa'i'",
+          "count": 4,
+          "sample_ar": "هٰذَا طَالِبٌ ➔ [ ＿＿＿ ] طُلَّابٌ .",
+          "sample_ur": "درست جواب منتخب کریں:"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): جمع مذکر سالم: 'ـونَ'",
+          "badge_en": "Exercise (2): Sound Masculine Plural (-oona)",
+          "count": 3,
+          "sample_ar": "هٰذَا مُدَرِّسٌ ➔ هٰؤُلَاءِ [ ＿＿＿ ] .",
+          "sample_ur": "درست جواب منتخب کریں:"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): جمع مذکر کے ساتھ فعل ماضی کی گردان",
+          "badge_en": "Exercise (3): Past Verb with Plural Subject",
+          "count": 2,
+          "sample_ar": "خَرَجَ الطَّالِبُ ➔ الطُّلَّابُ [ ＿＿＿ ] مِنَ الْفَ",
+          "sample_ur": "درست جواب منتخب کریں:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b1_u14",
+      "title_ar": "الدَّرْسُ الرَّابِعَ عَشَرَ",
+      "topic_en": "Plural 'You' & 'We' (أنتم / نحن) • Which (أيّ)",
+      "topic_ur": "جمع مخاطب و متکلم کی ضمائر (أَنْتُمْ، نَحْنُ، كُمْ، نَا) اور أَيُّ (کون سا)",
+      "total_questions": 7,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): جمع کی ضمیریں: تم سب اور ہم سب",
+          "badge_en": "Exercise (1): Plural Pronouns: 'Antum' & 'Nahnu'",
+          "count": 3,
+          "sample_ar": "مَنْ أَنْتُمْ؟",
+          "sample_ur": "درست جواب منتخب کریں:"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): ضمیر کو واحد سے جمع میں بدلیں",
+          "badge_en": "Exercise (2): Singular to Plural Pronoun Conversion",
+          "count": 2,
+          "sample_ar": "أَيْنَ بَيْتُكَ؟ ➔ أَيْنَ بَيْتُـ [ ＿＿＿ ] ؟",
+          "sample_ur": "درست جواب منتخب کریں:"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): ہفتے کے دن",
+          "badge_en": "Exercise (3): Days of the Week",
+          "count": 2,
+          "sample_ar": "الْيَوْمُ السَّبْتُ وَغَدًا [ ＿＿＿ ] .",
+          "sample_ur": "درست جواب منتخب کریں:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b1_u15",
+      "title_ar": "الدَّرْسُ الْخَامِسَ عَشَرَ",
+      "topic_en": "Feminine Plural 'You' (أنتنّ) • Before & After",
+      "topic_ur": "جمع مؤنث مخاطب کی ضمائر (أَنْتُنَّ، كُنَّ، ذَهَبْتُنَّ) • قَبْلَ اور بَعْدَ",
+      "total_questions": 6,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): جمع مؤنث سالم: 'ـاتٌ'",
+          "badge_en": "Exercise (1): Sound Feminine Plural (-aatun)",
+          "count": 3,
+          "sample_ar": "هٰذِهِ طَالِبَةٌ ➔ هٰؤُلَاءِ [ ＿＿＿ ] .",
+          "sample_ur": "درست جواب منتخب کریں:"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): دور کی جمع کے لیے اسم اشارہ 'أُولٰئِكَ'",
+          "badge_en": "Exercise (2): Distant Plural Demonstrative 'Ulaa'ika'",
+          "count": 3,
+          "sample_ar": "ذٰلِكَ رَجُلٌ ➔ [ ＿＿＿ ] رِجَالٌ .",
+          "sample_ur": "درست جواب منتخب کریں:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b1_u16",
+      "title_ar": "الدَّرْسُ السَّادِسَ عَشَرَ",
+      "topic_en": "Non-Human Plurals Treated as Feminine Singular",
+      "topic_ur": "غیر عاقل کی جمع کا قاعدہ (واحد مؤنث کا حکم: هٰذِهِ كُتُبٌ)",
+      "total_questions": 8,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): غیر عاقل کی جمع کے ساتھ 'هٰذِهِ' کا استعمال",
+          "badge_en": "Exercise (1): 'Hadhihi' with Non-Rational Plurals",
+          "count": 4,
+          "sample_ar": "هٰذَا كِتَابٌ ➔ [ ＿＿＿ ] كُتُبٌ .",
+          "sample_ur": "درست جواب منتخب کریں:"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): دور کی غیر عاقل جمع کے ساتھ 'تِلْكَ' کا استعمال",
+          "badge_en": "Exercise (2): 'Tilka' with Distant Non-Rational Plurals",
+          "count": 2,
+          "sample_ar": "ذٰلِكَ نَجْمٌ ➔ [ ＿＿＿ ] نُجُومٌ .",
+          "sample_ur": "درست جواب منتخب کریں:"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): غیر عاقل کی جمع کی صفت مفرد مؤنث ہوتی ہے",
+          "badge_en": "Exercise (3): Adjectives for Non-Rational Plural are Feminine Singular",
+          "count": 2,
+          "sample_ar": "هٰذِهِ كُتُبٌ [ ＿＿＿ ] .",
+          "sample_ur": "درست جواب منتخب کریں:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b1_u17",
+      "title_ar": "الدَّرْسُ السَّابِعَ عَشَرَ",
+      "topic_en": "Practice with Non-Human Plurals & Adjectives",
+      "topic_ur": "غیر عاقل کی جمع اور اس کی صفت و خبر کی تطبیقی مشقیں",
+      "total_questions": 4,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): مطالعہ متن: ہوائی اڈا اور ہوٹل",
+          "badge_en": "Exercise (1): Reading: Airport & Hotel",
+          "count": 2,
+          "sample_ar": "أَيْنَ حَقِيبَتُكَ؟",
+          "sample_ur": "درست جواب منتخب کریں:"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): جمع تکسیر غیر عاقل کی صفت",
+          "badge_en": "Exercise (2): Plural Adjective Agreement",
+          "count": 2,
+          "sample_ar": "هٰذِهِ حَمَّامَاتٌ [ ＿＿＿ ] .",
+          "sample_ur": "درست جواب منتخب کریں:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b1_u18",
+      "title_ar": "الدَّرْسُ الثَّامِنَ عَشَرَ",
+      "topic_en": "The Dual Form (المثنى) • How Many? (كم + تمييز)",
+      "topic_ur": "تثنیہ / مثنیٰ کے قواعد (هٰذَانِ، هَاتَانِ، هُمَا) اور كَمْ استفہامیہ",
+      "total_questions": 9,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): 'كم' کے بعد اسم مفرد اور زبر والا ہوتا ہے",
+          "badge_en": "Exercise (1): Specification for 'Kam' is Singular Accusative",
+          "count": 4,
+          "sample_ar": "كَمْ [ ＿＿＿ ] عِنْدَكَ؟",
+          "sample_ur": "درست جواب منتخب کریں:"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): تثنیہ (دو) بنانے کے لیے 'ـانِ' کا اضافہ",
+          "badge_en": "Exercise (2): Forming Dual by Adding '-aani'",
+          "count": 3,
+          "sample_ar": "قَلَمٌ ➔ [ ＿＿＿ ]",
+          "sample_ur": "درست جواب منتخب کریں:"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): تثنیہ کے اسماء اشارہ: هذان اور هاتان",
+          "badge_en": "Exercise (3): Dual Demonstratives: Hathaani & Hataani",
+          "count": 2,
+          "sample_ar": "[ ＿＿＿ ] قَلَمَانِ .",
+          "sample_ur": "درست جواب منتخب کریں:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b1_u19",
+      "title_ar": "الدَّرْسُ التَّاسِعَ عَشَرَ",
+      "topic_en": "Numbers 3 to 10 with Masculine Nouns",
+      "topic_ur": "تین (٣) سے دس (١٠) تک گنتی — مذکر معدود کے ساتھ",
+      "total_questions": 6,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): عدد اور مذکر معدود میں مخالفت (تاء مربوطہ کے ساتھ)",
+          "badge_en": "Exercise (1): Opposite Gender Rule (3-10 with Masculine)",
+          "count": 4,
+          "sample_ar": "عِنْدِي [ ＿＿＿ ] كُتُبٍ . (3)",
+          "sample_ur": "درست جواب منتخب کریں:"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): معدود کی حالت: جمع مجرور",
+          "badge_en": "Exercise (2): Counted Noun is Plural Genitive",
+          "count": 2,
+          "sample_ar": "عِنْدِي ثَلَاثَةُ [ ＿＿＿ ] .",
+          "sample_ur": "درست جواب منتخب کریں:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b1_u20",
+      "title_ar": "الدَّرْسُ الْعِشْرُونَ",
+      "topic_en": "Numbers 3 to 10 with Feminine Nouns",
+      "topic_ur": "تین (٣) سے دس (١٠) تک گنتی — مؤنث معدود کے ساتھ",
+      "total_questions": 5,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): مؤنث معدود کے ساتھ عدد بغیر تاء مربوطہ کے آئے گا",
+          "badge_en": "Exercise (1): Numbers 3-10 with Feminine (No Taa Marbuta)",
+          "count": 3,
+          "sample_ar": "فِي الْمَدْرَسَةِ [ ＿＿＿ ] سَيَّارَاتٍ . (3)",
+          "sample_ur": "درست جواب منتخب کریں:"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): اعداد میں مذکر اور مؤنث کا موازنہ",
+          "badge_en": "Exercise (2): Comparing Masculine vs Feminine Counted Nouns",
+          "count": 2,
+          "sample_ar": "عِنْدِي ثَلَاثَةُ أَبْنَاءٍ وَ [ ＿＿＿ ] بَنَاتٍ .",
+          "sample_ur": "درست جواب منتخب کریں:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b1_u21",
+      "title_ar": "الدَّرْسُ الْحَادِي وَالْعِشْرُونَ",
+      "topic_en": "Comprehensive Review: My School & Classroom",
+      "topic_ur": "جامع اعادہ و دہرائی: میرا مدرسہ اور میری کلاس (مَدْرَسَتِي)",
+      "total_questions": 6,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): مطالعہ متن: میرا اسکول",
+          "badge_en": "Exercise (1): Comprehension: My School",
+          "count": 3,
+          "sample_ar": "أَيْنَ تَقَعُ الْمَدْرَسَةُ؟",
+          "sample_ur": "درست جواب منتخب کریں:"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): واحد اور جمع تکسیر کی پہچان",
+          "badge_en": "Exercise (2): Singular and Broken Plurals",
+          "count": 3,
+          "sample_ar": "بَابٌ ➔ جَمْعُهُ: [ ＿＿＿ ]",
+          "sample_ur": "درست جواب منتخب کریں:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b1_u22",
+      "title_ar": "الدَّرْسُ الثَّانِي وَالْعِشْرُونَ",
+      "topic_en": "Diptotes (الممنوع من الصرف) — Categories & Patterns",
+      "topic_ur": "غیر منصرف اسماء (الممنوع من الصرف) — اقسام اور اوزان",
+      "total_questions": 6,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): مؤنث کے نام ممنوع من الصرف ہیں",
+          "badge_en": "Exercise (1): Feminine Names are Diptotes (No Tanween)",
+          "count": 2,
+          "sample_ar": "اخْتَرْ الضَّبْطَ الصَّحِيحَ:",
+          "sample_ur": "درست جواب منتخب کریں:"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): أفعل کے وزن اور ان پر ختم ہونے والے نام",
+          "badge_en": "Exercise (2): Names on pattern Af'alu & ending in -aan",
+          "count": 2,
+          "sample_ar": "اخْتَرْ الضَّبْطَ الصَّحِيحَ:",
+          "sample_ur": "درست جواب منتخب کریں:"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): عجمی (غیر عربی) نام",
+          "badge_en": "Exercise (3): Non-Arab Foreign Names",
+          "count": 2,
+          "sample_ar": "اخْتَرْ الضَّبْطَ الصَّحِيحَ:",
+          "sample_ur": "درست جواب منتخب کریں:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b1_u23",
+      "title_ar": "الدَّرْسُ الثَّالِثُ وَالْعِشْرُونَ",
+      "topic_en": "Diptotes in Genitive Case (الممنوع من الصرف المجرور)",
+      "topic_ur": "غیر منصرف کا اعراب (حالتِ جر میں کسرہ کے بجائے فتحہ آنا)",
+      "total_questions": 5,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): حالت جر میں ممنوع من الصرف پر زبر (فتحہ) آتی ہے",
+          "badge_en": "Exercise (1): Diptotes Take Fatha in Genitive Case",
+          "count": 3,
+          "sample_ar": "هٰذَا كِتَابُ [ ＿＿＿ ] . (أحمد)",
+          "sample_ur": "درست جواب منتخب کریں:"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): منصرف اور غیر منصرف کا موازنہ",
+          "badge_en": "Exercise (2): Triptote vs Diptote Comparison",
+          "count": 2,
+          "sample_ar": "كِتَابُ مُحَمَّدٍ (مَصْرُوفٌ) وَكِتَابُ [ ＿＿＿ ] (م",
+          "sample_ur": "درست جواب منتخب کریں:"
+        }
+      ]
+    }
+  ],
+  "Book 2: دُرُوسُ اللُّغَةِ الْعَرَبِيَّةِ لِغَيْرِ النَّاطِقِينَ بِهَا - الْجُزْءُ الثَّانِي": [
+    {
+      "unit_id": "b2_u1",
+      "title_ar": "الدَّرْسُ الْأَوَّلُ",
+      "topic_en": "إِنَّ and its Sisters • ذُو (Possessor of) • 100 & 1000",
+      "topic_ur": "حروفِ مشبہ بالفعل (إِنَّ اور لَعَلَّ) • ذُو (والا) • أَمْ • سو (مِائَة) اور ہزار (أَلْف)",
+      "total_questions": 8,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): فہمِ مکالمہ",
+          "badge_en": "Exercise (1): Dialogue Comprehension",
+          "count": 1,
+          "sample_ar": "مِنْ أَيْنَ هَاشِمٌ؟ [ ＿＿＿ ]",
+          "sample_ur": "ہاشم کہاں سے ہے؟ درست جواب منتخب کریں:"
+        },
+        {
+          "num": 4,
+          "badge_ar": "التَّمْرِينُ (4)",
+          "badge_ur": "مشق (4): ضمیروں پر (إِنَّ) کا داخل ہونا",
+          "badge_en": "Exercise (4): Attaching Pronouns to Inna",
+          "count": 2,
+          "sample_ar": "هُوَ تَاجِرٌ ➔ [ ＿＿＿ ] تَاجِرٌ .",
+          "sample_ur": "هُوَ تَاجِرٌ پر إِنَّ داخل کریں:"
+        },
+        {
+          "num": 6,
+          "badge_ar": "التَّمْرِينُ (6)",
+          "badge_ur": "مشق (6): اسم پر (إِنَّ) کا داخل ہونا اور اعراب",
+          "badge_en": "Exercise (6): Inna with Nouns",
+          "count": 1,
+          "sample_ar": "السَّيَّارَةُ جَمِيلَةٌ ➔ [ ＿＿＿ ] جَمِيلَةٌ .",
+          "sample_ur": "السَّيَّارَةُ پر إِنَّ داخل کریں:"
+        },
+        {
+          "num": 7,
+          "badge_ar": "التَّمْرِينُ (7)",
+          "badge_ur": "مشق (7): اسم تفضیل (أَفْعَلُ مِنْ)",
+          "badge_en": "Exercise (7): Comparative Degree",
+          "count": 1,
+          "sample_ar": "هٰذَا الْكِتَابُ سَهْلٌ وَذٰلِكَ [ ＿＿＿ ] مِنْهُ .",
+          "sample_ur": "سَهْلٌ کا اسم تفضیل منتخب کریں:"
+        },
+        {
+          "num": 8,
+          "badge_ar": "التَّمْرِينُ (8)",
+          "badge_ur": "مشق (8): کلمہ (ذُو) کا استعمال",
+          "badge_en": "Exercise (8): Using 'Dhu'",
+          "count": 1,
+          "sample_ar": "مَنْ هٰذَا الرَّجُلُ ذُو [ ＿＿＿ ] ؟",
+          "sample_ur": "ذُو کے بعد درست مجرور اسم منتخب کریں:"
+        },
+        {
+          "num": 10,
+          "badge_ar": "التَّمْرِينُ (10)",
+          "badge_ur": "مشق (10): (لَعَلَّ) کا استعمال",
+          "badge_en": "Exercise (10): Using 'La'alla'",
+          "count": 1,
+          "sample_ar": "الْجَوُّ بَارِدٌ ➔ [ ＿＿＿ ] بَارِدٌ .",
+          "sample_ur": "الْجَوُّ پر لَعَلَّ داخل کریں:"
+        },
+        {
+          "num": 12,
+          "badge_ar": "التَّمْرِينُ (12)",
+          "badge_ur": "مشق (12): (مِائَة) اور (أَلْف) کا معدود",
+          "badge_en": "Exercise (12): Counted Nouns with 100 & 1000",
+          "count": 1,
+          "sample_ar": "فِي هٰذِهِ الْكُلِّيَّةِ أَلْفُ [ ＿＿＿ ] .",
+          "sample_ur": "أَلْفُ کے بعد درست معدود منتخب کریں:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b2_u2",
+      "title_ar": "الدَّرْسُ الثَّانِي",
+      "topic_en": "Negative Verb لَيْسَ (is not) & its Predicate",
+      "topic_ur": "فعلِ ناقص «لَيْسَ» (نہیں ہے) اور اس کی خبر پر بائے زائدہ (بِـ)",
+      "total_questions": 6,
+      "tamreens": [
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): نفی بِـ (لَيْسَ) مع الباء",
+          "badge_en": "Exercise (2): Negation with Laysa & Ba",
+          "count": 2,
+          "sample_ar": "الْمَاءُ بَارِدٌ ➔ لَيْسَ الْمَاءُ [ ＿＿＿ ] .",
+          "sample_ur": "درست خبر منتخب کریں:"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): تصریفِ (لَيْسَ) مع المتکلم",
+          "badge_en": "Exercise (3): 1st Person 'Lastu'",
+          "count": 3,
+          "sample_ar": "أَنَا مُدَرِّسٌ ➔ [ ＿＿＿ ] بِمُدَرِّسٍ .",
+          "sample_ur": "أَنَا کے لیے درست صیغہ منتخب کریں:"
+        },
+        {
+          "num": 4,
+          "badge_ar": "التَّمْرِينُ (4)",
+          "badge_ur": "مشق (4): منفی سوال کا جواب (بَلَى)",
+          "badge_en": "Exercise (4): Answering with Balaa",
+          "count": 1,
+          "sample_ar": "أَلَيْسَ هٰذَا كِتَابَكَ؟ ➔ [ ＿＿＿ ] ، هٰذَا كِتَاب",
+          "sample_ur": "درست اثباتی کلمہ منتخب کریں:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b2_u3",
+      "title_ar": "الدَّرْسُ الثَّالِثُ",
+      "topic_en": "Comparative/Superlative (أَفْعَلُ) • لٰكِنَّ • Numbers 11–20",
+      "topic_ur": "اسم تفضیل (أَفْعَلُ من) • لٰكِنَّ اور كَأَنَّ • ١١ سے ٢٠ تک گنتی",
+      "total_questions": 6,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): فہمِ مکالمہ و سوالات",
+          "badge_en": "Exercise (1): Dialogue Comprehension",
+          "count": 1,
+          "sample_ar": "كَمْ طَالِباً جَدِيداً جَاءَ الْيَوْمَ؟ [ ＿＿＿ ]",
+          "sample_ur": "آج کتنے نئے طلبہ آئے؟ درست جواب منتخب کریں:"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): عدد (١١) مع مذکر معدود",
+          "badge_en": "Exercise (2): Number 11 with Masculine Noun",
+          "count": 1,
+          "sample_ar": "رَأَيْتُ [ ＿＿＿ ] كَوْكَباً .",
+          "sample_ur": "كَوْكَباً (مذکر) کے ساتھ عدد ۱۱ لگائیں:"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): اعداد (١٣ - ١٩) مع مذکر معدود",
+          "badge_en": "Exercise (3): Compound Numbers 13-19",
+          "count": 1,
+          "sample_ar": "فِي الْفَصْلِ [ ＿＿＿ ] طَالِباً . (15)",
+          "sample_ur": "طَالِباً (مذکر) کے لیے عدد ۱۵ منتخب کریں:"
+        },
+        {
+          "num": 4,
+          "badge_ar": "التَّمْرِينُ (4)",
+          "badge_ur": "مشق (4): اعداد (١١ - ٩٩) کا معدود",
+          "badge_en": "Exercise (4): Counted Noun for 11-99",
+          "count": 1,
+          "sample_ar": "عِنْدِي أَرْبَعَةَ عَشَرَ [ ＿＿＿ ] .",
+          "sample_ur": "أَرْبَعَةَ عَشَرَ کے بعد درست معدود منتخب کریں:"
+        },
+        {
+          "num": 5,
+          "badge_ar": "التَّمْرِينُ (5)",
+          "badge_ur": "مشق (5): عدد (١٢) مع مذکر",
+          "badge_en": "Exercise (5): Number 12 with Masculine",
+          "count": 1,
+          "sample_ar": "جَاءَ [ ＿＿＿ ] رَجُلاً . (12)",
+          "sample_ur": "حالتِ رفع میں عدد ۱۲ منتخب کریں:"
+        },
+        {
+          "num": 6,
+          "badge_ar": "التَّمْرِينُ (6)",
+          "badge_ur": "مشق (6): عدد (٢٠) الفاظِ عقود",
+          "badge_en": "Exercise (6): Number 20 Decade Word",
+          "count": 1,
+          "sample_ar": "فِي الْحَافِلَةِ [ ＿＿＿ ] رَاكِباً . (20)",
+          "sample_ur": "حالتِ رفع میں ۲۰ منتخب کریں:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b2_u4",
+      "title_ar": "الدَّرْسُ الرَّابِعُ",
+      "topic_en": "Past Tense Verbs • Because (لِأَنَّ) • Yes indeed (بَلَى)",
+      "topic_ur": "فعل ماضی کی ضمائر کی طرف اسناد • لِأَنَّ (کیونکہ) • نَعَمْ اور بَلَى کا فرق",
+      "total_questions": 6,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): فہمِ مکالمہ",
+          "badge_en": "Exercise (1): Dialogue Comprehension",
+          "count": 1,
+          "sample_ar": "فِي أَيِّ مَهْجَعٍ أَنْتُمْ؟ [ ＿＿＿ ]",
+          "sample_ur": "تم سب کس ہاسٹل میں ہو؟ درست جواب منتخب کریں:"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): عدد ترتیبی مذکر (فَاعِل)",
+          "badge_en": "Exercise (2): Ordinal Numbers Masculine",
+          "count": 1,
+          "sample_ar": "قَرَأْتُ الدَّرْسَ [ ＿＿＿ ] . (4)",
+          "sample_ur": "چوتھے سبق کے لیے درست عدد ترتیبی منتخب کریں:"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): عدد ترتیبی مؤنث",
+          "badge_en": "Exercise (3): Ordinal Numbers Feminine",
+          "count": 1,
+          "sample_ar": "أَسْكُنُ فِي الْغُرْفَةِ [ ＿＿＿ ] . (3)",
+          "sample_ur": "الْغُرْفَةِ کے لیے درست عدد ترتیبی منتخب کریں:"
+        },
+        {
+          "num": 4,
+          "badge_ar": "التَّمْرِينُ (4)",
+          "badge_ur": "مشق (4): پہلا اور پہلی (الْأَوَّلُ / الْأُولَى)",
+          "badge_en": "Exercise (4): First (Al-Awwal / Al-Oolaa)",
+          "count": 1,
+          "sample_ar": "هٰذِهِ هِيَ الْمَرَّةُ [ ＿＿＿ ] . (1)",
+          "sample_ur": "الْمَرَّةُ (مؤنث) کے لیے 'پہلی' منتخب کریں:"
+        },
+        {
+          "num": 5,
+          "badge_ar": "التَّمْرِينُ (5)",
+          "badge_ur": "مشق (5): تمییز عدد مع (كَمْ)",
+          "badge_en": "Exercise (5): Counted Noun with Kam",
+          "count": 1,
+          "sample_ar": "كَمْ [ ＿＿＿ ] فِي غُرْفَتِكَ؟",
+          "sample_ur": "كَمْ کے بعد درست لفظ منتخب کریں:"
+        },
+        {
+          "num": 6,
+          "badge_ar": "التَّمْرِينُ (6)",
+          "badge_ur": "مشق (6): عدد ترتیبی مرکب (الحادي عشر)",
+          "badge_en": "Exercise (6): Compound Ordinal Numbers",
+          "count": 1,
+          "sample_ar": "نَحْنُ فِي الدَّرْسِ [ ＿＿＿ ] . (11)",
+          "sample_ur": "گیارھویں سبق کے لیے درست کلمہ منتخب کریں:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b2_u5",
+      "title_ar": "الدَّرْسُ الْخَامِسُ",
+      "topic_en": "Verbal Sentence: Subject (الفاعل) & Object (المفعول به)",
+      "topic_ur": "جملہ فعلیہ: فاعل (مرفوع) اور مفعول بہ (منصوب)",
+      "total_questions": 6,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): فہمِ مکالمہ",
+          "badge_en": "Exercise (1): Dialogue Comprehension",
+          "count": 1,
+          "sample_ar": "أَيْنَ ذَهَبَ الطُّلَّابُ بَعْدَ الدَّرْسِ؟ [ ＿＿＿ ",
+          "sample_ur": "طلبہ سبق کے بعد کہاں گئے؟ درست جواب منتخب کریں:"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): جمع مذکر غائب (فَعَلُوا)",
+          "badge_en": "Exercise (2): 3rd Person Plural Masculine",
+          "count": 1,
+          "sample_ar": "الْأَوْلَادُ [ ＿＿＿ ] إِلَى الْمَسْجِدِ . (ذَهَبَ)",
+          "sample_ur": "الْأَوْلَادُ کے لیے فعل ذَهَبَ کی درست شکل منتخب ک"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): مفرد مؤنث غائب (فَعَلَتْ)",
+          "badge_en": "Exercise (3): 3rd Person Singular Feminine",
+          "count": 1,
+          "sample_ar": "آمِنَةُ [ ＿＿＿ ] إِلَى الْمَطْبَخِ . (دَخَلَ)",
+          "sample_ur": "آمِنَةُ کے لیے فعل دَخَلَ کی درست شکل منتخب کریں:"
+        },
+        {
+          "num": 4,
+          "badge_ar": "التَّمْرِينُ (4)",
+          "badge_ur": "مشق (4): جمع مؤنث غائب (فَعَلْنَ)",
+          "badge_en": "Exercise (4): 3rd Person Plural Feminine",
+          "count": 1,
+          "sample_ar": "الطَّالِبَاتُ [ ＿＿＿ ] مِنَ الْفَصْلِ . (خَرَجَ)",
+          "sample_ur": "الطَّالِبَاتُ کے لیے فعل خَرَجَ کی درست شکل منتخب "
+        },
+        {
+          "num": 5,
+          "badge_ar": "التَّمْرِينُ (5)",
+          "badge_ur": "مشق (5): مفعول بہ کا اعراب (نصب بالفتحة)",
+          "badge_en": "Exercise (5): Object Accusative Case",
+          "count": 1,
+          "sample_ar": "شَرِبَ الْوَلَدُ [ ＿＿＿ ] .",
+          "sample_ur": "درست اعراب والا مفعول بہ منتخب کریں:"
+        },
+        {
+          "num": 6,
+          "badge_ar": "التَّمْرِينُ (6)",
+          "badge_ur": "مشق (6): ماضی کی نفی (مَا فَعَلَ)",
+          "badge_en": "Exercise (6): Past Tense Negation with Maa",
+          "count": 1,
+          "sample_ar": "أَشَرِبْتَ الشَّايَ؟ ➔ لَا ، [ ＿＿＿ ] الشَّايَ .",
+          "sample_ur": "نفی کے ساتھ درست ماضی جملہ منتخب کریں:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b2_u6",
+      "title_ar": "الدَّرْسُ السَّادِسُ",
+      "topic_en": "Past Tense Feminine • أَظُنُّ • Give me (هَاتِ)",
+      "topic_ur": "فعل ماضی مؤنث مخاطبہ • أَظُنُّ (میرا گمان ہے) • هَاتِ (لاؤ) • مؤنث اعداد ١١–٢٠",
+      "total_questions": 7,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): فہمِ سبق",
+          "badge_en": "Exercise (1): Lesson Facts",
+          "count": 2,
+          "sample_ar": "أَيْنَ ذَهَبَ الطُّلَّابُ بَعْدَ الدَّرْسِ؟ [ ＿＿＿ ",
+          "sample_ur": "طلبہ سبق کے بعد کہاں گئے؟"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): تائے فاعل (تُ / تَ / تِ)",
+          "badge_en": "Exercise (2): Taa al-Fa'il Conjugation",
+          "count": 2,
+          "sample_ar": "أَنَا [ ＿＿＿ ] إِلَى السُّوقِ أَمْسِ .",
+          "sample_ur": "ضمیر 'أنا' کے لیے درست فعل ماضی منتخب کریں:"
+        },
+        {
+          "num": 4,
+          "badge_ar": "التَّمْرِينُ (4)",
+          "badge_ur": "مشق (4): جمع متکلم (نَا)",
+          "badge_en": "Exercise (4): 1st Person Plural (Naa)",
+          "count": 1,
+          "sample_ar": "نَحْنُ [ ＿＿＿ ] كُرَةَ الْقَدَمِ الْيَوْمَ .",
+          "sample_ur": "نحن کے لیے درست فعل منتخب کریں:"
+        },
+        {
+          "num": 5,
+          "badge_ar": "التَّمْرِينُ (5)",
+          "badge_ur": "مشق (5): مفعول بہ کا اعراب",
+          "badge_en": "Exercise (5): Direct Object (Maf'ool Bihi)",
+          "count": 2,
+          "sample_ar": "قَرَأَ الْوَلَدُ [ ＿＿＿ ] .",
+          "sample_ur": "درست اعراب والا مفعول بہ چنیں:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b2_u7",
+      "title_ar": "الدَّرْسُ السَّابِعُ",
+      "topic_en": "Was (كَانَ) • Plurals of ذُو • Fractions (نِصْفٌ، ثُلُثٌ، رُبْعٌ)",
+      "topic_ur": "كَانَ اور اس کی خبر • ذُو، ذَاتُ، ذَوُو • کسور (نِصْفٌ، ثُلُثٌ، رُبْعٌ)",
+      "total_questions": 5,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): فہمِ سبق",
+          "badge_en": "Exercise (1): Lesson Facts",
+          "count": 1,
+          "sample_ar": "مَتَى رَجَعَ أَبُوكَ مِنْ مَكَّةَ يَا عَلِيُّ؟ [ ＿",
+          "sample_ur": "علی کے والد مکہ سے کب واپس آئے؟"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): عَمَلُ كَانَ",
+          "badge_en": "Exercise (2): Syntax of Kaana",
+          "count": 2,
+          "sample_ar": "الْمَاءُ بَارِدٌ ➔ كَانَ الْمَاءُ [ ＿＿＿ ] .",
+          "sample_ur": "کان کی خبر کا اعراب منتخب کریں:"
+        },
+        {
+          "num": 4,
+          "badge_ar": "التَّمْرِينُ (4)",
+          "badge_ur": "مشق (4): اعدادِ ترتیبیہ",
+          "badge_en": "Exercise (4): Ordinal Numbers",
+          "count": 2,
+          "sample_ar": "قَرَأْتُ الدَّرْسَ [ ＿＿＿ ] .",
+          "sample_ur": "میں نے پہلا سبق پڑھا:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b2_u8",
+      "title_ar": "الدَّرْسُ الثَّامِنُ",
+      "topic_en": "Complete Conjugation Table of the Past Tense Verb",
+      "topic_ur": "فعل ماضی کی تمام ضمائر کے ساتھ مکمل گردان (مراجعہ)",
+      "total_questions": 5,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): فہمِ سبق",
+          "badge_en": "Exercise (1): Lesson Facts",
+          "count": 1,
+          "sample_ar": "مَنْ فَتَحَ النَّوَافِذَ يَا فَيْصَلُ؟ [ ＿＿＿ ]",
+          "sample_ur": "کھڑکیاں کس نے کھولیں؟"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): جمع مؤنث غائب (نَ)",
+          "badge_en": "Exercise (2): 3rd Person Fem. Plural",
+          "count": 1,
+          "sample_ar": "الْبَنَاتُ [ ＿＿＿ ] مِنَ الْفَصْلِ .",
+          "sample_ur": "بچیوں کے لیے درست فعل منتخب کریں:"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): ضمیر مفعول متصل",
+          "badge_en": "Exercise (3): Attached Object Pronouns",
+          "count": 2,
+          "sample_ar": "أَيْنَ الْحَيَّةُ؟ أَقَتَلْتَـ[ ＿＿＿ ]؟",
+          "sample_ur": "سانپ مؤنث ہے، اس کے لیے درست ضمیر منتخب کریں:"
+        },
+        {
+          "num": 5,
+          "badge_ar": "التَّمْرِينُ (5)",
+          "badge_ur": "مشق (5): اسمائے اشارہ للبعید",
+          "badge_en": "Exercise (5): Demonstrative Pronouns",
+          "count": 1,
+          "sample_ar": "[ ＿＿＿ ] الطُّلَّابُ إِخْوَتِي .",
+          "sample_ur": "طلبہ جمع ہیں، دور کا درست اسم اشارہ چنیں:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b2_u9",
+      "title_ar": "الدَّرْسُ التَّاسِعُ",
+      "topic_en": "Accusative Sound Feminine Plural • Exclamation (مَا أَفْعَلَهُ!)",
+      "topic_ur": "جمع مؤنث سالم کی حالتِ نصب (کسرہ کے ساتھ) • فعلِ تعجب (مَا أَجْمَلَهُ!)",
+      "total_questions": 5,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): فہمِ سبق",
+          "badge_en": "Exercise (1): Lesson Facts",
+          "count": 1,
+          "sample_ar": "كَمْ طَالِبَةً جَدِيدَةً جَاءَتْ إِلَى الْفَصْلِ؟ ",
+          "sample_ur": "کلاس میں کتنی نئی طالبات آئیں؟"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): جمع مؤنث کا اعراب بالکسرہ",
+          "badge_en": "Exercise (2): Feminine Plural in Accusative",
+          "count": 2,
+          "sample_ar": "رَأَيْتُ [ ＿＿＿ ] فِي الْمَسْجِدِ .",
+          "sample_ur": "درست اعراب والا مفعول بہ منتخب کریں:"
+        },
+        {
+          "num": 4,
+          "badge_ar": "التَّمْرِينُ (4)",
+          "badge_ur": "مشق (4): اعدادِ مرکبہ (11 تا 19)",
+          "badge_en": "Exercise (4): Compound Numbers (11-19)",
+          "count": 2,
+          "sample_ar": "فِي الْفَصْلِ [ ＿＿＿ ] طَالِبَةً .",
+          "sample_ur": "کلاس میں گیارہ طالبات ہیں (درست عدد چنیں):"
+        }
+      ]
+    },
+    {
+      "unit_id": "b2_u10",
+      "title_ar": "الدَّرْسُ الْعَاشِرُ",
+      "topic_en": "Present Tense (المضارع) • Verb Stem Vowels • Numbers 21–30",
+      "topic_ur": "فعل مضارع کا تعارف • ثلاثی مجرد کے ابواب • ٢١ سے ٣٠ تک اعداد",
+      "total_questions": 5,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): فہمِ سبق",
+          "badge_en": "Exercise (1): Lesson Facts",
+          "count": 1,
+          "sample_ar": "إِلَى أَيْنَ يَذْهَبُ عَمَّارٌ كُلَّ يَوْمٍ؟ [ ＿＿＿",
+          "sample_ur": "عمار روزانہ کہاں جاتا ہے؟"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): مضارع کے حروف (أَنَيْتُ)",
+          "badge_en": "Exercise (2): Present Tense Prefixes",
+          "count": 2,
+          "sample_ar": "أَنَا [ ＿＿＿ ] الدَّرْسَ الآنَ .",
+          "sample_ur": "أنا کے لیے درست فعلِ مضارع منتخب کریں:"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): غائب مؤنث (تَفْعَلُ)",
+          "badge_en": "Exercise (3): 3rd Person Fem. Present",
+          "count": 1,
+          "sample_ar": "أُمِّي [ ＿＿＿ ] الطَّعَامَ فِي الْمَطْبَخِ .",
+          "sample_ur": "امی کھانا پکا رہی ہیں (امی کے لیے درست فعل چنیں):"
+        },
+        {
+          "num": 4,
+          "badge_ar": "التَّمْرِينُ (4)",
+          "badge_ur": "مشق (4): مضارع مرفوع بالضمة",
+          "badge_en": "Exercise (4): Present Verb Nominative",
+          "count": 1,
+          "sample_ar": "يَشْرَبُ حَامِدٌ [ ＿＿＿ ] .",
+          "sample_ur": "حامد چائے پیتا ہے (مفعول بہ منسوب چنیں):"
+        }
+      ]
+    },
+    {
+      "unit_id": "b2_u11",
+      "title_ar": "الدَّرْسُ الْحَادِيَ عَشَرَ",
+      "topic_en": "Present Tense Conjugation • Future (سـ) • Verbal Nouns (المصدر)",
+      "topic_ur": "فعل مضارع کی گردان • حرفِ استقبال (سَـ) • مصدر کا استعمال",
+      "total_questions": 5,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): فہمِ سبق",
+          "badge_en": "Exercise (1): Lesson Facts",
+          "count": 1,
+          "sample_ar": "بِأَيِّ جَامِعَةٍ يَدْرُسُ عَبْدُ اللَّهِ؟ [ ＿＿＿ ]",
+          "sample_ur": "عبد اللہ کس یونیورسٹی میں پڑھتا ہے؟"
+        },
+        {
+          "num": 4,
+          "badge_ar": "التَّمْرِينُ (4)",
+          "badge_ur": "مشق (4): جمع مذکر میں ثبوتِ نون",
+          "badge_en": "Exercise (4): Plural Present Tense with Nun",
+          "count": 1,
+          "sample_ar": "الطُّلَّابُ [ ＿＿＿ ] إِلَى الْمَسْجِدِ كُلَّ يَوْمٍ",
+          "sample_ur": "طلبہ کے لیے درست فعل چنیں:"
+        },
+        {
+          "num": 8,
+          "badge_ar": "التَّمْرِينُ (8)",
+          "badge_ur": "مشق (8): تَذْهَبُ کے دو معنی",
+          "badge_en": "Exercise (8): Two Meanings of Tazhabu",
+          "count": 1,
+          "sample_ar": "أَيْنَ [ ＿＿＿ ] يَا حَامِدُ الآنَ؟",
+          "sample_ur": "حامد سے مخاطب ہو کر پوچھنے کے لیے درست صیغہ چنیں:"
+        },
+        {
+          "num": 11,
+          "badge_ar": "التَّمْرِينُ (11)",
+          "badge_ur": "مشق (11): سِينُ الاسْتِقْبَالِ",
+          "badge_en": "Exercise (11): Future Prefix Seen",
+          "count": 1,
+          "sample_ar": "[ ＿＿＿ ] الْمُدِيرُ غَداً إِنْ شَاءَ اللَّهُ .",
+          "sample_ur": "پرنسپل کل واپس آئیں گے (مستقبل کے لیے درست فعل چنی"
+        },
+        {
+          "num": 14,
+          "badge_ar": "التَّمْرِينُ (14)",
+          "badge_ur": "مشق (14): أَمَّا ... فَـ",
+          "badge_en": "Exercise (14): Ammaa ... Fa Construction",
+          "count": 1,
+          "sample_ar": "أَمَّا الْكِتَابُ [ ＿＿＿ ] بِعَشَرَةِ رِيَالَاتٍ .",
+          "sample_ur": "اما کے بعد جواب میں کون سا حرف آتا ہے؟"
+        }
+      ]
+    },
+    {
+      "unit_id": "b2_u12",
+      "title_ar": "الدَّرْسُ الثَّانِيَ عَشَرَ",
+      "topic_en": "When to use إِنَّ vs أَنَّ • Days of the Week",
+      "topic_ur": "إِنَّ اور أَنَّ کے استعمال کے مواقع • ہفتے کے دنوں کے نام",
+      "total_questions": 5,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): فہمِ سبق",
+          "badge_en": "Exercise (1): Lesson Facts",
+          "count": 1,
+          "sample_ar": "عَنْ مَاذَا تَبْحَثُ أُمُّ أَحْمَدَ؟ [ ＿＿＿ ]",
+          "sample_ur": "ام احمد کس چیز کی تلاش کر رہی ہیں؟"
+        },
+        {
+          "num": 5,
+          "badge_ar": "التَّمْرِينُ (5)",
+          "badge_ur": "مشق (5): إسناد للمخاطبة",
+          "badge_en": "Exercise (5): 2nd Person Feminine Present",
+          "count": 2,
+          "sample_ar": "فِي أَيِّ سَنَةٍ [ ＿＿＿ ] يَا فَتَاةُ؟",
+          "sample_ur": "لڑکی سے پوچھنے کے لیے درست فعل منتخب کریں:"
+        },
+        {
+          "num": 6,
+          "badge_ar": "التَّمْرِينُ (6)",
+          "badge_ur": "مشق (6): إِنَّ اور أَنَّ کا فرق",
+          "badge_en": "Exercise (6): Inna vs Anna",
+          "count": 1,
+          "sample_ar": "سَمِعْتُ [ ＿＿＿ ] أَحْسَنُ طَبِيبَةٍ فِي الْمُسْتَش",
+          "sample_ur": "میں نے سنا ہے کہ وہ بہترین ڈاکٹر ہیں (ان یا أن چنی"
+        },
+        {
+          "num": 7,
+          "badge_ar": "التَّمْرِينُ (7)",
+          "badge_ur": "مشق (7): ہفتے کے دنوں کے نام",
+          "badge_en": "Exercise (7): Days of the Week",
+          "count": 1,
+          "sample_ar": "أَوَّلُ أَيَّامِ الأُسْبُوعِ فِي الْجَدْوَلِ هُوَ ",
+          "sample_ur": "سبق کے جدول کے مطابق ہفتے کا پہلا دن کون سا ہے؟"
+        }
+      ]
+    },
+    {
+      "unit_id": "b2_u13",
+      "title_ar": "الدَّرْسُ الثَّالِثَ عَشَرَ",
+      "topic_en": "Full Present Tense Conjugation & Nominative Markers",
+      "topic_ur": "فعل مضارع کی تمام ضمائر کے ساتھ گردان اور علاماتِ رفع",
+      "total_questions": 4,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): جمع مؤنث مخاطب (تَفْعَلْنَ)",
+          "badge_en": "Exercise (1): 2nd Person Fem. Plural Present",
+          "count": 1,
+          "sample_ar": "أَيْنَ [ ＿＿＿ ] يَا أَخَوَاتِي فِي الْمَسَاءِ؟",
+          "sample_ur": "بہنوں سے مخاطب ہونے کے لیے درست فعل چنیں:"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): سکن اور رہائش",
+          "badge_en": "Exercise (2): Verb Sakana (To Live)",
+          "count": 1,
+          "sample_ar": "فِي أَيِّ مَهْجَعٍ [ ＿＿＿ ] يَا طَالِبَاتُ؟",
+          "sample_ur": "طالبات سے پوچھنے کے لیے درست فعل منتخب کریں:"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): تصحیح جملے",
+          "badge_en": "Exercise (3): Sentence Correction",
+          "count": 1,
+          "sample_ar": "الْبَنَاتُ [ ＿＿＿ ] إِلَى الْمَدْرَسَةِ بِالْحَافِل",
+          "sample_ur": "لڑکیاں بس کے ذریعے سکول جاتی ہیں (درست فعل چنیں):"
+        },
+        {
+          "num": 4,
+          "badge_ar": "التَّمْرِينُ (4)",
+          "badge_ur": "مشق (4): عیادت اور زیارت",
+          "badge_en": "Exercise (4): Visiting the Sick",
+          "count": 1,
+          "sample_ar": "مَتَى [ ＿＿＿ ] أُمَّكُنَّ فِي الْمُسْتَشْفَى يَا بَ",
+          "sample_ur": "بیٹیو، تم اپنی امی کی عیادت کب کرو گی؟"
+        }
+      ]
+    },
+    {
+      "unit_id": "b2_u14",
+      "title_ar": "الدَّرْسُ الرَّابِعَ عَشَرَ",
+      "topic_en": "The Imperative Verb (فعل الأمر)",
+      "topic_ur": "فعلِ امر بنانے کا قاعدہ اور گردان (اُكْتُبْ، اِذْهَبْ، اِجْلِسْ)",
+      "total_questions": 5,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): فہمِ سبق",
+          "badge_en": "Exercise (1): Lesson Facts",
+          "count": 1,
+          "sample_ar": "مَاذَا قَالَ الْمُدَرِّسُ لِعَلِيٍّ؟ [ ＿＿＿ ]",
+          "sample_ur": "استاد نے علی سے کیا کہا؟"
+        },
+        {
+          "num": 4,
+          "badge_ar": "التَّمْرِينُ (4)",
+          "badge_ur": "مشق (4): صیاغتِ امر مکسور العین",
+          "badge_en": "Exercise (4): Imperative with Kasrah",
+          "count": 2,
+          "sample_ar": "الأَمْرُ مِنْ (تَجْلِسُ) هُوَ: [ ＿＿＿ ]",
+          "sample_ur": "تجلس کا امر منتخب کریں:"
+        },
+        {
+          "num": 5,
+          "badge_ar": "التَّمْرِينُ (5)",
+          "badge_ur": "مشق (5): امر جمع مذکر (افْعَلُوا)",
+          "badge_en": "Exercise (5): Plural Imperative (If'aloo)",
+          "count": 1,
+          "sample_ar": "يَا أَبْنَائِي، [ ＿＿＿ ] الْوَاجِبَاتِ الآنَ .",
+          "sample_ur": "بیٹو، اب ہوم ورک لکھو (جمع کا امر منتخب کریں):"
+        },
+        {
+          "num": 6,
+          "badge_ar": "التَّمْرِينُ (6)",
+          "badge_ur": "مشق (6): امر مؤنث مخاطب (افْعَلِي)",
+          "badge_en": "Exercise (6): Feminine Imperative (If'alee)",
+          "count": 1,
+          "sample_ar": "يَا مَرْيَمُ، [ ＿＿＿ ] الْبَابَ .",
+          "sample_ur": "مریم، دروازہ کھولو (مؤنث کے لیے امر چنیں):"
+        }
+      ]
+    },
+    {
+      "unit_id": "b2_u15",
+      "title_ar": "الدَّرْسُ الْخَامِسَ عَشَرَ",
+      "topic_en": "Prohibitive لَا (Jussive) • Almost (كَادَ) • Negation",
+      "topic_ur": "لائے نہی اور مضارع مجزوم • فعل «كَادَ» • لَا اور مَا نافیہ کا فرق",
+      "total_questions": 4,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): فہمِ سبق",
+          "badge_en": "Exercise (1): Lesson Facts",
+          "count": 1,
+          "sample_ar": "مَاذَا قَالَ الْمُدَرِّسُ لِأَحْمَدَ؟ [ ＿＿＿ ]",
+          "sample_ur": "استاد نے احمد سے کیا کہا؟"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): لا ناہیہ کا جزم",
+          "badge_en": "Exercise (3): Jussive with La an-Nahiyah",
+          "count": 1,
+          "sample_ar": "يَا حَامِدُ، [ ＿＿＿ ] الْمَاءَ الْبَارِدَ .",
+          "sample_ur": "ٹھنڈا پانی مت پیو:"
+        },
+        {
+          "num": 4,
+          "badge_ar": "التَّمْرِينُ (4)",
+          "badge_ur": "مشق (4): نہی جمع مذکر (لَا تَفْعَلُوا)",
+          "badge_en": "Exercise (4): Prohibitive for Plural",
+          "count": 1,
+          "sample_ar": "يَا إِخْوَانُ، [ ＿＿＿ ] فِي الْفَصْلِ .",
+          "sample_ur": "بھائیو، کلاس میں مت ہنسو (جمع کی نہی منتخب کریں):"
+        },
+        {
+          "num": 5,
+          "badge_ar": "التَّمْرِينُ (5)",
+          "badge_ur": "مشق (5): لا ناہیہ اور لا نافیہ کا فرق",
+          "badge_en": "Exercise (5): Prohibitive vs Negative La",
+          "count": 1,
+          "sample_ar": "أَنَا [ ＿＿＿ ] الشَّايَ فِي اللَّيْلِ .",
+          "sample_ur": "میں رات کو چائے نہیں پیتا (یہ صرف خبر/نفی ہے):"
+        }
+      ]
+    },
+    {
+      "unit_id": "b2_u16",
+      "title_ar": "الدَّرْسُ السَّادِسَ عَشَرَ",
+      "topic_en": "To Want (يُرِيدُ أَنْ) • Colors • عُمَر vs عَمْرو • غَيْر",
+      "topic_ur": "فعل «يُرِيدُ» • رنگوں کے نام (مذکر و مؤنث) • عُمَرُ اور عَمْرٌو میں فرق",
+      "total_questions": 5,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): مؤنث الألوان (فَعْلَاء)",
+          "badge_en": "Exercise (1): Feminine Colors (Fa'laa)",
+          "count": 2,
+          "sample_ar": "هٰذَا قَلَمٌ أَحْمَرُ، وَهٰذِهِ سَيَّارَةٌ [ ＿＿＿ ]",
+          "sample_ur": "گاڑی مؤنث ہے، اس کے لیے لال رنگ کا مؤنث صیغہ منتخب"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): جمع الألوان (فُعْل)",
+          "badge_en": "Exercise (2): Plural of Colors (Fu'l)",
+          "count": 1,
+          "sample_ar": "هٰذِهِ أَقْلَامٌ [ ＿＿＿ ] .",
+          "sample_ur": "یہ لال قلم ہیں (أحمر کی جمع منتخب کریں):"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): فعل (يُرِيدُ)",
+          "badge_en": "Exercise (3): The Verb Yureedu (To Want)",
+          "count": 2,
+          "sample_ar": "مَاذَا [ ＿＿＿ ] يَا إِخْوَانُ؟",
+          "sample_ur": "بھائیو، تم کیا چاہتے ہو؟"
+        }
+      ]
+    },
+    {
+      "unit_id": "b2_u17",
+      "title_ar": "الدَّرْسُ السَّابِعَ عَشَرَ",
+      "topic_en": "Subjunctive Present (أَنْ & لِـ) • Seasons of the Year",
+      "topic_ur": "فعل مضارع منصوب (أَنْ اور لامِ تعلیل کے ساتھ) • سال کے موسم",
+      "total_questions": 4,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): فہمِ سبق",
+          "badge_en": "Exercise (1): Lesson Facts",
+          "count": 1,
+          "sample_ar": "إِلَى أَيْنَ يُرِيدُ الطُّلَّابُ أَنْ يَذْهَبُوا ف",
+          "sample_ur": "طلبہ جمعہ کے دن کہاں جانا چاہتے ہیں؟"
+        },
+        {
+          "num": 7,
+          "badge_ar": "التَّمْرِينُ (7)",
+          "badge_ur": "مشق (7): أَنْ مَصدَرِیَّہ کا نَصب",
+          "badge_en": "Exercise (7): Subjunctive with 'An'",
+          "count": 2,
+          "sample_ar": "أُرِيدُ أَنْ [ ＿＿＿ ] إِلَى مَكَّةَ لِلْعُمْرَةِ .",
+          "sample_ur": "میں عمرے کے لیے مکہ جانا چاہتا ہوں (أن کے بعد منسو"
+        },
+        {
+          "num": 8,
+          "badge_ar": "التَّمْرِينُ (8)",
+          "badge_ur": "مشق (8): لَامُ التَّعْلِيلِ",
+          "badge_en": "Exercise (8): Lam of Purpose (Li-)",
+          "count": 1,
+          "sample_ar": "دَخَلْتُ الْمَطْبَخَ [ ＿＿＿ ] الْمَاءَ .",
+          "sample_ur": "میں کچن میں داخل ہوا تاکہ پانی پیوں:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b2_u18",
+      "title_ar": "الدَّرْسُ الثَّامِنَ عَشَرَ",
+      "topic_en": "Subjunctive of the Five Verbs (حذف النون) • Like (كَـ)",
+      "topic_ur": "افعالِ خمسہ کی حالتِ نصب (حذفِ نون) اور کافِ تشبیہ (كَـ)",
+      "total_questions": 4,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): فہمِ سبق",
+          "badge_en": "Exercise (1): Lesson Facts",
+          "count": 1,
+          "sample_ar": "لِمَاذَا جَاءَ الطُّلَّابُ إِلَى الْمُدَرِّسِ؟ [ ＿",
+          "sample_ur": "طلبہ استاد کے پاس کیوں آئے؟"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): حذفِ نون للنصب",
+          "badge_en": "Exercise (2): Dropping Nun for Nasb",
+          "count": 1,
+          "sample_ar": "يُرِيدُ الطُّلَّابُ أَنْ [ ＿＿＿ ] إِلَى الْمَلْعَبِ",
+          "sample_ur": "أن کے بعد طلبہ کے لیے درست فعلِ منسوب چنیں:"
+        },
+        {
+          "num": 4,
+          "badge_ar": "التَّمْرِينُ (4)",
+          "badge_ur": "مشق (4): حذف نون لمخاطبہ",
+          "badge_en": "Exercise (4): Dropping Nun for Fem. Addressee",
+          "count": 1,
+          "sample_ar": "أَتُرِيدِينَ أَنْ [ ＿＿＿ ] إِلَى بَلَدِكِ فِي الْعُ",
+          "sample_ur": "مریم سے پوچھنے کے لیے درست منسوب صیغہ چنیں:"
+        },
+        {
+          "num": 5,
+          "badge_ar": "التَّمْرِينُ (5)",
+          "badge_ur": "مشق (5): لامِ تعلیل اور حذفِ نون",
+          "badge_en": "Exercise (5): Lam of Purpose with Plural",
+          "count": 1,
+          "sample_ar": "خَرَجَ الطُّلَّابُ مِنَ الْفَصْلِ [ ＿＿＿ ] كُرَةَ ا",
+          "sample_ur": "طلبہ کلاس سے نکلے تاکہ فٹ بال کھیلیں:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b2_u19",
+      "title_ar": "الدَّرْسُ التَّاسِعَ عَشَرَ",
+      "topic_en": "Future Negation with لَنْ + Subjunctive",
+      "topic_ur": "حرفِ نصب «لَنْ» کے ذریعے مستقبل کی نفی",
+      "total_questions": 4,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): فہمِ سبق",
+          "badge_en": "Exercise (1): Lesson Facts",
+          "count": 1,
+          "sample_ar": "أَتَذْهَبُ إِلَى بَلَدِكَ فِي عُطْلَةِ الصَّيْفِ؟ ",
+          "sample_ur": "کیا تم گرمیوں کی چھٹیوں میں اپنے ملک جاؤ گے؟"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): نصبِ مضارع بـ (لن)",
+          "badge_en": "Exercise (3): Accusative with Lan",
+          "count": 1,
+          "sample_ar": "[ ＿＿＿ ] أَرْجِعَ إِلَى الْبَلَدِ هٰذَا الْعَامَ .",
+          "sample_ur": "میں اس سال ہرگز اپنے ملک واپس نہیں جاؤں گا:"
+        },
+        {
+          "num": 4,
+          "badge_ar": "التَّمْرِينُ (4)",
+          "badge_ur": "مشق (4): أدوات النفی کا فرق",
+          "badge_en": "Exercise (4): Negation Particles (Maa/Laa/Lan)",
+          "count": 1,
+          "sample_ar": "سَأَذْهَبُ إِلَى السُّوقِ غَداً ➔ [ ＿＿＿ ] إِلَى ال",
+          "sample_ur": "کل کی نفی کرنے کے لیے درست جملہ منتخب کریں:"
+        },
+        {
+          "num": 6,
+          "badge_ar": "التَّمْرِينُ (6)",
+          "badge_ur": "مشق (6): لن کے ساتھ حذفِ نون",
+          "badge_en": "Exercise (6): Lan with Five Verbs",
+          "count": 1,
+          "sample_ar": "الطُّلَّابُ [ ＿＿＿ ] إِلَى الْمَلْعَبِ الْيَوْمَ .",
+          "sample_ur": "طلبہ آج ہرگز میدان نہیں جائیں گے (درست صیغہ چنیں):"
+        }
+      ]
+    },
+    {
+      "unit_id": "b2_u20",
+      "title_ar": "الدَّرْسُ الْعِشْرُونَ",
+      "topic_en": "Declension of the Dual (المثنى:ـانِ / ـَيْنِ)",
+      "topic_ur": "مثنیٰ (تثنیہ) کا اعراب: رفع الف سے اور نصب و جر یاء سے",
+      "total_questions": 5,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): فہمِ سبق",
+          "badge_en": "Exercise (1): Dual Nouns Comprehension",
+          "count": 1,
+          "sample_ar": "كَمْ أَخاً لَكَ يَا إِبْرَاهِيمُ؟ [ ＿＿＿ ]",
+          "sample_ur": "اے ابراہیم تمہارے کتنے بھائی ہیں؟"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): تثنیہ کے اعراب (الف و یاء)",
+          "badge_en": "Exercise (2): Dual Inflection",
+          "count": 1,
+          "sample_ar": "اشْتَرَيْتُ [ ＿＿＿ ] مِنْ تِلْكَ الْمَكْتَبَةِ .",
+          "sample_ur": "میں نے اس لائبریری سے دو قلم خریدے (مفعول بہ منسوب"
+        },
+        {
+          "num": 5,
+          "badge_ar": "التَّمْرِينُ (5)",
+          "badge_ur": "مشق (5): تثنیہ حالتِ جر میں",
+          "badge_en": "Exercise (5): Dual in Genitive Case",
+          "count": 1,
+          "sample_ar": "بِكَمْ رِيَالاً اشْتَرَيْتَ هٰذَا الْمُشْطَ؟ اشْتَ",
+          "sample_ur": "میں نے اسے دو ریال میں خریدا (حرف جر باء کے بعد تث"
+        },
+        {
+          "num": 8,
+          "badge_ar": "التَّمْرِينُ (8)",
+          "badge_ur": "مشق (8): أَحَدُهُمَا وَالآخَرُ",
+          "badge_en": "Exercise (8): One of them and the Other",
+          "count": 1,
+          "sample_ar": "عِنْدِي قَلَمَانِ، [ ＿＿＿ ] أَزْرَقُ وَالآخَرُ أَحْ",
+          "sample_ur": "میرے پاس دو قلم ہیں، ایک نیلا ہے اور دوسرا لال:"
+        },
+        {
+          "num": 9,
+          "badge_ar": "التَّمْرِينُ (9)",
+          "badge_ur": "مشق (9): إِحْدَاهُمَا وَالأُخْرَى",
+          "badge_en": "Exercise (9): Feminine Dual Pair",
+          "count": 1,
+          "sample_ar": "عِنْدِي سَيَّارَتَانِ، [ ＿＿＿ ] حَمْرَاءُ وَالأُخْر",
+          "sample_ur": "میرے پاس دو گاڑیاں ہیں، ایک لال ہے اور دوسری سفید:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b2_u21",
+      "title_ar": "الدَّرْسُ الْحَادِي وَالْعِشْرُونَ",
+      "topic_en": "Jussive with لَمْ & لَمَّا • Nominal vs. Verbal Sentences",
+      "topic_ur": "«لَمْ» اور «لَمَّا» کے ذریعے مضارع کو جزم دینا • جملہ اسمیہ و فعلیہ",
+      "total_questions": 4,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): فہمِ سبق",
+          "badge_en": "Exercise (1): Lesson Facts",
+          "count": 1,
+          "sample_ar": "لِمَ لَمْ يَكْتُبْ عَلِيٌّ الْوَاجِبَاتِ؟ [ ＿＿＿ ]",
+          "sample_ur": "علی نے ہوم ورک کیوں نہیں لکھا؟"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): لم کا جزم اور ماضی کا معنی",
+          "badge_en": "Exercise (2): Past Negation with Lam",
+          "count": 1,
+          "sample_ar": "[ ＿＿＿ ] أَذْهَبْ إِلَى الْمَدْرَسَةِ أَمْسِ .",
+          "sample_ur": "میں کل سکول نہیں گیا:"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): لم کے ساتھ حذفِ نون",
+          "badge_en": "Exercise (3): Jussive by Dropping Nun",
+          "count": 1,
+          "sample_ar": "الطُّلَّابُ [ ＿＿＿ ] الْوَاجِبَاتِ أَمْسِ .",
+          "sample_ur": "طلبہ نے کل ہوم ورک نہیں لکھا (درست مجزوم صیغہ چنیں"
+        },
+        {
+          "num": 4,
+          "badge_ar": "التَّمْرِينُ (4)",
+          "badge_ur": "مشق (4): لَمْ اور لَنْ کا فرق",
+          "badge_en": "Exercise (4): Lam vs Lan",
+          "count": 1,
+          "sample_ar": "أَنَا [ ＿＿＿ ] أَلْعَبْ أَمْسِ، وَ[ ＿＿＿ ] أَلْعَبَ ",
+          "sample_ur": "میں کل نہیں کھیلا اور کل ہرگز نہیں کھیلوں گا (درست"
+        }
+      ]
+    },
+    {
+      "unit_id": "b2_u22",
+      "title_ar": "الدَّرْسُ الثَّانِي وَالْعِشْرُونَ",
+      "topic_en": "Summary of the Three Moods of the Present Verb",
+      "topic_ur": "فعل مضارع کی تینوں حالتیں: مرفوع، منصوب اور مجزوم (مراجعہ)",
+      "total_questions": 4,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): غیر منصرف کے اسباب",
+          "badge_en": "Exercise (1): Diptote Categories",
+          "count": 1,
+          "sample_ar": "الاسْمُ الْمَمْنُوعُ مِنَ الصَّرْفِ لِانْتِهَائِهِ",
+          "sample_ur": "الف اور نون زائدتان کی وجہ سے غیر منصرف نام چنیں:"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): غیر منصرف کا اعراب بالفتحہ",
+          "badge_en": "Exercise (2): Diptote Genitive with Fathah",
+          "count": 1,
+          "sample_ar": "سَافَرَ أَبِي إِلَى [ ＿＿＿ ] لِلْعُمْرَةِ .",
+          "sample_ur": "میرے والد عمرے کے لیے مکہ گئے (مکہ کا درست اعراب چ"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): صیغہ منتہی الجموع",
+          "badge_en": "Exercise (3): Ultimate Plural Patterns",
+          "count": 1,
+          "sample_ar": "صَلَّيْنَا فِي [ ＿＿＿ ] كَثِيرَةٍ .",
+          "sample_ur": "ہم نے بہت سی مساجد میں نماز پڑھی (مساجد کا درست اع"
+        },
+        {
+          "num": 4,
+          "badge_ar": "التَّمْرِينُ (4)",
+          "badge_ur": "مشق (4): صفات علی وزن فعلان",
+          "badge_en": "Exercise (4): Adjectives on Fa'lan",
+          "count": 1,
+          "sample_ar": "أَنَا لَسْتُ كَسْلَانَ، أَنَا [ ＿＿＿ ] جِدّاً .",
+          "sample_ur": "میں بہت بھوکا ہوں (جوعان پر درست اعراب چنیں):"
+        }
+      ]
+    },
+    {
+      "unit_id": "b2_u23",
+      "title_ar": "الدَّرْسُ الثَّالِثُ وَالْعِشْرُونَ",
+      "topic_en": "Sound Masculine Plural Declension (ـُونَ / ـِينَ) & Tens (20–90)",
+      "topic_ur": "جمع مذکر سالم کا اعراب (ـُونَ / ـِينَ) اور دہائیاں (٢٠ تا ٩٠)",
+      "total_questions": 4,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): فہمِ سبق",
+          "badge_en": "Exercise (1): Lesson Facts",
+          "count": 1,
+          "sample_ar": "أَيْنَ ذَهَبَ الْمُدَرِّسُونَ؟ [ ＿＿＿ ]",
+          "sample_ur": "اساتذہ کہاں گئے؟"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): اعراب جمع مذکر سالم",
+          "badge_en": "Exercise (2): Sound Masculine Plural Inflection",
+          "count": 2,
+          "sample_ar": "سَأَلْتُ [ ＿＿＿ ] عَنِ الْمَسْأَلَةِ .",
+          "sample_ur": "میں نے اساتذہ سے مسئلہ پوچھا (مفعول بہ منسوب):"
+        },
+        {
+          "num": 4,
+          "badge_ar": "التَّمْرِينُ (4)",
+          "badge_ur": "مشق (4): الفاظِ عقود (20 تا 90)",
+          "badge_en": "Exercise (4): Decade Numbers (20-90)",
+          "count": 1,
+          "sample_ar": "فِي الْمَكْتَبَةِ [ ＿＿＿ ] طَالِباً .",
+          "sample_ur": "لائبریری میں تیس طلبہ ہیں (مبتدأ مؤخر مرفوع چنیں):"
+        }
+      ]
+    },
+    {
+      "unit_id": "b2_u24",
+      "title_ar": "الدَّرْسُ الرَّابِعُ وَالْعِشْرُونَ",
+      "topic_en": "Comprehensive Guide to Arabic Numbers 1 to 100",
+      "topic_ur": "ایک (١) سے سو (١٠٠) تک عربی گنتی کے مکمل قواعد کا اعادہ",
+      "total_questions": 4,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): اسمائے خمسہ (أَبُو)",
+          "badge_en": "Exercise (1): Five Nouns (Abu)",
+          "count": 1,
+          "sample_ar": "رَأَيْتُ [ ＿＿＿ ] فِي السُّوقِ أَمْسِ .",
+          "sample_ur": "میں نے کل بازار میں تمہارے والد کو دیکھا (مفعول بہ"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): رفع أخوك بالواو",
+          "badge_en": "Exercise (2): Akhooke in Nominative",
+          "count": 1,
+          "sample_ar": "أَيْنَ ذَهَبَ [ ＿＿＿ ] الْيَوْمَ يَا حَامِدُ؟",
+          "sample_ur": "اے حامد، تمہارا بھائی آج کہاں گیا؟ (فاعل مرفوع چنی"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): ذُو (والا)",
+          "badge_en": "Exercise (3): Dhu (Possessor of)",
+          "count": 1,
+          "sample_ar": "مُدِيرُنَا رَجُلٌ [ ＿＿＿ ] خُلُقٍ فَاضِلٍ .",
+          "sample_ur": "ہمارے پرنسپل اچھے اخلاق والے آدمی ہیں (ذو، ذا، ذی "
+        },
+        {
+          "num": 4,
+          "badge_ar": "التَّمْرِينُ (4)",
+          "badge_ur": "مشق (4): فُوكَ اور حَمُوكَ",
+          "badge_en": "Exercise (4): Fooka and Hamooka",
+          "count": 1,
+          "sample_ar": "افْتَحْ [ ＿＿＿ ] عِنْدَ الطَّبِيبِ .",
+          "sample_ur": "ڈاکٹر کے سامنے اپنا منہ کھولو (مفعول بہ منسوب چنیں"
+        }
+      ]
+    },
+    {
+      "unit_id": "b2_u25",
+      "title_ar": "الدَّرْسُ الْخَامِسُ وَالْعِشْرُونَ",
+      "topic_en": "كَانَ & مَا زَالَ • The Five Nouns (أبو، أخو، ذو)",
+      "topic_ur": "كَانَ اور مَا زَالَ • اسمائے خمسہ (أَبُو، أَخُو، ذُو) کا اعراب",
+      "total_questions": 4,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): فہمِ سبق",
+          "badge_en": "Exercise (1): Lesson Facts",
+          "count": 1,
+          "sample_ar": "كَيْفَ كَانَ الْجَوُّ فِي الرِّيَاضِ أَمْسِ؟ [ ＿＿＿",
+          "sample_ur": "کل ریاض میں موسم کیسا تھا؟"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): كان کا عمل",
+          "badge_en": "Exercise (2): Syntax of Kaana",
+          "count": 1,
+          "sample_ar": "الْهَاتِفُ مَشْغُولٌ ➔ كَانَ الْهَاتِفُ [ ＿＿＿ ] .",
+          "sample_ur": "کان داخل ہونے پر 'مشغول' کا اعراب چنیں:"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): لَا يَزَالُ (ابھی تک)",
+          "badge_en": "Exercise (3): Laa Yazaalu (Still)",
+          "count": 1,
+          "sample_ar": "أَحَامِدٌ مَرِيضٌ؟ نَعَمْ، لَا يَزَالُ [ ＿＿＿ ] .",
+          "sample_ur": "ہاں وہ اب بھی بیمار ہے (لا يزال کی خبر منسوب چنیں)"
+        },
+        {
+          "num": 4,
+          "badge_ar": "التَّمْرِينُ (4)",
+          "badge_ur": "مشق (4): مَا كَانَ (نفی)",
+          "badge_en": "Exercise (4): Negation of Kaana",
+          "count": 1,
+          "sample_ar": "أَكَانَ الامْتِحَانُ صَعْباً؟ لَا، مَا كَانَ الامْ",
+          "sample_ur": "نہیں، امتحان مشکل نہیں تھا:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b2_u26",
+      "title_ar": "الدَّرْسُ السَّادِسُ وَالْعِشْرُونَ",
+      "topic_en": "Assimilated Verbs (المثال الواوي: وَقَفَ/وَصَلَ) & Diminutive",
+      "topic_ur": "معتل الفاء (مثال واوی: وَصَلَ / يَصِلُ) اور اسمِ تصغیر",
+      "total_questions": 4,
+      "tamreens": [
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): مثال واوی کا مضارع",
+          "badge_en": "Exercise (2): Present of Mithal Verbs",
+          "count": 1,
+          "sample_ar": "مُضَارِعُ الْفِعْلِ (وَقَفَ) هُوَ: [ ＿＿＿ ]",
+          "sample_ur": "وقف کا مضارع منتخب کریں:"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): امرِ مثال واوی (قِفْ)",
+          "badge_en": "Exercise (3): Imperative of Mithal Verbs",
+          "count": 1,
+          "sample_ar": "الأَمْرُ مِنْ (وَضَعَ يَضَعُ) هُوَ: [ ＿＿＿ ]",
+          "sample_ur": "وَضَعَ يَضَعُ کا امر چنیں (رکھو!):"
+        },
+        {
+          "num": 6,
+          "badge_ar": "التَّمْرِينُ (6)",
+          "badge_ur": "مشق (6): اسمِ تصغیر (فُعَيْل)",
+          "badge_en": "Exercise (6): Diminutive Nouns (Fu'ayl)",
+          "count": 1,
+          "sample_ar": "تَصْغِيرُ كَلِمَةِ (نَهْرٌ) هُوَ: [ ＿＿＿ ]",
+          "sample_ur": "نہر (دریا) کا اسم تصغیر منتخب کریں:"
+        },
+        {
+          "num": 10,
+          "badge_ar": "التَّمْرِينُ (10)",
+          "badge_ur": "مشق (10): يَجِبُ عَلَيْكَ أَنْ",
+          "badge_en": "Exercise (10): Obligation (Yajibu 'Alayka An)",
+          "count": 1,
+          "sample_ar": "أَنْتَ مَرِيضٌ، [ ＿＿＿ ] أَنْ تَذْهَبَ إِلَى الْمُس",
+          "sample_ur": "تم بیمار ہو، تم پر ہسپتال جانا واجب ہے:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b2_u27",
+      "title_ar": "الدَّرْسُ السَّابِعُ وَالْعِشْرُونَ",
+      "topic_en": "Hollow Verbs (الأجوف: قَالَ / سَارَ / خَافَ)",
+      "topic_ur": "معتل العین (اجوف: قَالَ / بَاعَ / نَامَ) کی گردان اور قواعد",
+      "total_questions": 5,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): فہمِ سبق",
+          "badge_en": "Exercise (1): Lesson Facts",
+          "count": 1,
+          "sample_ar": "مَتَى قَامَ حَامِدٌ مِنْ نَوْمِهِ؟ [ ＿＿＿ ]",
+          "sample_ur": "حامد اپنی نیند سے کب بیدار ہوا؟"
+        },
+        {
+          "num": 4,
+          "badge_ar": "التَّمْرِينُ (4)",
+          "badge_ur": "مشق (4): إسناد الأجوف للتاء (قُلْتُ)",
+          "badge_en": "Exercise (4): Hollow Past with Taa (Qultu)",
+          "count": 1,
+          "sample_ar": "أَنَا [ ＿＿＿ ] الْحَقَّ دَائِماً .",
+          "sample_ur": "میں نے ہمیشہ سچ کہا (فعل قال کو ضمیر أنا کے ساتھ ج"
+        },
+        {
+          "num": 6,
+          "badge_ar": "التَّمْرِينُ (6)",
+          "badge_ur": "مشق (6): اجوف یائی کا ماضی و مضارع",
+          "badge_en": "Exercise (6): Hollow Yaa'ee (Baa'a / Yabee'u)",
+          "count": 1,
+          "sample_ar": "أَنَا [ ＿＿＿ ] سَيَّارَتِي الْقَدِيمَةَ أَمْسِ .",
+          "sample_ur": "میں نے کل اپنی پرانی گاڑی بیچی:"
+        },
+        {
+          "num": 10,
+          "badge_ar": "التَّمْرِينُ (10)",
+          "badge_ur": "مشق (10): جزمِ اجوف بـ لم",
+          "badge_en": "Exercise (10): Jussive Hollow Verb",
+          "count": 1,
+          "sample_ar": "عَلِيٌّ [ ＿＿＿ ] شَيْئاً أَمْسِ .",
+          "sample_ur": "علی نے کل کچھ نہیں کہا (فعل مجزوم چنیں):"
+        },
+        {
+          "num": 13,
+          "badge_ar": "التَّمْرِينُ (13)",
+          "badge_ur": "مشق (13): امرِ اجوف (قُلْ)",
+          "badge_en": "Exercise (13): Imperative of Hollow Verb",
+          "count": 1,
+          "sample_ar": "الأَمْرُ مِنْ (قَالَ يَقُولُ) هُوَ: [ ＿＿＿ ]",
+          "sample_ur": "قال یقول کا امر منتخب کریں (کہو!):"
+        }
+      ]
+    },
+    {
+      "unit_id": "b2_u28",
+      "title_ar": "الدَّرْسُ الثَّامِنُ وَالْعِشْرُونَ",
+      "topic_en": "Defective Verbs (الناقص: دَعَا / جَرَى / نَسِيَ)",
+      "topic_ur": "معتل اللام (ناقص: دَعَا / مَشَى / نَسِيَ) کی گردان اور جزم",
+      "total_questions": 5,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): فہمِ سبق",
+          "badge_en": "Exercise (1): Lesson Facts",
+          "count": 1,
+          "sample_ar": "إِلَى مَاذَا دَعَا الْمُدَرِّسُ طُلَّابَهُ؟ [ ＿＿＿ ",
+          "sample_ur": "استاد نے اپنے طلبہ کو کس چیز کی طرف دعوت دی؟"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): مضارع ناقص (دَعَا يَدْعُو)",
+          "badge_en": "Exercise (3): Present of Defective Verb",
+          "count": 1,
+          "sample_ar": "الْمُؤْمِنُ [ ＿＿＿ ] رَبَّهُ فِي كُلِّ وَقْتٍ .",
+          "sample_ur": "مومن ہر وقت اپنے رب کو پکارتا ہے (دعا کا مضارع چنی"
+        },
+        {
+          "num": 7,
+          "badge_ar": "التَّمْرِينُ (7)",
+          "badge_ur": "مشق (7): ماضی ناقص مع التاء (مَشَيْتُ)",
+          "badge_en": "Exercise (7): Past Defective with Taa",
+          "count": 1,
+          "sample_ar": "أَنَا [ ＿＿＿ ] كِيلُومِتْرَيْنِ هٰذَا الصَّبَاحَ .",
+          "sample_ur": "میں آج صبح دو کلومیٹر چلا (مَشَى کو أنا کے ساتھ جو"
+        },
+        {
+          "num": 8,
+          "badge_ar": "التَّمْرِينُ (8)",
+          "badge_ur": "مشق (8): جزمِ ناقص بحذف حرف العلہ",
+          "badge_en": "Exercise (8): Jussive by Dropping Weak Letter",
+          "count": 1,
+          "sample_ar": "حَامِدٌ [ ＿＿＿ ] وَاجِبَهُ أَمْسِ .",
+          "sample_ur": "حامد کل اپنا ہوم ورک نہیں بھولا (نَسِيَ يَنسَى کا "
+        },
+        {
+          "num": 20,
+          "badge_ar": "التَّمْرِينُ (20)",
+          "badge_ur": "مشق (20): امرِ ناقص (ادْعُ، امْشِ)",
+          "badge_en": "Exercise (20): Imperative of Defective Verb",
+          "count": 1,
+          "sample_ar": "قَالَ تَعَالَى: { [ ＿＿＿ ] إِلَى سَبِيلِ رَبِّكَ بِ",
+          "sample_ur": "قرآنی آیت میں دعوت دینے کا امر منتخب کریں:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b2_u29",
+      "title_ar": "الدَّرْسُ التَّاسِعُ وَالْعِشْرُونَ",
+      "topic_en": "Geminate/Doubled Verbs (المضعّف) • Never (قَطُّ vs أَبَدًا)",
+      "topic_ur": "فعل مضاعف (حَجَّ، مَرَّ، ظَنَّ) کی گردان • قَطُّ اور أَبَدًا کا فرق",
+      "total_questions": 4,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): فہمِ سبق",
+          "badge_en": "Exercise (1): Lesson Facts",
+          "count": 1,
+          "sample_ar": "كَمْ مَرَّةً حَجَّ الْمُدَرِّسُ؟ [ ＿＿＿ ]",
+          "sample_ur": "استاد نے کتنی بار حج کیا؟"
+        },
+        {
+          "num": 4,
+          "badge_ar": "التَّمْرِينُ (4)",
+          "badge_ur": "مشق (4): فکِّ ادغام (حَجَجْتُ)",
+          "badge_en": "Exercise (4): Un-gemination (Hajajtu)",
+          "count": 1,
+          "sample_ar": "أَنَا [ ＿＿＿ ] هٰذَا الْعَامَ بِفَضْلِ اللَّهِ .",
+          "sample_ur": "میں نے اس سال اللہ کے فضل سے حج کیا (حَجَّ کو أنا "
+        },
+        {
+          "num": 5,
+          "badge_ar": "التَّمْرِينُ (5)",
+          "badge_ur": "مشق (5): امرِ مضعف (عُدَّ / مُرَّ)",
+          "badge_en": "Exercise (5): Imperative of Doubled Verb",
+          "count": 1,
+          "sample_ar": "يَا حَامِدُ، [ ＿＿＿ ] هٰذِهِ الْكُتُبَ .",
+          "sample_ur": "حامد، ان کتابوں کو گنو! (عَدَّ يَعُدُّ کا امر چنیں"
+        },
+        {
+          "num": 13,
+          "badge_ar": "التَّمْرِينُ (13)",
+          "badge_ur": "مشق (13): قَطُّ اور أَبَداً کا فرق",
+          "badge_en": "Exercise (13): Qattu vs Abadan",
+          "count": 1,
+          "sample_ar": "مَا رَأَيْتُ هٰذَا الرَّجُلَ [ ＿＿＿ ] .",
+          "sample_ur": "میں نے اس آدمی کو کبھی نہیں دیکھا (ماضی کی نفی کے "
+        }
+      ]
+    },
+    {
+      "unit_id": "b2_u30",
+      "title_ar": "الدَّرْسُ الثَّلَاثُونَ",
+      "topic_en": "Verbs Conjugated in the Dual Form",
+      "topic_ur": "ماضی، مضارع اور امر کی ضمیرِ تثنیہ (مثنیٰ) کی طرف اسناد",
+      "total_questions": 5,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): فہمِ سبق",
+          "badge_en": "Exercise (1): Lesson Facts",
+          "count": 1,
+          "sample_ar": "مَا اسْمَا الْفَتَيَيْنِ الْجَدِيدَيْنِ؟ [ ＿＿＿ ]",
+          "sample_ur": "ان دو نئے نوجوانوں کے نام کیا ہیں؟"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): ماضی تثنیہ (فَعَلَا)",
+          "badge_en": "Exercise (2): Past Tense Dual (Fa'alaa)",
+          "count": 1,
+          "sample_ar": "أَيْنَ خَالِدٌ وَحَامِدٌ؟ هُمَا [ ＿＿＿ ] إِلَى الْم",
+          "sample_ur": "خالد اور حامد کہاں ہیں؟ وہ دونوں لائبریری گئے:"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): مضارع تثنیہ (يَفْعَلَانِ)",
+          "badge_en": "Exercise (3): Present Tense Dual",
+          "count": 1,
+          "sample_ar": "أَحْمَدُ وَإِبْرَاهِيمُ [ ＿＿＿ ] كُرَةَ السَّلَّةِ ",
+          "sample_ur": "احمد اور ابراہیم ہر شام باسکٹ بال کھیلتے ہیں:"
+        },
+        {
+          "num": 4,
+          "badge_ar": "التَّمْرِينُ (4)",
+          "badge_ur": "مشق (4): امرِ تثنیہ (اذْهَبَا)",
+          "badge_en": "Exercise (4): Dual Imperative (Idh-habaa)",
+          "count": 1,
+          "sample_ar": "يَا وَلَدَانِ، [ ＿＿＿ ] إِلَى الْمَسْجِدِ الآنَ .",
+          "sample_ur": "اے دو لڑکو، اب مسجد جاؤ! (تثنیہ کا امر چنیں):"
+        },
+        {
+          "num": 8,
+          "badge_ar": "التَّمْرِينُ (8)",
+          "badge_ur": "مشق (8): إعراب مضارع التثنیہ",
+          "badge_en": "Exercise (8): Dual Present Inflection",
+          "count": 1,
+          "sample_ar": "الطَّالِبَانِ [ ＿＿＿ ] أَمْسِ .",
+          "sample_ur": "دونوں طلبہ کل نہیں گئے (لم کے بعد مجزوم تثنیہ چنیں"
+        }
+      ]
+    },
+    {
+      "unit_id": "b2_u31",
+      "title_ar": "الدَّرْسُ الْحَادِي وَالثَّلَاثُونَ",
+      "topic_en": "Complete Rules of Adjective Agreement (النعت والمنعوت)",
+      "topic_ur": "نعت اور منعوت (صفت و موصوف) کی کامل مطابقت کے قواعد",
+      "total_questions": 5,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): فہمِ سبق",
+          "badge_en": "Exercise (1): Lesson Facts",
+          "count": 1,
+          "sample_ar": "مَتَى يَبْدَأُ الطُّلَّابُ الْجُزْءَ الثَّالِثَ؟ [",
+          "sample_ur": "طلبہ تیسری کتاب کب شروع کریں گے؟"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): نعت اور منعوت کی پہچان",
+          "badge_en": "Exercise (2): Identifying Adjective & Noun",
+          "count": 1,
+          "sample_ar": "أُرِيدُ أَنْ أَشْرَبَ مَاءً [ ＿＿＿ ] .",
+          "sample_ur": "میں ٹھنڈا پانی پینا چاہتا ہوں (منسوب نعت چنیں):"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): نعت للمثنى",
+          "badge_en": "Exercise (3): Dual Adjective Matching",
+          "count": 1,
+          "sample_ar": "لِي أَخَوَانِ [ ＿＿＿ ] ، وَأُخْتَانِ [ ＿＿＿ ] .",
+          "sample_ur": "میرے دو بڑے بھائی اور دو چھوٹی بہنیں ہیں (درست صفا"
+        },
+        {
+          "num": 4,
+          "badge_ar": "التَّمْرِينُ (4)",
+          "badge_ur": "مشق (4): اسمِ منقوص (غَالٍ)",
+          "badge_en": "Exercise (4): Defective Noun (Ghaalin)",
+          "count": 1,
+          "sample_ar": "هٰذَا الْمُعْجَمُ [ ＿＿＿ ] جِدّاً .",
+          "sample_ur": "یہ لغت بہت مہنگی ہے (غالی کا مرفوع صیغہ منتخب کریں"
+        },
+        {
+          "num": 5,
+          "badge_ar": "التَّمْرِينُ (5)",
+          "badge_ur": "مشق (5): اسمِ نسبت (يَاءُ النِّسْبَةِ)",
+          "badge_en": "Exercise (5): Relative Adjective (Nisbah)",
+          "count": 1,
+          "sample_ar": "الطَّالِبُ الَّذِي جَاءَ مِنَ الْيَابَانِ هُوَ طَا",
+          "sample_ur": "جو طالب علم جاپان سے آیا ہے وہ جاپانی طالب علم ہے:"
+        }
+      ]
+    }
+  ],
+  "Book 3: دُرُوسُ اللُّغَةِ الْعَرَبِيَّةِ لِغَيْرِ النَّاطِقِينَ بِهَا - الْجُزْءُ الثَّالِثُ (١-١٧)": [
+    {
+      "unit_id": "b3_u1",
+      "title_ar": "الدَّرْسُ الْأَوَّلُ",
+      "topic_en": "Declinable vs. Indeclinable (الإعراب والبناء) & Case Markers",
+      "topic_ur": "معرب اور مبنی اسماء و افعال • اعراب کی اصلی، فرعی اور تقدیری علامات",
+      "total_questions": 22,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): معرب اور مبنی کی پہچان",
+          "badge_en": "Exercise (1): Declinable vs Indeclinable",
+          "count": 8,
+          "sample_ar": "كَلِمَةُ (كِتَابٌ) فِي اللُّغَةِ هِيَ: [ ＿＿＿ ]",
+          "sample_ur": "درست جواب کا انتخاب کریں:"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): علاماتِ اعراب",
+          "badge_en": "Exercise (2): Primary & Secondary Case Markers",
+          "count": 8,
+          "sample_ar": "عَلَامَةُ الرَّفْعِ الأَصْلِيَّةُ فِي الاسْمِ هِيَ",
+          "sample_ur": "درست علامت چنیں:"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): افعال کا اعراب و بناء",
+          "badge_en": "Exercise (3): Inflection & Stability in Verbs",
+          "count": 6,
+          "sample_ar": "الْفِعْلُ الْمَاضِي (دَخَلَ) فِي اللُّغَةِ: [ ＿＿＿ ",
+          "sample_ur": "درست حکم کا انتخاب کریں:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b3_u2",
+      "title_ar": "الدَّرْسُ الثَّانِي",
+      "topic_en": "Circumstantial الواو • Verbal Nouns (اسم الفعل) • المنقوص",
+      "topic_ur": "واوِ حالیہ • لَعَلَّ کے معانی • اسم فعل • مِن زائدہ • اسم منقوص کا اعراب",
+      "total_questions": 14,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): واو الحال",
+          "badge_en": "Exercise (1): Waw al-Hal",
+          "count": 4,
+          "sample_ar": "حَجَجْتُ [ ＿＿＿ ] صَغِيرٌ .",
+          "sample_ur": "درست جملہ حالیہ منتخب کریں:"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): واو العطف بمقابلہ واو الحال",
+          "badge_en": "Exercise (2): Coordinating vs Circumstantial Waw",
+          "count": 4,
+          "sample_ar": "فِي جُمْلَةِ: (خَرَجَ الْمُدَرِّسُ مِنَ الْفَصْلِ،",
+          "sample_ur": "واو کی درست قسم منتخب کریں:"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): لعل، اسماء الافعال، من الزائدہ",
+          "badge_en": "Exercise (3): La'alla, Verbal Nouns, Extra Min",
+          "count": 6,
+          "sample_ar": "مَاذَا تُفِيدُ (لَعَلَّ) فِي: (لَعَلَّكَ نَاجِحٌ)؟",
+          "sample_ur": "درست جواب چنیں:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b3_u3",
+      "title_ar": "الدَّرْسُ الثَّالِثُ",
+      "topic_en": "Passive Voice (المبني للمجهول) & Deputy Subject (نائب الفاعل)",
+      "topic_ur": "فعل مجہول اور نائب فاعل • یائے نسبت • إِمَّا... وَإِمَّا • اسلامی و عیسوی مہینے",
+      "total_questions": 10,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): ماضی مجہول",
+          "badge_en": "Exercise (1): Passive Past Verbs",
+          "count": 4,
+          "sample_ar": "الْمَبْنِيُّ لِلْمَجْهُولِ مِنَ الْفِعْلِ الْمَاضِ",
+          "sample_ur": "درست صیغہ مجہول منتخب کریں:"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): مضارع مجہول",
+          "badge_en": "Exercise (2): Passive Present Verbs",
+          "count": 3,
+          "sample_ar": "الْمَبْنِيُّ لِلْمَجْهُولِ مِنَ الْمُضَارِعِ (يَكْ",
+          "sample_ur": "درست صیغہ مجہول چنیں:"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): یاء النسب",
+          "badge_en": "Exercise (3): The Relative Suffix (Yaa an-Nisbah)",
+          "count": 3,
+          "sample_ar": "الِاسْمُ الْمَنْسُوبُ إِلَى: (مَكَّةُ) هُوَ: [ ＿＿＿",
+          "sample_ur": "درست اسم منسوب منتخب کریں:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b3_u4",
+      "title_ar": "الدَّرْسُ الرَّابِعُ",
+      "topic_en": "Active & Passive Participles (اسم الفاعل واسم المفعول)",
+      "topic_ur": "ثلاثی مجرد سالم سے اسم فاعل (فَاعِلٌ) اور اسم مفعول (مَفْعُولٌ) بنانا • ما حجازیہ",
+      "total_questions": 8,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): اسم فاعل",
+          "badge_en": "Exercise (1): Active Participle (Ism al-Fa'il)",
+          "count": 3,
+          "sample_ar": "اسْمُ الْفَاعِلِ مِنَ الْفِعْلِ الثُّلَاثِيِّ (ذَه",
+          "sample_ur": "درست اسم فاعل منتخب کریں:"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): اسم مفعول",
+          "badge_en": "Exercise (2): Passive Participle (Ism al-Maf'ool)",
+          "count": 3,
+          "sample_ar": "اسْمُ الْمَفْعُولِ مِنَ الْفِعْلِ الثُّلَاثِيِّ (ف",
+          "sample_ur": "درست اسم مفعول منتخب کریں:"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): ما الحجازیۃ",
+          "badge_en": "Exercise (3): Maa al-Hijaziyyah",
+          "count": 2,
+          "sample_ar": "فِي الآيَةِ الْكَرِيمَةِ: {مَا هٰذَا بَشَراً}، إِع",
+          "sample_ur": "درست نحوی جواب منتخب کریں:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b3_u5",
+      "title_ar": "الدَّرْسُ الْخَامِسُ",
+      "topic_en": "Participles of Weak Verbs & Passive of Hollow Verbs",
+      "topic_ur": "معتل افعال سے اسم فاعل و مفعول بنانا اور اجوف کا مجہول (قِيلَ، بِيعَ)",
+      "total_questions": 12,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): اسم فاعل از اجوف",
+          "badge_en": "Exercise (1): Active Participle from Hollow Verbs",
+          "count": 5,
+          "sample_ar": "اسْمُ الْفَاعِلِ مِنَ الْفِعْلِ الأَجْوَفِ (قَالَ)",
+          "sample_ur": "درست اسم فاعل منتخب کریں:"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): اسم مفعول از اجوف",
+          "badge_en": "Exercise (2): Passive Participle from Hollow Verbs",
+          "count": 5,
+          "sample_ar": "اسْمُ الْمَفْعُولِ مِنَ الْفِعْلِ الأَجْوَفِ الْوَ",
+          "sample_ur": "درست صیغہ منتخب کریں:"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): مضارع اجوف مجہول (يُقَالُ)",
+          "badge_en": "Exercise (3): Present Passive of Hollow",
+          "count": 1,
+          "sample_ar": "الْمُضَارِعُ الْمَبْنِيُّ لِلْمَجْهُولِ مِنْ (يَبِ",
+          "sample_ur": "یَبِیعُ کا مضارع مجہول منتخب کریں (بیچا جاتا ہے):"
+        },
+        {
+          "num": 4,
+          "badge_ar": "التَّمْرِينُ (4)",
+          "badge_ur": "مشق (4): اعراب نائب الفاعل",
+          "badge_en": "Exercise (4): Case of Deputy Subject",
+          "count": 1,
+          "sample_ar": "قَالَ تَعَالَى: { وَخُلِقَ [ ＿＿＿ ] ضَعِيفاً } .",
+          "sample_ur": "قرآنی آیت میں نائب فاعل کا درست اعراب چنیں:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b3_u6",
+      "title_ar": "الدَّرْسُ السَّادِسُ",
+      "topic_en": "Nouns of Place and Time (اسم المكان والزمان)",
+      "topic_ur": "اسمِ ظرف (اسم مکان اور اسم زمان: مَفْعَلٌ اور مَفْعِلٌ کے اوزان)",
+      "total_questions": 11,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): اسم مکان بروزن مَفْعَل",
+          "badge_en": "Exercise (1): Noun of Place/Time on (Maf'al)",
+          "count": 5,
+          "sample_ar": "اسْمُ الْمَكَانِ مِنَ الْفِعْلِ (لَعِبَ يَلْعَبُ) ",
+          "sample_ur": "درست وزن منتخب کریں:"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): اسم مکان بروزن مَفْعِل",
+          "badge_en": "Exercise (2): Noun of Place/Time on (Maf'il)",
+          "count": 4,
+          "sample_ar": "اسْمُ الْمَكَانِ مِنَ الْفِعْلِ (جَلَسَ يَجْلِسُ) ",
+          "sample_ur": "درست صیغہ منتخب کریں:"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): حال جمع مذکر (مَسْرُورِينَ)",
+          "badge_en": "Exercise (3): Plural Haal with Yaa",
+          "count": 1,
+          "sample_ar": "رَجَعَ الطُّلَّابُ مِنَ الرِّحْلَةِ [ ＿＿＿ ] .",
+          "sample_ur": "طلبہ سفر سے خوش و خرم واپس آئے (حال جمع چنیں):"
+        },
+        {
+          "num": 4,
+          "badge_ar": "التَّمْرِينُ (4)",
+          "badge_ur": "مشق (4): صَاحِبُ الْحَال",
+          "badge_en": "Exercise (4): Owner of the State (Saahib al-Haal)",
+          "count": 1,
+          "sample_ar": "فِي جُمْلَةِ: (شَرِبْتُ الْمَاءَ بَارِداً)، صَاحِب",
+          "sample_ur": "اس جملے میں صاحب الحال (جس کی حالت بتائی گئی) کون "
+        }
+      ]
+    },
+    {
+      "unit_id": "b3_u7",
+      "title_ar": "الدَّرْسُ السَّابِعُ",
+      "topic_en": "Nouns of Instrument (اسم الآلة: مِفْتَاح، مِكْنَسَة، غَسَّالَة)",
+      "topic_ur": "اسمِ آلہ اور اس کے اوزان (مِفْعَلٌ، مِفْعَالٌ، مِفْعَلَةٌ، فَعَّالَةٌ)",
+      "total_questions": 12,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): اسم آلہ (مِفْعَال ومِفْعَل)",
+          "badge_en": "Exercise (1): Nouns of Instrument (Mif'aal & Mif'al)",
+          "count": 5,
+          "sample_ar": "اسْمُ الآلَةِ مِنَ الْفِعْلِ (فَتَحَ) عَلَى وَزْنِ",
+          "sample_ur": "درست اسم آلہ چنیں:"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): اسم آلہ (مِفْعَلَة وفَعَّالَة)",
+          "badge_en": "Exercise (2): Patterns (Mif'alah) & (Fa''aalah)",
+          "count": 5,
+          "sample_ar": "اسْمُ الآلَةِ مِنَ الْفِعْلِ (كَنَسَ) عَلَى وَزْنِ",
+          "sample_ur": "درست اسم آلہ منتخب کریں:"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): وزن مِفْعَلَة",
+          "badge_en": "Exercise (3): Pattern Mif'alah",
+          "count": 1,
+          "sample_ar": "اسْمُ الآلَةِ مِنَ الْفِعْلِ (كَنَسَ يَكْنُسُ) لِت",
+          "sample_ur": "صفائی کا آلہ (جھاڑو) منتخب کریں:"
+        },
+        {
+          "num": 4,
+          "badge_ar": "التَّمْرِينُ (4)",
+          "badge_ur": "مشق (4): وزن مِفْعَل",
+          "badge_en": "Exercise (4): Pattern Mif'al",
+          "count": 1,
+          "sample_ar": "اسْمُ الآلَةِ الَّتِي نَصْعَدُ بِهَا فِي الْعِمَار",
+          "sample_ur": "لفٹ (مِصْعَدٌ) کس وزن پر ہے؟"
+        }
+      ]
+    },
+    {
+      "unit_id": "b3_u8",
+      "title_ar": "الدَّرْسُ الثَّامِنُ",
+      "topic_en": "Definite & Indefinite Nouns (أقسام المعارف السبعة)",
+      "topic_ur": "معرفہ اور نکرہ کی پہچان اور معرفہ کی سات اقسام",
+      "total_questions": 8,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): معارف کی اقسام",
+          "badge_en": "Exercise (1): The Seven Definite Categories",
+          "count": 4,
+          "sample_ar": "كَمْ عَدَدُ أَقْسَامِ الْمَعَارِفِ فِي اللُّغَةِ ا",
+          "sample_ur": "درست قسم منتخب کریں:"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): معرفہ بذریعہ اضافت",
+          "badge_en": "Exercise (2): Definiteness through Idafah",
+          "count": 3,
+          "sample_ar": "فِي قَوْلِنَا: (كِتَابُ الطَّالِبِ)، اكْتَسَبَتْ ك",
+          "sample_ur": "درست جواب منتخب کریں:"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): الْبَدَلُ وَالْمُبْدَلُ مِنْهُ",
+          "badge_en": "Exercise (3): Badal (Apposition)",
+          "count": 1,
+          "sample_ar": "فِي جُمْلَةِ: (قَالَ الْفَارُوقُ عُمَرُ)، كَلِمَةُ",
+          "sample_ur": "اس جملے میں لفظ 'عمر' کا اعرابی کردار کیا ہے؟"
+        }
+      ]
+    },
+    {
+      "unit_id": "b3_u9",
+      "title_ar": "الدَّرْسُ التَّاسِعُ",
+      "topic_en": "Dropping النون in الإضافة • Both (كِلَا وَكِلْتَا)",
+      "topic_ur": "اضافت کے وقت تثنیہ اور جمع کا نون گرنا • كِلَا اور كِلْتَا • ذَانِكَ اور تَانِكَ",
+      "total_questions": 93,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): فہمِ سبق کے سوالات",
+          "badge_en": "Exercise (1): Comprehension Questions",
+          "count": 3,
+          "sample_ar": "مَنِ الَّذِي نَسِيَ دَفْتَرَيْهِ؟",
+          "sample_ur": "کون اپنے دونوں رجسٹر لانا بھول گیا؟"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): قاعدہ حذفِ نون و تنوین",
+          "badge_en": "Exercise (2): Rule of Dropping Tanween & Nun",
+          "count": 5,
+          "sample_ar": "عِنْدَ إِضَافَةِ الْمُفْرَدِ (كِتَابٌ) إِلَى (الله",
+          "sample_ur": "جب مفرد اسم (كِتَابٌ) مضاف بنتا ہے تو تنوین کا کیا"
+        },
+        {
+          "num": 4,
+          "badge_ar": "التَّمْرِينُ (4)",
+          "badge_ur": "مشق (4): امثلہ کا استعمال",
+          "badge_en": "Exercise (4): Examples in Context",
+          "count": 12,
+          "sample_ar": "اغْسِلْ [ ＿＿＿ ] وَرِجْلَيْكَ .",
+          "sample_ur": "خالی جگہ میں اعراب کے اصول کے مطابق درست کلمہ منتخ"
+        },
+        {
+          "num": 5,
+          "badge_ar": "التَّمْرِينُ (5)",
+          "badge_ur": "مشق (5): اعداد 200 اور 2000 کی تحریر",
+          "badge_en": "Exercise (5): Writing 200 and 2000 in Words",
+          "count": 8,
+          "sample_ar": "اكْتُبِ الْعَدَدَ بِالْحُرُوفِ: جَاءَ مِنَ الصِّين",
+          "sample_ur": "درست اعراب کے ساتھ عددی جملہ منتخب کریں:"
+        },
+        {
+          "num": 6,
+          "badge_ar": "التَّمْرِينُ (6)",
+          "badge_ur": "مشق (6): ترکیبِ اضافی",
+          "badge_en": "Exercise (6): Forming Dual/Plural Idafah",
+          "count": 10,
+          "sample_ar": "أَضِفْ: ( ابْنَانِ / حَامِدٌ ) ➔ [ ＿＿＿ ]",
+          "sample_ur": "درست مضاف صورت منتخب کریں:"
+        },
+        {
+          "num": 7,
+          "badge_ar": "التَّمْرِينُ (7)",
+          "badge_ur": "مشق (7): تثنیہ میں تبدیلی",
+          "badge_en": "Exercise (7): Converting to Dual",
+          "count": 10,
+          "sample_ar": "حَوِّلْ إِلَى الْمُثَنَّى: [ ارْفَعْ يَدَكَ . ] ➔ ",
+          "sample_ur": "درست تثنیہ جملہ منتخب کریں:"
+        },
+        {
+          "num": 8,
+          "badge_ar": "التَّمْرِينُ (8)",
+          "badge_ur": "مشق (8): یاء المتکلم کی طرف اضافت",
+          "badge_en": "Exercise (8): Annexing Dual to Ya al-Mutakallim",
+          "count": 6,
+          "sample_ar": "أَضِفْ إِلَى يَاءِ الْمُتَكَلِّمِ: أُخْتَانِ + ي ➔",
+          "sample_ur": "درست لفظ منتخب کریں:"
+        },
+        {
+          "num": 9,
+          "badge_ar": "التَّمْرِينُ (9)",
+          "badge_ur": "مشق (9): نصب و جر میں یاء المتکلم کی اضافت",
+          "badge_en": "Exercise (9): Mansub/Majrur Dual to Ya al-Mutakallim",
+          "count": 9,
+          "sample_ar": "أَضِفِ الْكَلِمَةَ إِلَى يَاءِ الْمُتَكَلِّمِ: [ غ",
+          "sample_ur": "درست جملہ منتخب کریں:"
+        },
+        {
+          "num": 11,
+          "badge_ar": "التَّمْرِينُ (11)",
+          "badge_ur": "مشق (11): كِلَا اور كِلْتَا کا استعمال",
+          "badge_en": "Exercise (11): Using Kilaa & Kiltaa",
+          "count": 10,
+          "sample_ar": "أَيُّ الْقَلَمَيْنِ ضَاعَ؟ [ ＿＿＿ ]",
+          "sample_ur": "درست جواب منتخب کریں:"
+        },
+        {
+          "num": 13,
+          "badge_ar": "التَّمْرِينُ (13)",
+          "badge_ur": "مشق (13): اسماء اشارہ برائے بعید",
+          "badge_en": "Exercise (13): Distant Demonstratives",
+          "count": 5,
+          "sample_ar": "هٰذَا بَيْتِي، وَ [ ＿＿＿ ] بَيْتُ أَخِي .",
+          "sample_ur": "خالی جگہ پُر کریں:"
+        },
+        {
+          "num": 14,
+          "badge_ar": "التَّمْرِينُ (14)",
+          "badge_ur": "مشق (14): افعال کا مضارع",
+          "badge_en": "Exercise (14): Present Tense Verbs",
+          "count": 4,
+          "sample_ar": "مُضَارِعُ الْفِعْلِ ( سَحَبَ ) هُوَ: [ ＿＿＿ ]",
+          "sample_ur": "درست فعلِ مضارع منتخب کریں:"
+        },
+        {
+          "num": 15,
+          "badge_ar": "التَّمْرِينُ (15)",
+          "badge_ur": "مشق (15): جمع تکسیر",
+          "badge_en": "Exercise (15): Broken Plurals",
+          "count": 5,
+          "sample_ar": "جَمْعُ اسْمِ ( أَرِيكَةٌ ) هُوَ: [ ＿＿＿ ]",
+          "sample_ur": "درست جمع چنیں:"
+        },
+        {
+          "num": 16,
+          "badge_ar": "التَّمْرِينُ (16)",
+          "badge_ur": "مشق (16): مفرد اسماء",
+          "badge_en": "Exercise (16): Singular Forms",
+          "count": 3,
+          "sample_ar": "مُفْرَدُ ( هُنُودٌ ) هُوَ: [ ＿＿＿ ]",
+          "sample_ur": "درست مفرد چنیں:"
+        },
+        {
+          "num": 17,
+          "badge_ar": "التَّمْرِينُ (17)",
+          "badge_ur": "مشق (17): فعل امر (أتى / اِيتِ / وَأْتِ)",
+          "badge_en": "Exercise (17): Imperative of Ataa",
+          "count": 3,
+          "sample_ar": "الأَمْرُ مِنْ (أَتَى يَأْتِي) عِنْدَ الِابْتِدَاءِ",
+          "sample_ur": "درست صیغہ منتخب کریں:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b3_u10",
+      "title_ar": "الدَّرْسُ الْعَاشِرُ",
+      "topic_en": "Nominal & Verbal Clauses • Interpreted Infinitive (المصدر المؤول)",
+      "topic_ur": "جملہ اسمیہ اور جملہ فعلیہ کا فرق اور مصدر مؤول (أَنْ + فعل مضارع)",
+      "total_questions": 9,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): فہمِ سبق",
+          "badge_en": "Exercise (1): Lesson Facts",
+          "count": 4,
+          "sample_ar": "لِمَ لَمْ يَحْضُرِ الْمُدَرِّسُ إِلَى الْفَصْلِ؟ [",
+          "sample_ur": "استاد کلاس میں کیوں حاضر نہیں ہوئے؟"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): جملہ اسمیہ و فعلیہ",
+          "badge_en": "Exercise (2): Sentence Types",
+          "count": 3,
+          "sample_ar": "الْجُمْلَةُ فِي: (اللَّهُ نُورُ السَّمَاوَاتِ وَال",
+          "sample_ur": "یہ جملہ کون سا جملہ ہے؟"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): مصدر مؤول",
+          "badge_en": "Exercise (3): Masdar Mu'awwal",
+          "count": 1,
+          "sample_ar": "تَقْدِيرُ الْمَصْدَرِ الْمُؤَوَّلِ فِي: (أُرِيدُ أ",
+          "sample_ur": "'أَنْ أَذْهَبَ' کی جگہ مصدر صریح کیا ہوگا؟"
+        },
+        {
+          "num": 4,
+          "badge_ar": "التَّمْرِينُ (4)",
+          "badge_ur": "مشق (4): افعال الشروع",
+          "badge_en": "Exercise (4): Verbs of Inception",
+          "count": 1,
+          "sample_ar": "مَعْنَى قَوْلِهِ تَعَالَى: { وَطَفِقَا يَخْصِفَانِ",
+          "sample_ur": "قرآنی آیت میں 'طَفِقَا' کا کیا معنی ہے؟"
+        }
+      ]
+    },
+    {
+      "unit_id": "b3_u11",
+      "title_ar": "الدَّرْسُ الْحَادِيَ عَشَرَ",
+      "topic_en": "Subject & Predicate (أنواع الخبر وتقديم الخبر على المبتدأ)",
+      "topic_ur": "مبتدا اور خبر کی اقسام (مفرد، جملہ، شبہ جملہ) اور خبر کا مقدم ہونا",
+      "total_questions": 8,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): فہمِ سبق",
+          "badge_en": "Exercise (1): Lesson Facts",
+          "count": 4,
+          "sample_ar": "أَيْنَ أَرَادَ حَامِدٌ أَنْ يَذْهَبَ؟ [ ＿＿＿ ]",
+          "sample_ur": "حامد کہاں جانا چاہتا تھا؟"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): خبر کی اقسام",
+          "badge_en": "Exercise (2): Types of Predicate (Khabar)",
+          "count": 3,
+          "sample_ar": "نَوْعُ الْخَبَرِ فِي جُمْلَةِ: (الْحَمْدُ لِلَّهِ)",
+          "sample_ur": "'الْحَمْدُ لِلَّهِ' میں خبر کس قسم کی ہے؟"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): خبر کو پہلے لانا (تقديم الخبر)",
+          "badge_en": "Exercise (3): Obligatory Fronting of Khabar",
+          "count": 1,
+          "sample_ar": "فِي جُمْلَةِ: (فِي الدَّارِ رَجُلٌ)، إِعْرَابُ كَل",
+          "sample_ur": "'رَجُلٌ' کا نحوی کردار کیا ہے؟"
+        }
+      ]
+    },
+    {
+      "unit_id": "b3_u12",
+      "title_ar": "الدَّرْسُ الثَّانِيَ عَشَرَ",
+      "topic_en": "Adverbs of Time & Place (المفعول فيه) • Conditional لَوْ",
+      "topic_ur": "مفعول فیہ (ظرفِ زمان و مکان) • حرفِ شرط «لَوْ» • مِنْ قَبْلُ اور مِنْ بَعْدُ",
+      "total_questions": 8,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): فہمِ سبق",
+          "badge_en": "Exercise (1): Lesson Facts",
+          "count": 4,
+          "sample_ar": "مَتَى وَصَلَ الْحُسَيْنُ مِنَ السَّفَرِ؟ [ ＿＿＿ ]",
+          "sample_ur": "حسین سفر سے کب پہنچا؟"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): ظرفِ زمان",
+          "badge_en": "Exercise (2): Adverb of Time (Zarf Zaman)",
+          "count": 3,
+          "sample_ar": "سَافَرَ أَبِي إِلَى جُدَّةَ [ ＿＿＿ ] .",
+          "sample_ur": "میرے والد جمعرات کے دن جدہ گئے (ظرف زمان منسوب چنی"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): ظرفِ مکان",
+          "badge_en": "Exercise (3): Adverb of Place (Zarf Makan)",
+          "count": 1,
+          "sample_ar": "وَقَفَ الْخَطِيبُ [ ＿＿＿ ] الْمِنْبَرِ .",
+          "sample_ur": "خطیب منبر کے اوپر کھڑے ہوئے (ظرف مکان چنیں):"
+        }
+      ]
+    },
+    {
+      "unit_id": "b3_u13",
+      "title_ar": "الدَّرْسُ الثَّالِثَ عَشَرَ",
+      "topic_en": "Lam of Command (لِيَفْعَلْ) & Jussive in Response to a Request",
+      "topic_ur": "لامِ امر (لِيَفْعَلْ) • جوابِ طلب میں جزم • ایک فعل کو جزم دینے والے ادوات",
+      "total_questions": 8,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): فہمِ سبق",
+          "badge_en": "Exercise (1): Lesson Facts",
+          "count": 4,
+          "sample_ar": "مِنْ أَيْنَ يَأْتِي الْوَفْدُ إِلَى الْمَعْهَدِ؟ [",
+          "sample_ur": "وفد معہد میں کہاں سے آ رہا ہے؟"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): لَامُ الأَمْرِ",
+          "badge_en": "Exercise (2): Lam of Command (Laam al-Amr)",
+          "count": 3,
+          "sample_ar": "قَالَ الْمُدَرِّسُ: [ ＿＿＿ ] كُلُّ طَالِبٍ فِي مَكَ",
+          "sample_ur": "استاد نے کہا: چاہیے کہ ہر طالب علم اپنی جگہ پر بیٹ"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): جَوَابُ الطَّلَبِ",
+          "badge_en": "Exercise (3): Response to Request (Jawaab at-Talab)",
+          "count": 1,
+          "sample_ar": "قَالَ تَعَالَى: { فَاذْكُرُونِي [ ＿＿＿ ] } .",
+          "sample_ur": "قرآنی آیت میں جواب الطلب کا درست مجزوم صیغہ چنیں:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b3_u14",
+      "title_ar": "الدَّرْسُ الرَّابِعَ عَشَرَ",
+      "topic_en": "Conditional Particles (إذا) & Connecting Answer with فـ",
+      "topic_ur": "ادواتِ شرط غیر جازمہ (إِذَا، لَوْ، كُلَّمَا) اور جوابِ شرط پر «ف» آنا",
+      "total_questions": 7,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): فہمِ سبق",
+          "badge_en": "Exercise (1): Lesson Facts",
+          "count": 4,
+          "sample_ar": "مَاذَا قَالَ الْمُدَرِّسُ لِمَنْ عَطَسَ فِي الْفَص",
+          "sample_ur": "کلاس میں چھینکنے والے سے استاد نے کیا کہا؟"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): إِذَا الشَّرْطِيَّة",
+          "badge_en": "Exercise (2): Conditional Idhaa",
+          "count": 2,
+          "sample_ar": "عِنْدَ دُخُولِ (إِذَا) عَلَى الْفِعْلِ الْمَاضِي، ",
+          "sample_ur": "إذا جب فعل ماضی پر داخل ہو تو وہ معنی میں کیا فائد"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): جواب شرط پر فاء کا داخل ہونا",
+          "badge_en": "Exercise (3): Entering Faa on Conditional Response",
+          "count": 1,
+          "sample_ar": "إِذَا لَقِيتَ أَخَاكَ الْمُسْلِمَ [ ＿＿＿ ] .",
+          "sample_ur": "جب تم اپنے مسلمان بھائی سے ملو تو اسے سلام کرو (فا"
+        }
+      ]
+    },
+    {
+      "unit_id": "b3_u15",
+      "title_ar": "الدَّرْسُ الْخَامِسَ عَشَرَ",
+      "topic_en": "Jussive Conditionals (أدوات الشرط الجازمة لفعلين) & حَتَّى",
+      "topic_ur": "دو فعلوں کو جزم دینے والے ادواتِ شرط (إِنْ، مَنْ، مَهْمَا، أَيْنَمَا) اور كَمْ خبریہ",
+      "total_questions": 8,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): فہمِ سبق",
+          "badge_en": "Exercise (1): Lesson Facts",
+          "count": 4,
+          "sample_ar": "مَنِ الطَّالِبُ الَّذِي غَابَ أُسْبُوعَيْنِ كَامِل",
+          "sample_ur": "کون سا طالب علم پورے دو ہفتے غیر حاضر رہا؟"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): ادواتِ شرط جازمہ",
+          "badge_en": "Exercise (2): Jussive Conditional Particles",
+          "count": 3,
+          "sample_ar": "قَالَ تَعَالَى: { فَمَنْ يَعْمَلْ مِثْقَالَ ذَرَّة",
+          "sample_ur": "قرآنی آیت میں جواب شرط کا درست مجزوم صیغہ چنیں:"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): كَمْ استفہامیہ بمقابلہ كَمْ خبریہ",
+          "badge_en": "Exercise (3): Interrogative vs Exclamatory Kam",
+          "count": 1,
+          "sample_ar": "فِي جُمْلَةِ: (كَمْ كِتَابٍ قَرَأْتُهُ فِي الْعُطْ",
+          "sample_ur": "اس جملے میں کم کی قسم کون سی ہے؟ (بہت سی کتابیں می"
+        }
+      ]
+    },
+    {
+      "unit_id": "b3_u16",
+      "title_ar": "الدَّرْسُ السَّادِسَ عَشَرَ",
+      "topic_en": "Triliteral & Derived Verb Forms — Form II (فَعَّلَ)",
+      "topic_ur": "فعل مجرد اور مزید فیہ • باب تفعیل (فَعَّلَ) • مصادر اور جمع مکسر کے اوزان",
+      "total_questions": 8,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): فہمِ حدیثِ نبوی",
+          "badge_en": "Exercise (1): Hadith Facts",
+          "count": 3,
+          "sample_ar": "مَاذَا قَالَ النَّبِيُّ ﷺ لِلأَقْرَعِ بْنِ حَابِسٍ",
+          "sample_ur": "جب اقرع بن حابس نے کہا کہ میں نے اپنے کسی بچے کو ن"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): باب تفعيل",
+          "badge_en": "Exercise (2): Form II (Fa''ala / Taf'eel)",
+          "count": 4,
+          "sample_ar": "مَصْدَرُ الْفِعْلِ (قَبَّلَ يُقَبِّلُ) عَلَى وَزْن",
+          "sample_ur": "قَبَّلَ يُقَبِّلُ کا مصدر منتخب کریں:"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): اسم فاعل و مفعول از باب تفعیل",
+          "badge_en": "Exercise (3): Form II Participles",
+          "count": 1,
+          "sample_ar": "اسْمُ الْفَاعِلِ مِنَ الْفِعْلِ (عَلَّمَ يُعَلِّمُ",
+          "sample_ur": "عَلَّمَ سے سکھانے والے کا اسم فاعل منتخب کریں:"
+        }
+      ]
+    },
+    {
+      "unit_id": "b3_u17",
+      "title_ar": "الدَّرْسُ السَّابِعَ عَشَرَ",
+      "topic_en": "Form IV (أَفْعَلَ) • أَصْبَحَ & أَوْشَكَ • Double-Object Verbs (أَعْطَى)",
+      "topic_ur": "باب افعال (أَفْعَلَ) • أَصْبَحَ اور أَوْشَكَ • دو مفعول چاہنے والے افعال (أَعْطَى)",
+      "total_questions": 9,
+      "tamreens": [
+        {
+          "num": 1,
+          "badge_ar": "التَّمْرِينُ (1)",
+          "badge_ur": "مشق (1): فہمِ سبق",
+          "badge_en": "Exercise (1): Lesson Facts",
+          "count": 4,
+          "sample_ar": "لِمَ لَمْ يَحْضُرْ عُثْمَانُ إِلَى الْمَعْهَدِ الْ",
+          "sample_ur": "عثمان آج معہد میں کیوں حاضر نہیں ہوا؟"
+        },
+        {
+          "num": 2,
+          "badge_ar": "التَّمْرِينُ (2)",
+          "badge_ur": "مشق (2): باب إِفْعَال",
+          "badge_en": "Exercise (2): Form IV (Af'ala / If'aal)",
+          "count": 3,
+          "sample_ar": "مَصْدَرُ الْفِعْلِ (أَسْلَمَ يُسْلِمُ) عَلَى وَزْن",
+          "sample_ur": "أَسْلَمَ يُسْلِمُ کا مصدر منتخب کریں:"
+        },
+        {
+          "num": 3,
+          "badge_ar": "التَّمْرِينُ (3)",
+          "badge_ur": "مشق (3): أفعال تنصب مفعولين",
+          "badge_en": "Exercise (3): Verbs Taking Two Objects",
+          "count": 1,
+          "sample_ar": "أَعْطَى الْمُدَرِّسُ [ ＿＿＿ ] [ ＿＿＿ ] .",
+          "sample_ur": "استاد نے حامد کو کتاب دی (دونوں مفعولوں کا درست اع"
+        },
+        {
+          "num": 4,
+          "badge_ar": "التَّمْرِينُ (4)",
+          "badge_ur": "مشق (4): أَصْبَحَ (اخوات كان)",
+          "badge_en": "Exercise (4): Asbaha (Sister of Kaana)",
+          "count": 1,
+          "sample_ar": "أَصْبَحَ الْجَوُّ [ ＿＿＿ ] هٰذَا الصَّبَاحَ .",
+          "sample_ur": "آج صبح موسم ٹھنڈا ہو گیا (أصبح کی خبر منسوب چنیں):"
+        }
+      ]
+    }
+  ]
+}
