@@ -7,7 +7,124 @@
 (function () {
   'use strict';
 
-  const DATA = window.MADINAH_DATA || window.MADINAH_BOOKS || { books: [] };
+  const SUPABASE_CONFIG = {
+    url: 'https://hjmmbmhcgwkqsciywbwr.supabase.co/rest/v1',
+    anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhqbW1ibWhjZ3drcXNjaXl3YndyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzNTA2NzEsImV4cCI6MjEwNzkyNjY3MX0.8EiK47mBB3uH0eZ8gWtqwMcs3_HfpyC6iPN17KDvAFw'
+  };
+  const CACHE_KEY = 'madinah_supabase_cache_v2';
+
+  let DATA = {
+    books: [
+      { book_num: 1, title_ar: 'الكتاب الأول', title_en: 'Book 1', title_ur: 'پہلی کتاب', units: [] },
+      { book_num: 2, title_ar: 'الكتاب الثاني', title_en: 'Book 2', title_ur: 'دوسری کتاب', units: [] },
+      { book_num: 3, title_ar: 'الكتاب الثالث', title_en: 'Book 3', title_ur: 'تیسری کتاب', units: [] }
+    ]
+  };
+
+  async function fetchSupabaseTable(endpoint) {
+    const res = await fetch(`${SUPABASE_CONFIG.url}/${endpoint}`, {
+      headers: {
+        'apikey': SUPABASE_CONFIG.anonKey,
+        'Authorization': `Bearer ${SUPABASE_CONFIG.anonKey}`
+      }
+    });
+    if (!res.ok) throw new Error(`Supabase error ${res.status}: ${res.statusText}`);
+    return await res.json();
+  }
+
+  function assembleData(books, units, cards, questions) {
+    const cardsByUnit = {};
+    (cards || []).forEach(c => {
+      if (!cardsByUnit[c.unit_id]) cardsByUnit[c.unit_id] = [];
+      cardsByUnit[c.unit_id].push(c);
+    });
+
+    const qsByUnit = {};
+    (questions || []).forEach(q => {
+      if (!qsByUnit[q.unit_id]) qsByUnit[q.unit_id] = [];
+      qsByUnit[q.unit_id].push(q);
+    });
+
+    const assembledBooks = (books || []).map(b => {
+      const bUnits = (units || [])
+        .filter(u => u.book_num === b.book_num)
+        .map(u => ({
+          ...u,
+          cards: cardsByUnit[u.id] || [],
+          questions: qsByUnit[u.id] || []
+        }));
+      return {
+        ...b,
+        units: bUnits
+      };
+    });
+
+    return { books: assembledBooks };
+  }
+
+  function loadCachedSupabaseData() {
+    try {
+      const cached = localStorage.getItem(CACHE_KEY);
+      if (cached) {
+        const parsed = JSON.parse(cached);
+        if (parsed && Array.isArray(parsed.books) && parsed.books.length > 0) {
+          DATA = parsed;
+        }
+      }
+    } catch (e) {
+      console.warn('Could not load cached Supabase data:', e);
+    }
+  }
+
+  async function loadDataFromSupabase() {
+    try {
+      const hasUnits = DATA.books.some(b => b.units && b.units.length > 0);
+      const grid = document.getElementById('journeyUnitsGrid');
+      if (!hasUnits && grid) {
+        grid.innerHTML = `
+          <div style="grid-column: 1 / -1; text-align: center; padding: 48px 16px; color: var(--text-sub);">
+            <div style="font-size: 2.5rem; margin-bottom: 12px; animation: pulse 1.5s infinite;">⏳</div>
+            <div style="font-size: 1.1rem; font-weight: 600;">${state.lang === 'ur' ? 'ڈیٹا بیس سے اسباق لوڈ ہو رہے ہیں...' : 'Loading lessons from Supabase...'}</div>
+          </div>
+        `;
+      }
+
+      const [books, units, cards, questions] = await Promise.all([
+        fetchSupabaseTable('books?select=*&order=book_num.asc'),
+        fetchSupabaseTable('units?select=*&order=unit_num.asc'),
+        fetchSupabaseTable('lesson_cards?select=*&order=card_order.asc'),
+        fetchSupabaseTable('questions?select=*&order=tamreen_num.asc,question_order.asc')
+      ]);
+
+      if (Array.isArray(books) && books.length > 0) {
+        DATA = assembleData(books, units || [], cards || [], questions || []);
+        try {
+          localStorage.setItem(CACHE_KEY, JSON.stringify(DATA));
+        } catch (e) {
+          console.warn('Could not cache Supabase data in localStorage:', e);
+        }
+        updateHeaderStats();
+        renderJourneyView();
+      }
+    } catch (err) {
+      console.error('Failed to load data from Supabase:', err);
+      const hasUnits = DATA.books.some(b => b.units && b.units.length > 0);
+      if (!hasUnits) {
+        const grid = document.getElementById('journeyUnitsGrid');
+        if (grid) {
+          grid.innerHTML = `
+            <div style="grid-column: 1 / -1; text-align: center; padding: 40px 16px; color: var(--text-sub);">
+              <div style="font-size: 2.5rem; margin-bottom: 12px;">⚠️</div>
+              <div style="font-weight: 700; margin-bottom: 8px;">${state.lang === 'ur' ? 'ڈیٹا لوڈ کرنے میں مسئلہ پیش آیا' : 'Failed to connect to Supabase'}</div>
+              <button class="duo-btn duo-btn-green" id="retrySupabaseBtn" style="margin-top: 10px;">${state.lang === 'ur' ? 'دوبارہ کوشش کریں' : 'Retry'}</button>
+            </div>
+          `;
+          document.getElementById('retrySupabaseBtn')?.addEventListener('click', () => loadDataFromSupabase());
+        }
+      }
+    }
+  }
+
   const STORAGE_KEY = 'madinah_duo_state_v4';
 
   const BOOK_COLORS = {
@@ -288,16 +405,19 @@
   }
 
   function getBook(bookNum) {
-    return DATA.books.find(b => b.book_num === Number(bookNum)) || DATA.books[0];
+    const num = Number(bookNum);
+    return DATA.books.find(b => b.book_num === num) || DATA.books[0] || { book_num: num, units: [] };
   }
 
   function findUnitById(unitId) {
     for (const b of DATA.books) {
+      if (!b.units) continue;
       const u = b.units.find(x => x.id === unitId);
       if (u) return { book: b, unit: u };
     }
-    const b0 = DATA.books[0];
-    return { book: b0, unit: b0.units[0] };
+    const b0 = DATA.books[0] || { book_num: 1, units: [] };
+    const u0 = (b0.units && b0.units[0]) ? b0.units[0] : null;
+    return { book: b0, unit: u0 };
   }
 
   function applyThemeAndPrefs() {
@@ -338,9 +458,10 @@
     document.getElementById('statXP').textContent = state.xp;
 
     DATA.books.forEach(b => {
-      const doneInBook = b.units.filter(u => (state.completed[u.id] || 0) > 0).length;
+      const units = b.units || [];
+      const doneInBook = units.filter(u => (state.completed[u.id] || 0) > 0).length;
       const el = document.getElementById(`pillCount${b.book_num}`);
-      if (el) el.textContent = `${doneInBook}/${b.units.length}`;
+      if (el) el.textContent = `${doneInBook}/${units.length}`;
     });
 
     document.querySelectorAll('#bookSwitcher .book-pill').forEach(btn => {
@@ -366,15 +487,16 @@
     const book = getBook(state.currentBook);
     if (!book) return;
     const L = t();
+    const units = book.units || [];
 
     // 1. Book Hero Banner
-    const doneCount = book.units.filter(u => (state.completed[u.id] || 0) > 0).length;
-    const pct = Math.round((doneCount / Math.max(1, book.units.length)) * 100);
+    const doneCount = units.filter(u => (state.completed[u.id] || 0) > 0).length;
+    const pct = units.length > 0 ? Math.round((doneCount / units.length) * 100) : 0;
 
-    document.getElementById('bookHeroBadge').textContent = L.bookHeroBadge(book.book_num, book.units.length);
-    document.getElementById('bookHeroTitle').textContent = formatAr(book.title_ar);
+    document.getElementById('bookHeroBadge').textContent = L.bookHeroBadge(book.book_num, units.length);
+    document.getElementById('bookHeroTitle').textContent = formatAr(book.title_ar || '');
     document.getElementById('bookHeroDesc').textContent = getBookTransTitle(book);
-    document.getElementById('bookProgressCount').textContent = L.bookProgress(doneCount, book.units.length, pct);
+    document.getElementById('bookProgressCount').textContent = L.bookProgress(doneCount, units.length, pct);
     document.getElementById('bookProgressPercent').textContent = `${pct}%`;
     document.getElementById('bookProgressFill').style.width = `${pct}%`;
 
@@ -382,7 +504,23 @@
     const grid = document.getElementById('journeyUnitsGrid');
     grid.innerHTML = '';
 
-    book.units.forEach(unit => {
+    if (units.length === 0) {
+      const emptyDiv = document.createElement('div');
+      emptyDiv.className = 'empty-journey-state';
+      emptyDiv.style.gridColumn = '1 / -1';
+      emptyDiv.style.textAlign = 'center';
+      emptyDiv.style.padding = '50px 20px';
+      emptyDiv.style.color = 'var(--text-sub)';
+      emptyDiv.innerHTML = `
+        <div style="font-size: 3rem; margin-bottom: 12px;">⏳</div>
+        <h3 style="margin-bottom: 8px; font-weight: 700;">${state.lang === 'ur' ? 'اس کتاب کے اسباق جلد آرہے ہیں' : 'Chapters coming soon'}</h3>
+        <p style="font-size: 0.95rem;">${state.lang === 'ur' ? 'ابھی صرف وہ اسباق دکھائی دے رہے ہیں جو سپابیس (Supabase) ڈیٹا بیس میں شامل ہیں۔' : 'Currently only chapters added to Supabase database are displayed.'}</p>
+      `;
+      grid.appendChild(emptyDiv);
+      return;
+    }
+
+    units.forEach(unit => {
       const card = document.createElement('div');
       const crowns = state.completed[unit.id] || 0;
       card.className = 'journey-unit-card' + (crowns > 0 ? ' completed' : '');
@@ -397,7 +535,7 @@
       card.innerHTML = `
         <div>
           <div class="unit-card-header">
-            <span class="unit-card-em">${unit.emoji}</span>
+            <span class="unit-card-em">${unit.emoji || '📖'}</span>
             <span class="unit-card-badge">${crowns > 0 ? `👑 ${crowns}` : L.unitBadge(unit.unit_num)}</span>
           </div>
           <div class="unit-card-body">
@@ -671,6 +809,30 @@
   }
 
   function extractCardsFromUnit(unit) {
+    if (!unit) return [];
+    if (Array.isArray(unit.cards) && unit.cards.length > 0) {
+      return unit.cards.map(c => {
+        const rawUr = c.trans_ur || c.ur || '';
+        const rawEn = c.trans_en || c.en || '';
+        const validUr = getValidUr(rawUr, c.arabic);
+        const validEn = getValidEn(rawEn, c.arabic);
+        let transTxt = '';
+        if (state.lang === 'ur') transTxt = validUr;
+        else if (state.lang === 'en') transTxt = validEn;
+        else transTxt = validUr && validEn ? `${validUr} • ${validEn}` : (validUr || validEn);
+
+        return {
+          id: c.id,
+          arabic: c.arabic,
+          ur: validUr,
+          en: validEn,
+          trans: transTxt,
+          emoji: sanitizeEmoji(c.emoji) || '💬',
+          type: c.type || 'text'
+        };
+      });
+    }
+
     const cards = [];
 
     (unit.blocks || []).forEach(b => {
@@ -1539,6 +1701,82 @@
     stage.appendChild(box);
   }
 
+  function stripLeadingEmoji(str) {
+    if (!str) return '';
+    return String(str).replace(/^[\p{Extended_Pictographic}\u{1F300}-\u{1FAFF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}\u{FE00}-\u{FE0F}\u{200D}\s]+/u, '').trim();
+  }
+
+  function formatOptionDisplay(opt, lang) {
+    if (!opt || typeof opt !== 'string') return '';
+    if (!opt.includes(' • ')) return opt;
+    const parts = opt.split(' • ').map(s => s.trim()).filter(Boolean);
+    if (parts.length < 2) return opt;
+
+    const isArabicScript0 = /[\u0600-\u06ff]/.test(parts[0]);
+    const isLatin0 = /[a-zA-Z]/.test(parts[0]);
+    const isArabicScript1 = /[\u0600-\u06ff]/.test(parts[1]);
+    const isLatin1 = /[a-zA-Z]/.test(parts[1]);
+
+    let urPart = parts[0];
+    let enPart = parts[1];
+    if (isArabicScript0 && isLatin1) {
+      urPart = parts[0];
+      enPart = parts[1];
+    } else if (isLatin0 && isArabicScript1) {
+      enPart = parts[0];
+      urPart = parts[1];
+    }
+
+    if (lang === 'en') return enPart || opt;
+    if (lang === 'ur') return urPart || opt;
+    return `${urPart} • ${enPart}`;
+  }
+
+  function formatQuizPromptAndInstruction(q, lang) {
+    let rawAr = (q.prompt_ar || '').trim();
+
+    // Detect textbook exercise prefixes like اقْرَأْ وَتَرْجِمْ or اقْرَأْ وَاكْتُبْ
+    const taskHeaderRegex = /^(?:[\p{Extended_Pictographic}\u{1F300}-\u{1FAFF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}\u{FE00}-\u{FE0F}\u{200D}\s]+)?(اقْرَأْ\s*وَتَرْجِمْ|اقْرَأْ\s*وَاكْتُبْ|تَرْجِمْ|اخْتَرْ)\s*[:：\-—]?\s*/u;
+    const taskMatch = rawAr.match(taskHeaderRegex);
+
+    let taskPrefix = '';
+    let cardText = rawAr;
+    if (taskMatch) {
+      taskPrefix = taskMatch[1] + ': ';
+      cardText = cardText.replace(taskMatch[0], '');
+    }
+
+    cardText = stripLeadingEmoji(cardText);
+
+    // Clean instructions: remove any parenthesized Arabic like (مَا هٰذَا؟ هٰذَا كُرْسِيٌّ.) or leaked hints
+    function cleanInstructionText(str) {
+      if (!str) return '';
+      let s = str.replace(/\s*\([^\)]*[\u0600-\u06ff][^\)]*\)\s*/g, ' ');
+      s = s.replace(/\s*\([^\)]*\)\s*$/g, '');
+      return s.trim().replace(/[:：\s]+$/, '');
+    }
+
+    let instText = '';
+    if (lang === 'ur') {
+      let baseUr = cleanInstructionText(q.prompt_ur) || (taskPrefix ? 'صحیح ترجمہ منتخب کریں' : cleanInstructionText(q.prompt_ar));
+      instText = taskPrefix ? `${taskPrefix}${baseUr}` : baseUr;
+    } else if (lang === 'en') {
+      let baseEn = cleanInstructionText(q.prompt_en) || (taskPrefix ? 'Select translation' : cleanInstructionText(q.prompt_ar));
+      instText = taskPrefix ? `${taskPrefix}${baseEn}` : baseEn;
+    } else {
+      let baseUr = cleanInstructionText(q.prompt_ur);
+      let baseEn = cleanInstructionText(q.prompt_en);
+      let combined = baseEn && baseUr ? `${baseEn} • ${baseUr}` : (baseEn || baseUr || cleanInstructionText(q.prompt_ar));
+      instText = taskPrefix ? `${taskPrefix}${combined}` : combined;
+    }
+
+    return {
+      instruction: instText,
+      cardText: cardText,
+      isTranslationQuestion: Boolean(taskPrefix || /translation|ترجمہ/i.test(instText))
+    };
+  }
+
   function renderCurrentQuizQuestion() {
     const L = t();
     const stage = document.getElementById('quizStage');
@@ -1576,71 +1814,49 @@
     stage.innerHTML = '';
     stage.scrollTop = 0;
 
-    // 1. Clean Minimalist Question Header Bar (no boxed container, no leaked sub-topics!)
-    const headerRow = document.createElement('div');
-    headerRow.className = 'q-header-row';
-
+    // 1. Topbar counter badge beside green bar (e.g. Exercise (3) • 15/29)
     let badgeTxt = '';
     const tNum = q.tamreen_num || 1;
     if (state.lang === 'ur') badgeTxt = `مشق (${tNum})`;
     else if (state.lang === 'en') badgeTxt = `Exercise (${tNum})`;
-    else badgeTxt = `مشق (${tNum}) • Ex. ${tNum}`;
+    else badgeTxt = `Ex. ${tNum}`;
 
-    const badge = document.createElement('div');
-    badge.className = 'q-badge';
-    badge.textContent = `${badgeTxt} • ${quiz.index + 1}/${quiz.questions.length}`;
+    const counterBadge = document.getElementById('quizCounterBadge');
+    if (counterBadge) {
+      counterBadge.textContent = `${badgeTxt} • ${quiz.index + 1}/${quiz.questions.length}`;
+    }
 
-    let promptInst = '';
-    if (state.lang === 'ur') promptInst = q.prompt_ur || q.prompt_ar || '';
-    else if (state.lang === 'en') promptInst = q.prompt_en || q.prompt_ar || '';
-    else promptInst = (q.prompt_ur && q.prompt_en) ? `${q.prompt_ur} • ${q.prompt_en}` : (q.prompt_ur || q.prompt_en || '');
+    // 2. Format question instruction and card text
+    const qData = formatQuizPromptAndInstruction(q, state.lang);
+
+    const headerRow = document.createElement('div');
+    headerRow.className = 'q-header-row';
 
     const inst = document.createElement('h3');
     inst.className = 'q-instruction';
-    inst.textContent = promptInst;
+    inst.textContent = qData.instruction;
     inst.dir = state.lang === 'en' ? 'ltr' : 'rtl';
-
-    headerRow.appendChild(badge);
-    if (promptInst) {
-      headerRow.appendChild(inst);
-    }
+    headerRow.appendChild(inst);
     stage.appendChild(headerRow);
 
-    // 2. Prompt Card
+    // 3. Prompt Card
     const promptCard = document.createElement('div');
     promptCard.className = 'q-prompt-card';
     
     let miniLabel = '';
-    let bigText = q.prompt_ar || '';
+    let bigText = qData.cardText;
     let subHint = '';
-    if (state.lang === 'ur') subHint = q.hint_ur || '';
-    else if (state.lang === 'en') subHint = q.hint_en || '';
-    else subHint = (q.hint_ur && q.hint_en) ? `${q.hint_ur} • ${q.hint_en}` : (q.hint_ur || q.hint_en || '');
-
-    let isBigAr = true;
-    let audioTarget = q.answer || q.prompt_ar;
-
-    // Detect if prompt is an instruction (e.g. "اختر العبارة الصحيحة" or "ترجم إلى العربية")
-    const isInstructionPrompt = /^(اخْتَرْ|اخْتَرِ|تَرْجِمْ|اختر|ترجم)/.test((q.prompt_ar || '').trim());
-    const hasTranslationHint = Boolean(q.hint_en || q.hint_ur);
-
-    if (isInstructionPrompt && hasTranslationHint) {
-      // Small instruction label above
-      miniLabel = q.prompt_ar;
-      if (state.lang === 'ur') bigText = q.hint_ur || '';
-      else if (state.lang === 'en') bigText = q.hint_en || '';
-      else bigText = (q.hint_ur && q.hint_en) ? `${q.hint_ur} • ${q.hint_en}` : (q.hint_ur || q.hint_en || '');
-      subHint = '';
-      isBigAr = false;
-      audioTarget = q.answer; // speak the Arabic answer
-    } else {
-      // Standard Arabic prompt (e.g. "ذَهَبَ إِلَى السُّوقِ" or "مَا هٰذَا؟")
-      bigText = q.prompt_ar;
-      isBigAr = true;
-      audioTarget = q.full_sentence || q.prompt_ar || q.answer;
+    // Never show subHint when it gives away the answer to a translation question!
+    if (!qData.isTranslationQuestion) {
+      if (state.lang === 'ur') subHint = q.hint_ur || '';
+      else if (state.lang === 'en') subHint = q.hint_en || '';
+      else subHint = (q.hint_ur && q.hint_en) ? `${q.hint_ur} • ${q.hint_en}` : (q.hint_ur || q.hint_en || '');
     }
 
-    const resolvedPromptEmoji = sanitizeEmoji(q.emoji) || getContextualEmoji(q.prompt_ar, q.hint_ur, q.hint_en) || (quiz.unit && sanitizeEmoji(quiz.unit.emoji)) || '💬';
+    let isBigAr = true;
+    let audioTarget = q.full_sentence || qData.cardText || q.answer;
+
+    const resolvedPromptEmoji = sanitizeEmoji(q.emoji) || getContextualEmoji(qData.cardText, q.hint_ur, q.hint_en) || (quiz.unit && sanitizeEmoji(quiz.unit.emoji)) || '💬';
     promptCard.innerHTML = `
       <span class="q-prompt-emoji">${resolvedPromptEmoji}</span>
       <div class="q-prompt-content">
@@ -1772,12 +1988,16 @@
         btn.className = 'q-option-btn';
         btn.dataset.opt = opt;
 
-        const isArabicText = /[\u0600-\u06ff]/.test(opt) && !/[\u0679\u0686\u0698\u0695\u06ba\u06be\u06c1\u06d2]/.test(opt) && !/[a-zA-Z]/.test(opt);
-        // IN GRAMMAR EXERCISES: ALWAYS preserve tashkeel on Arabic options!
-        const displayText = opt;
+        const displayText = formatOptionDisplay(opt, state.lang);
+        const isArabicText = /[\u0600-\u06ff]/.test(displayText) && !/[\u0679\u0686\u0698\u0695\u06ba\u06be\u06c1\u06d2]/.test(displayText) && !/[a-zA-Z]/.test(displayText);
+        const isUrduText = /[\u0679\u0686\u0698\u0695\u06ba\u06be\u06c1\u06d2]/.test(displayText) || (state.lang === 'ur' && !isArabicText);
+
+        let fontClass = 'en-font';
+        if (isArabicText) fontClass = 'ar-font preserve-tashkeel';
+        else if (isUrduText) fontClass = 'ur-font';
 
         btn.innerHTML = `
-          <span class="${isArabicText ? 'ar-font preserve-tashkeel' : (state.lang === 'ur' ? 'ur-font' : 'en-font')}">${displayText}</span>
+          <span class="${fontClass}">${displayText}</span>
           <span class="key-num">${i + 1}</span>
         `;
         btn.addEventListener('click', () => {
@@ -1887,10 +2107,17 @@
     checkBtn.disabled = false;
     checkBtn.textContent = L.continueBtn;
 
-    let expl = q.answer;
-    if (state.lang === 'ur') expl = q.explanation_ur || q.answer;
-    else if (state.lang === 'en') expl = q.explanation_en || q.answer;
-    else expl = (q.explanation_ur && q.explanation_en) ? `${q.explanation_ur} • ${q.explanation_en}` : (q.explanation_ur || q.explanation_en || q.answer);
+    const rawAns = q.answer || '';
+    const displayAns = formatOptionDisplay(rawAns, state.lang);
+    const isArabicAns = /[\u0600-\u06ff]/.test(displayAns) && !/[\u0679\u0686\u0698\u0695\u06ba\u06be\u06c1\u06d2]/.test(displayAns) && !/[a-zA-Z]/.test(displayAns);
+    const isUrduAns = /[\u0679\u0686\u0698\u0695\u06ba\u06be\u06c1\u06d2]/.test(displayAns) || (state.lang === 'ur' && !isArabicAns);
+    const ansFontClass = isArabicAns ? 'ar-font preserve-tashkeel' : (isUrduAns ? 'ur-font' : 'en-font');
+    const formattedAns = (isArabicAns && !q.strict_tashkeel) ? formatAr(displayAns) : displayAns;
+
+    let expl = displayAns;
+    if (state.lang === 'ur') expl = q.explanation_ur || displayAns;
+    else if (state.lang === 'en') expl = q.explanation_en || displayAns;
+    else expl = (q.explanation_ur && q.explanation_en) ? `${q.explanation_ur} • ${q.explanation_en}` : (q.explanation_ur || q.explanation_en || displayAns);
 
     if (isCorrect) {
       quiz.correctCount += 1;
@@ -1898,11 +2125,10 @@
       bottomBar.className = 'quiz-bottombar state-correct';
       feedbackIcon.textContent = '🎉';
       feedbackTitle.textContent = L.correctTitle;
-      const formattedAns = q.strict_tashkeel ? q.answer : formatAr(q.answer);
-      if (expl && expl !== q.answer) {
-        feedbackSub.innerHTML = `<span class="ar-font preserve-tashkeel">${formattedAns}</span><div style="margin-top:4px;font-size:0.92em;opacity:0.95;">${expl}</div>`;
+      if (expl && expl !== displayAns) {
+        feedbackSub.innerHTML = `<span class="${ansFontClass}">${formattedAns}</span><div style="margin-top:4px;font-size:0.92em;opacity:0.95;">${expl}</div>`;
       } else {
-        feedbackSub.innerHTML = `<span class="ar-font preserve-tashkeel">${formattedAns}</span>`;
+        feedbackSub.innerHTML = `<span class="${ansFontClass}">${formattedAns}</span>`;
       }
     } else {
       quiz.hearts = Math.max(1, quiz.hearts - 1);
@@ -1912,20 +2138,19 @@
       feedbackIcon.textContent = '❌';
       feedbackTitle.textContent = L.wrongTitle;
 
-      const formattedAns = q.strict_tashkeel ? q.answer : formatAr(q.answer);
       let ansLabel = '';
       if (state.lang === 'ur') {
-        ansLabel = `اصل جواب یہ تھا: <strong class="ar-font preserve-tashkeel" style="font-size:1.15em;">${formattedAns}</strong>`;
-        if (q.explanation_ur && q.explanation_ur !== q.answer) {
+        ansLabel = `اصل جواب یہ تھا: <strong class="${ansFontClass}" style="font-size:1.15em;">${formattedAns}</strong>`;
+        if (q.explanation_ur && q.explanation_ur !== rawAns) {
           ansLabel += `<div style="margin-top:4px;font-size:0.92em;opacity:0.95;">${q.explanation_ur}</div>`;
         }
       } else if (state.lang === 'en') {
-        ansLabel = `The correct answer was: <strong class="ar-font preserve-tashkeel" style="font-size:1.15em;">${formattedAns}</strong>`;
-        if (q.explanation_en && q.explanation_en !== q.answer) {
+        ansLabel = `The correct answer was: <strong class="${ansFontClass}" style="font-size:1.15em;">${formattedAns}</strong>`;
+        if (q.explanation_en && q.explanation_en !== rawAns) {
           ansLabel += `<div style="margin-top:4px;font-size:0.92em;opacity:0.95;">${q.explanation_en}</div>`;
         }
       } else {
-        ansLabel = `اصل جواب یہ تھا: <strong class="ar-font preserve-tashkeel" style="font-size:1.15em;">${formattedAns}</strong> • Correct answer was: <strong class="ar-font preserve-tashkeel" style="font-size:1.15em;">${formattedAns}</strong>`;
+        ansLabel = `اصل جواب یہ تھا: <strong class="${ansFontClass}" style="font-size:1.15em;">${formattedAns}</strong>`;
         if (q.explanation_ur || q.explanation_en) {
           const detail = (q.explanation_ur && q.explanation_en) ? `${q.explanation_ur} • ${q.explanation_en}` : (q.explanation_ur || q.explanation_en);
           ansLabel += `<div style="margin-top:4px;font-size:0.92em;opacity:0.95;">${detail}</div>`;
@@ -2181,7 +2406,7 @@
       btn.addEventListener('click', () => {
         state.currentBook = Number(btn.dataset.book);
         const b = getBook(state.currentBook);
-        if (b && b.units.length > 0) {
+        if (b && b.units && b.units.length > 0) {
           state.currentUnitId = b.units[0].id;
         }
         applyThemeAndPrefs();
@@ -2295,11 +2520,13 @@
     registerServiceWorker();
     setupPWAInstall();
     loadState();
+    loadCachedSupabaseData();
     applyLocalizationStrings();
     applyThemeAndPrefs();
     updateHeaderStats();
     bindEvents();
     renderJourneyView();
+    loadDataFromSupabase();
   }
 
   // Expose for testing and automation
@@ -2310,7 +2537,8 @@
     closeQuiz,
     renderCurrentQuizQuestion,
     openTamreenSelector,
-    openLessonCardReader
+    openLessonCardReader,
+    loadDataFromSupabase
   };
 
   if (document.readyState === 'loading') {

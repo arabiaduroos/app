@@ -17,7 +17,7 @@
   <!-- Google Fonts: Lateef (for Arabic) & Noto Nastaliq Urdu (for Urdu) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lateef:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lateef:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body data-lang="ur">
@@ -75,17 +75,17 @@
         <button class="book-pill active" data-book="1">
           <span class="pill-icon">📗</span>
           <span id="bookPillLabel1" class="pill-title">الكتاب ١</span>
-          <span class="pill-count" id="pillCount1">0/23</span>
+          <span class="pill-count" id="pillCount1">0/1</span>
         </button>
         <button class="book-pill" data-book="2">
           <span class="pill-icon">📘</span>
           <span id="bookPillLabel2" class="pill-title">الكتاب ٢</span>
-          <span class="pill-count" id="pillCount2">0/31</span>
+          <span class="pill-count" id="pillCount2">0/0</span>
         </button>
         <button class="book-pill" data-book="3">
           <span class="pill-icon">📙</span>
           <span id="bookPillLabel3" class="pill-title">الكتاب ٣</span>
-          <span class="pill-count" id="pillCount3">0/17</span>
+          <span class="pill-count" id="pillCount3">0/0</span>
         </button>
       </div>
 
@@ -236,18 +236,19 @@
   <!-- DUOLINGO INTERACTIVE CHAPTER EXERCISES (التمارين) OVERLAY -->
   <div class="quiz-overlay hidden" id="quizOverlay">
     <div class="quiz-topbar">
-      <button class="quiz-close-btn" id="quizCloseBtn" title="Exit">✕</button>
-      <div class="quiz-progress-track">
-        <div class="quiz-progress-fill" id="quizProgressFill" style="width: 10%"></div>
+      <div class="quiz-hearts" title="Hearts">
+        <span>❤️</span>
+        <strong id="quizHeartsCount">5</strong>
       </div>
       <button class="quiz-peek-btn" id="quizPeekLessonBtn" title="Peek at Lesson Cards">
         <span>📖</span>
         <span id="quizPeekBtnLabel">الدرس</span>
       </button>
-      <div class="quiz-hearts" title="Hearts">
-        <span>❤️</span>
-        <strong id="quizHeartsCount">5</strong>
+      <div class="quiz-progress-track">
+        <div class="quiz-progress-fill" id="quizProgressFill" style="width: 10%"></div>
       </div>
+      <span class="quiz-counter-badge" id="quizCounterBadge">Exercise (1) • 1/29</span>
+      <button class="quiz-close-btn" id="quizCloseBtn" title="Exit">✕</button>
     </div>
 
     <!-- Scrollable Quiz Stage - Top aligned to guarantee text above question is NEVER cut off! -->
@@ -349,8 +350,7 @@
     </div>
   </div>
 
-  <!-- Load Full Transcribed Dataset (Books 1, 2, 3) & App Engine -->
-  <script src="data/madinah_books.js"></script>
+  <!-- Supabase-powered Madinah Arabic Engine -->
   <script src="app.js"></script>
 </body>
 </html>

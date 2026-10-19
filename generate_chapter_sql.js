@@ -43,8 +43,22 @@ function generateUnitSQL(bookNum, unitNum) {
   let cardIdx = 1;
   const cardRows = [];
   (u.blocks || []).forEach(blk => {
-    if (blk.section === 'exercises' || blk.type === 'exercise_line') return;
-    cardRows.push(`  (${sqlEscape(u.id)}, ${cardIdx++}, ${sqlEscape((blk.text || '').trim())}, ${sqlEscape((blk.ur || '').trim())}, ${sqlEscape((blk.en || '').trim())}, ${sqlEscape(blk.emoji || '📖')})`);
+    const sec = blk.section || 'lesson';
+    const bt = blk.type;
+    const rawText = (blk.text || '').trim();
+    if (sec === 'exercises' || bt === 'exercise_line') return;
+    if (/^(تمارين|تمارین|التمارين|أجب عن|اختر)/.test(rawText)) return;
+
+    if (bt === 'emoji_grid' && Array.isArray(blk.cards)) {
+      blk.cards.forEach(c => {
+        const cText = (c.text || '').trim();
+        if (cText) {
+          cardRows.push(`  (${sqlEscape(u.id)}, ${cardIdx++}, ${sqlEscape(cText)}, ${sqlEscape((c.ur || '').trim())}, ${sqlEscape((c.en || '').trim())}, ${sqlEscape(c.emoji || '💬')})`);
+        }
+      });
+    } else if (rawText) {
+      cardRows.push(`  (${sqlEscape(u.id)}, ${cardIdx++}, ${sqlEscape(rawText)}, ${sqlEscape((blk.ur || '').trim())}, ${sqlEscape((blk.en || '').trim())}, ${sqlEscape(blk.emoji || '📖')})`);
+    }
   });
 
   sql += `-- 2. LESSON CARDS (${cardRows.length} cards for reading & pronunciation)\n`;
@@ -53,13 +67,19 @@ function generateUnitSQL(bookNum, unitNum) {
     sql += `INSERT INTO public.lesson_cards (unit_id, card_order, arabic, trans_ur, trans_en, emoji)\nVALUES\n` + cardRows.join(',\n') + ';\n\n';
   }
 
+function stripLeadingEmoji(str) {
+  if (!str) return '';
+  return String(str).replace(/^[\p{Extended_Pictographic}\u{1F300}-\u{1FAFF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}\u{FE00}-\u{FE0F}\u{200D}\s]+/u, '').trim();
+}
+
   // 3. Questions
   let qIdx = 1;
   const qRows = [];
   // Sort questions in order of tamreen
   const sortedQuestions = [...(u.questions || [])].sort((a, b) => (Number(a.tamreen_num) || 1) - (Number(b.tamreen_num) || 1));
   sortedQuestions.forEach(q => {
-    qRows.push(`  (${sqlEscape(q.id)}, ${sqlEscape(u.id)}, ${q.tamreen_num || 1}, ${qIdx++}, ${sqlEscape(q.type || 'sentence_reading')}, ${sqlEscape(q.prompt_ar || '')}, ${sqlEscape(q.prompt_ur || '')}, ${sqlEscape(q.prompt_en || '')}, ${sqlEscape(q.answer || '')}, ${sqlJson(q.options || [])}, ${q.strict_tashkeel ? 'TRUE' : 'FALSE'}, ${sqlEscape(q.hint_ur || '')}, ${sqlEscape(q.hint_en || '')}, ${sqlEscape(q.explanation_ur || '')}, ${sqlEscape(q.explanation_en || '')}, ${sqlEscape(q.emoji || '✍️')})`);
+    const cleanPromptAr = stripLeadingEmoji(q.prompt_ar || '');
+    qRows.push(`  (${sqlEscape(q.id)}, ${sqlEscape(u.id)}, ${q.tamreen_num || 1}, ${qIdx++}, ${sqlEscape(q.type || 'sentence_reading')}, ${sqlEscape(cleanPromptAr)}, ${sqlEscape(q.prompt_ur || '')}, ${sqlEscape(q.prompt_en || '')}, ${sqlEscape(q.answer || '')}, ${sqlJson(q.options || [])}, ${q.strict_tashkeel ? 'TRUE' : 'FALSE'}, ${sqlEscape(q.hint_ur || '')}, ${sqlEscape(q.hint_en || '')}, ${sqlEscape(q.explanation_ur || '')}, ${sqlEscape(q.explanation_en || '')}, ${sqlEscape(q.emoji || '✍️')})`);
   });
 
   sql += `-- 3. EXERCISE QUESTIONS (${qRows.length} questions in order of tamreens)\n`;
