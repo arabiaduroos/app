@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<audio id="player" src="test_hamed.mp3"></audio>
+<script>
+const a = document.getElementById('player');
+a.oncanplaythrough = () => {
+  document.body.innerHTML += '<div id="res">CAN_PLAY</div>';
+};
+a.onerror = () => {
+  document.body.innerHTML += '<div id="res">ERROR_' + (a.error ? a.error.code : 'unknown') + '</div>';
+};
+</script>
+</body>
+</html>

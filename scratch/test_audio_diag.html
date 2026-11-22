@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Testing Audio & Voices</h1>
+<script>
+async function run() {
+  function getVoicesPromise() {
+    return new Promise(resolve => {
+      let v = window.speechSynthesis.getVoices();
+      if (v.length) return resolve(v);
+      window.speechSynthesis.onvoiceschanged = () => {
+        resolve(window.speechSynthesis.getVoices());
+      };
+      setTimeout(() => resolve(window.speechSynthesis.getVoices()), 1500);
+    });
+  }
+
+  const voices = await getVoicesPromise();
+  const voiceList = voices.map(v => ({
+    name: v.name,
+    lang: v.lang,
+    localService: v.localService,
+    default: v.default
+  }));
+
+  let audioError = null;
+  let audioCanPlay = false;
+  try {
+    const a = new Audio('https://translate.google.com/translate_tts?ie=UTF-8&tl=ar&client=tw-ob&q=%D8%A7%D9%8E%D9%84%D9%92%D8%A8%D9%8E%D9%8A%D9%92%D8%AA%D9%8F');
+    a.onerror = (e) => { audioError = 'Audio error event fired'; };
+    await new Promise((res) => {
+      a.oncanplaythrough = () => { audioCanPlay = true; res(); };
+      a.onerror = (e) => { audioError = 'Failed to load audio: ' + (a.error ? a.error.message || a.error.code : 'unknown'); res(); };
+      setTimeout(() => res(), 2000);
+    });
+  } catch (e) {
+    audioError = e.message;
+  }
+
+  const data = {
+    voices: voiceList,
+    audioCanPlay,
+    audioError,
+    userAgent: navigator.userAgent
+  };
+
+  fetch('http://localhost:8999', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data)
+  });
+}
+run();
+</script>
+</body>
+</html>

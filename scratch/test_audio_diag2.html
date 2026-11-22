@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+async function run() {
+  function getVoicesPromise() {
+    return new Promise(resolve => {
+      let v = window.speechSynthesis.getVoices();
+      if (v.length) return resolve(v);
+      window.speechSynthesis.onvoiceschanged = () => {
+        resolve(window.speechSynthesis.getVoices());
+      };
+      setTimeout(() => resolve(window.speechSynthesis.getVoices()), 1000);
+    });
+  }
+
+  const voices = await getVoicesPromise();
+  const voiceList = voices.map(v => ({
+    name: v.name,
+    lang: v.lang
+  }));
+
+  let audioError = null;
+  let audioCanPlay = false;
+  try {
+    const a = new Audio('https://translate.google.com/translate_tts?ie=UTF-8&tl=ar&client=tw-ob&q=%D8%A7%D9%8E%D9%84%D9%92%D8%A8%D9%8E%D9%8A%D9%92%D8%AA%D9%8F');
+    await new Promise((res) => {
+      a.oncanplaythrough = () => { audioCanPlay = true; res(); };
+      a.onerror = (e) => { audioError = 'Audio error: ' + (a.error ? a.error.code : 'unknown'); res(); };
+      setTimeout(() => res(), 1500);
+    });
+  } catch (e) {
+    audioError = e.message;
+  }
+
+  const data = {
+    voices: voiceList,
+    audioCanPlay,
+    audioError
+  };
+
+  await fetch('http://localhost:8998', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data)
+  });
+  window.close();
+}
+run();
+</script>
+</body>
+</html>

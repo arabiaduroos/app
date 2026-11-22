@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="file:///c:/Users/Person/Documents/GitHub/app/styles.css">
+  <style>
+    /* COMPACT 24-WORD GRID (ZERO SCROLL, NEVER TOUCHES FOOTER) */
+    .vocab-words-grid.grid-6-cols {
+      grid-template-columns: repeat(6, 1fr) !important;
+      max-width: 860px !important;
+      gap: 4px 6px !important;
+    }
+    .vocab-words-grid.grid-6-cols .vocab-word-tile {
+      min-height: 48px !important;
+      padding: 3px 4px 2px !important;
+      border-radius: 10px !important;
+      border-bottom-width: 2.5px !important;
+      gap: 1px !important;
+    }
+    .vocab-words-grid.grid-6-cols .vocab-tile-em {
+      font-size: 1.15rem !important;
+      line-height: 1 !important;
+      margin-bottom: 0 !important;
+    }
+    .vocab-words-grid.grid-6-cols .vocab-tile-ar {
+      font-size: 1.05rem !important;
+      font-weight: 700 !important;
+      line-height: 1.15 !important;
+    }
+    .vocab-words-grid.grid-6-cols .vocab-tile-trans {
+      font-size: 0.72rem !important;
+      line-height: 1.1 !important;
+    }
+    .vocab-words-grid.grid-6-cols .vocab-tile-trans.ur-font {
+      font-size: 0.82rem !important;
+      line-height: 1.25 !important;
+    }
+    .vocab-words-grid.grid-6-cols .vocab-tile-speaker {
+      display: none !important;
+    }
+    .lesson-page-card.is-vocab-table,
+    .lesson-page-card:has(.vocab-table-card) {
+      padding: 6px 14px 8px !important;
+      gap: 3px !important;
+      max-width: 860px !important;
+      border-bottom-width: 4px !important;
+    }
+    .vocab-table-header-box {
+      padding: 3px 10px !important;
+      margin-bottom: 3px !important;
+    }
+    .lesson-stage.has-vocab-card,
+    .lesson-stage:has(.is-vocab-table),
+    .lesson-stage:has(.is-letter-table) {
+      overflow-y: auto !important;
+      padding: 8px 16px 24px !important;
+    }
+    .lesson-stage.has-vocab-card .lesson-card-viewport,
+    .lesson-stage:has(.is-vocab-table) .lesson-card-viewport,
+    .lesson-stage:has(.is-letter-table) .lesson-card-viewport {
+      margin: 0 auto !important;
+    }
+  </style>
+</head>
+<body style="margin:0; background:#f8fafc; overflow:hidden;">
+  <div id="lessonReaderModal" style="display:flex; flex-direction:column; width:1000px; height:700px; background:#fff; position:relative;">
+    <!-- Reader Topbar -->
+    <div class="reader-topbar" style="display:flex; align-items:center; justify-content:space-between; padding:12px 24px; border-bottom:2px solid #e2e8f0; flex-shrink:0;">
+      <div id="readerCardCounter" style="font-size:14px; font-weight:700; color:#64748b;">Card 35 of 35</div>
+      <div class="progress-bar-wrap" style="flex:1; max-width:320px; height:12px; background:#e2e8f0; border-radius:99px; margin:0 16px; overflow:hidden;">
+        <div id="readerProgressFill" style="width:100%; height:100%; background:#1cb0f6;"></div>
+      </div>
+      <div style="display:flex; gap:8px;">
+        <span class="pill-btn active">Cards</span>
+        <span id="readerUnitBadge" class="unit-pill">Unit 3: الدَّرْسُ الثَّالِثُ</span>
+      </div>
+    </div>
+
+    <!-- Central Stage -->
+    <div id="lessonStage" class="lesson-stage has-vocab-card" style="flex:1; display:flex; flex-direction:column; align-items:center; padding:10px 16px 24px; overflow-y:auto; box-sizing:border-box;">
+      <div id="lessonCardViewport" class="lesson-card-viewport" style="width:100%; display:flex; justify-content:center; margin:0 auto;">
+        <div id="lessonPageCard" class="lesson-page-card is-vocab-table" style="width:100%; max-width:860px; border:2.5px solid #cbd5e1; border-radius:20px; padding:8px 14px 10px; box-shadow:0 8px 24px rgba(0,0,0,0.04); box-sizing:border-box;">
+          <div style="display:none;">
+            <button id="lessonCardSpeakBtn">🔊</button>
+            <div id="lessonCardEmoji">🗂️</div>
+            <div id="lessonCardArabic"></div>
+            <div id="lessonCardTrans"></div>
+          </div>
+        </div>
+      </div>
+      <div id="lessonFullScroll" class="hidden"></div>
+    </div>
+
+    <!-- Bottom Navigation Bar -->
+    <div class="lesson-bottombar" style="border-top:2px solid #e2e8f0; background:#ffffff; padding:12px 24px; flex-shrink:0; display:flex; justify-content:space-between; align-items:center; z-index:10; position:relative;">
+      <button class="duo-btn duo-btn-green" style="padding:10px 24px; background:#58cc02; color:#fff; border:none; border-radius:14px; font-weight:800; font-size:1rem; cursor:pointer;">
+        <span>Solve Chapter Exercises Now</span>
+        <span>⬅️</span>
+      </button>
+      <button class="duo-btn duo-btn-outline" style="padding:10px 24px; background:#fff; border:2px solid #cbd5e1; border-radius:14px; font-weight:800; font-size:1rem; cursor:pointer;">
+        <span>Previous</span>
+        <span>➡️</span>
+      </button>
+    </div>
+  </div>
+
+  <script src="file:///c:/Users/Person/Documents/GitHub/app/app.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const u3 = window.app.DATA.books[0].units.find(u => u.id === 'b1_u3');
+      window.app.lessonReader.unit = u3;
+      window.app.lessonReader.cards = window.app.extractCardsFromUnit(u3);
+      window.app.lessonReader.index = 34; // Card 35
+      window.app.renderCurrentLessonCard();
+    });
+  </script>
+</body>
+</html>

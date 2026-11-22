@@ -380,62 +380,103 @@
     }
   }
 
-  // Arabic TTS: Dual Engine (Local voice if installed; Seamless Google TTS fallback for 100% reliability on Windows/all browsers)
+  const AUDIO_INDEX = {"هٰذَا حِمَارٌ أَهٰذَا حِمَارٌ لَا، هٰذَا حِصَانٌ": "audio/aud_1b79b22892.mp3", "هٰـــذَا": "audio/aud_ec402b6c36.mp3", "جَمَلٌ": "audio/aud_31756427b7.mp3", "اَلْخُبْزُ": "audio/aud_d53373ef80.mp3", "هٰذَا كُرْسِيٌّ": "audio/aud_a1a0efdd7f.mp3", "الدَّفْتَرُ جَدِيدٌ": "audio/aud_7e261f0188.mp3", "مَنْ هٰـــذَا": "audio/aud_7a4fe11db5.mp3", "بَيْتٌ": "audio/aud_d4c49c94cb.mp3", "النَّجْمُ": "audio/aud_17166ff2a9.mp3", "غَنِيٌّ": "audio/aud_92f161a8eb.mp3", "الْقَلَمُ": "audio/aud_8d2bf29c0c.mp3", "الصَّدْرُ": "audio/aud_7d0d9633ae.mp3", "مَا ذٰلِكَ ذٰلِكَ سَرِيرٌ": "audio/aud_9c1c599a29.mp3", "اللَّحْمُ": "audio/aud_17c8cbb33d.mp3", "الْبَيْتُ": "audio/aud_0f52d578b8.mp3", "الْوَلَدُ فَقِيرٌ": "audio/aud_b540f2ee00.mp3", "مَا هٰذَا هٰذَا حَجَرٌ": "audio/aud_ec4e3ec5e7.mp3", "مَا هٰذَا هٰذَا قَمِيصٌ": "audio/aud_63db797e07.mp3", "دِيكٌ": "audio/aud_ae038db14e.mp3", "النَّجْمُ بَعِيدٌ": "audio/aud_8babd4aef8.mp3", "التَّاجِرُ غَنِيٌّ": "audio/aud_97d3494cd6.mp3", "الْقَلَمُ مَكْسُورٌ": "audio/aud_c2328f2808.mp3", "نَجْمٌ": "audio/aud_eef6015c4b.mp3", "نَجْمٌ النَّجْمُ": "audio/aud_04c185a78d.mp3", "الْكُرْسِيُّ مَكْسُورٌ": "audio/aud_d030974c84.mp3", "اَلْحِمَارُ": "audio/aud_0e78c302ff.mp3", "هٰذَا بَابٌ": "audio/aud_2d26852aa6.mp3", "هٰذَا مَسْجِدٌ وَذٰلِكَ بَيْتٌ": "audio/aud_acfccdb6a2.mp3", "الذَّهَبُ": "audio/aud_ffcde90479.mp3", "الزَّهْرَةُ": "audio/aud_23433deaf4.mp3", "مَا هٰـــذَا": "audio/aud_96297b1663.mp3", "أَهٰذَا بَيْتٌ نَعَمْ، هٰذَا بَيْتٌ": "audio/aud_ba661b37f7.mp3", "الطَّبِيبُ طَوِيلٌ وَالْمَرِيضُ قَصِيرٌ": "audio/aud_4df4c0d5b2.mp3", "التُّفَّاحُ": "audio/aud_5d844ffd3a.mp3", "هٰذَا مَكْتَبٌ": "audio/aud_2196dff599.mp3", "ثَقِيلٌ": "audio/aud_a56ff2fa6c.mp3", "مَنْ هٰذَا هٰذَا مُدَرِّسٌ": "audio/aud_9abb42a7bb.mp3", "كَبِيرٌ": "audio/aud_54049fdfa1.mp3", "الْجَمَلُ": "audio/aud_fce4167b42.mp3", "مَنْ هٰذَا هٰذَا وَلَدٌ": "audio/aud_ead2d86edb.mp3", "الْقَمِيصُ نَظِيفٌ": "audio/aud_341754213a.mp3", "الدُّكَّانُ مَفْتُوحٌ": "audio/aud_c2bb02d8ee.mp3", "جَمَلٌ الْجَمَلُ": "audio/aud_f72b4f34ae.mp3", "ذَلِـــكَ": "audio/aud_590e3d72ff.mp3", "الْحِمَارُ صَغِيرٌ وَالْحِصَانُ كَبِيرٌ": "audio/aud_1babcbb96a.mp3", "الطَّالِبُ": "audio/aud_df5d2fb1fe.mp3", "وَمَا ذٰلِكَ ذٰلِكَ جَمَلٌ": "audio/aud_3d1acfa1cc.mp3", "جَالِسٌ": "audio/aud_6706fae2a2.mp3", "هٰذَا حِصَانٌ وَذٰلِكَ حِمَارٌ": "audio/aud_e23745a0ff.mp3", "الْقَمَرُ جَمِيلٌ": "audio/aud_cd55ca03da.mp3", "اَلْجَنَّةُ": "audio/aud_430908c7a4.mp3", "مَرِيضٌ": "audio/aud_53016c9637.mp3", "الدُّكَّانُ": "audio/aud_1793747c4f.mp3", "الْكِتَابُ": "audio/aud_30ce8cc0ea.mp3", "مَا هٰذَا هٰذَا مَسْجِدٌ": "audio/aud_d1007153ed.mp3", "اللَّبَنُ حَارٌّ": "audio/aud_b97eaf4498.mp3", "أَهٰذَا مِفْتَاحٌ لَا، هٰذَا قَلَمٌ": "audio/aud_634f3a3256.mp3", "خَفِيفٌ": "audio/aud_5ca4f3ec9b.mp3", "السُّكَّرُ حُلْوٌ": "audio/aud_7fc0904f28.mp3", "وَسِخٌ": "audio/aud_c693e4c7da.mp3", "الدِّيكُ": "audio/aud_94bff9fdf3.mp3", "اَلْهَوَاءُ": "audio/aud_84b41f7cae.mp3", "مَفْتُوحٌ": "audio/aud_01bf733965.mp3", "مَكْسُورٌ": "audio/aud_fee378b08c.mp3", "التُّفَّاحُ لَذِيذٌ": "audio/aud_aa172409e6.mp3", "هٰذَا قَلَمٌ": "audio/aud_408655bb08.mp3", "هٰذَا بَيْتٌ": "audio/aud_c937bfa37d.mp3", "اَلْقَمَرُ": "audio/aud_64cbb6ca9c.mp3", "مَا ذٰلِكَ ذٰلِكَ نَجْمٌ": "audio/aud_bea1d9d4f5.mp3", "الظَّهْرُ": "audio/aud_ae36b01b91.mp3", "قَلَمٌ": "audio/aud_891a85ce2d.mp3", "طَوِيلٌ": "audio/aud_0155f0380e.mp3", "أَذٰلِكَ كَلْبٌ لَا، ذٰلِكَ قِطٌّ": "audio/aud_0c283f4576.mp3", "الطَّالِبُ مَرِيضٌ": "audio/aud_384559cabb.mp3", "هٰذَا كِتَابٌ": "audio/aud_cf177bb44c.mp3", "الْقَمَرُ": "audio/aud_1f08ecd597.mp3", "التَّاجِرُ": "audio/aud_1d3480ff70.mp3", "هٰذَا سَرِيرٌ": "audio/aud_5ab5dff0fb.mp3", "الْحُرُوفُ الْقَمَرِيَّةُ": "audio/aud_757ac2fe8f.mp3", "الْمَاءُ بَارِدٌ": "audio/aud_e47aabdf00.mp3", "قَصِيرٌ": "audio/aud_8856716253.mp3", "الْبَابُ مَفْتُوحٌ": "audio/aud_d184cb24f9.mp3", "اَلْمَاءُ": "audio/aud_4e7bfd8e2d.mp3", "رَجُلٌ الرَّجُلُ": "audio/aud_edbffd8a9a.mp3", "فَقِيرٌ": "audio/aud_ad9475deec.mp3", "اَلْعَيْنُ": "audio/aud_1bdccf28c9.mp3", "الدِّيكُ جَمِيلٌ": "audio/aud_6495c0b819.mp3", "جَمِيلٌ": "audio/aud_7cfeb5540d.mp3", "هٰذَا كَلْبٌ أَهٰذَا كَلْبٌ لَا، هٰذَا قِطٌّ": "audio/aud_0fcfdead28.mp3", "رَجُلٌ": "audio/aud_497b54314a.mp3", "مَا هٰذَا هٰذَا نَجْمٌ": "audio/aud_733250507c.mp3", "اَلْغَدَاءُ": "audio/aud_03d6c88968.mp3", "حَجَرٌ": "audio/aud_2f41481a67.mp3", "الْكِتَابُ جَدِيدٌ وَالْقَلَمُ قَدِيمٌ": "audio/aud_8d60b1400d.mp3", "بَيْتٌ الْبَيْتُ": "audio/aud_808d9167f5.mp3", "جَدِيدٌ": "audio/aud_0109be90f8.mp3", "الرَّجُلُ وَاقِفٌ": "audio/aud_b3c57b322e.mp3", "اَلْكَلْبُ": "audio/aud_4f8ed80d67.mp3", "كِتَابٌ الْكِتَابُ": "audio/aud_0e374a7107.mp3", "أَذٰلِكَ قِطٌّ لَا، ذٰلِكَ كَلْبٌ": "audio/aud_e328e95503.mp3", "مَنْ هٰذَا هٰذَا طَبِيبٌ": "audio/aud_6c39c18acf.mp3", "هٰذَا مَسْجِدٌ": "audio/aud_d2b4b4acc2.mp3", "قَدِيمٌ": "audio/aud_8d2074f040.mp3", "الْحَجَرُ ثَقِيلٌ وَالْوَرَقُ خَفِيفٌ": "audio/aud_bc72062134.mp3", "مَنْ هٰذَا هٰذَا طَالِبٌ": "audio/aud_2a9fcc62b1.mp3", "الضَّيْفُ": "audio/aud_6a72cd6f24.mp3", "أَهٰذَا سَرِيرٌ لَا، هٰذَا كُرْسِيٌّ": "audio/aud_9dfa14ecc0.mp3", "اَلْبَابُ": "audio/aud_c970473aa6.mp3", "سُكَّرٌ": "audio/aud_aa53875937.mp3", "مَا ذٰلِكَ ذٰلِكَ حَجَرٌ": "audio/aud_727ace9f0d.mp3", "مَنْ ذٰلِكَ ذٰلِكَ إِمَامٌ": "audio/aud_83dc734d4d.mp3", "نَظِيفٌ": "audio/aud_93909a4cc0.mp3", "الْكَلِمَاتُ الْجَدِيدَةُ": "audio/aud_6ecc8aca8e.mp3", "اَلْوَلَدُ": "audio/aud_8fb1e36531.mp3", "اَلْأَبُ": "audio/aud_45f6538b4e.mp3", "طَالِبٌ": "audio/aud_94a8028344.mp3", "كِتَابٌ": "audio/aud_e07c3c4110.mp3", "مَا هٰذَا هٰذَا بَيْتٌ": "audio/aud_c4cae34a65.mp3", "مَنْ هٰذَا هٰذَا تَاجِرٌ": "audio/aud_19bdbd14fc.mp3", "مَا هٰذَا هٰذَا دِيكٌ": "audio/aud_47f41d1d59.mp3", "مَنْ هٰذَا وَمَنْ ذٰلِكَ هٰذَا مُدَرِّسٌ وَذٰلِكَ إِمَامٌ": "audio/aud_9c44457e9c.mp3", "إِمَامٌ": "audio/aud_f01f5b0399.mp3", "لَبَنٌ": "audio/aud_af3e58e502.mp3", "الْوَلَدُ جَالِسٌ وَالْمُدَرِّسُ وَاقِفٌ": "audio/aud_f07bca6593.mp3", "صَغِيرٌ": "audio/aud_91360a0a71.mp3", "وَاقِفٌ": "audio/aud_e1ae41b44c.mp3", "طَالِبٌ الطَّالِبُ": "audio/aud_95fc82c942.mp3", "أَهٰذَا قَمِيصٌ لَا، هٰذَا مِنْدِيلٌ": "audio/aud_4b1a924717.mp3", "الْحُرُوفُ الشَّمْسِيَّةُ": "audio/aud_c492c253b0.mp3", "دِيكٌ الدِّيكُ": "audio/aud_4b734617b4.mp3", "حُلْوٌ": "audio/aud_9d7dce31e7.mp3", "الْبَيْتُ قَرِيبٌ وَالْمَسْجِدُ بَعِيدٌ": "audio/aud_54d31612ee.mp3", "السَّمَكُ": "audio/aud_1d8ef4b45e.mp3", "هٰذَا سُكَّرٌ وَذٰلِكَ لَبَنٌ": "audio/aud_d29ecb44d0.mp3", "الرَّجُلُ": "audio/aud_e37bda96c5.mp3", "الثَّوْبُ": "audio/aud_d9d9ea2880.mp3", "اَلْفَمُ": "audio/aud_ce4dcfab0b.mp3", "الشَّمْسُ": "audio/aud_f49a8c05ee.mp3", "اَلْيَدُ": "audio/aud_b363b32eae.mp3", "هٰذَا مِفْتَاحٌ": "audio/aud_0ca750579e.mp3", "حَارٌّ": "audio/aud_7db09dac3a.mp3", "قَلَمٌ الْقَلَمُ": "audio/aud_722aaa1a6e.mp3", "الْمِنْدِيلُ وَسِخٌ": "audio/aud_0de29840c7.mp3", "بَارِدٌ": "audio/aud_a582813eb8.mp3", "أَهٰذَا وَلَدٌ لَا، هٰذَا رَجُلٌ": "audio/aud_ea6adf6265.mp3"};
+  // Arabic Audio Engine: Pre-synthesized studio-grade Male Voice (ar-SA-HamedNeural) + Dynamic Fallback
   let activeAudioTTS = null;
+
+  function cleanArTextForAudio(text) {
+    if (!text) return '';
+    return text
+      .replace(/\[.*?\]/g, '')
+      .replace(/[\(（][۰-۹0-9]+[\)）]/g, '')
+      .replace(/[•|⬅️➡️➔⬇️💡✨⭐\?؟\.,!:]/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+
   function speakArabic(text) {
     if (!text) return;
     try {
-      const clean = text
-        .replace(/\[.*?\]/g, '')
-        .replace(/[•|⬅️➡️➔⬇️💡✨⭐]/g, ' ')
-        .replace(/\s+/g, ' ')
-        .trim();
+      const clean = cleanArTextForAudio(text);
       if (!clean) return;
 
-      let spokenLocal = false;
-      if ('speechSynthesis' in window) {
-        try {
-          const voices = window.speechSynthesis.getVoices() || [];
-          const arVoice = voices.find(v => v.lang && v.lang.toLowerCase().startsWith('ar'));
-          if (arVoice) {
-            window.speechSynthesis.cancel();
-            const utter = new SpeechSynthesisUtterance(clean);
-            utter.lang = arVoice.lang || 'ar-SA';
-            utter.voice = arVoice;
-            utter.rate = 0.88;
-            window.speechSynthesis.speak(utter);
-            spokenLocal = true;
+      // 1. Check if we have pre-rendered authentic Saudi Male voice (HamedNeural)
+      let audioPath = AUDIO_INDEX[clean];
+      if (!audioPath) {
+        const bareClean = stripTashkeel(clean);
+        for (const [key, path] of Object.entries(AUDIO_INDEX)) {
+          if (stripTashkeel(key) === bareClean) {
+            audioPath = path;
+            break;
           }
-        } catch (localErr) {
-          spokenLocal = false;
         }
       }
 
-      // If no local Arabic speech pack is installed on Windows/browser, play authentic cloud audio
-      if (!spokenLocal) {
+      if (audioPath) {
         if (activeAudioTTS) {
           try {
             activeAudioTTS.pause();
             activeAudioTTS.currentTime = 0;
-          } catch (pauseErr) {}
+          } catch (e) {}
         }
-        const encoded = encodeURIComponent(clean);
-        const url = `https://translate.google.com/translate_tts?ie=UTF-8&tl=ar&client=tw-ob&q=${encoded}`;
-        activeAudioTTS = new Audio(url);
+        activeAudioTTS = new Audio(audioPath);
         activeAudioTTS.play().catch(e => {
-          console.warn('Audio play fallback:', e);
-          if ('speechSynthesis' in window) {
-            try {
-              window.speechSynthesis.cancel();
-              const utter = new SpeechSynthesisUtterance(clean);
-              utter.lang = 'ar-SA';
-              window.speechSynthesis.speak(utter);
-            } catch (err) {}
-          }
+          console.warn('Local audio play error, falling back to dynamic TTS:', e);
+          fallbackTTS(clean);
         });
+        return;
       }
+
+      // 2. Fallback to Dynamic TTS (Male voice preference)
+      fallbackTTS(clean);
     } catch (e) {
       console.warn('speakArabic error:', e);
+    }
+  }
+
+  function fallbackTTS(clean) {
+    let spokenLocal = false;
+    if ('speechSynthesis' in window) {
+      try {
+        const voices = window.speechSynthesis.getVoices() || [];
+        const arVoices = voices.filter(v => v.lang && v.lang.toLowerCase().startsWith('ar'));
+        const maleVoice = arVoices.find(v => {
+          const n = (v.name || '').toLowerCase();
+          return n.includes('hamed') || n.includes('shakir') || n.includes('maged') ||
+                 n.includes('taim') || n.includes('fahed') || n.includes('ali') ||
+                 n.includes('bassel') || n.includes('omar') || n.includes('jamal') ||
+                 n.includes('abdullah') || n.includes('moaz') || n.includes('male') ||
+                 (v.gender && v.gender.toLowerCase() === 'male');
+        }) || arVoices[0];
+
+        if (maleVoice) {
+          window.speechSynthesis.cancel();
+          const utter = new SpeechSynthesisUtterance(clean);
+          utter.lang = maleVoice.lang || 'ar-SA';
+          utter.voice = maleVoice;
+          utter.pitch = 0.82; // Resonant masculine teacher tone
+          utter.rate = 0.88;
+          window.speechSynthesis.speak(utter);
+          spokenLocal = true;
+        }
+      } catch (err) {
+        spokenLocal = false;
+      }
+    }
+
+    if (!spokenLocal) {
+      if (activeAudioTTS) {
+        try {
+          activeAudioTTS.pause();
+          activeAudioTTS.currentTime = 0;
+        } catch (e) {}
+      }
+      const encoded = encodeURIComponent(clean);
+      const url = `https://translate.google.com/translate_tts?ie=UTF-8&tl=ar&client=tw-ob&q=${encoded}`;
+      activeAudioTTS = new Audio(url);
+      activeAudioTTS.play().catch(e => {
+        console.warn('Cloud audio playback error:', e);
+      });
     }
   }
 
@@ -866,7 +907,7 @@
       { ar: 'مَفْتُوحٌ', ur: 'کھلا', en: 'Open', emoji: '🚪' },
       { ar: 'مَكْسُورٌ', ur: 'ٹوٹا ہوا', en: 'Broken', emoji: '💔' },
       { ar: 'ثَقِيلٌ', ur: 'بھاری', en: 'Heavy', emoji: '🏋️' },
-      { ar: 'خَفِيفٌ', ur: 'ہلکا', en: 'Light', emoji: '🪶' },
+      { ar: 'خَفِيفٌ', ur: 'ہلکا', en: 'Light', emoji: '🍃' },
       { ar: 'جَمِيلٌ', ur: 'خوبصورت', en: 'Beautiful', emoji: '🌸' },
       { ar: 'وَاقِفٌ', ur: 'کھڑا', en: 'Standing', emoji: '🧍' },
       { ar: 'جَالِسٌ', ur: 'بیٹھا', en: 'Sitting', emoji: '🪑' },
@@ -875,7 +916,7 @@
       { ar: 'الدُّكَّانُ', ur: 'دکان', en: 'The shop', emoji: '🏪' },
       { ar: 'غَنِيٌّ', ur: 'امیر / مالدار', en: 'Rich', emoji: '💰' },
       { ar: 'طَوِيلٌ', ur: 'لمبا', en: 'Tall', emoji: '📏' },
-      { ar: 'فَقِيرٌ', ur: 'غریب', en: 'Poor', emoji: '🪙' },
+      { ar: 'فَقِيرٌ', ur: 'غریب', en: 'Poor', emoji: '🤲' },
       { ar: 'قَصِيرٌ', ur: 'چھوٹے قد کا', en: 'Short', emoji: '📐' },
       { ar: 'التُّفَّاحُ', ur: 'سیب', en: 'The apple', emoji: '🍎' }
     ]
@@ -1070,7 +1111,35 @@
 
       // ALWAYS append the vocabCard at the very end as the LAST card of the chapter!
       if (vocabCard) {
-        cardsList.push(vocabCard);
+        const allWords = (vocabCard.words && vocabCard.words.length) ? vocabCard.words : vocabWords;
+        if (allWords.length > 14) {
+          const mid = Math.ceil(allWords.length / 2);
+          const part1Words = allWords.slice(0, mid);
+          const part2Words = allWords.slice(mid);
+
+          cardsList.push({
+            ...vocabCard,
+            id: `${vocabCard.id}_part1`,
+            title_ar: `${vocabCard.title_ar || 'الْكَلِمَاتُ الْجَدِيدَةُ'} (١)`,
+            title_ur: `${vocabCard.title_ur || 'نئے الفاظ'} (حصہ ۱)`,
+            title_en: `${vocabCard.title_en || 'New Vocabulary'} (Part 1)`,
+            words: part1Words
+          });
+
+          cardsList.push({
+            ...vocabCard,
+            id: `${vocabCard.id}_part2`,
+            title_ar: `${vocabCard.title_ar || 'الْكَلِمَاتُ الْجَدِيدَةُ'} (٢)`,
+            title_ur: `${vocabCard.title_ur || 'نئے الفاظ'} (حصہ ۲)`,
+            title_en: `${vocabCard.title_en || 'New Vocabulary'} (Part 2)`,
+            words: part2Words
+          });
+        } else {
+          cardsList.push({
+            ...vocabCard,
+            words: allWords
+          });
+        }
       }
 
       return cardsList;
@@ -1524,7 +1593,7 @@
       const grid = document.createElement('div');
       let colCount = 4;
       if (words.length <= 4) colCount = words.length;
-      else if (words.length > 16) colCount = 6;
+      else if (words.length >= 10) colCount = 6;
       grid.className = `vocab-words-grid grid-${colCount}-cols`;
       grid.style.setProperty('--vocab-cols', colCount);
 
@@ -1670,6 +1739,7 @@
         const grid = document.createElement('div');
         let colCount = 4;
         if (words.length <= 4) colCount = words.length;
+        else if (words.length >= 10) colCount = 6;
         grid.className = `vocab-words-grid grid-${colCount}-cols`;
         grid.style.setProperty('--vocab-cols', colCount);
 
@@ -3055,6 +3125,36 @@
     bindEvents();
     renderJourneyView();
     loadDataFromSupabase();
+
+    // Auto-open unit/card/lang if specified in URL (e.g. index.html?unit=b1_u3&card=35&lang=en)
+    try {
+      const urlParams = new URLSearchParams(window.location.search);
+      const autoLang = urlParams.get('lang');
+      if (autoLang && ['ur', 'en', 'both'].includes(autoLang)) {
+        state.lang = autoLang;
+        applyThemeAndPrefs();
+        applyLocalizationStrings();
+      }
+      const autoUnit = urlParams.get('unit');
+      const autoCard = urlParams.get('card');
+      if (autoUnit) {
+        const u = findUnitById(autoUnit)?.unit;
+        if (u) {
+          const splash = document.getElementById('splashOverlay');
+          if (splash) splash.classList.add('hidden');
+          openLessonCardReader(u);
+          if (autoCard) {
+            const cardNum = parseInt(autoCard, 10);
+            if (!isNaN(cardNum) && cardNum >= 1 && cardNum <= lessonReader.cards.length) {
+              lessonReader.index = cardNum - 1;
+              renderCurrentLessonCard();
+            }
+          }
+        }
+      }
+    } catch (e) {
+      console.warn('URL auto-open error:', e);
+    }
   }
 
   // Expose for testing and automation

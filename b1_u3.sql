@@ -57,8 +57,9 @@ VALUES
   -- DEDICATED SUN & MOON LETTERS TABLES (SPLIT INTO 2 PAGES, ZERO SCROLL)
   ('b1_u3', 33, 'الْحُرُوفُ الْقَمَرِيَّةُ', 'حروفِ قمریہ (لام ظاہر، ساکن پڑھی جائے گی)', 'Moon Letters (The ''l'' sound is clearly pronounced)', '🌙'),
   ('b1_u3', 34, 'الْحُرُوفُ الشَّمْسِيَّةُ', 'حروفِ شمسیہ (لام مدغم، حرف پر تشدید کے ساتھ)', 'Sun Letters (The ''l'' is silent and assimilates into a shaddah)', '☀️'),
-  -- FINAL CARD: VOCABULARY GRID (الْكَلِمَاتُ الْجَدِيدَةُ)
-  ('b1_u3', 35, 'الْكَلِمَاتُ الْجَدِيدَةُ', 'نئے الفاظ', 'New Vocabulary', '🗂️');
+  -- FINAL CARDS: VOCABULARY GRIDS (SPLIT INTO 2 ELEGANT PAGES OF 12 WORDS EACH, ZERO FOOTER OVERLAP)
+  ('b1_u3', 35, 'الْكَلِمَاتُ الْجَدِيدَةُ (١)', 'نئے الفاظ (حصہ ۱)', 'New Vocabulary (Part 1)', '🗂️'),
+  ('b1_u3', 36, 'الْكَلِمَاتُ الْجَدِيدَةُ (٢)', 'نئے الفاظ (حصہ ۲)', 'New Vocabulary (Part 2)', '🗂️');
 
 -- 3. EXERCISE QUESTIONS (28 authentic textbook questions across 4 tamreens)
 DELETE FROM public.questions WHERE unit_id = 'b1_u3';

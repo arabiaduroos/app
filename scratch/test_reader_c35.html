@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head><meta name="referrer" content="no-referrer">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>دُرُوسُ اللُّغَةِ الْعَرَبِيَّةِ • Madinah Arabic</title>
+
+  <!-- PWA & Mobile Web App Meta -->
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#0f172a" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Madinah Arabic" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="icon" type="image/png" href="icons/icon-192.png" />
+
+  <!-- Fonts: Jameel Noori Nastaleeq (Urdu), Lateef & Noto Kufi Arabic (Arabic) -->
+  <link rel="preload" href="fonts/JameelNooriNastaleeq.woff" as="font" type="font/woff" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lateef:wght@400;500;600;700;800&family=Noto+Kufi+Arabic:wght@400;500;600;700;800;900&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="scratch/full_test.css" />
+
+  <script>
+    try {
+      var raw = localStorage.getItem('madinah_duo_state_v4');
+      if (raw) {
+        var s = JSON.parse(raw);
+        if (s && s.darkMode) {
+          document.documentElement.classList.add('dark-mode');
+        }
+        if (s && s.lang) {
+          document.documentElement.setAttribute('data-early-lang', s.lang);
+        }
+      }
+    } catch (e) {}
+  </script>
+</head>
+<body data-lang="ur">
+  <!-- ULTRA-MINIMAL STARTING SCREEN (LANGUAGE SELECTION & PWA INSTALL) -->
+  <div class="splash-overlay" id="splashOverlay">
+    <div class="splash-card minimal-splash-card">
+      <div class="minimal-splash-badge">🕌</div>
+      <h1 class="minimal-splash-title ar-font">دُرُوسُ اللُّغَةِ الْعَرَبِيَّةِ</h1>
+      <p class="minimal-splash-subtitle">زبان منتخب کریں • Select Language</p>
+
+      <div class="minimal-lang-grid">
+        <button class="minimal-lang-card" id="selectUrduBtn" data-lang="ur">
+          <span class="lang-flag">🇵🇰</span>
+          <span class="minimal-lang-name ur-font">اردو</span>
+        </button>
+
+        <button class="minimal-lang-card" id="selectEnglishBtn" data-lang="en">
+          <span class="lang-flag">🇬🇧</span>
+          <span class="minimal-lang-name">English</span>
+        </button>
+
+        <button class="minimal-lang-card" id="selectBothBtn" data-lang="both">
+          <span class="lang-flag">🌐</span>
+          <span class="minimal-lang-name">EN + UR</span>
+        </button>
+      </div>
+
+      <!-- PWA INSTALL APP BUTTON ON FIRST SCREEN -->
+      <div class="splash-install-wrap">
+        <button class="splash-install-btn" id="splashInstallBtn" type="button" title="Install App • ایپ انسٹال کریں">
+          <span class="install-btn-icon">📲</span>
+          <div class="install-btn-texts">
+            <span class="install-btn-title ar-font">تَثْبِيتُ التَّطْبِيقِ عَلَى الْجِهَازِ</span>
+            <span class="install-btn-sub">ایپ انسٹال کریں • Install App (Offline)</span>
+          </div>
+          <span class="install-btn-badge">PWA</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOP CLEAN HEADER -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand" id="brandHomeBtn" title="Madinah Arabic">
+        <span class="brand-logo">🕌</span>
+        <div class="brand-text">
+          <span class="brand-title ar-font">عَرَبِيَّةُ الْمَدِينَةِ</span>
+          <span class="brand-sub" id="brandSubText">دُرُوسُ اللُّغَةِ الْعَرَبِيَّةِ</span>
+        </div>
+      </div>
+
+      <!-- Book Switcher Pills -->
+      <div class="book-switcher" id="bookSwitcher">
+        <button class="book-pill active" data-book="1">
+          <span class="pill-icon">📗</span>
+          <span id="bookPillLabel1" class="pill-title">الكتاب ١</span>
+          <span class="pill-count" id="pillCount1">0/1</span>
+        </button>
+        <button class="book-pill" data-book="2">
+          <span class="pill-icon">📘</span>
+          <span id="bookPillLabel2" class="pill-title">الكتاب ٢</span>
+          <span class="pill-count" id="pillCount2">0/0</span>
+        </button>
+        <button class="book-pill" data-book="3">
+          <span class="pill-icon">📙</span>
+          <span id="bookPillLabel3" class="pill-title">الكتاب ٣</span>
+          <span class="pill-count" id="pillCount3">0/0</span>
+        </button>
+      </div>
+
+      <!-- Controls & Stats -->
+      <div class="stats-bar">
+        <button class="icon-btn pwa-install-btn" id="topbarInstallBtn" title="Install App • ایپ انسٹال کریں">
+          <span>📲</span>
+        </button>
+        <button class="icon-btn lang-switch-btn" id="switchLangBtn" title="Switch Language">
+          <span id="activeLangBadge">🇵🇰 اردو</span>
+        </button>
+        <div class="stat-chip streak" title="Streak">
+          <span>🔥</span>
+          <strong id="statStreak">1</strong>
+        </div>
+        <div class="stat-chip xp" title="Total Points">
+          <span>⚡</span>
+          <strong id="statXP">0</strong>
+        </div>
+        <button class="icon-btn" id="fontSizeBtn" title="Adjust Arabic Font Size">
+          <span>A+</span>
+        </button>
+        <button class="icon-btn" id="themeToggleBtn" title="Dark / Light Mode">
+          <span id="themeIcon">🌙</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN APP CONTAINER (MINIMALIST LEARNING JOURNEY) -->
+  <main class="main-journey-container">
+    <!-- Current Book Banner & Progress -->
+    <div class="book-hero-banner" id="bookHeroBanner">
+      <div class="book-hero-info">
+        <div class="book-hero-badge" id="bookHeroBadge">📗 کتاب 1 • کل 1 سبق</div>
+        <h1 class="book-hero-title ar-font" id="bookHeroTitle">دُرُوسُ اللُّغَةِ الْعَرَبِيَّةِ - الْجُزْءُ الْأَوَّلُ</h1>
+        <p class="book-hero-desc" id="bookHeroDesc">اسم اشارہ قریب اور بنیادی جملے</p>
+      </div>
+      <!-- Overall Book Progress Track -->
+      <div class="book-progress-wrapper">
+        <div class="book-progress-label">
+          <span id="bookProgressCount">1 میں سے 0 اسباق مکمل (0%)</span>
+          <span id="bookProgressPercent">0%</span>
+        </div>
+        <div class="book-progress-track">
+          <div class="book-progress-fill" id="bookProgressFill" style="width: 0%"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Units List / Journey -->
+    <div class="journey-units-grid" id="journeyUnitsGrid">
+      <div class="journey-unit-card" data-unit-id="b1_u1">
+        <div>
+          <div class="unit-card-header">
+            <span class="unit-card-em">🏠</span>
+            <span class="unit-card-badge">سبق 1</span>
+          </div>
+          <div class="unit-card-body">
+            <h3 class="unit-card-title ar-font">الدَّرْسُ الْأَوَّلُ</h3>
+            <p class="unit-card-sub">اسم اشارہ قریب (هٰذَا: یہ) • مَا هٰذَا؟ اور مَنْ هٰذَا؟</p>
+            <div class="unit-card-curriculum-chips">
+              <span class="unit-curr-chip chip-tamreen">✍️ 3 تمارین</span>
+              <span class="unit-curr-chip chip-qaida">💡 قواعد</span>
+              <span class="unit-curr-chip chip-qcount">🎯 29 سوالات</span>
+            </div>
+          </div>
+        </div>
+        <div class="unit-card-actions">
+          <button class="duo-btn duo-btn-outline unit-read-btn">سبق پڑھیں</button>
+          <button class="duo-btn duo-btn-green unit-ex-btn">تمارین</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- MODAL: MINIMAL LESSON CARD READER (STYLED SAME AS QUESTIONS!) -->
+  <div class="lesson-reader-overlay hidden" id="lessonReaderModal">
+    <div class="reader-topbar">
+      <div class="reader-topbar-row1">
+        <button class="reader-close-btn" id="readerCloseBtn" title="Close Lesson">✕</button>
+        <span class="reader-badge" id="readerUnitBadge">🏠 الدرس الأول</span>
+        <div class="reader-mode-toggle">
+          <button class="mode-pill active" id="readerModeCardBtn" title="Cards Mode">🃏 بطاقات</button>
+          <button class="mode-pill" id="readerModeFullBtn" title="Full Text Mode">📄 كامل</button>
+        </div>
+      </div>
+      <div class="reader-topbar-row2">
+        <div class="reader-progress-track">
+          <div class="reader-progress-fill" id="readerProgressFill" style="width: 10%"></div>
+        </div>
+        <span class="reader-counter" id="readerCardCounter">بطاقة ١ من ٨</span>
+      </div>
+    </div>
+
+    <!-- Central Stage: Card-by-Card (Styled exactly like question prompt card!) -->
+    <div class="lesson-stage" id="lessonStage">
+      <!-- Single Card View (Default) -->
+      <div class="lesson-card-viewport" id="lessonCardViewport">
+        <div class="lesson-page-card" id="lessonPageCard">
+          <div class="lesson-card-header">
+            <span class="lesson-card-em" id="lessonCardEmoji">🏠</span>
+            <button class="lesson-speak-btn" id="lessonCardSpeakBtn" title="Listen Pronunciation">🔊</button>
+          </div>
+          <div class="lesson-card-arabic ar-font" id="lessonCardArabic">هٰذَا بَيْتٌ</div>
+          <div class="lesson-card-trans" id="lessonCardTrans">یہ ایک گھر ہے</div>
+        </div>
+      </div>
+
+      <!-- Full Text Scrollable View (Optional Toggle) -->
+      <div class="lesson-full-scroll hidden" id="lessonFullScroll"></div>
+    </div>
+
+    <!-- Bottom Navigation Bar -->
+    <div class="lesson-bottombar" id="lessonBottomBar">
+      <div class="lesson-bottom-inner">
+        <button class="duo-btn duo-btn-outline" id="lessonPrevBtn">➡️ السابق</button>
+        <button class="duo-btn duo-btn-blue" id="lessonNextBtn">التالي ⬅️</button>
+        <button class="duo-btn duo-btn-green hidden" id="lessonStartExercisesBtn">
+          <span id="lessonStartExercisesLabel">اب سبق کی تمارین حل کریں</span>
+          <span>⬅️</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: SELECT TAMREEN (اخْتَرْ التَّمْرِينَ) -->
+  <div class="tamreen-selector-backdrop hidden" id="tamreenSelectorModal">
+    <div class="tamreen-selector-card">
+      <div class="tamreen-selector-header">
+        <div class="tamreen-header-title-wrap">
+          <span class="tamreen-unit-badge ar-font" id="tamreenUnitBadge">الدَّرْسُ الْأَوَّلُ</span>
+          <h2 class="tamreen-selector-title" id="tamreenSelectorTitle">اخْتَرْ التَّمْرِينَ • Select Exercise</h2>
+        </div>
+        <button class="popover-close" id="closeTamreenSelectorBtn">✕</button>
+      </div>
+      <div class="tamreen-options-list" id="tamreenOptionsList">
+        <!-- Injected options for Tamreen 1, Tamreen 2, All Exercises -->
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: QAIDA / GRAMMAR MINI-LESSON -->
+  <div class="tamreen-selector-backdrop hidden" id="qaidaModal">
+    <div class="tamreen-selector-card qaida-modal-card">
+      <div class="tamreen-selector-header" style="border-bottom-color: rgba(245, 158, 11, 0.3);">
+        <div class="tamreen-header-title-wrap">
+          <div class="qaida-badge-wrap">
+            <span class="qaida-badge">💡 قَاعِدَةٌ ضَابِطَةٌ • Grammar Mini-Lesson</span>
+            <span class="qaida-page-badge" id="qaidaPageBadge">ص ٢٣</span>
+          </div>
+          <h2 class="tamreen-selector-title ar-font" id="qaidaModalTitle">قَاعِدَةٌ نَحْوِيَّةٌ</h2>
+        </div>
+        <button class="popover-close" id="closeQaidaModalBtn">✕</button>
+      </div>
+      <div class="qaida-modal-body" id="qaidaModalBody">
+        <!-- Injected title, rule explanation, and examples -->
+      </div>
+      <div class="qaida-modal-footer">
+        <button class="duo-btn duo-btn-green" id="qaidaContinueBtn">
+          <span>فَهِمْتُ الْقَاعِدَةَ • Got it!</span>
+          <span>➡️</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- DUOLINGO INTERACTIVE CHAPTER EXERCISES (التمارين) OVERLAY -->
+  <div class="quiz-overlay hidden" id="quizOverlay">
+    <div class="quiz-topbar">
+      <div class="quiz-hearts" title="Hearts">
+        <span>❤️</span>
+        <strong id="quizHeartsCount">5</strong>
+      </div>
+      <button class="quiz-peek-btn" id="quizPeekLessonBtn" title="Peek at Lesson Cards">
+        <span>📖</span>
+        <span id="quizPeekBtnLabel">الدرس</span>
+      </button>
+      <div class="quiz-progress-track">
+        <div class="quiz-progress-fill" id="quizProgressFill" style="width: 10%"></div>
+      </div>
+      <span class="quiz-counter-badge" id="quizCounterBadge">Exercise (1) • 1/29</span>
+      <button class="quiz-close-btn" id="quizCloseBtn" title="Exit">✕</button>
+    </div>
+
+    <!-- Scrollable Quiz Stage - Top aligned to guarantee text above question is NEVER cut off! -->
+    <div class="quiz-stage" id="quizStage">
+      <!-- Dynamic Question Content Injected Here -->
+    </div>
+
+    <!-- Bottom Check / Feedback Bar -->
+    <div class="quiz-bottombar" id="quizBottomBar">
+      <div class="quiz-bottom-inner">
+        <div class="quiz-feedback" id="quizFeedbackBox">
+          <span class="feedback-icon" id="feedbackIcon">🎉</span>
+          <div class="feedback-texts">
+            <div class="feedback-title" id="feedbackTitle"></div>
+            <div class="feedback-sub" id="feedbackSub"></div>
+          </div>
+        </div>
+        <div class="quiz-bottom-actions">
+          <button class="duo-btn duo-btn-outline" id="quizSkipBtn">Skip</button>
+          <button class="duo-btn duo-btn-green" id="quizCheckBtn" disabled>Check</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: QUICK PEEK AT LESSON CARDS DURING QUIZ -->
+  <div class="peek-drawer-backdrop hidden" id="peekLessonBackdrop">
+    <div class="peek-drawer" id="peekLessonDrawer">
+      <div class="peek-drawer-header">
+        <h3 class="ar-font" id="peekLessonTitle">📖 الدَّرْسُ وَالتَّرْجَمَةُ</h3>
+        <button class="popover-close" id="closePeekBtn">✕</button>
+      </div>
+      <div class="peek-drawer-body" id="peekLessonBody"></div>
+    </div>
+  </div>
+
+  <!-- MODAL: PWA INSTALL GUIDE -->
+  <div class="install-guide-backdrop hidden" id="installGuideBackdrop">
+    <div class="install-guide-modal" id="installGuideModal">
+      <div class="install-guide-header">
+        <div class="guide-header-icon">📲</div>
+        <div class="guide-header-text">
+          <h3 class="ar-font">تَثْبِيتُ التَّطْبِيقِ عَلَى جِهَازِكَ</h3>
+          <p class="guide-subtitle">ایپ کو اپنے فون یا کمپیوٹر پر انسٹال کریں • Install App</p>
+        </div>
+        <button class="popover-close" id="closeInstallGuideBtn" title="Close">✕</button>
+      </div>
+
+      <div class="install-guide-body">
+        <!-- Direct Prompt Button (shown when browser prompt is available or triggered) -->
+        <div class="guide-direct-wrap" id="guideDirectWrap">
+          <button class="duo-btn duo-btn-green guide-direct-btn" id="guideDirectInstallBtn">
+            <span>📲</span>
+            <span>ابھی انسٹال کریں • Install Now</span>
+          </button>
+        </div>
+
+        <div class="guide-steps-grid">
+          <!-- Android / Chrome step -->
+          <div class="guide-step-card">
+            <div class="guide-step-badge">🤖 Android / Chrome</div>
+            <div class="guide-step-body">
+              <p class="guide-step-desc">
+                براؤزر کے مینو <strong class="badge-tag">⋮</strong> پر کلک کریں اور <strong>«ایپ انسٹال کریں»</strong> (Install App) منتخب کریں۔
+              </p>
+              <p class="guide-step-sub">Tap browser menu <strong>⋮</strong> and select <strong>"Install app"</strong>.</p>
+            </div>
+          </div>
+
+          <!-- iOS / Safari step -->
+          <div class="guide-step-card">
+            <div class="guide-step-badge">🍏 iPhone / iPad (Safari)</div>
+            <div class="guide-step-body">
+              <p class="guide-step-desc">
+                نیچے شیئر بٹن <strong class="badge-tag">⎋</strong> دبائیں اور پھر <strong>«ہوم اسکرین پر شامل کریں ⊕»</strong> (Add to Home Screen) پر کلک کریں۔
+              </p>
+              <p class="guide-step-sub">Tap Share <strong>⎋</strong> then tap <strong>"Add to Home Screen ⊕"</strong>.</p>
+            </div>
+          </div>
+
+          <!-- Windows / Mac / Desktop step -->
+          <div class="guide-step-card">
+            <div class="guide-step-badge">💻 Windows / Mac (Chrome / Edge)</div>
+            <div class="guide-step-body">
+              <p class="guide-step-desc">
+                ایڈریس بار میں دائیں جانب موجود انسٹال بٹن <strong class="badge-tag">⊕</strong> پر کلک کریں، یا اوپر والا انسٹال بٹن دبائیں۔
+              </p>
+              <p class="guide-step-sub">Click the install icon <strong>⊕</strong> in the browser address bar.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="guide-features-row">
+          <span class="guide-feat">⚡ تیز رفتار لوڈنگ</span>
+          <span class="guide-feat">📴 مکمل آف لائن دستیابی</span>
+          <span class="guide-feat">🚫 بغیر اشتہارات</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Supabase-powered Madinah Arabic Engine -->
+  <script src="app.js?v=10"></script>
+
+<script>
+  localStorage.setItem('madinah_lang', 'both');
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      // Force reader open on Unit 3, Card 35
+      const u3 = window.app.DATA.books[0].units.find(u => u.id === 'b1_u3');
+      window.app.openLessonCardReader(u3);
+      window.app.lessonReader.index = 34; // Card 35
+      window.app.renderCurrentLessonCard();
+      document.getElementById('lessonReaderModal').classList.remove('hidden');
+      document.getElementById('lessonReaderModal').style.zIndex = '99999';
+    }, 1200);
+  });
+</script>
+</body>
+
+</html>

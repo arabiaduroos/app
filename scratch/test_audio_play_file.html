@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+const a = new Audio('../audio/aud_d4c49c94cb.mp3');
+a.oncanplaythrough = () => {
+  document.body.innerHTML = '<div id="status">AUDIO_SUCCESS</div>';
+};
+a.onerror = () => {
+  document.body.innerHTML = '<div id="status">AUDIO_ERROR_' + (a.error ? a.error.code : 'unknown') + '</div>';
+};
+</script>
+</body>
+</html>
