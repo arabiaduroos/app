@@ -41,7 +41,7 @@ VALUES
   ('b1_u3', 25, '(۱۰) التُّفَّاحُ لَذِيذٌ.', '(۱۰) سیب لذیذ ہے۔', '(10) The apple is delicious.', '🍎'),
   ('b1_u3', 26, '(۱۱) الطَّبِيبُ طَوِيلٌ وَالْمَرِيضُ قَصِيرٌ.', '(۱۱) ڈاکٹر لمبا ہے اور مریض پستہ قد ہے۔', '(11) The doctor is tall and the patient is short.', '🧑‍⚕️ 🩺'),
   ('b1_u3', 27, 'الْحُرُوفُ الْقَمَرِيَّةُ وَالْحُرُوفُ الشَّمْسِيَّةُ', 'حروفِ قمریہ (أ ب ج ح خ ع غ ف ق ك م و هـ ي) • حروفِ شمسیہ (ت ث د ذ ر ز س ش ص ض ط ظ ل ن)', 'Moon Letters (clear ''l'' sound) • Sun Letters (assimilated ''l'' sound into shaddah)', '🌙 ☀️'),
-  ('b1_u3', 28, 'الْكَلِمَاتُ الْجَدِيدَةُ', 'الْقَمَرُ (چاند) • جَدِيدٌ (نیا) • قَدِيمٌ (پرانا) • وَسِخٌ (میلا) • نَظِيفٌ (صاف) • حَارٌّ (گرم) • بَارِدٌ (ٹھنڈا) • صَغِيرٌ (چھوٹا) • كَبِيرٌ (بڑا) • مَفْتُوحٌ (کھلا) • مَكْسُورٌ (ٹوٹا ہوا) • ثَقِيلٌ (بھاری) • خَفِيفٌ (ہلکا) • جَمِيلٌ (خوبصورت) • وَاقِفٌ (کھڑا) • جَالِسٌ (بیٹھا) • حُلْوٌ (میٹھا) • مَرِيضٌ (بیمار) • الدُّكَّانُ (دکان) • غَنِيٌّ (مالدار) • طَوِيلٌ (لمبا) • فَقِيرٌ (غریب) • قَصِيرٌ (چھوٹا قد) • التُّفَّاحُ (سیب)', 'The Moon • New • Old • Dirty • Clean • Hot • Cold • Small • Big • Open • Broken • Heavy • Light • Beautiful • Standing • Sitting • Sweet • Sick • The Shop • Rich • Tall • Poor • Short • The Apple', '🗂️');
+  ('b1_u3', 28, 'الْكَلِمَاتُ الْجَدِيدَةُ', 'نئے الفاظ', 'New Vocabulary', '🗂️');
 
 -- 3. EXERCISE QUESTIONS (28 authentic textbook questions across 4 tamreens)
 DELETE FROM public.questions WHERE unit_id = 'b1_u3';

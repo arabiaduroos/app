@@ -28,7 +28,7 @@ VALUES
   ('b1_u2', 11, 'أَذٰلِكَ قِطٌّ؟ لَا، ذٰلِكَ كَلْبٌ.', 'کیا وہ بلی ہے؟ نہیں، وہ ایک کتا ہے۔', 'Is that a cat? No, that is a dog.', '🐕'),
   ('b1_u2', 12, 'مَا هٰذَا؟ هٰذَا حَجَرٌ.', 'یہ کیا ہے؟ یہ ایک پتھر ہے۔', 'What is this? This is a stone.', '⛰️'),
   -- كَلِمَاتٌ جَدِيدَةٌ (SINGLE VOCABULARY TABLE AT LESSON END)
-  ('b1_u2', 13, 'الْكَلِمَاتُ الْجَدِيدَةُ', 'إِمَامٌ (امام) • حَجَرٌ (پتھر) • سُكَّرٌ (چینی) • لَبَنٌ (دودھ)', 'Imam (Leader) • Hajar (Stone) • Sukkar (Sugar) • Laban (Milk)', '🗂️');
+  ('b1_u2', 13, 'الْكَلِمَاتُ الْجَدِيدَةُ', 'نئے الفاظ', 'New Vocabulary', '🗂️');
 
 -- 3. EXERCISE QUESTIONS (Strictly the 4 translation questions from textbook tamreen)
 DELETE FROM public.questions WHERE unit_id = 'b1_u2';
