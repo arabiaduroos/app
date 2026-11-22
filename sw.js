@@ -1,5 +1,5 @@
 // Madinah Arabic Course - Progressive Web App Service Worker
-const CACHE_NAME = 'madinah-arabic-supabase-v8';
+const CACHE_NAME = 'madinah-arabic-supabase-v10';
 
 const PRECACHE_ASSETS = [
   './',

@@ -8,40 +8,57 @@ VALUES
   ('b1_u3', 1, 3, 'الدَّرْسُ الثَّالِثُ', 'الـ التَّعْرِيفُ • الْحُرُوفُ الشَّمْسِيَّةُ وَالْقَمَرِيَّةُ', 'The Definite Article (al-) & Sun and Moon Letters', 'معرفہ (الـ کا استعمال) اور حروفِ شمسیہ و قمریہ', '☀️')
 ON CONFLICT (id) DO UPDATE SET title_ar = EXCLUDED.title_ar, topic_ar = EXCLUDED.topic_ar, topic_en = EXCLUDED.topic_en, topic_ur = EXCLUDED.topic_ur, emoji = EXCLUDED.emoji;
 
--- 2. LESSON CARDS (27 reading cards + 1 compact vocabulary grid card at lesson end)
+-- 2. LESSON CARDS (34 progressive cards: C2 vertical transformation cards + reading sentences + vocab table)
 -- Mountain emoji ⛰️ used for rock / stone (حَجَرٌ)
--- Zero-scroll compact vocabulary grid at lesson end
+-- Progressive C2 transformation cards for Indefinite ➔ Definite (الـ = The)
 DELETE FROM public.lesson_cards WHERE unit_id = 'b1_u3';
 INSERT INTO public.lesson_cards (unit_id, card_order, arabic, trans_ur, trans_en, emoji)
 VALUES
-  ('b1_u3', 1, 'بَيْتٌ ➔ الْبَيْتُ • قَلَمٌ ➔ الْقَلَمُ • كِتَابٌ ➔ الْكِتَابُ • جَمَلٌ ➔ الْجَمَلُ', 'بَيْتٌ (کوئی گھر) ➔ الْبَيْتُ (خاص گھر) • قَلَمٌ (کوئی قلم) ➔ الْقَلَمُ (خاص قلم) • كِتَابٌ (کوئی کتاب) ➔ الْكِتَابُ (خاص کتاب) • جَمَلٌ (کوئی اونٹ) ➔ الْجَمَلُ (خاص اونٹ)', 'A house ➔ The house • A pen ➔ The pen • A book ➔ The book • A camel ➔ The camel', '🏠 🖊️ 📖 🐪'),
-  ('b1_u3', 2, 'الْقَلَمُ مَكْسُورٌ.', 'قلم ٹوٹا ہوا ہے۔', 'The pen is broken.', '🖊️'),
-  ('b1_u3', 3, 'الْبَابُ مَفْتُوحٌ.', 'دروازہ کھلا ہے۔', 'The door is open.', '🚪'),
-  ('b1_u3', 4, 'الْوَلَدُ جَالِسٌ وَالْمُدَرِّسُ وَاقِفٌ.', 'لڑکا بیٹھا ہے اور استاد کھڑے ہیں۔', 'The boy is sitting and the teacher is standing.', '👦 🧑‍🏫'),
-  ('b1_u3', 5, '(۱) الْكِتَابُ جَدِيدٌ وَالْقَلَمُ قَدِيمٌ.', '(۱) کتاب نئی ہے اور قلم پرانا ہے۔', '(1) The book is new and the pen is old.', '📖 🖊️'),
-  ('b1_u3', 6, '(۲) الْحِمَارُ صَغِيرٌ وَالْحِصَانُ كَبِيرٌ.', '(۲) گدھا چھوٹا ہے اور گھوڑا بڑا ہے۔', '(2) The donkey is small and the horse is big.', '🫏 🐎'),
-  ('b1_u3', 7, '(۳) الْكُرْسِيُّ مَكْسُورٌ.', '(۳) کرسی ٹوٹی ہوئی ہے۔', '(3) The chair is broken.', '🪑'),
-  ('b1_u3', 8, '(۴) الْمِنْدِيلُ وَسِخٌ.', '(۴) رومال میلا ہے۔', '(4) The handkerchief is dirty.', '🧣'),
-  ('b1_u3', 9, '(۵) الْمَاءُ بَارِدٌ.', '(۵) پانی ٹھنڈا ہے۔', '(5) The water is cold.', '🧊 💧'),
-  ('b1_u3', 10, '(۶) الْقَمَرُ جَمِيلٌ.', '(۶) چاند خوبصورت ہے۔', '(6) The moon is beautiful.', '🌕'),
-  ('b1_u3', 11, '(۷) الْبَيْتُ قَرِيبٌ وَالْمَسْجِدُ بَعِيدٌ.', '(۷) گھر قریب ہے اور مسجد دور ہے۔', '(7) The house is near and the mosque is far.', '🏠 🕌'),
-  ('b1_u3', 12, '(۸) الْحَجَرُ ثَقِيلٌ وَالْوَرَقُ خَفِيفٌ.', '(۸) پتھر بھاری ہے اور کاغذ ہلکا ہے۔', '(8) The stone is heavy and the paper is light.', '⛰️ 📄'),
-  ('b1_u3', 13, '(۹) اللَّبَنُ حَارٌّ.', '(۹) دودھ گرم ہے۔', '(9) The milk is hot.', '🥛 ♨️'),
-  ('b1_u3', 14, '(۱۰) الْقَمِيصُ نَظِيفٌ.', '(۱۰) قمیض صاف ہے۔', '(10) The shirt is clean.', '👔'),
-  ('b1_u3', 15, 'نَجْمٌ ➔ النَّجْمُ • رَجُلٌ ➔ الرَّجُلُ • دِيكٌ ➔ الدِّيكُ • طَالِبٌ ➔ الطَّالِبُ', 'ستارہ ➔ خاص ستارہ • آدمی ➔ خاص آدمی • مرغا ➔ خاص مرغا • طالب علم ➔ خاص طالب علم', 'A star ➔ The star • A man ➔ The man • A rooster ➔ The rooster • A student ➔ The student', '⭐ 👨 🐓 👨‍🎓'),
-  ('b1_u3', 16, '(۱) النَّجْمُ بَعِيدٌ.', '(۱) ستارہ دور ہے۔', '(1) The star is far.', '⭐'),
-  ('b1_u3', 17, '(۲) الرَّجُلُ وَاقِفٌ.', '(۲) آدمی کھڑا ہے۔', '(2) The man is standing.', '🧍'),
-  ('b1_u3', 18, '(۳) السُّكَّرُ حُلْوٌ.', '(۳) چینی میٹھی ہے۔', '(3) The sugar is sweet.', '🍬'),
-  ('b1_u3', 19, '(۴) الطَّالِبُ مَرِيضٌ.', '(۴) طالب علم بیمار ہے۔', '(4) The student is sick.', '🤒'),
-  ('b1_u3', 20, '(۵) الدِّيكُ جَمِيلٌ.', '(۵) مرغا خوبصورت ہے۔', '(5) The rooster is beautiful.', '🐓'),
-  ('b1_u3', 21, '(۶) الدَّفْتَرُ جَدِيدٌ.', '(۶) کاپی نئی ہے۔', '(6) The notebook is new.', '📓'),
-  ('b1_u3', 22, '(۷) التَّاجِرُ غَنِيٌّ.', '(۷) تاجر مالدار ہے۔', '(7) The merchant is rich.', '💰'),
-  ('b1_u3', 23, '(۸) الدُّكَّانُ مَفْتُوحٌ.', '(۸) دکان کھلی ہے۔', '(8) The shop is open.', '🏪'),
-  ('b1_u3', 24, '(۹) الْوَلَدُ فَقِيرٌ.', '(۹) لڑکا غریب ہے۔', '(9) The boy is poor.', '👦'),
-  ('b1_u3', 25, '(۱۰) التُّفَّاحُ لَذِيذٌ.', '(۱۰) سیب لذیذ ہے۔', '(10) The apple is delicious.', '🍎'),
-  ('b1_u3', 26, '(۱۱) الطَّبِيبُ طَوِيلٌ وَالْمَرِيضُ قَصِيرٌ.', '(۱۱) ڈاکٹر لمبا ہے اور مریض پستہ قد ہے۔', '(11) The doctor is tall and the patient is short.', '🧑‍⚕️ 🩺'),
-  ('b1_u3', 27, 'الْحُرُوفُ الْقَمَرِيَّةُ وَالْحُرُوفُ الشَّمْسِيَّةُ', 'حروفِ قمریہ (أ ب ج ح خ ع غ ف ق ك م و هـ ي) • حروفِ شمسیہ (ت ث د ذ ر ز س ش ص ض ط ظ ل ن)', 'Moon Letters (clear ''l'' sound) • Sun Letters (assimilated ''l'' sound into shaddah)', '🌙 ☀️'),
-  ('b1_u3', 28, 'الْكَلِمَاتُ الْجَدِيدَةُ', 'نئے الفاظ', 'New Vocabulary', '🗂️');
+  -- MOON LETTERS DEMONSTRATION CARDS (C2 PROGRESSIVE CARDS)
+  ('b1_u3', 1, 'بَيْتٌ ➔ الْبَيْتُ', 'کوئی گھر ➔ خاص گھر', 'A house ➔ The house', '🏠'),
+  ('b1_u3', 2, 'قَلَمٌ ➔ الْقَلَمُ', 'کوئی قلم ➔ خاص قلم', 'A pen ➔ The pen', '🖊️'),
+  ('b1_u3', 3, 'كِتَابٌ ➔ الْكِتَابُ', 'کوئی کتاب ➔ خاص کتاب', 'A book ➔ The book', '📖'),
+  ('b1_u3', 4, 'جَمَلٌ ➔ الْجَمَلُ', 'کوئی اونٹ ➔ خاص اونٹ', 'A camel ➔ The camel', '🐪'),
+
+  -- MOON LETTERS READING SENTENCES
+  ('b1_u3', 5, 'الْقَلَمُ مَكْسُورٌ.', 'قلم ٹوٹا ہوا ہے۔', 'The pen is broken.', '🖊️'),
+  ('b1_u3', 6, 'الْبَابُ مَفْتُوحٌ.', 'دروازہ کھلا ہے۔', 'The door is open.', '🚪'),
+  ('b1_u3', 7, 'الْوَلَدُ جَالِسٌ وَالْمُدَرِّسُ وَاقِفٌ.', 'لڑکا بیٹھا ہے اور استاد کھڑے ہیں۔', 'The boy is sitting and the teacher is standing.', '👦 🧑‍🏫'),
+  ('b1_u3', 8, '(۱) الْكِتَابُ جَدِيدٌ وَالْقَلَمُ قَدِيمٌ.', '(۱) کتاب نئی ہے اور قلم پرانا ہے۔', '(1) The book is new and the pen is old.', '📖 🖊️'),
+  ('b1_u3', 9, '(۲) الْحِمَارُ صَغِيرٌ وَالْحِصَانُ كَبِيرٌ.', '(۲) گدھا چھوٹا ہے اور گھوڑا بڑا ہے۔', '(2) The donkey is small and the horse is big.', '🫏 🐎'),
+  ('b1_u3', 10, '(۳) الْكُرْسِيُّ مَكْسُورٌ.', '(۳) کرسی ٹوٹی ہوئی ہے۔', '(3) The chair is broken.', '🪑'),
+  ('b1_u3', 11, '(۴) الْمِنْدِيلُ وَسِخٌ.', '(۴) رومال میلا ہے۔', '(4) The handkerchief is dirty.', '🧣'),
+  ('b1_u3', 12, '(۵) الْمَاءُ بَارِدٌ.', '(۵) پانی ٹھنڈا ہے۔', '(5) The water is cold.', '🧊 💧'),
+  ('b1_u3', 13, '(۶) الْقَمَرُ جَمِيلٌ.', '(۶) چاند خوبصورت ہے۔', '(6) The moon is beautiful.', '🌕'),
+  ('b1_u3', 14, '(۷) الْبَيْتُ قَرِيبٌ وَالْمَسْجِدُ بَعِيدٌ.', '(۷) گھر قریب ہے اور مسجد دور ہے۔', '(7) The house is near and the mosque is far.', '🏠 🕌'),
+  ('b1_u3', 15, '(۸) الْحَجَرُ ثَقِيلٌ وَالْوَرَقُ خَفِيفٌ.', '(۸) پتھر بھاری ہے اور کاغذ ہلکا ہے۔', '(8) The stone is heavy and the paper is light.', '⛰️ 📄'),
+  ('b1_u3', 16, '(۹) اللَّبَنُ حَارٌّ.', '(۹) دودھ گرم ہے۔', '(9) The milk is hot.', '🥛 ♨️'),
+  ('b1_u3', 17, '(۱۰) الْقَمِيصُ نَظِيفٌ.', '(۱۰) قمیض صاف ہے۔', '(10) The shirt is clean.', '👔'),
+
+  -- SUN LETTERS DEMONSTRATION CARDS (C2 PROGRESSIVE CARDS)
+  ('b1_u3', 18, 'نَجْمٌ ➔ النَّجْمُ', 'کوئی ستارہ ➔ خاص ستارہ', 'A star ➔ The star', '⭐'),
+  ('b1_u3', 19, 'رَجُلٌ ➔ الرَّجُلُ', 'کوئی آدمی ➔ خاص آدمی', 'A man ➔ The man', '🧔'),
+  ('b1_u3', 20, 'دِيكٌ ➔ الدِّيكُ', 'کوئی مرغا ➔ خاص مرغا', 'A rooster ➔ The rooster', '🐓'),
+  ('b1_u3', 21, 'طَالِبٌ ➔ الطَّالِبُ', 'کوئی طالب علم ➔ خاص طالب علم', 'A student ➔ The student', '👨‍🎓'),
+
+  -- SUN LETTERS READING SENTENCES
+  ('b1_u3', 22, '(۱) النَّجْمُ بَعِيدٌ.', '(۱) ستارہ دور ہے۔', '(1) The star is far.', '⭐'),
+  ('b1_u3', 23, '(۲) الرَّجُلُ وَاقِفٌ.', '(۲) آدمی کھڑا ہے۔', '(2) The man is standing.', '🧍'),
+  ('b1_u3', 24, '(۳) السُّكَّرُ حُلْوٌ.', '(۳) چینی میٹھی ہے۔', '(3) The sugar is sweet.', '🍬'),
+  ('b1_u3', 25, '(۴) الطَّالِبُ مَرِيضٌ.', '(۴) طالب علم بیمار ہے۔', '(4) The student is sick.', '🤒'),
+  ('b1_u3', 26, '(۵) الدِّيكُ جَمِيلٌ.', '(۵) مرغا خوبصورت ہے۔', '(5) The rooster is beautiful.', '🐓'),
+  ('b1_u3', 27, '(۶) الدَّفْتَرُ جَدِيدٌ.', '(۶) کاپی نئی ہے۔', '(6) The notebook is new.', '📓'),
+  ('b1_u3', 28, '(۷) التَّاجِرُ غَنِيٌّ.', '(۷) تاجر مالدار ہے۔', '(7) The merchant is rich.', '💰'),
+  ('b1_u3', 29, '(۸) الدُّكَّانُ مَفْتُوحٌ.', '(۸) دکان کھلی ہے۔', '(8) The shop is open.', '🏪'),
+  ('b1_u3', 30, '(۹) الْوَلَدُ فَقِيرٌ.', '(۹) لڑکا غریب ہے۔', '(9) The boy is poor.', '👦'),
+  ('b1_u3', 31, '(۱۰) التُّفَّاحُ لَذِيذٌ.', '(۱۰) سیب لذیذ ہے۔', '(10) The apple is delicious.', '🍎'),
+  ('b1_u3', 32, '(۱۱) الطَّبِيبُ طَوِيلٌ وَالْمَرِيضُ قَصِيرٌ.', '(۱۱) ڈاکٹر لمبا ہے اور مریض پستہ قد ہے۔', '(11) The doctor is tall and the patient is short.', '🧑‍⚕️ 🩺'),
+
+  -- DEDICATED SUN & MOON LETTERS TABLES (SPLIT INTO 2 PAGES, ZERO SCROLL)
+  ('b1_u3', 33, 'الْحُرُوفُ الْقَمَرِيَّةُ', 'حروفِ قمریہ (لام ظاہر، ساکن پڑھی جائے گی)', 'Moon Letters (The ''l'' sound is clearly pronounced)', '🌙'),
+  ('b1_u3', 34, 'الْحُرُوفُ الشَّمْسِيَّةُ', 'حروفِ شمسیہ (لام مدغم، حرف پر تشدید کے ساتھ)', 'Sun Letters (The ''l'' is silent and assimilates into a shaddah)', '☀️'),
+  -- FINAL CARD: VOCABULARY GRID (الْكَلِمَاتُ الْجَدِيدَةُ)
+  ('b1_u3', 35, 'الْكَلِمَاتُ الْجَدِيدَةُ', 'نئے الفاظ', 'New Vocabulary', '🗂️');
 
 -- 3. EXERCISE QUESTIONS (28 authentic textbook questions across 4 tamreens)
 DELETE FROM public.questions WHERE unit_id = 'b1_u3';
