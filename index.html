@@ -7,18 +7,35 @@
 
   <!-- PWA & Mobile Web App Meta -->
   <link rel="manifest" href="manifest.json" />
-  <meta name="theme-color" content="#58cc02" />
+  <meta name="theme-color" content="#0f172a" />
+  <meta name="color-scheme" content="light dark" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="Madinah Arabic" />
   <link rel="apple-touch-icon" href="icons/icon-192.png" />
   <link rel="icon" type="image/png" href="icons/icon-192.png" />
 
-  <!-- Google Fonts: Lateef (for Arabic) & Noto Nastaliq Urdu (for Urdu) -->
+  <!-- Fonts: Jameel Noori Nastaleeq (Urdu), Lateef & Noto Kufi Arabic (Arabic) -->
+  <link rel="preload" href="fonts/JameelNooriNastaleeq.woff" as="font" type="font/woff" crossorigin />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lateef:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lateef:wght@400;500;600;700;800&family=Noto+Kufi+Arabic:wght@400;500;600;700;800;900&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+
+  <script>
+    try {
+      var raw = localStorage.getItem('madinah_duo_state_v4');
+      if (raw) {
+        var s = JSON.parse(raw);
+        if (s && s.darkMode) {
+          document.documentElement.classList.add('dark-mode');
+        }
+        if (s && s.lang) {
+          document.documentElement.setAttribute('data-early-lang', s.lang);
+        }
+      }
+    } catch (e) {}
+  </script>
 </head>
 <body data-lang="ur">
   <!-- ULTRA-MINIMAL STARTING SCREEN (LANGUAGE SELECTION & PWA INSTALL) -->
@@ -120,14 +137,14 @@
     <!-- Current Book Banner & Progress -->
     <div class="book-hero-banner" id="bookHeroBanner">
       <div class="book-hero-info">
-        <div class="book-hero-badge" id="bookHeroBadge">📗 المستوى الأول • ٢٣ درسًا</div>
+        <div class="book-hero-badge" id="bookHeroBadge">📗 کتاب 1 • کل 1 سبق</div>
         <h1 class="book-hero-title ar-font" id="bookHeroTitle">دُرُوسُ اللُّغَةِ الْعَرَبِيَّةِ - الْجُزْءُ الْأَوَّلُ</h1>
-        <p class="book-hero-desc" id="bookHeroDesc">بنیادی عربی گرامر اور جملہ اسمیہ</p>
+        <p class="book-hero-desc" id="bookHeroDesc">اسم اشارہ قریب اور بنیادی جملے</p>
       </div>
       <!-- Overall Book Progress Track -->
       <div class="book-progress-wrapper">
         <div class="book-progress-label">
-          <span id="bookProgressCount">0 / 23 اسباق مکمل</span>
+          <span id="bookProgressCount">1 میں سے 0 اسباق مکمل (0%)</span>
           <span id="bookProgressPercent">0%</span>
         </div>
         <div class="book-progress-track">
@@ -138,7 +155,27 @@
 
     <!-- Units List / Journey -->
     <div class="journey-units-grid" id="journeyUnitsGrid">
-      <!-- Dynamic Unit Cards Injected Here -->
+      <div class="journey-unit-card" data-unit-id="b1_u1">
+        <div>
+          <div class="unit-card-header">
+            <span class="unit-card-em">🏠</span>
+            <span class="unit-card-badge">سبق 1</span>
+          </div>
+          <div class="unit-card-body">
+            <h3 class="unit-card-title ar-font">الدَّرْسُ الْأَوَّلُ</h3>
+            <p class="unit-card-sub">اسم اشارہ قریب (هٰذَا: یہ) • مَا هٰذَا؟ اور مَنْ هٰذَا؟</p>
+            <div class="unit-card-curriculum-chips">
+              <span class="unit-curr-chip chip-tamreen">✍️ 3 تمارین</span>
+              <span class="unit-curr-chip chip-qaida">💡 قواعد</span>
+              <span class="unit-curr-chip chip-qcount">🎯 29 سوالات</span>
+            </div>
+          </div>
+        </div>
+        <div class="unit-card-actions">
+          <button class="duo-btn duo-btn-outline unit-read-btn">سبق پڑھیں</button>
+          <button class="duo-btn duo-btn-green unit-ex-btn">تمارین</button>
+        </div>
+      </div>
     </div>
   </main>
 
@@ -262,8 +299,8 @@
         <div class="quiz-feedback" id="quizFeedbackBox">
           <span class="feedback-icon" id="feedbackIcon">🎉</span>
           <div class="feedback-texts">
-            <strong id="feedbackTitle"></strong>
-            <p id="feedbackSub"></p>
+            <div class="feedback-title" id="feedbackTitle"></div>
+            <div class="feedback-sub" id="feedbackSub"></div>
           </div>
         </div>
         <div class="quiz-bottom-actions">
