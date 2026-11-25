@@ -1,0 +1,5 @@
+2026/11/24-17:12:16.043 4a18 Reusing MANIFEST C:\Users\Person\Documents\GitHub\app\scratch\chrome_vocab_test\Default\Local Storage\leveldb/MANIFEST-000001
+2026/11/24-17:12:16.045 4a18 Recovering log #3
+2026/11/24-17:12:16.045 4a18 Level-0 table #3: started
+2026/11/24-17:12:16.054 4a18 Level-0 table #3: 22508 bytes OK
+2026/11/24-17:12:16.060 4a18 Delete type=0 #3

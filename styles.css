@@ -1087,27 +1087,42 @@ body[data-lang="en"] {
   margin-top: 4px;
 }
 
-/* KALIMATUL JADIDA VOCAB TABLE (COMPACT ZERO SCROLL - NEVER OVERLAPS FOOTER) */
+/* KALIMATUL JADIDA VOCAB TABLE (RESPONSIVE & DECENT MEDIUM SIZE) */
 .lesson-stage.has-vocab-card,
 .lesson-stage:has(.is-vocab-table),
 .lesson-stage:has(.is-letter-table) {
   overflow-y: auto;
-  padding: 8px 16px 28px;
+  padding: 16px 20px 32px;
 }
 
 .lesson-stage.has-vocab-card .lesson-card-viewport,
 .lesson-stage:has(.is-vocab-table) .lesson-card-viewport,
 .lesson-stage:has(.is-letter-table) .lesson-card-viewport {
-  margin: 0 auto;
+  margin: auto 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .lesson-page-card.is-vocab-table,
 .lesson-page-card:has(.vocab-table-card) {
-  padding: 8px 14px 10px;
-  gap: 4px;
-  max-width: 860px;
-  border-bottom-width: 4px;
+  padding: clamp(20px, 3.5vh, 32px) clamp(18px, 3.5vw, 36px);
+  gap: 16px;
+  max-width: 820px;
+  width: 100%;
+  border-bottom-width: 5px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.04);
+}
+
+.lesson-page-card.is-vocab-table.vocab-count-few,
+.lesson-page-card:has(.vocab-density-few) {
+  min-height: 330px;
 }
 
 .lesson-page-card.is-vocab-table .lesson-card-header,
@@ -1119,30 +1134,40 @@ body[data-lang="en"] {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .vocab-table-header-box {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 12px;
   background: var(--duo-green-bg);
-  border: 1.5px solid var(--duo-green);
-  border-radius: 12px;
-  padding: 4px 14px;
-  margin: 0 auto 8px;
+  border: 2px solid var(--duo-green);
+  border-radius: 16px;
+  padding: 8px 24px;
+  margin: 0 auto 14px auto;
+  box-shadow: 0 4px 14px rgba(88, 204, 2, 0.1);
+}
+
+.vocab-table-header-box .vocab-header-badge-icon {
+  font-size: 1.6rem;
+  line-height: 1;
 }
 
 .vocab-table-header-title {
-  font-size: 1.05rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: var(--duo-green-dark);
   margin: 0;
-  line-height: 1.25;
+  line-height: 1.3 !important;
+  font-family: var(--font-arabic) !important;
 }
 
 .vocab-table-header-sub {
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   color: var(--duo-green-dark);
   font-weight: 600;
   opacity: 0.95;
@@ -1289,87 +1314,158 @@ body[data-lang="en"] {
   line-height: 1.3;
 }
 
-/* VOCABULARY WORDS GRID (الْكَلِمَاتُ الْجَدِيدَةُ) - COMPACT ZERO SCROLL */
+/* VOCABULARY WORDS GRID (الْكَلِمَاتُ الْجَدِيدَةُ) - RESPONSIVE & DECENT MEDIUM SIZE */
 .vocab-words-grid {
   display: grid;
-  grid-template-columns: repeat(var(--vocab-cols, 4), 1fr);
-  gap: 8px 10px;
   width: 100%;
-  max-width: 780px;
   margin: 0 auto;
   box-sizing: border-box;
 }
 
-.vocab-words-grid.grid-1-cols { grid-template-columns: 1fr; max-width: 200px; }
-.vocab-words-grid.grid-2-cols { grid-template-columns: repeat(2, 1fr); max-width: 400px; }
-.vocab-words-grid.grid-3-cols { grid-template-columns: repeat(3, 1fr); max-width: 580px; }
-.vocab-words-grid.grid-4-cols { grid-template-columns: repeat(4, 1fr); max-width: 780px; }
-.vocab-words-grid.grid-6-cols {
-  grid-template-columns: repeat(6, 1fr);
-  max-width: 860px;
-  gap: 4px 6px;
+/* Tier 1: Few words (<= 4 words, e.g. Unit 2 with 4 words) */
+.vocab-words-grid.vocab-density-few {
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 760px;
+  gap: 16px;
 }
 
-.vocab-words-grid.grid-6-cols .vocab-word-tile {
-  min-height: 48px;
-  padding: 3px 4px 2px;
-  border-radius: 10px;
-  border-bottom-width: 2.5px;
-  gap: 1px;
+.vocab-words-grid.vocab-density-few .vocab-word-tile {
+  min-height: 155px;
+  padding: 18px 12px 14px;
+  border-radius: 18px;
+  border: 2px solid var(--border-color);
+  border-bottom: 4px solid var(--border-lip);
+  gap: 6px;
 }
 
-.vocab-words-grid.grid-6-cols .vocab-tile-em {
-  font-size: 1.15rem;
+.vocab-words-grid.vocab-density-few .vocab-tile-em {
+  font-size: 2.5rem;
   line-height: 1;
-  margin-bottom: 0;
+  margin-bottom: 2px;
 }
 
-.vocab-words-grid.grid-6-cols .vocab-tile-ar,
-.vocab-tile-ar {
+.vocab-words-grid.vocab-density-few .vocab-tile-ar {
   font-family: var(--font-arabic) !important;
-  font-size: 1.35rem;
+  font-size: 2.15rem;
   font-weight: 700;
-  line-height: 1.15 !important;
+  line-height: 1.35 !important;
+  color: var(--text-main);
 }
 
-.vocab-words-grid.grid-6-cols .vocab-tile-trans {
-  font-size: 0.72rem;
-  line-height: 1.1;
+.vocab-words-grid.vocab-density-few .vocab-tile-trans {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--trans-color);
+  line-height: 1.25;
 }
 
-.vocab-words-grid.grid-6-cols .vocab-tile-trans.ur-font {
-  font-size: 0.82rem;
+.vocab-words-grid.vocab-density-few .vocab-tile-trans.ur-font {
+  font-size: 1.15rem;
+  line-height: 1.45 !important;
+}
+
+.vocab-words-grid.vocab-density-few .vocab-tile-speaker {
+  width: 26px;
+  height: 26px;
+  font-size: 0.78rem;
+  margin-top: 4px;
+}
+
+/* Tier 2: Medium words (5 to 8 words) */
+.vocab-words-grid.vocab-density-medium {
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 780px;
+  gap: 12px 14px;
+}
+
+.vocab-words-grid.vocab-density-medium .vocab-word-tile {
+  min-height: 120px;
+  padding: 12px 10px 10px;
+  border-radius: 16px;
+  border: 2px solid var(--border-color);
+  border-bottom: 3.5px solid var(--border-lip);
+  gap: 4px;
+}
+
+.vocab-words-grid.vocab-density-medium .vocab-tile-em {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.vocab-words-grid.vocab-density-medium .vocab-tile-ar {
+  font-family: var(--font-arabic) !important;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.3 !important;
+}
+
+.vocab-words-grid.vocab-density-medium .vocab-tile-trans {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.vocab-words-grid.vocab-density-medium .vocab-tile-trans.ur-font {
+  font-size: 1.05rem;
+}
+
+/* Tier 3: Many words (9 to 14 words, e.g. Unit 3 with 12 words) */
+.vocab-words-grid.vocab-density-many {
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 800px;
+  gap: 8px 10px;
+}
+
+.vocab-words-grid.vocab-density-many .vocab-word-tile {
+  min-height: 85px;
+  padding: 8px 6px 6px;
+  border-radius: 14px;
+  border: 1.5px solid var(--border-color);
+  border-bottom: 3.5px solid var(--border-lip);
+  gap: 2px;
+}
+
+.vocab-words-grid.vocab-density-many .vocab-tile-em {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.vocab-words-grid.vocab-density-many .vocab-tile-ar {
+  font-family: var(--font-arabic) !important;
+  font-size: 1.55rem;
+  font-weight: 700;
   line-height: 1.25 !important;
 }
 
-.vocab-words-grid.grid-6-cols .vocab-tile-speaker {
-  display: none;
+.vocab-words-grid.vocab-density-many .vocab-tile-trans {
+  font-size: 0.82rem;
 }
 
+.vocab-words-grid.vocab-density-many .vocab-tile-trans.ur-font {
+  font-size: 0.92rem;
+}
+
+/* Base Tile Styles */
 .vocab-word-tile {
   background: var(--bg-surface);
   border: 1.5px solid var(--border-color);
   border-bottom: 3.5px solid var(--border-lip);
   border-radius: 14px;
-  padding: 8px 6px 7px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2px;
   cursor: pointer;
   text-align: center;
   position: relative;
-  transition: transform 0.12s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
   user-select: none;
-  min-height: 70px;
   box-sizing: border-box;
 }
 
 .vocab-word-tile:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
   border-color: var(--duo-green);
-  box-shadow: 0 4px 12px rgba(88, 204, 2, 0.14);
+  box-shadow: 0 6px 16px rgba(88, 204, 2, 0.16);
 }
 
 .vocab-word-tile:active {
@@ -1378,111 +1474,107 @@ body[data-lang="en"] {
 }
 
 .vocab-tile-em {
-  font-size: 1.55rem;
   line-height: 1;
-  margin-bottom: 1px;
 }
 
 .vocab-tile-ar {
   font-family: var(--font-arabic) !important;
-  font-size: 1.45rem;
   font-weight: 700;
   color: var(--text-main);
-  line-height: 1.25;
 }
 
 .vocab-tile-trans {
-  font-size: 0.8rem;
   color: var(--trans-color);
-  line-height: 1.2;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 100%;
 }
 
-.vocab-tile-trans.ur-font {
-  font-size: 0.94rem;
-  line-height: 1.45 !important;
-}
-
 .vocab-tile-speaker {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 18px;
-  height: 18px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
   background: var(--duo-blue-bg);
   border: 1px solid var(--duo-blue);
   color: var(--duo-blue-dark);
-  font-size: 0.62rem;
-  margin-top: 2px;
-  opacity: 0.75;
+  font-size: 0.68rem;
+  margin-top: 3px;
+  opacity: 0.8;
   transition: opacity 0.15s, transform 0.12s, background 0.15s, color 0.15s;
 }
 
 .vocab-word-tile:hover .vocab-tile-speaker {
   opacity: 1;
-  transform: scale(1.1);
+  transform: scale(1.12);
   background: var(--duo-blue);
   color: #fff;
 }
 
-@media (max-width: 600px) {
-  .vocab-words-grid.grid-3-cols,
-  .vocab-words-grid.grid-4-cols {
+@media (max-width: 768px) {
+  .vocab-words-grid.vocab-density-few {
     grid-template-columns: repeat(2, 1fr);
-    max-width: 100%;
-    gap: 6px 8px;
+    max-width: 440px;
+    gap: 12px;
   }
-  .vocab-word-tile {
-    min-height: 62px;
-    padding: 6px 4px 5px;
+  .vocab-words-grid.vocab-density-few .vocab-word-tile {
+    min-height: 130px;
+    padding: 14px 10px 12px;
   }
-  .vocab-tile-em {
-    font-size: 1.35rem;
+  .vocab-words-grid.vocab-density-few .vocab-tile-em {
+    font-size: 2.1rem;
   }
-  .vocab-tile-ar {
-    font-size: 1.12rem;
+  .vocab-words-grid.vocab-density-few .vocab-tile-ar {
+    font-size: 1.85rem;
   }
-  .vocab-tile-trans {
-    font-size: 0.76rem;
+  .vocab-words-grid.vocab-density-few .vocab-tile-trans {
+    font-size: 0.95rem;
   }
-  .vocab-tile-trans.ur-font {
-    font-size: 0.88rem;
-    line-height: 1.4 !important;
+
+  .vocab-words-grid.vocab-density-medium,
+  .vocab-words-grid.vocab-density-many {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 440px;
+    gap: 8px 10px;
   }
 }
 
-@media (max-height: 700px) {
-  .lesson-stage {
-    padding: 6px 12px 10px;
-  }
+@media (max-width: 480px) {
   .lesson-page-card.is-vocab-table,
   .lesson-page-card:has(.vocab-table-card) {
-    padding: 6px 12px 8px;
+    padding: 16px 14px 18px;
+    gap: 12px;
+    min-height: auto;
   }
   .vocab-table-header-box {
-    padding: 3px 10px;
-    margin-bottom: 4px;
+    padding: 6px 16px;
+    margin-bottom: 8px;
   }
-  .vocab-words-grid.grid-6-cols .vocab-word-tile {
-    min-height: 44px;
-    padding: 2px 4px 2px;
+  .vocab-table-header-title {
+    font-size: 1.2rem;
   }
-  .vocab-word-tile {
-    min-height: 46px;
-    padding: 3px 4px 3px;
+  .vocab-table-header-sub {
+    font-size: 0.85rem;
   }
-  .vocab-tile-em {
-    font-size: 1.15rem;
+  .vocab-words-grid.vocab-density-few {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
-  .vocab-tile-ar {
-    font-size: 1.25rem;
+  .vocab-words-grid.vocab-density-few .vocab-word-tile {
+    min-height: 110px;
+    padding: 10px 6px 8px;
   }
-  .vocab-tile-trans {
-    font-size: 0.72rem;
+  .vocab-words-grid.vocab-density-few .vocab-tile-em {
+    font-size: 1.8rem;
+  }
+  .vocab-words-grid.vocab-density-few .vocab-tile-ar {
+    font-size: 1.6rem;
+  }
+  .vocab-words-grid.vocab-density-few .vocab-tile-trans {
+    font-size: 0.85rem;
   }
 }
 
@@ -4220,10 +4312,6 @@ body.dark-mode .word-ar .al-shamsi {
   .lesson-stage {
     padding: 6px 12px 10px !important;
   }
-  .lesson-page-card.is-vocab-table,
-  .lesson-page-card:has(.vocab-table-card) {
-    padding: 6px 12px 8px !important;
-  }
   .letter-table-card {
     padding: 6px 12px 6px !important;
   }
@@ -4264,10 +4352,6 @@ body.dark-mode .word-ar .al-shamsi {
     border-radius: 12px !important;
   }
   .lesson-stage {
-    padding: 4px 10px 6px !important;
-  }
-  .lesson-page-card.is-vocab-table,
-  .lesson-page-card:has(.vocab-table-card) {
     padding: 4px 10px 6px !important;
   }
   .letter-table-card {
