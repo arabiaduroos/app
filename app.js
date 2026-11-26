@@ -1432,6 +1432,8 @@
     const L = t();
     document.getElementById('readerUnitBadge').textContent = L.readerBadge(unit.unit_num, formatAr(unit.title_ar));
     document.getElementById('lessonReaderModal').classList.remove('hidden');
+    document.body.classList.add('reader-modal-open');
+    document.documentElement.classList.add('reader-modal-open');
 
     const stage = document.getElementById('lessonStage');
     if (stage) stage.scrollTop = 0;
@@ -1442,6 +1444,8 @@
 
   function closeLessonCardReader() {
     document.getElementById('lessonReaderModal').classList.add('hidden');
+    document.body.classList.remove('reader-modal-open');
+    document.documentElement.classList.remove('reader-modal-open');
   }
 
   function setReaderMode(mode) {
@@ -1453,7 +1457,10 @@
     document.getElementById('lessonFullScroll').classList.toggle('hidden', isCard);
 
     const stage = document.getElementById('lessonStage');
-    if (stage) stage.scrollTop = 0;
+    if (stage) {
+      stage.scrollTop = 0;
+      stage.classList.toggle('is-full-text-mode', !isCard);
+    }
 
     if (!isCard) {
       renderLessonFullText();
@@ -1498,6 +1505,7 @@
 
     arEl.style.display = 'block';
     transEl.style.display = 'block';
+    speakBtn.style.display = '';
     arEl.className = 'lesson-card-arabic ar-font';
     const isVocab = card.type === 'vocab_table' || isVocabCard(card);
     if (isVocab) card.type = 'vocab_table';
@@ -1699,6 +1707,7 @@
       emEl.style.display = 'none';
       arEl.style.display = 'none';
       transEl.style.display = 'none';
+      speakBtn.style.display = 'none';
 
       const vCard = document.createElement('div');
       vCard.className = 'vocab-table-card';
@@ -1714,6 +1723,18 @@
         </div>
       `;
       vCard.appendChild(headerBox);
+
+      // Small instruction written above table in selected language
+      const hintText = state.lang === 'ur'
+        ? 'آواز کے لیے لفظ پر کلک کریں'
+        : (state.lang === 'en'
+          ? 'Click the word for sound'
+          : 'Click the word for sound • آواز کے لیے لفظ پر کلک کریں');
+
+      const soundHint = document.createElement('div');
+      soundHint.className = `vocab-sound-hint ${state.lang !== 'en' ? 'ur-font' : ''}`;
+      soundHint.textContent = hintText;
+      vCard.appendChild(soundHint);
 
       let words = card.words;
       if (!Array.isArray(words) || words.length === 0) {
@@ -1735,7 +1756,7 @@
         cardContainer.classList.add('vocab-count-medium');
       } else {
         densityClass = 'vocab-density-many';
-        colCount = 6;
+        colCount = 4;
         cardContainer.classList.add('vocab-count-many');
       }
 
@@ -1746,17 +1767,14 @@
       words.forEach(w => {
         const tile = document.createElement('div');
         tile.className = 'vocab-word-tile';
+        tile.setAttribute('title', state.lang === 'ur' ? 'آواز کے لیے کلک کریں' : 'Click for sound');
         let meaning = w.ur || '';
         if (state.lang === 'en') meaning = w.en || '';
         else if (state.lang === 'both') meaning = (w.ur && w.en) ? `${w.ur} • ${w.en}` : (w.ur || w.en || '');
 
-        const wordEmoji = sanitizeEmoji(w.emoji) || getContextualEmoji(w.ar, w.ur, w.en) || '✨';
-
         tile.innerHTML = `
-          <span class="vocab-tile-em">${wordEmoji}</span>
-          <div class="vocab-tile-ar ar-font">${formatAr(w.ar)}</div>
+          <div class="vocab-tile-ar ar-font preserve-tashkeel">${formatAr(w.ar)}</div>
           <div class="vocab-tile-trans ${state.lang !== 'en' ? 'ur-font' : ''}" dir="${state.lang === 'en' ? 'ltr' : 'rtl'}">${meaning}</div>
-          <span class="vocab-tile-speaker" title="Listen">🔊</span>
         `;
 
         tile.addEventListener('click', () => speakArabic(w.ar));
@@ -1876,32 +1894,40 @@
         `;
         vCard.appendChild(headerBox);
 
+        const hintText = state.lang === 'ur'
+          ? 'آواز کے لیے لفظ پر کلک کریں'
+          : (state.lang === 'en'
+            ? 'Click the word for sound'
+            : 'Click the word for sound • آواز کے لیے لفظ پر کلک کریں');
+
+        const soundHint = document.createElement('div');
+        soundHint.className = `vocab-sound-hint ${state.lang !== 'en' ? 'ur-font' : ''}`;
+        soundHint.textContent = hintText;
+        vCard.appendChild(soundHint);
+
         let words = card.words;
-      if (!Array.isArray(words) || words.length === 0) {
-        words = getUnitVocabWords(lessonReader.unit, card);
-        card.words = words;
-      }
-      words = words || [];
+        if (!Array.isArray(words) || words.length === 0) {
+          words = getUnitVocabWords(lessonReader.unit, card);
+          card.words = words;
+        }
+        words = words || [];
         const grid = document.createElement('div');
         let colCount = 4;
         if (words.length <= 4) colCount = words.length;
-        else if (words.length >= 10) colCount = 6;
         grid.className = `vocab-words-grid grid-${colCount}-cols`;
         grid.style.setProperty('--vocab-cols', colCount);
 
         words.forEach(w => {
           const tile = document.createElement('div');
           tile.className = 'vocab-word-tile';
+          tile.setAttribute('title', state.lang === 'ur' ? 'آواز کے لیے کلک کریں' : 'Click for sound');
           let meaning = w.ur || '';
           if (state.lang === 'en') meaning = w.en || '';
           else if (state.lang === 'both') meaning = (w.ur && w.en) ? `${w.ur} • ${w.en}` : (w.ur || w.en || '');
-          const wordEmoji = sanitizeEmoji(w.emoji) || getContextualEmoji(w.ar, w.ur, w.en) || '✨';
 
           tile.innerHTML = `
-            <span class="vocab-tile-em">${wordEmoji}</span>
-            <div class="vocab-tile-ar ar-font">${formatAr(w.ar)}</div>
+            <div class="vocab-tile-ar ar-font preserve-tashkeel">${formatAr(w.ar)}</div>
             <div class="vocab-tile-trans ${state.lang !== 'en' ? 'ur-font' : ''}" dir="${state.lang === 'en' ? 'ltr' : 'rtl'}">${meaning}</div>
-            <span class="vocab-tile-speaker" title="Listen">🔊</span>
           `;
 
           tile.addEventListener('click', () => speakArabic(w.ar));
